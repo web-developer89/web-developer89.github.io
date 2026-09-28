@@ -1,0 +1,11 @@
+---
+import { site } from '../config/site';
+---
+{site.newsletter.enabled && site.newsletter.provider && (
+  <section class="section">
+    <div class="wrap">
+      <h2>Keine neuen Inhalte verpassen</h2>
+      <p>Der Newsletter ist vorbereitet, aber noch keinem Versand verbunden.</p>
+    </div>
+  </section>
+)}

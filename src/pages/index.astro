@@ -1,0 +1,195 @@
+---
+import Base from '../layouts/Base.astro';
+import VideoCard from '../components/VideoCard.astro';
+import SupportPanel from '../components/SupportPanel.astro';
+import EmptyState from '../components/EmptyState.astro';
+import Newsletter from '../components/Newsletter.astro';
+import { catalog, channelDirectory, getFeatured, videoPath } from '../lib/catalog';
+import { formatDate } from '../lib/format';
+import { connectedSocials } from '../config/social';
+import { site } from '../config/site';
+import { topics } from '../config/topics';
+
+const featured = getFeatured();
+const liveVideo = catalog.live ? catalog.videos.find((video) => video.id === catalog.live?.videoId) ?? null : null;
+const hero = liveVideo ?? featured;
+const rest = catalog.videos.filter((video) => video.id !== hero?.id);
+const rail = rest.slice(0, 4);
+const mosaic = rest.slice(4, 10);
+const channels = channelDirectory();
+const origin = site.url;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: site.name,
+    legalName: site.publisher.legalName,
+    url: origin,
+    logo: new URL('/brand/mark.jpg', origin).href,
+    sameAs: connectedSocials.map((item) => item.href),
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: site.publisher.street,
+      postalCode: site.publisher.postalCode,
+      addressLocality: site.publisher.city,
+      addressCountry: site.publisher.countryCode,
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: site.name,
+    url: origin,
+    inLanguage: 'de-DE',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${origin}/suche/?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  },
+];
+---
+<Base title={site.name} description={site.description} image={hero?.thumbnail || '/brand/mark.jpg'} jsonLd={jsonLd}>
+  {catalog.live && (
+    <aside class="live-banner">
+      <div class="wrap">
+        <p><span class="live-dot" aria-hidden="true"></span><strong>Live.</strong> Politik mit Kopf ist jetzt live</p>
+        <a class="link-arrow" href={liveVideo ? videoPath(liveVideo) : catalog.live.url} rel={liveVideo ? undefined : 'noopener noreferrer'}>Livestream ansehen</a>
+      </div>
+    </aside>
+  )}
+  {!catalog.ok && catalog.videos.length > 0 && (
+    <div class="wrap notice" role="status">
+      <p>Inhalte konnten momentan nicht geladen werden. Angezeigt werden die zuletzt gespeicherten Videos. <a href="/">Erneut versuchen</a></p>
+    </div>
+  )}
+  <div class="wrap">
+    {hero ? (
+      <section class="hero">
+        <a class="thumb" href={videoPath(hero)} aria-label={hero.title}>
+          <img src={hero.thumbnail} alt="" width="1280" height="720" fetchpriority="high" decoding="async" data-fallback={hero.thumbnailRemote} />
+          <span class="play" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7.2v9.6L17.5 12 9 7.2z"/></svg>
+          </span>
+        </a>
+        <div class="hero-copy">
+          <p class="kicker">{catalog.live && liveVideo ? 'Live' : 'Im Fokus'}</p>
+          <p class="byline"><span>{hero.channelName}</span><time datetime={hero.publishedAt}>{formatDate(hero.publishedAt)}</time></p>
+          <h1>{hero.title}</h1>
+          <p class="excerpt">{hero.excerpt}</p>
+          <div class="hero-actions">
+            <a class="button" href={videoPath(hero)}>Beitrag ansehen</a>
+            <a class="button ghost" href="/ueber-uns/">Mehr erfahren</a>
+          </div>
+        </div>
+      </section>
+    ) : (
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="kicker">Politik mit Kopf</p>
+          <h1>Aktuell sind noch keine Videos übernommen.</h1>
+          <EmptyState title="Inhalte konnten momentan nicht geladen werden." actionHref="/" action="Erneut versuchen" />
+        </div>
+      </section>
+    )}
+
+    {rail.length > 0 && (
+      <section class="section" style="padding-top:28px">
+        <div class="section-head">
+          <h2>Als Nächstes</h2>
+          <a class="link-arrow" href="/videos/">Alle Videos</a>
+        </div>
+        <div class="rail">
+          {rail.map((video) => <VideoCard video={video} variant="rail" />)}
+        </div>
+      </section>
+    )}
+  </div>
+
+  <div class="wrap">
+    <figure class="pullquote">
+      <blockquote>{site.quote}</blockquote>
+      <figcaption>{site.quoteAttribution}</figcaption>
+    </figure>
+  </div>
+
+  {mosaic.length > 0 && (
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Neueste Videos</h2>
+          <a class="link-arrow" href="/videos/">Ins Archiv</a>
+        </div>
+        <div class="mosaic">
+          {mosaic.map((video, index) => <VideoCard video={video} variant={index === 0 ? 'lead' : 'standard'} />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="section" style="padding-top:10px">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Themen</h2>
+        <a class="link-arrow" href="/themen/">Alle Themen</a>
+      </div>
+      <p class="lede">{site.description}</p>
+      <ol class="topic-index">
+        {topics.map((topic, index) => (
+          <li>
+            <a href={`/themen/${topic.slug}/`}>
+              <span>{String(index + 1).padStart(2, '0')}</span>
+              {topic.title}
+              <span>→</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="band section">
+    <div class="wrap">
+      {channels.map((channel) => (
+        <article class="channel-panel">
+          <img src={channel.avatar} alt="" width="92" height="92" />
+          <div>
+            <p class="kicker">{channels.length > 1 ? 'Unsere YouTube-Kanäle' : 'Der YouTube-Kanal'}</p>
+            <h2>{channel.name}</h2>
+            <p>{channel.description}</p>
+            {channel.latest && <p>Letztes Video: <a href={videoPath(channel.latest)}>{channel.latest.title}</a></p>}
+            <p><a class="link-arrow" href={channel.channelUrl} rel="noopener noreferrer">YouTube-Kanal öffnen</a></p>
+          </div>
+        </article>
+      ))}
+      <div class="section-head" style="margin-top:36px;border-color:var(--band-line)">
+        <h2>Politik mit Kopf folgen</h2>
+      </div>
+      <div class="social-list">
+        {connectedSocials.map((item) => (
+          <a class="row" href={item.href} rel="noopener noreferrer">
+            <h3>{item.label}</h3>
+            <p>{item.description}</p>
+            <span class="link-arrow">{item.label} öffnen</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="prose">
+        <p class="kicker">Das Projekt</p>
+        <h2>Über Politik mit Kopf</h2>
+        <p>{site.description}</p>
+        <p><a class="link-arrow" href="/ueber-uns/">Mehr erfahren</a></p>
+      </div>
+      <SupportPanel compact={true} />
+    </div>
+  </section>
+  <Newsletter />
+</Base>

@@ -1,0 +1,116 @@
+---
+import { connectedSocials } from '../config/social';
+import { feed } from '../lib/catalog';
+import { formatDate } from '../lib/format';
+import '../styles/overlay.css';
+
+interface Props {
+  kind: string;
+  title: string;
+}
+const { kind, title } = Astro.props;
+const headline = feed.message.headline || feed.latest?.title || '';
+const ticker = feed.message.ticker || feed.latest?.title || '';
+const custom = feed.message.custom || '';
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>{title}</title>
+  </head>
+  <body data-overlay={kind}>
+    {kind === 'news' && (
+      <section class="plate lower">
+        <p class="kicker">Politik mit Kopf</p>
+        <h1 class="headline" data-bind="headline">{headline}</h1>
+      </section>
+    )}
+    {kind === 'headline' && (
+      <section class="plate center-top">
+        <p class="kicker">Politik mit Kopf</p>
+        <h1 class="headline" data-bind="headline">{headline}</h1>
+      </section>
+    )}
+    {kind === 'ticker' && (
+      <div class="ticker" hidden={!ticker}>
+        <p><strong>AKTUELL</strong><span data-bind="ticker">{ticker}</span></p>
+      </div>
+    )}
+    {kind === 'latest-video' && feed.latest && (
+      <article class="card" data-bind="latest">
+        <img data-bind="thumb" src={feed.latest.thumbnail} alt="" width="640" height="360" />
+        <div>
+          <p class="kicker">Neues Video</p>
+          <h1 data-bind="latest-title">{feed.latest.title}</h1>
+          <p data-bind="latest-date">{formatDate(feed.latest.publishedAt)}</p>
+        </div>
+      </article>
+    )}
+    {kind === 'live' && (
+      <section class="live-pill" data-bind="live" hidden={!feed.live}>
+        <span class="dot"></span>
+        <div>
+          <strong>LIVE</strong>
+          <div data-bind="live-title">{feed.live ? feed.live.title : ''}</div>
+        </div>
+      </section>
+    )}
+    {kind === 'socials' && (
+      <nav class="socials" aria-label="Kanäle">
+        {connectedSocials.map((item) => <a href={item.href}>{item.label}</a>)}
+      </nav>
+    )}
+    {kind === 'custom' && (
+      <section class="plate custom" data-bind="custom" hidden={!custom}>
+        <h1 class="headline" data-bind="custom-text">{custom}</h1>
+      </section>
+    )}
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      if (params.has('preview')) document.documentElement.classList.add('is-preview');
+
+      const apply = (feed) => {
+        const headline = feed.message?.headline || feed.latest?.title || '';
+        const ticker = feed.message?.ticker || feed.latest?.title || '';
+        const custom = feed.message?.custom || '';
+        document.querySelectorAll('[data-bind="headline"]').forEach((node) => {
+          node.textContent = headline;
+        });
+        const tickerNode = document.querySelector('[data-bind="ticker"]');
+        const tickerBar = document.querySelector('.ticker');
+        if (tickerNode) tickerNode.textContent = ticker;
+        if (tickerBar instanceof HTMLElement) tickerBar.hidden = !ticker;
+        const title = document.querySelector('[data-bind="latest-title"]');
+        if (title && feed.latest) title.textContent = feed.latest.title;
+        const date = document.querySelector('[data-bind="latest-date"]');
+        if (date && feed.latest) date.textContent = feed.latest.publishedAt;
+        const thumb = document.querySelector('[data-bind="thumb"]');
+        if (thumb instanceof HTMLImageElement && feed.latest?.thumbnail) thumb.src = feed.latest.thumbnail;
+        const live = document.querySelector('[data-bind="live"]');
+        const liveTitle = document.querySelector('[data-bind="live-title"]');
+        if (live instanceof HTMLElement) {
+          live.hidden = !feed.live;
+          if (liveTitle) liveTitle.textContent = feed.live?.title || '';
+        }
+        const customBox = document.querySelector('[data-bind="custom"]');
+        const customText = document.querySelector('[data-bind="custom-text"]');
+        if (customText) customText.textContent = custom;
+        if (customBox instanceof HTMLElement) customBox.hidden = !custom;
+      };
+
+      const refresh = async () => {
+        try {
+          const response = await fetch(`/data/feed.json?t=${Date.now()}`, { cache: 'no-store' });
+          if (!response.ok) return;
+          apply(await response.json());
+        } catch {
+          /* Overlay behält den zuletzt gebauten Stand. */
+        }
+      };
+      window.setInterval(refresh, 30000);
+    </script>
+  </body>
+</html>

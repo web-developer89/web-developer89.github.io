@@ -1,0 +1,41 @@
+---
+import { footerDiscover, footerLegal, footerProject } from '../config/navigation';
+import { connectedSocials } from '../config/social';
+import { publisherLines, site } from '../config/site';
+import { catalog } from '../lib/catalog';
+import { currentYear, formatDateTime } from '../lib/format';
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h2>Politik mit Kopf</h2>
+        <p class="legal-note">{publisherLines.join(', ')}</p>
+        {catalog.syncedAt && <p class="legal-note">Stand der Videos: {formatDateTime(catalog.syncedAt)}</p>}
+      </div>
+      <div>
+        <h2>Entdecken</h2>
+        <ul>
+          {footerDiscover.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+        </ul>
+      </div>
+      <div>
+        <h2>Folgen</h2>
+        <ul>
+          {connectedSocials.map((item) => (
+            <li><a href={item.href} rel="noopener noreferrer">{item.label}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h2>Projekt</h2>
+        <ul>
+          {footerProject.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+          {footerLegal.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+        </ul>
+      </div>
+    </div>
+    <p class="footer-mark" aria-hidden="true">Politik <em>mit Kopf</em></p>
+    <p class="legal-note">© {currentYear()} {site.name}</p>
+  </div>
+</footer>

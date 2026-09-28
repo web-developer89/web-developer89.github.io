@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SupportPanel from '../components/SupportPanel.astro';
+import { support } from '../config/support';
+---
+<Base title="Projekt unterstützen" description={support.intro}>
+  <div class="wrap">
+    <Breadcrumbs items={[{ href: '/unterstuetzen/', label: 'Unterstützen' }]} />
+    <PageHeader kicker="Unterstützung" title="Projekt unterstützen" lede={support.intro} />
+    <SupportPanel showHeading={false} />
+  </div>
+</Base>

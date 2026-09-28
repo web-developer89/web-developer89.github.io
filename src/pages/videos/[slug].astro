@@ -1,0 +1,95 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Player from '../../components/Player.astro';
+import ShareBar from '../../components/ShareBar.astro';
+import VideoCard from '../../components/VideoCard.astro';
+import { catalog, relatedVideos, videoPath } from '../../lib/catalog';
+import { descriptionLines, formatDate, linkify } from '../../lib/format';
+import { site } from '../../config/site';
+import type { Video } from '../../types';
+
+export function getStaticPaths() {
+  return catalog.videos.map((video) => ({ params: { slug: video.slug }, props: { video } }));
+}
+
+interface Props {
+  video: Video;
+}
+const { video } = Astro.props;
+const related = relatedVideos(video);
+const pageUrl = new URL(videoPath(video), site.url).href;
+const image = video.thumbnail.startsWith('http') ? video.thumbnail : new URL(video.thumbnail, site.url).href;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Startseite', item: `${site.url}/` },
+      { '@type': 'ListItem', position: 2, name: 'Videos', item: `${site.url}/videos/` },
+      { '@type': 'ListItem', position: 3, name: video.title, item: pageUrl },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: video.title,
+    description: video.excerpt,
+    thumbnailUrl: image,
+    uploadDate: video.publishedAt,
+    embedUrl: `https://www.youtube-nocookie.com/embed/${video.id}`,
+    url: pageUrl,
+    publisher: { '@type': 'Organization', name: site.name, url: site.url },
+  },
+];
+---
+<Base title={video.title} description={video.excerpt} image={video.thumbnail} ogType="video.other" jsonLd={jsonLd}>
+  <article class="wrap">
+    <nav aria-label="Brotkrumen">
+      <ol class="crumbs">
+        <li><a href="/">Startseite</a></li>
+        <li><a href="/videos/">Videos</a></li>
+        <li><span aria-current="page">{video.title}</span></li>
+      </ol>
+    </nav>
+    <header class="page-head">
+      <p class="kicker">{video.channelName}</p>
+      <h1>{video.title}</h1>
+      <p class="byline"><time datetime={video.publishedAt}>{formatDate(video.publishedAt)}</time>{video.durationLabel && <span>{video.durationLabel}</span>}</p>
+    </header>
+    <Player label="Abspielen" id={video.id} title={video.title}>
+      <img src={video.thumbnail} alt="" width="1280" height="720" fetchpriority="high" data-fallback={video.thumbnailRemote} />
+    </Player>
+    <ShareBar video={video} />
+    <div class="description prose">
+      {descriptionLines(video.description).map((line) => (
+        line.trim() ? (
+          <p>
+            {linkify(line).map((part) => part.type === 'link' && part.href
+              ? <a href={part.href} rel="noopener noreferrer">{part.value}</a>
+              : part.value)}
+          </p>
+        ) : <br />
+      ))}
+    </div>
+    {video.tags.length > 0 && (
+      <ul class="tags">
+        {video.tags.map((tag) => <li><a href={`/videos/?thema=${encodeURIComponent(tag)}`}>#{tag}</a></li>)}
+      </ul>
+    )}
+  </article>
+  {related.length > 0 && (
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Weitere Videos</h2>
+          <a class="link-arrow" href="/videos/">Alle Videos</a>
+        </div>
+        <div class="cards">
+          {related.map((item) => <VideoCard video={item} />)}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>

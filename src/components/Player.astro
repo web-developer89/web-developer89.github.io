@@ -1,0 +1,40 @@
+---
+interface Props {
+  label: string;
+  id: string;
+  title?: string;
+}
+const { label, id, title = 'Video' } = Astro.props;
+---
+<div class="player" data-player>
+  <a href={`https://www.youtube.com/watch?v=${id}`} data-embed={id} data-title={title}>
+    <slot />
+    <span class="play" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 7.2v9.6L17.5 12 9 7.2z"/></svg>
+    </span>
+    <span class="sr-only">Video abspielen</span>
+  </a>
+</div>
+<script>
+  import { track } from '../lib/analytics';
+
+  document.querySelectorAll('[data-player]').forEach((node) => {
+    const link = node.querySelector('a');
+    if (!(link instanceof HTMLAnchorElement) || link.dataset.bound === 'true') return;
+    link.dataset.bound = 'true';
+    link.addEventListener('click', (event) => {
+      const id = link.dataset.embed;
+      if (!id) return;
+      event.preventDefault();
+      const frame = document.createElement('iframe');
+      frame.className = 'player-frame';
+      frame.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0`;
+      frame.title = link.dataset.title || 'Video';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      node.replaceChildren(frame);
+      track('video_play', { id });
+    });
+  });
+</script>

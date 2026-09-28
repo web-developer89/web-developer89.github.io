@@ -1,0 +1,62 @@
+---
+import { navigation } from '../config/navigation';
+import { connectedSocials } from '../config/social';
+import Icon from './Icon.astro';
+
+const pathname = Astro.url.pathname;
+const current = (href: string) => (href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(href));
+---
+<header class="site-header" data-header>
+  <div class="header-bar">
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
+      <span class="sr-only">Menü</span>
+      <Icon name="menu" />
+    </button>
+    <a class="brand" href="/">
+      <img src="/brand/mark.jpg" alt="" width="36" height="36" data-fallback="/favicon.svg" />
+      <span class="wordmark">Politik <em>mit Kopf</em></span>
+    </a>
+    <nav class="nav-main" aria-label="Hauptnavigation">
+      {navigation.map((item) => (
+        <a href={item.href} aria-current={current(item.href) ? 'page' : undefined}>{item.label}</a>
+      ))}
+    </nav>
+    <div class="header-tools">
+      <a class="tool tool-search" href="/suche/" data-search-open>
+        <Icon name="search" size={18} />
+        <span class="search-text">Suche</span>
+      </a>
+      <button class="tool" type="button" data-theme-toggle aria-label="Farbschema wechseln">
+        <span class="when-light"><Icon name="moon" size={18} /></span>
+        <span class="when-dark"><Icon name="sun" size={18} /></span>
+        <span class="search-text when-light">Dunkel</span>
+        <span class="search-text when-dark">Hell</span>
+      </button>
+      <a class="button small" href="/unterstuetzen/">Projekt unterstützen</a>
+    </div>
+  </div>
+</header>
+<div id="menu" class="menu-panel" hidden data-menu-panel>
+  <div class="menu-top">
+    <a class="brand" href="/">
+      <img src="/brand/mark.jpg" alt="" width="36" height="36" data-fallback="/favicon.svg" />
+      <span class="wordmark">Politik <em>mit Kopf</em></span>
+    </a>
+    <button class="menu-button" type="button" data-menu-close style="display:inline-flex">
+      <span class="sr-only">Menü schließen</span>
+      <Icon name="close" />
+    </button>
+  </div>
+  <nav class="menu-nav" aria-label="Mobilnavigation">
+    {navigation.map((item) => (
+      <a href={item.href} aria-current={current(item.href) ? 'page' : undefined}>{item.label}</a>
+    ))}
+  </nav>
+  <a class="button" href="/unterstuetzen/">Projekt unterstützen</a>
+  <div class="menu-social">
+    {connectedSocials.map((item) => (
+      <a href={item.href} rel="noopener noreferrer">{item.label}</a>
+    ))}
+    <a href="/suche/" data-search-open>Suche</a>
+  </div>
+</div>

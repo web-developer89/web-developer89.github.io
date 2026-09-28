@@ -1,0 +1,34 @@
+---
+import { videoPath } from '../lib/catalog';
+import type { Video } from '../types';
+
+interface Props {
+  video: Video;
+}
+const { video } = Astro.props;
+const pageUrl = new URL(videoPath(video), Astro.site ?? 'https://web-developer89.github.io').href;
+const text = encodeURIComponent(video.title);
+const url = encodeURIComponent(pageUrl);
+---
+<div class="share">
+  <button type="button" data-copy={pageUrl}>Link kopieren</button>
+  <button type="button" data-share data-title={video.title} data-url={pageUrl}>Teilen</button>
+  <a href={`https://x.com/intent/tweet?text=${text}&url=${url}`} rel="noopener noreferrer">Auf X teilen</a>
+  <a href={`https://t.me/share/url?url=${url}&text=${text}`} rel="noopener noreferrer">Per Telegram teilen</a>
+  <a href={`https://wa.me/?text=${text}%20${url}`} rel="noopener noreferrer">Per WhatsApp teilen</a>
+  <a href={video.url} rel="noopener noreferrer">Auf YouTube ansehen</a>
+</div>
+<script>
+  document.querySelectorAll('[data-share]').forEach((node) => {
+    if (!(node instanceof HTMLButtonElement)) return;
+    const canShare = typeof navigator.share === 'function';
+    if (!canShare) node.hidden = true;
+    node.addEventListener('click', async () => {
+      try {
+        await navigator.share({ title: node.dataset.title, url: node.dataset.url });
+      } catch {
+        /* Abbruch durch die besuchende Person ist kein Fehler. */
+      }
+    });
+  });
+</script>

@@ -1,0 +1,19 @@
+{
+  "name": "Politik mit Kopf",
+  "short_name": "Politik mit Kopf",
+  "description": "Videos, Analysen und aktuelle Beiträge von Politik mit Kopf.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "de",
+  "background_color": "#f2efe8",
+  "theme_color": "#121a27",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

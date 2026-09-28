@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { searchContent } from '../lib/search';
+import { formatDate } from '../lib/format';
+
+const q = Astro.url.searchParams.get('q')?.trim() ?? '';
+const results = q ? searchContent(q) : [];
+---
+<Base title="Suche" description="Beiträge, Themen und Seiten von Politik mit Kopf durchsuchen." noindex={Boolean(q)}>
+  <div class="wrap">
+    <PageHeader kicker="Suche" title="Was möchtest du finden?" />
+    <form class="filters" action="/suche/" method="get" role="search" style="grid-template-columns: 1fr auto">
+      <label class="field">
+        <span class="sr-only">Suchbegriff</span>
+        <input name="q" value={q} />
+      </label>
+      <button class="button" type="submit">Suchen</button>
+    </form>
+    {q && results.length === 0 && <p class="empty">Keine Treffer.</p>}
+    {results.length > 0 && (
+      <ol class="wire">
+        {results.map((item) => (
+          <li>
+            <span class="badge">{item.kind}</span>
+            <div>
+              <h2><a href={item.href}>{item.title}</a></h2>
+              {item.date && <time datetime={item.date}>{formatDate(item.date)}</time>}
+            </div>
+          </li>
+        ))}
+      </ol>
+    )}
+  </div>
+</Base>

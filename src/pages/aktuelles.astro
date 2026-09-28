@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { catalog, videoPath } from '../lib/catalog';
+import { formatDate } from '../lib/format';
+---
+<Base title="Aktuelles" description="Die neuesten Veröffentlichungen von Politik mit Kopf.">
+  <div class="wrap">
+    <Breadcrumbs items={[{ href: '/aktuelles/', label: 'Aktuelles' }]} />
+    <PageHeader kicker="Laufend" title="Aktuelles" lede="Neue Videos erscheinen hier, sobald sie veröffentlicht sind." />
+    {catalog.videos.length === 0 && !catalog.live ? (
+      <p>Aktuell sind in diesem Bereich noch keine Beiträge vorhanden.</p>
+    ) : (
+      <ol class="wire">
+        {catalog.live && (
+          <li>
+            <time datetime={catalog.syncedAt ?? undefined}>Jetzt</time>
+            <div>
+              <span class="badge">Live</span>
+              <h2><a href={catalog.live.url} rel="noopener noreferrer">{catalog.live.title}</a></h2>
+              <p>Politik mit Kopf ist jetzt live.</p>
+            </div>
+          </li>
+        )}
+        {catalog.videos.map((video) => (
+          <li>
+            <time datetime={video.publishedAt}>{formatDate(video.publishedAt)}</time>
+            <div>
+              <span class="badge">Video</span>
+              <h2><a href={videoPath(video)}>{video.title}</a></h2>
+              <p>{video.excerpt}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    )}
+  </div>
+</Base>

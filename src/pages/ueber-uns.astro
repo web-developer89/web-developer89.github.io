@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { publisherLines, site } from '../config/site';
+---
+<Base title="Über uns" description={site.description}>
+  <div class="wrap">
+    <Breadcrumbs items={[{ href: '/ueber-uns/', label: 'Über uns' }]} />
+    <PageHeader kicker="Das Projekt" title="Über Politik mit Kopf" lede="So beschreibt sich das Projekt:" />
+    <div class="prose" style="max-width: 42rem">
+      <p>{site.description}</p>
+      <p>Die Beiträge erscheinen auf YouTube und werden auf dieser Seite automatisch übernommen. Hier finden sich das aktuelle Video, das Archiv und die Wege, dem Projekt zu folgen.</p>
+    </div>
+    <figure class="pullquote">
+      <blockquote>{site.quote}</blockquote>
+      <figcaption>{site.quoteAttribution}</figcaption>
+    </figure>
+    <div class="prose">
+      <h2>Herausgeber</h2>
+      <p>{publisherLines.join(', ')}</p>
+      <p>Handelsregister: {site.publisher.registerNumber}, {site.publisher.registerCourt}</p>
+      <p><a class="link-arrow" href="/impressum/">Impressum</a></p>
+    </div>
+  </div>
+</Base>

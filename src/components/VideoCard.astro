@@ -1,0 +1,42 @@
+---
+import type { Video } from '../types';
+import { formatDate } from '../lib/format';
+import { videoPath } from '../lib/catalog';
+import Icon from './Icon.astro';
+
+interface Props {
+  video: Video;
+  variant?: 'standard' | 'lead' | 'rail';
+  hidden?: boolean;
+  priority?: boolean;
+}
+const { video, variant = 'standard', hidden = false, priority = false } = Astro.props;
+---
+<article
+  class:list={['video-card', `is-${variant}`]}
+  hidden={hidden}
+  data-video
+  data-year={video.publishedAt.slice(0, 4)}
+  data-tags={video.tags.join('|')}
+  data-time={video.publishedAt}
+>
+  <a href={videoPath(video)}>
+    <div class="thumb">
+      <img
+        src={video.thumbnail}
+        alt=""
+        width="1280"
+        height="720"
+        loading={priority ? 'eager' : 'lazy'}
+        decoding="async"
+        fetchpriority={priority ? 'high' : undefined}
+        data-fallback={video.thumbnailRemote}
+      />
+      <span class="play"><Icon name="play" /></span>
+      {video.durationLabel && <span class="duration">{video.durationLabel}</span>}
+    </div>
+    <p class="card-meta"><time datetime={video.publishedAt}>{formatDate(video.publishedAt)}</time></p>
+    <h3>{video.title}</h3>
+    {variant !== 'rail' && <p class="excerpt">{video.excerpt}</p>}
+  </a>
+</article>

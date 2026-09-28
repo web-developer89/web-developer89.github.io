@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { publisherLines, site } from '../config/site';
+---
+<Base title="Impressum" description="Impressum der MK Swiss Media GmbH.">
+  <div class="wrap prose">
+    <Breadcrumbs items={[{ href: '/impressum/', label: 'Impressum' }]} />
+    <PageHeader kicker="Rechtliches" title="Impressum" />
+    <p>
+      {publisherLines.map((line) => <span>{line}<br /></span>)}
+    </p>
+    <h2>Handelsregistereintrag</h2>
+    <p>Nummer: {site.publisher.registerNumber}<br />{site.publisher.registerCourt}</p>
+  </div>
+</Base>

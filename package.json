@@ -1,0 +1,27 @@
+{
+  "name": "politik-mit-kopf",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-youtube.mjs",
+    "prebuild": "node scripts/sync-youtube.mjs",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.6.0",
+    "@fontsource-variable/fraunces": "^5.2.8",
+    "@fontsource-variable/source-sans-3": "^5.2.8",
+    "astro": "^5.14.1",
+    "fast-xml-parser": "^5.3.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

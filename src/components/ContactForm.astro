@@ -1,0 +1,114 @@
+---
+import { contactCategories } from '../config/support';
+import { publisherLines } from '../config/site';
+const endpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || '';
+---
+<form class="form-grid" data-contact data-endpoint={endpoint} novalidate>
+  <label class="field">
+    <span>Name</span>
+    <input name="name" autocomplete="name" required maxlength="120" />
+    <span class="error" data-error-for="name"></span>
+  </label>
+  <label class="field">
+    <span>E-Mail-Adresse</span>
+    <input name="email" type="email" autocomplete="email" required maxlength="200" />
+    <span class="error" data-error-for="email"></span>
+  </label>
+  <label class="field">
+    <span>Betreff</span>
+    <input name="subject" required maxlength="180" />
+    <span class="error" data-error-for="subject"></span>
+  </label>
+  <label class="field">
+    <span>Kategorie</span>
+    <select name="category" required>
+      <option value="">Bitte wählen</option>
+      {contactCategories.map((item) => <option value={item}>{item}</option>)}
+    </select>
+    <span class="error" data-error-for="category"></span>
+  </label>
+  <label class="field wide">
+    <span>Nachricht</span>
+    <textarea name="message" required maxlength="5000"></textarea>
+    <span class="error" data-error-for="message"></span>
+  </label>
+  <label class="hp" aria-hidden="true">
+    Firma
+    <input name="company" tabindex="-1" autocomplete="off" />
+  </label>
+  <div class="wide">
+    <button class="button" type="submit">Nachricht senden</button>
+    <p class="status" data-form-status role="status"></p>
+    <p class="legal-note">Postalisch: {publisherLines.join(', ')}</p>
+  </div>
+</form>
+<script>
+  const categories = new Set(['Allgemeine Anfrage', 'Presse', 'Kooperation', 'Technik', 'Sonstiges']);
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  document.querySelectorAll('[data-contact]').forEach((node) => {
+    if (!(node instanceof HTMLFormElement) || node.dataset.bound === 'true') return;
+    node.dataset.bound = 'true';
+    const status = node.querySelector('[data-form-status]');
+    const endpoint = node.dataset.endpoint || '';
+
+    const setError = (name: string, message: string) => {
+      const field = node.elements.namedItem(name);
+      const slot = node.querySelector(`[data-error-for="${name}"]`);
+      if (field instanceof HTMLElement) field.setAttribute('aria-invalid', message ? 'true' : 'false');
+      if (slot) slot.textContent = message;
+    };
+
+    node.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const data = new FormData(node);
+      const name = String(data.get('name') || '').trim();
+      const email = String(data.get('email') || '').trim();
+      const subject = String(data.get('subject') || '').trim();
+      const category = String(data.get('category') || '').trim();
+      const message = String(data.get('message') || '').trim();
+      const company = String(data.get('company') || '').trim();
+
+      const errors = {
+        name: name.length < 2 ? 'Bitte einen Namen angeben.' : '',
+        email: emailPattern.test(email) ? '' : 'Bitte eine gültige E-Mail-Adresse angeben.',
+        subject: subject.length < 3 ? 'Bitte einen Betreff angeben.' : '',
+        category: categories.has(category) ? '' : 'Bitte eine Kategorie wählen.',
+        message: message.length < 10 ? 'Die Nachricht sollte mindestens 10 Zeichen haben.' : '',
+      };
+      Object.entries(errors).forEach(([key, value]) => setError(key, value));
+      if (Object.values(errors).some(Boolean)) {
+        if (status) status.textContent = 'Bitte die markierten Felder prüfen.';
+        return;
+      }
+      if (company) {
+        if (status) status.textContent = 'Die Nachricht konnte nicht gesendet werden.';
+        return;
+      }
+      if (!endpoint) {
+        if (status) {
+          status.textContent = 'Das Kontaktformular ist noch nicht verbunden. Ihre Nachricht wurde nicht gesendet. Bitte schreiben Sie postalisch an MK Swiss Media GmbH, Zürichstrasse 38A, 8840 Einsiedeln, Schweiz.';
+        }
+        return;
+      }
+
+      const button = node.querySelector('button[type="submit"]');
+      if (button instanceof HTMLButtonElement) button.disabled = true;
+      if (status) status.textContent = 'Wird gesendet…';
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', accept: 'application/json' },
+          body: JSON.stringify({ name, email, subject, category, message }),
+        });
+        if (!response.ok) throw new Error('request failed');
+        node.reset();
+        if (status) status.textContent = 'Vielen Dank. Die Nachricht wurde gesendet.';
+      } catch {
+        if (status) status.textContent = 'Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.';
+      } finally {
+        if (button instanceof HTMLButtonElement) button.disabled = false;
+      }
+    });
+  });
+</script>

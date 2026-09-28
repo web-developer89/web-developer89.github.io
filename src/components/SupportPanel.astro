@@ -1,0 +1,42 @@
+---
+import { support } from '../config/support';
+
+interface Props {
+  compact?: boolean;
+  showHeading?: boolean;
+}
+const { compact = false, showHeading = true } = Astro.props;
+const bank = support.bank;
+---
+<section>
+  {showHeading && <p class="kicker">Unterstützung</p>}
+  {showHeading && <h2>{compact ? 'Projekt unterstützen' : 'Du möchtest die Arbeit von Politik mit Kopf unterstützen?'}</h2>}
+  {compact && <p>{support.intro}</p>}
+  {bank.enabled && (
+    <div class="iban">
+      <span>Überweisung · {bank.currencyNote}</span>
+      <strong>{bank.iban}</strong>
+      <p>Empfänger: {bank.accountName}<br />Verwendungszweck: {bank.purpose}</p>
+      <button class="button ghost" type="button" data-copy={bank.iban}>IBAN kopieren</button>
+    </div>
+  )}
+  {support.links.length > 0 && (
+    <div class="stack-actions">
+      {support.links.map((item) => (
+        <a class="button" href={item.href} rel="noopener noreferrer">{item.label}</a>
+      ))}
+    </div>
+  )}
+  {!compact && support.recommendations.length > 0 && (
+    <div class="prose">
+      <h3>Empfehlungen</h3>
+      <ul>
+        {support.recommendations.map((item) => (
+          <li><a href={item.href} rel="noopener noreferrer">{item.title}</a> — {item.note}</li>
+        ))}
+      </ul>
+      <p><em>{support.disclaimer}</em></p>
+    </div>
+  )}
+  {compact && <p><a class="link-arrow" href="/unterstuetzen/">Alle Angaben</a></p>}
+</section>

@@ -1,0 +1,76 @@
+---
+import Base from '../layouts/Base.astro';
+import { catalog, allChannelDirectory, youtube } from '../lib/catalog';
+import { formatDateTime } from '../lib/format';
+import { socials } from '../config/social';
+import { support } from '../config/support';
+
+const channels = allChannelDirectory();
+const statusLabel = {
+  verbunden: 'Verbunden',
+  deaktiviert: 'Deaktiviert',
+  fehler: 'Fehler',
+} as const;
+const sourceLabel = {
+  rss: 'Öffentlicher RSS-Feed, letzte 15 Videos je Kanal',
+  'youtube-data-api': 'YouTube Data API',
+  mixed: 'Gemischte Quellen',
+  none: 'Noch keine Übernahme',
+} as const;
+---
+<Base title="Synchronisation" description="Stand der YouTube-Übernahme." noindex={true}>
+  <div class="wrap">
+    <header class="page-head">
+      <p class="kicker">Redaktion</p>
+      <h1>Synchronisation</h1>
+      <p class="lede">Diese Seite zeigt den Stand. Einstellungen liegen in der Konfiguration und werden nicht von hier aus geändert.</p>
+    </header>
+    <p>Letzte Übernahme: {catalog.syncedAt ? formatDateTime(catalog.syncedAt) : 'noch keine'}</p>
+    <p>Quelle: {sourceLabel[catalog.source]}</p>
+    <p>Videos: {catalog.videos.length}</p>
+    <p>Live: {catalog.live ? catalog.live.title : 'Kein Livestream erkannt'}</p>
+    {catalog.error && <p role="status">{catalog.error}</p>}
+    <h2>YouTube-Kanäle</h2>
+    <table class="table">
+      <thead>
+        <tr><th>Kanal</th><th>Status</th><th>Videos</th><th>Modus</th></tr>
+      </thead>
+      <tbody>
+        {channels.map((channel) => (
+          <tr>
+            <td>{channel.name}<br /><span class="legal-note">{channel.channelId}</span></td>
+            <td>{statusLabel[channel.status]}</td>
+            <td>{channel.videoCount}</td>
+            <td>{channel.featured ? 'Hervorgehoben' : 'Kanal'}{youtube.featuredMode === 'manual' ? ', Fokus manuell' : ', Fokus automatisch'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <h2>Social Media</h2>
+    <table class="table">
+      <thead><tr><th>Dienst</th><th>Status</th></tr></thead>
+      <tbody>
+        {socials.map((item) => (
+          <tr>
+            <td>{item.label}</td>
+            <td>{item.connected && item.href ? 'Verbunden' : 'Nicht verbunden'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <h2>Unterstützung</h2>
+    <p>Überweisung: {support.bank.enabled ? 'Hinterlegt' : 'Nicht hinterlegt'}</p>
+    <p>Weitere Zahlungswege: {support.links.length ? 'Hinterlegt' : 'Nicht hinterlegt'}</p>
+    <h2>Overlays für OBS</h2>
+    <ul>
+      <li><a href="/overlay/news/?preview=1">Schlagzeile</a></li>
+      <li><a href="/overlay/headline/?preview=1">Headline</a></li>
+      <li><a href="/overlay/ticker/?preview=1">Ticker</a></li>
+      <li><a href="/overlay/latest-video/?preview=1">Neuestes Video</a></li>
+      <li><a href="/overlay/live/?preview=1">Live</a></li>
+      <li><a href="/overlay/socials/?preview=1">Socials</a></li>
+      <li><a href="/overlay/custom/?preview=1">Freier Text</a></li>
+    </ul>
+    <p class="legal-note">Texte für Ticker und freie Einblendung stehen in src/content/overlay.json. Die OBS-Seiten aktualisieren sich nach der nächsten Veröffentlichung.</p>
+  </div>
+</Base>

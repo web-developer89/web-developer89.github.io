@@ -1,0 +1,22 @@
+---
+import Overlay from '../../layouts/Overlay.astro';
+
+export function getStaticPaths() {
+  return [
+    ['news', 'Schlagzeile'],
+    ['headline', 'Headline'],
+    ['ticker', 'Ticker'],
+    ['latest-video', 'Neuestes Video'],
+    ['live', 'Live'],
+    ['socials', 'Socials'],
+    ['custom', 'Freier Text'],
+  ].map(([kind, title]) => ({ params: { kind }, props: { kind, title } }));
+}
+
+interface Props {
+  kind: string;
+  title: string;
+}
+const { kind, title } = Astro.props;
+---
+<Overlay kind={kind} title={`${title} · Overlay`} />

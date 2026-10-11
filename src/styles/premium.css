@@ -280,17 +280,25 @@
 }
 
 .channel-badge {
+  --badge-color: #e8c478;
   display: grid;
   place-items: center;
   flex: 0 0 auto;
   aspect-ratio: 1;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
   text-decoration: none;
-  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  transition: transform 160ms ease, filter 160ms ease;
 }
+
+.channel-badge.is-youtube { --badge-color: #ff0033; }
+.channel-badge.is-tiktok { --badge-color: #25f4ee; }
+.channel-badge.is-telegram { --badge-color: #2aabee; }
+.channel-badge.is-whatsapp { --badge-color: #25d366; }
+.channel-badge.is-x { --badge-color: #e7e9ea; }
 
 .channel-badge img {
   display: block;
@@ -298,13 +306,14 @@
   height: 100%;
   object-fit: contain;
   object-position: center;
+  background: transparent;
+  filter: drop-shadow(0 0 0.5px color-mix(in srgb, var(--badge-color) 80%, transparent));
 }
 
 .channel-badge:hover,
 .channel-badge:focus-visible {
   transform: translateY(-2px);
-  border-color: rgba(232, 196, 120, 0.5);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+  filter: drop-shadow(0 8px 16px color-mix(in srgb, var(--badge-color) 35%, transparent));
 }
 
 .channel-badges.is-header {
@@ -316,7 +325,6 @@
 .channel-badges.is-header .channel-badge {
   width: 30px;
   height: 30px;
-  border-radius: 8px;
 }
 
 .channel-badges.is-menu {
@@ -327,7 +335,6 @@
 .channel-badges.is-menu .channel-badge {
   width: 56px;
   height: 56px;
-  border-radius: 14px;
 }
 
 .channel-badges.is-section {
@@ -344,7 +351,6 @@
   width: min(112px, 100%);
   height: auto;
   aspect-ratio: 1;
-  border-radius: 18px;
 }
 
 @media (max-width: 700px) {
@@ -355,7 +361,6 @@
 
   .channel-badges.is-section .channel-badge {
     width: min(72px, 100%);
-    border-radius: 14px;
   }
 }
 

@@ -7,11 +7,20 @@ interface Props {
 }
 const { size = 'section', label = 'Kanäle' } = Astro.props;
 const px = size === 'header' ? 30 : size === 'menu' ? 56 : 112;
+
+const platformClass = (id: string) => {
+  if (id.startsWith('youtube')) return 'is-youtube';
+  if (id === 'tiktok') return 'is-tiktok';
+  if (id === 'telegram') return 'is-telegram';
+  if (id === 'whatsapp') return 'is-whatsapp';
+  if (id === 'x') return 'is-x';
+  return '';
+};
 ---
 <nav class:list={['channel-badges', `is-${size}`]} aria-label={label}>
   {badgeSocials.map((item) => (
     <a
-      class="channel-badge"
+      class:list={['channel-badge', platformClass(item.id)]}
       href={item.href}
       rel="noopener noreferrer"
       title={item.label}

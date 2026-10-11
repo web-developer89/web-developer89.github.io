@@ -1,6 +1,7 @@
 ---
 import { navigation } from '../config/navigation';
-import { channelSocials } from '../config/social';
+import { badgeSocials } from '../config/social';
+import ChannelBadges from './ChannelBadges.astro';
 import Icon from './Icon.astro';
 
 const pathname = Astro.url.pathname;
@@ -22,14 +23,7 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
       ))}
     </nav>
     <div class="header-tools">
-      <div class="header-socials" aria-label="Kanäle">
-        {channelSocials.map((item) => (
-          <a class="tool" href={item.href} rel="noopener noreferrer" title={item.label}>
-            <Icon name={item.id === 'tiktok' ? 'tiktok' : 'youtube'} size={16} />
-            <span class="sr-only">{item.label}</span>
-          </a>
-        ))}
-      </div>
+      <ChannelBadges size="header" />
       <a class="tool tool-search" href="/suche/" data-search-open>
         <Icon name="search" size={18} />
         <span class="search-text">Suche</span>
@@ -55,8 +49,9 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
     ))}
   </nav>
   <a class="button" href="/unterstuetzen/">Unterstützen</a>
+  <ChannelBadges size="menu" />
   <div class="menu-social">
-    {channelSocials.map((item) => (
+    {badgeSocials.map((item) => (
       <a href={item.href} rel="noopener noreferrer">{item.label}</a>
     ))}
     <a href="/suche/" data-search-open>Suche</a>

@@ -1,0 +1,30 @@
+---
+import { badgeSocials } from '../config/social';
+
+interface Props {
+  size?: 'header' | 'section' | 'menu';
+  label?: string;
+}
+const { size = 'section', label = 'Kanäle' } = Astro.props;
+const px = size === 'header' ? 30 : size === 'menu' ? 56 : 112;
+---
+<nav class:list={['channel-badges', `is-${size}`]} aria-label={label}>
+  {badgeSocials.map((item) => (
+    <a
+      class="channel-badge"
+      href={item.href}
+      rel="noopener noreferrer"
+      title={item.label}
+    >
+      <img
+        src={item.badge}
+        alt=""
+        width={px}
+        height={px}
+        decoding="async"
+        loading={size === 'header' ? 'eager' : 'lazy'}
+      />
+      <span class="sr-only">{item.label}</span>
+    </a>
+  ))}
+</nav>

@@ -174,8 +174,10 @@ a { color: inherit; }
 .header-tools {
   margin-left: auto;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 8px;
+  min-width: 0;
 }
 .tool {
   display: inline-flex;

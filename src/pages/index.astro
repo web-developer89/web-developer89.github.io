@@ -7,6 +7,7 @@ import StatsBoard from '../components/StatsBoard.astro';
 import { catalog, channelDirectory, getFeatured, videoPath } from '../lib/catalog';
 import { formatDate, formatDateTime, formatNumber } from '../lib/format';
 import { connectedSocials, channelSocials, standardSocials } from '../config/social';
+import ChannelBadges from '../components/ChannelBadges.astro';
 import { site } from '../config/site';
 
 const featured = getFeatured();
@@ -161,6 +162,7 @@ const jsonLd = [
       <div class="section-head" style="border-color:var(--band-line)">
         <h2>Politik mit Kopf folgen</h2>
       </div>
+      <ChannelBadges size="section" />
       <div class="social-list">
         {channelSocials.map((item) => (
           <a class="row" href={item.href} rel="noopener noreferrer">

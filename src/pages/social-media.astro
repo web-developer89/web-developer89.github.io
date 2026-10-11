@@ -2,12 +2,14 @@
 import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ChannelBadges from '../components/ChannelBadges.astro';
 import { connectedSocials } from '../config/social';
 ---
-<Base title="Social Media" description="YouTube, Telegram, WhatsApp und X von Politik mit Kopf.">
+<Base title="Social Media" description="YouTube, Telegram, WhatsApp, X und TikTok von Politik mit Kopf.">
   <div class="wrap">
     <Breadcrumbs items={[{ href: '/social-media/', label: 'Social Media' }]} />
     <PageHeader kicker="Kanäle" title="Politik mit Kopf folgen" lede="Nur Profile, die zum Projekt gehören." />
+    <ChannelBadges size="section" />
   </div>
   <section class="band section">
     <div class="wrap social-list">

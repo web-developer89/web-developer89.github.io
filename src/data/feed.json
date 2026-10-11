@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-11T15:19:27.713Z",
+  "syncedAt": "2026-10-11T15:28:34.358Z",
   "live": null,
   "latest": {
     "title": "SPD-Sumpf: Fraktionschef tritt zurück – Klinikaffäre, Ermittlungen & Parteigeld für privaten Anwalt?",
@@ -17,9 +17,9 @@
       "name": "Politik mit Kopf",
       "slug": "politik-mit-kopf",
       "stats": {
-        "subscriberCount": null,
+        "subscriberCount": 284000,
         "viewCount": null,
-        "videoCount": null,
+        "videoCount": 15,
         "hiddenSubscriberCount": false
       }
     },
@@ -29,9 +29,9 @@
       "name": "Politik mit Kopf REAGIERT",
       "slug": "politik-mit-kopf-reagiert",
       "stats": {
-        "subscriberCount": null,
+        "subscriberCount": 16300,
         "viewCount": null,
-        "videoCount": null,
+        "videoCount": 4,
         "hiddenSubscriberCount": false
       }
     }

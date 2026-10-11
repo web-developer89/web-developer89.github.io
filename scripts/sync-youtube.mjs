@@ -96,6 +96,36 @@ function formatDuration(iso) {
   return `${minutes}:${ss}`;
 }
 
+function formatDurationSeconds(total) {
+  const value = Number(total);
+  if (!Number.isFinite(value) || value < 0) return null;
+  const hours = Math.floor(value / 3600);
+  const minutes = Math.floor((value % 3600) / 60);
+  const seconds = Math.floor(value % 60);
+  const ss = String(seconds).padStart(2, '0');
+  if (hours) return `${hours}:${String(minutes).padStart(2, '0')}:${ss}`;
+  return `${minutes}:${ss}`;
+}
+
+function parseLocalizedCount(value) {
+  if (value == null || value === '') return null;
+  if (typeof value === 'number' && Number.isFinite(value)) return value;
+  const text = String(value).trim();
+  if (!text) return null;
+  if (/^\d+$/.test(text)) return Number(text);
+  const digits = text.replace(/[^\d]/g, '');
+  return digits ? Number(digits) : null;
+}
+
+const innertubeContext = {
+  client: {
+    clientName: 'WEB',
+    clientVersion: '2.20250925.01.00',
+    hl: 'de',
+    gl: 'DE',
+  },
+};
+
 function remoteThumb(id) {
   return `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
 }
@@ -300,6 +330,106 @@ async function fetchApi(channel, apiKey, maxVideos) {
   return { videos, live };
 }
 
+async function fetchPublicChannelStats(channel) {
+  const urls = [
+    channel.channelUrl ? `${channel.channelUrl.replace(/\/$/, '')}/about` : null,
+    `https://www.youtube.com/channel/${channel.channelId}/about`,
+  ].filter(Boolean);
+
+  for (const url of urls) {
+    try {
+      const response = await fetch(url, {
+        headers: {
+          'user-agent': 'Mozilla/5.0',
+          'accept-language': 'de-DE,de;q=0.9',
+        },
+        signal: AbortSignal.timeout(20000),
+      });
+      if (!response.ok) continue;
+      const html = await response.text();
+      const follow = html.match(
+        /"interactionType":\{"@type":"FollowAction"\},"userInteractionCount":"(\d+)"/,
+      );
+      const subscriberCount = parseLocalizedCount(follow?.[1]);
+      if (subscriberCount == null) continue;
+      return {
+        subscriberCount,
+        viewCount: null,
+        videoCount: null,
+        hiddenSubscriberCount: false,
+      };
+    } catch {
+      continue;
+    }
+  }
+  return { ...EMPTY_CHANNEL_STATS };
+}
+
+async function fetchPublicVideoStats(videoId) {
+  const stats = { ...EMPTY_VIDEO_STATS };
+  let durationLabel = null;
+
+  try {
+    const playerResponse = await fetch('https://www.youtube.com/youtubei/v1/player?prettyPrint=false', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'Mozilla/5.0',
+      },
+      body: JSON.stringify({
+        context: innertubeContext,
+        videoId,
+      }),
+      signal: AbortSignal.timeout(20000),
+    });
+    if (playerResponse.ok) {
+      const player = await playerResponse.json();
+      stats.viewCount = parseCount(player?.videoDetails?.viewCount);
+      durationLabel = formatDurationSeconds(player?.videoDetails?.lengthSeconds);
+    }
+  } catch {
+    // Keep nulls and continue with watch-page enrichment.
+  }
+
+  try {
+    const watchResponse = await fetch(`https://www.youtube.com/watch?v=${encodeURIComponent(videoId)}&hl=de`, {
+      headers: {
+        'user-agent': 'Mozilla/5.0',
+        'accept-language': 'de-DE,de;q=0.9',
+      },
+      signal: AbortSignal.timeout(20000),
+    });
+    if (watchResponse.ok) {
+      const html = await watchResponse.text();
+      if (stats.viewCount == null) {
+        stats.viewCount = parseLocalizedCount(html.match(/"viewCount":"(\d+)"/)?.[1]);
+      }
+      stats.likeCount = parseLocalizedCount(html.match(/"likeCount":"(\d+)"/)?.[1]);
+      const comments =
+        html.match(/"text":"Kommentare"\}\]\},"contextualInfo":\{"runs":\[\{"text":"([^"]+)"\}/) ||
+        html.match(/"text":"Comments"\}\]\},"contextualInfo":\{"runs":\[\{"text":"([^"]+)"\}/);
+      stats.commentCount = parseLocalizedCount(comments?.[1]);
+      if (!durationLabel) {
+        const seconds = html.match(/"lengthSeconds":"(\d+)"/)?.[1];
+        durationLabel = formatDurationSeconds(seconds);
+      }
+    }
+  } catch {
+    // Leave whatever the player endpoint already provided.
+  }
+
+  return { stats, durationLabel };
+}
+
+async function enrichVideosWithPublicStats(rawVideos) {
+  await mapPool(rawVideos, 3, async (item) => {
+    const enriched = await fetchPublicVideoStats(item.id);
+    item.stats = enriched.stats;
+    if (enriched.durationLabel) item.durationLabel = enriched.durationLabel;
+  });
+  return rawVideos;
+}
+
 async function detectLive(channel) {
   const response = await fetch('https://www.youtube.com/youtubei/v1/browse?prettyPrint=false', {
     method: 'POST',
@@ -421,6 +551,7 @@ async function main() {
   let live = null;
   let usedApi = false;
   let usedRss = false;
+  let usedPublic = false;
   let failed = 0;
   const syncedAt = new Date().toISOString();
 
@@ -455,9 +586,15 @@ async function main() {
       } else {
         raw = await fetchRss(channel);
         usedRss = true;
+        await enrichVideosWithPublicStats(raw);
+        publicStats = await fetchPublicChannelStats(channel);
+        usedPublic = true;
       }
       if (!raw.length) throw new Error('Keine Videos');
       const mapped = raw.map((item) => toVideo(item, channel));
+      if (!apiKey && publicStats.videoCount == null) {
+        publicStats = { ...publicStats, videoCount: mapped.length };
+      }
       videos.push(...mapped);
       channelStats.push({
         id: channel.id,
@@ -472,24 +609,22 @@ async function main() {
         stats: publicStats,
       });
 
-      if (apiKey) {
-        snapshots.channelSnapshots.push({
+      snapshots.channelSnapshots.push({
+        at: syncedAt,
+        channelId: channel.channelId,
+        subscriberCount: publicStats.subscriberCount,
+        viewCount: publicStats.viewCount,
+        videoCount: publicStats.videoCount,
+      });
+      for (const video of mapped.slice(0, 30)) {
+        snapshots.videoSnapshots.push({
           at: syncedAt,
-          channelId: channel.channelId,
-          subscriberCount: publicStats.subscriberCount,
-          viewCount: publicStats.viewCount,
-          videoCount: publicStats.videoCount,
+          videoId: video.id,
+          channelId: video.channelId,
+          viewCount: video.stats.viewCount,
+          likeCount: video.stats.likeCount,
+          commentCount: video.stats.commentCount,
         });
-        for (const video of mapped.slice(0, 30)) {
-          snapshots.videoSnapshots.push({
-            at: syncedAt,
-            videoId: video.id,
-            channelId: video.channelId,
-            viewCount: video.stats.viewCount,
-            likeCount: video.stats.likeCount,
-            commentCount: video.stats.commentCount,
-          });
-        }
       }
     } catch (error) {
       failed += 1;
@@ -551,7 +686,16 @@ async function main() {
     }
   });
 
-  const source = usedApi && usedRss ? 'mixed' : usedApi ? 'youtube-data-api' : usedRss ? 'rss' : previous.source || 'none';
+  const source =
+    usedApi && (usedRss || usedPublic)
+      ? 'mixed'
+      : usedApi
+        ? 'youtube-data-api'
+        : usedPublic
+          ? 'youtube-public'
+          : usedRss
+            ? 'rss'
+            : previous.source || 'none';
   const catalog = {
     syncedAt,
     ok: failed === 0 && deduped.length > 0,

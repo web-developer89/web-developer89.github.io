@@ -1,7 +1,7 @@
 {
-  "syncedAt": "2026-10-11T15:19:27.713Z",
+  "syncedAt": "2026-10-11T15:28:34.358Z",
   "ok": true,
-  "source": "rss",
+  "source": "youtube-public",
   "error": null,
   "live": null,
   "channels": [
@@ -16,9 +16,9 @@
       "handle": "@PolitikmitKopf",
       "channelUrl": "https://www.youtube.com/@PolitikmitKopf",
       "stats": {
-        "subscriberCount": null,
+        "subscriberCount": 284000,
         "viewCount": null,
-        "videoCount": null,
+        "videoCount": 15,
         "hiddenSubscriberCount": false
       }
     },
@@ -33,9 +33,9 @@
       "handle": "@PolitikmitKopfReagiert",
       "channelUrl": "https://www.youtube.com/@PolitikmitKopfReagiert",
       "stats": {
-        "subscriberCount": null,
+        "subscriberCount": 16300,
         "viewCount": null,
-        "videoCount": null,
+        "videoCount": 4,
         "hiddenSubscriberCount": false
       }
     }
@@ -53,16 +53,16 @@
       "url": "https://www.youtube.com/watch?v=xcf8vvH39Qc",
       "thumbnail": "/media/xcf8vvH39Qc.jpg",
       "thumbnailRemote": "https://i1.ytimg.com/vi/xcf8vvH39Qc/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "10:56",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 116571,
+        "likeCount": 11012,
+        "commentCount": 659
       }
     },
     {
@@ -77,16 +77,16 @@
       "url": "https://www.youtube.com/watch?v=UBOk0cmt2lk",
       "thumbnail": "/media/UBOk0cmt2lk.jpg",
       "thumbnailRemote": "https://i2.ytimg.com/vi/UBOk0cmt2lk/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "10:20",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 127282,
+        "likeCount": 8570,
+        "commentCount": 788
       }
     },
     {
@@ -101,16 +101,16 @@
       "url": "https://www.youtube.com/watch?v=jMomr0FvTKU",
       "thumbnail": "/media/jMomr0FvTKU.jpg",
       "thumbnailRemote": "https://i3.ytimg.com/vi/jMomr0FvTKU/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "9:18",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 126169,
+        "likeCount": 7749,
+        "commentCount": 716
       }
     },
     {
@@ -125,16 +125,16 @@
       "url": "https://www.youtube.com/watch?v=UJxJxU1mAag",
       "thumbnail": "/media/UJxJxU1mAag.jpg",
       "thumbnailRemote": "https://i2.ytimg.com/vi/UJxJxU1mAag/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "11:36",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 120442,
+        "likeCount": 9476,
+        "commentCount": 643
       }
     },
     {
@@ -149,16 +149,16 @@
       "url": "https://www.youtube.com/watch?v=-KYbzhDgcwI",
       "thumbnail": "/media/-KYbzhDgcwI.jpg",
       "thumbnailRemote": "https://i2.ytimg.com/vi/-KYbzhDgcwI/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "13:54",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 122705,
+        "likeCount": 8678,
+        "commentCount": 585
       }
     },
     {
@@ -173,16 +173,16 @@
       "url": "https://www.youtube.com/watch?v=hEJTi89VnR8",
       "thumbnail": "/media/hEJTi89VnR8.jpg",
       "thumbnailRemote": "https://i1.ytimg.com/vi/hEJTi89VnR8/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "13:32",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 92164,
+        "likeCount": 8456,
+        "commentCount": 1599
       }
     },
     {
@@ -197,16 +197,16 @@
       "url": "https://www.youtube.com/watch?v=1PR6pWZ6PR0",
       "thumbnail": "/media/1PR6pWZ6PR0.jpg",
       "thumbnailRemote": "https://i2.ytimg.com/vi/1PR6pWZ6PR0/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "14:41",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 94228,
+        "likeCount": 7628,
+        "commentCount": 594
       }
     },
     {
@@ -221,16 +221,16 @@
       "url": "https://www.youtube.com/watch?v=MISEloK_dGk",
       "thumbnail": "/media/MISEloK_dGk.jpg",
       "thumbnailRemote": "https://i2.ytimg.com/vi/MISEloK_dGk/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "10:53",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 141921,
+        "likeCount": 9159,
+        "commentCount": 915
       }
     },
     {
@@ -245,16 +245,16 @@
       "url": "https://www.youtube.com/watch?v=o7b-7kqkCpA",
       "thumbnail": "/media/o7b-7kqkCpA.jpg",
       "thumbnailRemote": "https://i4.ytimg.com/vi/o7b-7kqkCpA/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "10:07",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 82986,
+        "likeCount": 7625,
+        "commentCount": 758
       }
     },
     {
@@ -269,16 +269,16 @@
       "url": "https://www.youtube.com/watch?v=IwN85V0wcww",
       "thumbnail": "/media/IwN85V0wcww.jpg",
       "thumbnailRemote": "https://i2.ytimg.com/vi/IwN85V0wcww/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "9:55",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 139493,
+        "likeCount": 7047,
+        "commentCount": 583
       }
     },
     {
@@ -293,16 +293,16 @@
       "url": "https://www.youtube.com/watch?v=p-oLLm0G6Y8",
       "thumbnail": "/media/p-oLLm0G6Y8.jpg",
       "thumbnailRemote": "https://i1.ytimg.com/vi/p-oLLm0G6Y8/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "9:46",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 145652,
+        "likeCount": 11163,
+        "commentCount": 2080
       }
     },
     {
@@ -317,16 +317,16 @@
       "url": "https://www.youtube.com/watch?v=BCqa4c_A90M",
       "thumbnail": "/media/BCqa4c_A90M.jpg",
       "thumbnailRemote": "https://i3.ytimg.com/vi/BCqa4c_A90M/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "14:30",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 154121,
+        "likeCount": 11794,
+        "commentCount": 1036
       }
     },
     {
@@ -341,16 +341,16 @@
       "url": "https://www.youtube.com/watch?v=Y6e_dlubhe4",
       "thumbnail": "/media/Y6e_dlubhe4.jpg",
       "thumbnailRemote": "https://i2.ytimg.com/vi/Y6e_dlubhe4/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "12:58",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 183792,
+        "likeCount": 13431,
+        "commentCount": 1202
       }
     },
     {
@@ -365,16 +365,16 @@
       "url": "https://www.youtube.com/watch?v=atNSeBB6RV8",
       "thumbnail": "/media/atNSeBB6RV8.jpg",
       "thumbnailRemote": "https://i2.ytimg.com/vi/atNSeBB6RV8/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "10:35",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 87198,
+        "likeCount": 5756,
+        "commentCount": 554
       }
     },
     {
@@ -389,16 +389,16 @@
       "url": "https://www.youtube.com/watch?v=RJ_-BOFZ1zk",
       "thumbnail": "/media/RJ_-BOFZ1zk.jpg",
       "thumbnailRemote": "https://i3.ytimg.com/vi/RJ_-BOFZ1zk/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "15:34",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 86098,
+        "likeCount": 6561,
+        "commentCount": 537
       }
     },
     {
@@ -413,16 +413,16 @@
       "url": "https://www.youtube.com/watch?v=PWzRo3FWjbo",
       "thumbnail": "/media/PWzRo3FWjbo.jpg",
       "thumbnailRemote": "https://i1.ytimg.com/vi/PWzRo3FWjbo/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "54:00",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 32689,
+        "likeCount": 3363,
+        "commentCount": 628
       }
     },
     {
@@ -437,16 +437,16 @@
       "url": "https://www.youtube.com/watch?v=4vqdluC_F_U",
       "thumbnail": "/media/4vqdluC_F_U.jpg",
       "thumbnailRemote": "https://i1.ytimg.com/vi/4vqdluC_F_U/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "40:40",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 86223,
+        "likeCount": 4491,
+        "commentCount": 398
       }
     },
     {
@@ -461,16 +461,16 @@
       "url": "https://www.youtube.com/watch?v=1vtk3_xDG78",
       "thumbnail": "/media/1vtk3_xDG78.jpg",
       "thumbnailRemote": "https://i2.ytimg.com/vi/1vtk3_xDG78/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "1:06:22",
       "tags": [
         "Bundestag",
         "Politik",
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 42527,
+        "likeCount": 3038,
+        "commentCount": 509
       }
     },
     {
@@ -485,12 +485,12 @@
       "url": "https://www.youtube.com/watch?v=rsJnBsIWRUU",
       "thumbnail": "/media/rsJnBsIWRUU.jpg",
       "thumbnailRemote": "https://i3.ytimg.com/vi/rsJnBsIWRUU/hqdefault.jpg",
-      "durationLabel": null,
+      "durationLabel": "1:12:09",
       "tags": [],
       "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": null
+        "viewCount": 45560,
+        "likeCount": 2339,
+        "commentCount": 165
       }
     }
   ]

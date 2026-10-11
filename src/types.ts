@@ -54,7 +54,7 @@ export type LiveItem = {
 export type Catalog = {
   syncedAt: string | null;
   ok: boolean;
-  source: 'rss' | 'youtube-data-api' | 'mixed' | 'none';
+  source: 'rss' | 'youtube-data-api' | 'youtube-public' | 'mixed' | 'none';
   error: string | null;
   live: LiveItem | null;
   channels: CatalogChannel[];

@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import VideoCard from '../components/VideoCard.astro';
 import PageHeader from '../components/PageHeader.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import { catalog, channelBySlug, videoPath } from '../lib/catalog';
+import { catalog, channelBySlug, videoPath, youtubeSubscribeUrl } from '../lib/catalog';
 import { formatNumber } from '../lib/format';
 
 const channel = channelBySlug('politik-mit-kopf-reagiert');
@@ -24,7 +24,7 @@ const featured = videos[0] ?? null;
             <p><strong>{formatNumber(channel.stats.subscriberCount)}</strong> Abonnenten insgesamt</p>
           )}
           <div class="hero-actions">
-            <a class="button" href={channel.subscribeUrl || `${channel.channelUrl}?sub_confirmation=1`} rel="noopener noreferrer">Jetzt abonnieren</a>
+            <a class="button" href={youtubeSubscribeUrl(channel)} rel="noopener noreferrer">Jetzt abonnieren</a>
             <a class="button ghost" href="/videos/?kanal=reagiert">Videoarchiv</a>
           </div>
         </div>

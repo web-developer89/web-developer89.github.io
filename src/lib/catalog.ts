@@ -38,6 +38,28 @@ export function videoPath(video: Pick<Video, 'slug'>): string {
   return `/videos/${video.slug}/`;
 }
 
+/** Every outbound YouTube channel link must open the subscribe confirmation dialog. */
+export function youtubeSubscribeUrl(channel: {
+  subscribeUrl?: string | null;
+  channelUrl?: string | null;
+  channelId?: string | null;
+}): string {
+  if (channel.subscribeUrl?.includes('sub_confirmation=1')) return channel.subscribeUrl;
+  if (channel.channelId) {
+    return `https://www.youtube.com/channel/${channel.channelId}?sub_confirmation=1`;
+  }
+  const base = (channel.channelUrl || 'https://www.youtube.com/@PolitikmitKopf')
+    .replace(/\/$/, '')
+    .replace(/\?.*$/, '');
+  return `${base}?sub_confirmation=1`;
+}
+
+export function subscribeUrlForVideo(video: Pick<Video, 'channelId'>): string {
+  const fromConfig = youtube.channels.find((channel) => channel.channelId === video.channelId);
+  if (fromConfig) return youtubeSubscribeUrl(fromConfig);
+  return youtubeSubscribeUrl({ channelId: video.channelId });
+}
+
 export function getFeatured(): Video | null {
   if (youtube.featuredMode === 'manual' && youtube.featuredVideoId) {
     const chosen = catalog.videos.find((video) => video.id === youtube.featuredVideoId);

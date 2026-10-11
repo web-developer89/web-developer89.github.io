@@ -643,6 +643,7 @@ async function main() {
         slug: channel.slug,
         handle: channel.handle,
         channelUrl: channel.channelUrl,
+        subscribeUrl: channel.subscribeUrl || `${String(channel.channelUrl || '').replace(/\/$/, '')}?sub_confirmation=1`,
         stats: { ...EMPTY_CHANNEL_STATS },
       });
       continue;
@@ -691,6 +692,7 @@ async function main() {
         slug: channel.slug,
         handle: channel.handle,
         channelUrl: channel.channelUrl,
+        subscribeUrl: channel.subscribeUrl || `${String(channel.channelUrl || '').replace(/\/$/, '')}?sub_confirmation=1`,
         stats: publicStats,
       });
 
@@ -730,6 +732,7 @@ async function main() {
         slug: channel.slug,
         handle: channel.handle,
         channelUrl: channel.channelUrl,
+        subscribeUrl: channel.subscribeUrl || previousChannel?.subscribeUrl || `${String(channel.channelUrl || '').replace(/\/$/, '')}?sub_confirmation=1`,
         stats: previousChannel?.stats || { ...EMPTY_CHANNEL_STATS },
       });
     }

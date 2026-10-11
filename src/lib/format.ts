@@ -51,6 +51,27 @@ export function currentYear(): number {
 
 export type TextPart = { type: 'text' | 'link'; value: string; href?: string };
 
+/** Channel landing URLs get YouTube's subscribe confirmation popup. Watch/shorts stay untouched. */
+export function withYouTubeSubscribeConfirmation(href: string): string {
+  try {
+    const url = new URL(href);
+    const host = url.hostname.replace(/^(www|m)\./, '');
+    if (host !== 'youtube.com') return href;
+    const path = url.pathname;
+    const isChannel =
+      path.startsWith('/@') ||
+      path.startsWith('/channel/') ||
+      path.startsWith('/c/') ||
+      path.startsWith('/user/');
+    if (!isChannel) return href;
+    if (url.searchParams.get('sub_confirmation') === '1') return href;
+    url.searchParams.set('sub_confirmation', '1');
+    return url.toString();
+  } catch {
+    return href;
+  }
+}
+
 export function linkify(line: string): TextPart[] {
   const parts: TextPart[] = [];
   const pattern = /https?:\/\/[^\s]+/g;
@@ -59,8 +80,9 @@ export function linkify(line: string): TextPart[] {
     const start = match.index ?? 0;
     if (start > last) parts.push({ type: 'text', value: line.slice(last, start) });
     const raw = match[0];
-    const href = raw.replace(/[),.;]+$/g, '');
-    const trailing = raw.slice(href.length);
+    const cleaned = raw.replace(/[),.;]+$/g, '');
+    const href = withYouTubeSubscribeConfirmation(cleaned);
+    const trailing = raw.slice(cleaned.length);
     parts.push({ type: 'link', value: href, href });
     if (trailing) parts.push({ type: 'text', value: trailing });
     last = start + raw.length;

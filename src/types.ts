@@ -38,6 +38,7 @@ export type CatalogChannel = {
   slug?: string;
   handle?: string;
   channelUrl?: string;
+  subscribeUrl?: string;
   stats: ChannelPublicStats;
 };
 

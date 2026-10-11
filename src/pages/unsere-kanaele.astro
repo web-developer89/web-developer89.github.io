@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import { channelDirectory } from '../lib/catalog';
+import { channelDirectory, youtubeSubscribeUrl } from '../lib/catalog';
 import { formatNumber } from '../lib/format';
 
 const channels = channelDirectory();
@@ -27,7 +27,7 @@ const channels = channelDirectory();
           )}
           <div class="hero-actions">
             <a class="button" href={`/${channel.slug}/`}>Kanalseite</a>
-            <a class="button ghost" href={channel.subscribeUrl || `${channel.channelUrl}?sub_confirmation=1`} rel="noopener noreferrer">Jetzt abonnieren</a>
+            <a class="button ghost" href={youtubeSubscribeUrl(channel)} rel="noopener noreferrer">Jetzt abonnieren</a>
           </div>
         </article>
       ))}

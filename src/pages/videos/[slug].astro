@@ -5,7 +5,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Player from '../../components/Player.astro';
 import ShareBar from '../../components/ShareBar.astro';
 import VideoCard from '../../components/VideoCard.astro';
-import { catalog, relatedVideos, videoPath } from '../../lib/catalog';
+import { catalog, relatedVideos, subscribeUrlForVideo, videoPath } from '../../lib/catalog';
 import { descriptionLines, formatDate, linkify } from '../../lib/format';
 import { site } from '../../config/site';
 import type { Video } from '../../types';
@@ -62,6 +62,9 @@ const jsonLd = [
       <img src={video.thumbnail} alt="" width="1280" height="720" fetchpriority="high" data-fallback={video.thumbnailRemote} />
     </Player>
     <ShareBar video={video} />
+    <p class="hero-actions" style="margin:18px 0 0">
+      <a class="button" href={subscribeUrlForVideo(video)} rel="noopener noreferrer">Kanal abonnieren</a>
+    </p>
     <div class="description prose">
       {descriptionLines(video.description).map((line) => (
         line.trim() ? (

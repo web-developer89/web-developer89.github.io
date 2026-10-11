@@ -1,17 +1,25 @@
+import youtube from './youtube.json';
+
 export type SocialLink = {
   id: string;
   label: string;
   href: string;
+  /** Clean profile URL for schema.org sameAs (no subscribe popup query). */
+  profileUrl?: string;
   description: string;
   connected: boolean;
   prominence?: 'channel' | 'standard';
 };
 
+const primary = youtube.channels.find((channel) => channel.id === 'primary')!;
+const reagiert = youtube.channels.find((channel) => channel.id === 'reagiert')!;
+
 export const socials: SocialLink[] = [
   {
     id: 'youtube',
     label: 'YouTube · Politik mit Kopf',
-    href: 'https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1',
+    href: primary.subscribeUrl,
+    profileUrl: primary.channelUrl,
     description: 'Der Hauptkanal mit Analysen und aktuellen Beiträgen.',
     connected: true,
     prominence: 'channel',
@@ -19,7 +27,8 @@ export const socials: SocialLink[] = [
   {
     id: 'youtube-reagiert',
     label: 'YouTube · REAGIERT',
-    href: 'https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1',
+    href: reagiert.subscribeUrl,
+    profileUrl: reagiert.channelUrl,
     description: 'Der Kanal für Reaktionsvideos und längere Einordnungen.',
     connected: true,
     prominence: 'channel',

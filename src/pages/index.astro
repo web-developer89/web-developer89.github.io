@@ -28,7 +28,7 @@ const jsonLd = [
     url: origin,
     email: site.contactEmail,
     logo: new URL('/brand/mark.jpg', origin).href,
-    sameAs: connectedSocials.map((item) => item.href),
+    sameAs: connectedSocials.map((item) => item.profileUrl || item.href),
     address: {
       '@type': 'PostalAddress',
       streetAddress: site.publisher.street,

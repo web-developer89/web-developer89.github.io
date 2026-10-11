@@ -365,7 +365,45 @@ async function fetchPublicChannelStats(channel) {
   return { ...EMPTY_CHANNEL_STATS };
 }
 
-async function fetchPublicVideoStats(videoId) {
+async function fetchPublicViewsFromBrowse(channel) {
+  const views = new Map();
+  try {
+    const response = await fetch('https://www.youtube.com/youtubei/v1/browse?prettyPrint=false', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'Mozilla/5.0',
+        'accept-language': 'de-DE,de;q=0.9',
+      },
+      body: JSON.stringify({
+        context: innertubeContext,
+        browseId: channel.channelId,
+        params: 'EgZ2aWRlb3PyBgQKAjoA',
+      }),
+      signal: AbortSignal.timeout(20000),
+    });
+    if (!response.ok) return views;
+    const payload = JSON.stringify(await response.json());
+    const blocks = payload.split('"videoId":"').slice(1);
+    for (const block of blocks) {
+      const id = block.slice(0, 11);
+      if (!/^[a-zA-Z0-9_-]{11}$/.test(id) || views.has(id)) continue;
+      const window = block.slice(0, 2500);
+      const match =
+        window.match(/"content":"([\d.,\s]+)\s*Aufrufe"/) ||
+        window.match(/"content":"([\d.,\s]+)\s*views"/i) ||
+        window.match(/"simpleText":"([\d.,\s]+)\s*Aufrufe"/) ||
+        window.match(/"simpleText":"([\d.,\s]+)\s*views"/i);
+      const count = parseLocalizedCount(match?.[1]);
+      if (count != null) views.set(id, count);
+    }
+  } catch {
+    return views;
+  }
+  return views;
+}
+
+async function fetchPublicVideoDetails(videoId) {
   const stats = { ...EMPTY_VIDEO_STATS };
   let durationLabel = null;
 
@@ -380,7 +418,7 @@ async function fetchPublicVideoStats(videoId) {
         context: innertubeContext,
         videoId,
       }),
-      signal: AbortSignal.timeout(20000),
+      signal: AbortSignal.timeout(15000),
     });
     if (playerResponse.ok) {
       const player = await playerResponse.json();
@@ -388,7 +426,7 @@ async function fetchPublicVideoStats(videoId) {
       durationLabel = formatDurationSeconds(player?.videoDetails?.lengthSeconds);
     }
   } catch {
-    // Keep nulls and continue with watch-page enrichment.
+    // Continue with watch-page fallback.
   }
 
   try {
@@ -397,7 +435,7 @@ async function fetchPublicVideoStats(videoId) {
         'user-agent': 'Mozilla/5.0',
         'accept-language': 'de-DE,de;q=0.9',
       },
-      signal: AbortSignal.timeout(20000),
+      signal: AbortSignal.timeout(15000),
     });
     if (watchResponse.ok) {
       const html = await watchResponse.text();
@@ -410,23 +448,52 @@ async function fetchPublicVideoStats(videoId) {
         html.match(/"text":"Comments"\}\]\},"contextualInfo":\{"runs":\[\{"text":"([^"]+)"\}/);
       stats.commentCount = parseLocalizedCount(comments?.[1]);
       if (!durationLabel) {
-        const seconds = html.match(/"lengthSeconds":"(\d+)"/)?.[1];
-        durationLabel = formatDurationSeconds(seconds);
+        durationLabel = formatDurationSeconds(html.match(/"lengthSeconds":"(\d+)"/)?.[1]);
       }
     }
   } catch {
-    // Leave whatever the player endpoint already provided.
+    // Keep partial stats.
   }
 
   return { stats, durationLabel };
 }
 
-async function enrichVideosWithPublicStats(rawVideos) {
+function mergeStats(current, previous) {
+  return {
+    viewCount: current?.viewCount ?? previous?.viewCount ?? null,
+    likeCount: current?.likeCount ?? previous?.likeCount ?? null,
+    commentCount: current?.commentCount ?? previous?.commentCount ?? null,
+  };
+}
+
+async function enrichVideosWithPublicStats(rawVideos, channel, previousVideos = []) {
+  const previousById = new Map(asArray(previousVideos).map((video) => [video.id, video]));
+  const browseViews = await fetchPublicViewsFromBrowse(channel);
+
   await mapPool(rawVideos, 3, async (item) => {
-    const enriched = await fetchPublicVideoStats(item.id);
-    item.stats = enriched.stats;
-    if (enriched.durationLabel) item.durationLabel = enriched.durationLabel;
+    const previous = previousById.get(item.id);
+    const details = await fetchPublicVideoDetails(item.id);
+    const fromBrowse = browseViews.get(item.id) ?? null;
+    item.stats = mergeStats(
+      {
+        viewCount: details.stats.viewCount ?? fromBrowse,
+        likeCount: details.stats.likeCount,
+        commentCount: details.stats.commentCount,
+      },
+      previous?.stats,
+    );
+    item.durationLabel = details.durationLabel || previous?.durationLabel || item.durationLabel || null;
   });
+
+  for (const item of rawVideos) {
+    if (item.stats?.viewCount == null && browseViews.has(item.id)) {
+      item.stats = {
+        ...(item.stats || { ...EMPTY_VIDEO_STATS }),
+        viewCount: browseViews.get(item.id),
+      };
+    }
+  }
+
   return rawVideos;
 }
 
@@ -586,8 +653,17 @@ async function main() {
       } else {
         raw = await fetchRss(channel);
         usedRss = true;
-        await enrichVideosWithPublicStats(raw);
+        const previousForChannel = asArray(previous.videos).filter((video) => video.channelId === channel.channelId);
+        await enrichVideosWithPublicStats(raw, channel, previousForChannel);
         publicStats = await fetchPublicChannelStats(channel);
+        const previousChannel = asArray(previous.channels).find((item) => item.channelId === channel.channelId);
+        if (publicStats.subscriberCount == null && previousChannel?.stats?.subscriberCount != null) {
+          publicStats = {
+            ...publicStats,
+            subscriberCount: previousChannel.stats.subscriberCount,
+            hiddenSubscriberCount: previousChannel.stats.hiddenSubscriberCount || false,
+          };
+        }
         usedPublic = true;
       }
       if (!raw.length) throw new Error('Keine Videos');

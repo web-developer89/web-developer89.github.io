@@ -19,7 +19,7 @@ const entries = [
     avatar: channel.avatar,
     href: youtubeSubscribeUrl(channel),
     pageHref: `/${channel.slug}/`,
-    external: true,
+    pageLabel: 'Zum Kanal',
     metric:
       channel.stats.subscriberCount != null
         ? {
@@ -38,8 +38,8 @@ const entries = [
         handle: tiktokChannel.handle,
         avatar: tiktokChannel.avatar,
         href: tiktokChannel.profileUrl,
-        pageHref: null as string | null,
-        external: true,
+        pageHref: tiktokChannel.profileUrl,
+        pageLabel: 'Zum Kanal',
         metric:
           tiktokChannel.stats.followerCount != null
             ? {
@@ -63,27 +63,33 @@ const entries = [
           <a
             class:list={['channel-tile', `is-${entry.icon}`]}
             href={entry.href}
-            rel={entry.external ? 'noopener noreferrer' : undefined}
+            rel="noopener noreferrer"
           >
-            <span class="channel-tile-brand" aria-hidden="true">
-              <Icon name={entry.icon} size={18} />
-            </span>
-            <img src={entry.avatar} alt="" width="40" height="40" data-fallback="/brand/mark.jpg" />
-            <span class="channel-tile-copy">
+            <span class="channel-tile-top">
               <span class="channel-tile-platform">{entry.platform}</span>
-              <strong>{entry.name}</strong>
-              <span class="channel-tile-handle">{entry.handle}</span>
-            </span>
-            {entry.metric && (
-              <span class="channel-tile-metric" title={entry.metric.title}>
-                <strong>{entry.metric.value}</strong>
-                <span>{entry.metric.label}</span>
+              <span class="channel-tile-brand" aria-hidden="true">
+                <Icon name={entry.icon} size={16} />
               </span>
-            )}
+            </span>
+            <span class="channel-tile-body">
+              <img src={entry.avatar} alt="" width="40" height="40" data-fallback="/brand/mark.jpg" />
+              <span class="channel-tile-copy">
+                <strong>{entry.name}</strong>
+                <span class="channel-tile-handle">{entry.handle}</span>
+              </span>
+              <span class="channel-tile-metric" title={entry.metric?.title || undefined}>
+                <strong>{entry.metric?.value || '—'}</strong>
+                <span>{entry.metric?.label || ' '}</span>
+              </span>
+            </span>
           </a>
-          {entry.pageHref && (
-            <a class="channel-tile-sub" href={entry.pageHref}>Zur Seite</a>
-          )}
+          <a
+            class="channel-tile-sub"
+            href={entry.pageHref}
+            rel={entry.pageHref.startsWith('http') ? 'noopener noreferrer' : undefined}
+          >
+            {entry.pageLabel}
+          </a>
         </li>
       ))}
     </ul>

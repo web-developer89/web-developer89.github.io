@@ -6,17 +6,26 @@ export function setupArchive(): void {
   const count = root.querySelector('[data-archive-count]');
   const more = root.querySelector('[data-archive-more]');
   const query = root.querySelector('[name="q"]');
-  const theme = root.querySelector('[name="thema"]');
+  const channel = root.querySelector('[name="kanal"]');
   const year = root.querySelector('[name="jahr"]');
   const sort = root.querySelector('[name="sort"]');
   if (!(grid instanceof HTMLElement) || !(query instanceof HTMLInputElement)) return;
+
+  const channelIds = new Map<string, string>();
+  for (const option of channel instanceof HTMLSelectElement ? [...channel.options] : []) {
+    if (option.value) channelIds.set(option.value, option.dataset.channelId || '');
+  }
 
   let shown = Math.max(1, Number(new URLSearchParams(window.location.search).get('seite') || '1')) * 12;
   const cards = () => [...grid.querySelectorAll<HTMLElement>('[data-video]')];
 
   const apply = (updateUrl: boolean) => {
     const needle = query.value.trim().toLowerCase();
-    const selectedTheme = theme instanceof HTMLSelectElement ? theme.value : '';
+    const selectedChannel = channel instanceof HTMLSelectElement ? channel.value : '';
+    const selectedChannelId =
+      selectedChannel && channel instanceof HTMLSelectElement
+        ? channel.selectedOptions[0]?.dataset.channelId || ''
+        : '';
     const selectedYear = year instanceof HTMLSelectElement ? year.value : '';
     const direction = sort instanceof HTMLSelectElement ? sort.value : 'neu';
     const ordered = cards().sort((a, b) => {
@@ -26,12 +35,11 @@ export function setupArchive(): void {
     });
     let matches = 0;
     for (const card of ordered) {
-      const tags = (card.dataset.tags || '').toLowerCase().split('|').filter(Boolean);
       const text = card.textContent?.toLowerCase() || '';
       const visible =
         (!needle || text.includes(needle)) &&
         (!selectedYear || card.dataset.year === selectedYear) &&
-        (!selectedTheme || tags.includes(selectedTheme.toLowerCase()));
+        (!selectedChannel || !selectedChannelId || card.dataset.channel === selectedChannelId);
       if (!visible) {
         card.hidden = true;
       } else {
@@ -45,7 +53,7 @@ export function setupArchive(): void {
     if (more instanceof HTMLElement) more.hidden = matches <= shown;
     const params = new URLSearchParams();
     if (needle) params.set('q', query.value.trim());
-    if (selectedTheme) params.set('thema', selectedTheme);
+    if (selectedChannel) params.set('kanal', selectedChannel);
     if (selectedYear) params.set('jahr', selectedYear);
     if (direction === 'alt') params.set('sort', 'alt');
     if (!updateUrl) return;
@@ -65,17 +73,6 @@ export function setupArchive(): void {
     event.preventDefault();
     shown += 12;
     apply(false);
-  });
-  root.addEventListener('submit', (event) => {
-    event.preventDefault();
-    shown = 12;
-    apply(true);
-  });
-  root.addEventListener('reset', () => {
-    window.setTimeout(() => {
-      shown = 12;
-      apply(true);
-    }, 0);
   });
   apply(false);
 }

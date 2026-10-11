@@ -4,19 +4,6 @@ function focusable(root: ParentNode): HTMLElement[] {
   );
 }
 
-function setupTheme(): void {
-  const button = document.querySelector('[data-theme-toggle]');
-  if (!(button instanceof HTMLButtonElement)) return;
-  button.addEventListener('click', () => {
-    const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-    document.documentElement.dataset.theme = next;
-    document.documentElement.style.colorScheme = next;
-    localStorage.setItem('pmk-theme', next);
-    const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute('content', next === 'dark' ? '#10141b' : '#f2efe8');
-  });
-}
-
 function setupHeader(): void {
   const header = document.querySelector('[data-header]');
   if (!header) return;
@@ -155,7 +142,7 @@ function setupCopy(): void {
       await navigator.clipboard.writeText(value);
       const original = button.dataset.copyLabel || button.textContent || 'Kopieren';
       button.dataset.copyLabel = original;
-      button.textContent = 'Kopiert';
+      button.textContent = button.dataset.copySuccess || 'Kopiert';
       window.setTimeout(() => {
         button.textContent = original;
       }, 1600);
@@ -179,9 +166,33 @@ function setupImages(): void {
   );
 }
 
-setupTheme();
 setupHeader();
 setupMenu();
 setupSearch();
 setupCopy();
 setupImages();
+
+const statsRoot = document.querySelector('[data-stats-refresh]');
+if (statsRoot instanceof HTMLElement) {
+  const stamp = statsRoot.querySelector('[data-sync-stamp]');
+  window.setInterval(async () => {
+    try {
+      const response = await fetch('/data/feed.json', { cache: 'no-store' });
+      if (!response.ok) return;
+      const data = await response.json();
+      if (stamp instanceof HTMLElement && data.syncedAt) {
+        stamp.setAttribute('datetime', data.syncedAt);
+        stamp.textContent = new Intl.DateTimeFormat('de-DE', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+          timeZone: 'Europe/Zurich',
+        }).format(new Date(data.syncedAt));
+      }
+    } catch {
+      // Keep last known stamp when the feed is temporarily unavailable.
+    }
+  }, 60_000);
+}

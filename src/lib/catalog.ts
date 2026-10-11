@@ -4,7 +4,30 @@ import youtubeConfig from '../config/youtube.json';
 import { topics } from '../config/topics';
 import type { Catalog, CatalogChannel, Feed, Video } from '../types';
 
-export const catalog = catalogFile as Catalog;
+function normalizeCatalog(raw: Catalog): Catalog {
+  return {
+    ...raw,
+    channels: (raw.channels || []).map((channel) => ({
+      ...channel,
+      stats: channel.stats || {
+        subscriberCount: null,
+        viewCount: null,
+        videoCount: null,
+        hiddenSubscriberCount: false,
+      },
+    })),
+    videos: (raw.videos || []).map((video) => ({
+      ...video,
+      stats: video.stats || {
+        viewCount: null,
+        likeCount: null,
+        commentCount: null,
+      },
+    })),
+  };
+}
+
+export const catalog = normalizeCatalog(catalogFile as Catalog);
 export const feed = feedFile as Feed;
 
 export type ChannelConfig = (typeof youtubeConfig.channels)[number];
@@ -24,7 +47,12 @@ export function getFeatured(): Video | null {
 }
 
 export function channelDirectory(): Array<
-  ChannelConfig & { videoCount: number; status: CatalogChannel['status']; latest: Video | null }
+  ChannelConfig & {
+    videoCount: number;
+    status: CatalogChannel['status'];
+    latest: Video | null;
+    stats: CatalogChannel['stats'];
+  }
 > {
   return [...youtube.channels]
     .filter((channel) => channel.enabled)
@@ -37,8 +65,18 @@ export function channelDirectory(): Array<
         videoCount: stat?.videoCount ?? catalog.videos.filter((video) => video.channelId === channel.channelId).length,
         status: stat?.status ?? 'verbunden',
         latest,
+        stats: stat?.stats || {
+          subscriberCount: null,
+          viewCount: null,
+          videoCount: null,
+          hiddenSubscriberCount: false,
+        },
       };
     });
+}
+
+export function channelBySlug(slug: string) {
+  return channelDirectory().find((channel) => channel.slug === slug) ?? null;
 }
 
 export function allChannelDirectory() {

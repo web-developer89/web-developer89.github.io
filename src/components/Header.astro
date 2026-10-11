@@ -1,6 +1,6 @@
 ---
 import { navigation } from '../config/navigation';
-import { connectedSocials } from '../config/social';
+import { channelSocials } from '../config/social';
 import Icon from './Icon.astro';
 
 const pathname = Astro.url.pathname;
@@ -22,17 +22,19 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
       ))}
     </nav>
     <div class="header-tools">
+      <div class="header-socials" aria-label="YouTube-Kanäle">
+        {channelSocials.map((item) => (
+          <a class="tool" href={item.href} rel="noopener noreferrer" title={item.label}>
+            <Icon name="play" size={16} />
+            <span class="sr-only">{item.label}</span>
+          </a>
+        ))}
+      </div>
       <a class="tool tool-search" href="/suche/" data-search-open>
         <Icon name="search" size={18} />
         <span class="search-text">Suche</span>
       </a>
-      <button class="tool" type="button" data-theme-toggle aria-label="Farbschema wechseln">
-        <span class="when-light"><Icon name="moon" size={18} /></span>
-        <span class="when-dark"><Icon name="sun" size={18} /></span>
-        <span class="search-text when-light">Dunkel</span>
-        <span class="search-text when-dark">Hell</span>
-      </button>
-      <a class="button small" href="/unterstuetzen/">Projekt unterstützen</a>
+      <a class="button small" href="/unterstuetzen/">Unterstützen</a>
     </div>
   </div>
 </header>
@@ -52,9 +54,9 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
       <a href={item.href} aria-current={current(item.href) ? 'page' : undefined}>{item.label}</a>
     ))}
   </nav>
-  <a class="button" href="/unterstuetzen/">Projekt unterstützen</a>
+  <a class="button" href="/unterstuetzen/">Unterstützen</a>
   <div class="menu-social">
-    {connectedSocials.map((item) => (
+    {channelSocials.map((item) => (
       <a href={item.href} rel="noopener noreferrer">{item.label}</a>
     ))}
     <a href="/suche/" data-search-open>Suche</a>

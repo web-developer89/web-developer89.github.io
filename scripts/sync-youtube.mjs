@@ -7,9 +7,18 @@ const configPath = path.join(root, 'src/config/youtube.json');
 const overlayPath = path.join(root, 'src/content/overlay.json');
 const catalogPath = path.join(root, 'src/data/catalog.json');
 const feedPath = path.join(root, 'src/data/feed.json');
+const snapshotsPath = path.join(root, 'src/data/snapshots.json');
 const publicData = path.join(root, 'public/data');
 const mediaDir = path.join(root, 'public/media');
 const brandDir = path.join(root, 'public/brand');
+
+const EMPTY_VIDEO_STATS = { viewCount: null, likeCount: null, commentCount: null };
+const EMPTY_CHANNEL_STATS = {
+  subscriberCount: null,
+  viewCount: null,
+  videoCount: null,
+  hiddenSubscriberCount: false,
+};
 
 const parser = new XMLParser({
   ignoreAttributes: false,
@@ -31,6 +40,12 @@ function text(value) {
     if (typeof value['#text'] === 'string') return value['#text'].trim();
   }
   return '';
+}
+
+function parseCount(value) {
+  if (value == null || value === '') return null;
+  const number = Number(value);
+  return Number.isFinite(number) ? number : null;
 }
 
 function slugify(title, id) {
@@ -154,6 +169,11 @@ function toVideo(raw, channel) {
     thumbnailRemote: raw.thumbnailRemote || remoteThumb(raw.id),
     durationLabel: raw.durationLabel || null,
     tags: tagsOf(description),
+    stats: {
+      viewCount: raw.stats?.viewCount ?? null,
+      likeCount: raw.stats?.likeCount ?? null,
+      commentCount: raw.stats?.commentCount ?? null,
+    },
   };
 }
 
@@ -180,8 +200,28 @@ async function fetchRss(channel) {
       publishedAt: text(entry.published),
       thumbnailRemote: group.thumbnail?.['@_url'] || remoteThumb(id),
       durationLabel: null,
+      stats: { ...EMPTY_VIDEO_STATS },
     };
   }).filter((item) => item.id && item.title);
+}
+
+async function fetchChannelStats(channel, apiKey) {
+  const url = new URL('https://www.googleapis.com/youtube/v3/channels');
+  url.searchParams.set('part', 'statistics,snippet');
+  url.searchParams.set('id', channel.channelId);
+  url.searchParams.set('key', apiKey);
+  const response = await fetch(url, { signal: AbortSignal.timeout(20000) });
+  if (!response.ok) throw new Error(`YouTube channels API ${response.status}`);
+  const data = await response.json();
+  const item = data.items?.[0];
+  if (!item) return { ...EMPTY_CHANNEL_STATS };
+  const stats = item.statistics || {};
+  return {
+    subscriberCount: stats.hiddenSubscriberCount ? null : parseCount(stats.subscriberCount),
+    viewCount: parseCount(stats.viewCount),
+    videoCount: parseCount(stats.videoCount),
+    hiddenSubscriberCount: Boolean(stats.hiddenSubscriberCount),
+  };
 }
 
 async function fetchApi(channel, apiKey, maxVideos) {
@@ -211,6 +251,7 @@ async function fetchApi(channel, apiKey, maxVideos) {
         thumbnailRemote: thumbs.maxres?.url || thumbs.standard?.url || thumbs.high?.url || remoteThumb(id),
         durationLabel: null,
         liveBroadcastContent: snippet.liveBroadcastContent || 'none',
+        stats: { ...EMPTY_VIDEO_STATS },
       });
     }
     pageToken = data.nextPageToken || '';
@@ -221,7 +262,7 @@ async function fetchApi(channel, apiKey, maxVideos) {
   for (let offset = 0; offset < collected.length; offset += 50) {
     const ids = collected.slice(offset, offset + 50).map((item) => item.id).join(',');
     const url = new URL('https://www.googleapis.com/youtube/v3/videos');
-    url.searchParams.set('part', 'contentDetails,snippet');
+    url.searchParams.set('part', 'contentDetails,snippet,statistics');
     url.searchParams.set('id', ids);
     url.searchParams.set('key', apiKey);
     const response = await fetch(url, { signal: AbortSignal.timeout(20000) });
@@ -236,7 +277,13 @@ async function fetchApi(channel, apiKey, maxVideos) {
   const videos = collected.slice(0, maxVideos).map((item) => {
     const detail = details.get(item.id);
     const liveState = detail?.snippet?.liveBroadcastContent || item.liveBroadcastContent;
+    const statistics = detail?.statistics || {};
     item.durationLabel = formatDuration(detail?.contentDetails?.duration);
+    item.stats = {
+      viewCount: parseCount(statistics.viewCount),
+      likeCount: parseCount(statistics.likeCount),
+      commentCount: parseCount(statistics.commentCount),
+    };
     if (!live && liveState === 'live') {
       live = {
         videoId: item.id,
@@ -311,17 +358,55 @@ async function downloadAvatar(channel) {
     if (!response.ok) return;
     const buffer = Buffer.from(await response.arrayBuffer());
     if (buffer.length < 500) return;
-    const target = channel.featured ? path.join(brandDir, 'mark.jpg') : path.join(brandDir, `${channel.channelId}.jpg`);
+    const target = channel.featured
+      ? path.join(brandDir, 'mark.jpg')
+      : path.join(brandDir, `${channel.channelId}.jpg`);
     await saveImage(target, buffer);
   } catch {
     console.error(`Avatar nicht geladen: ${channel.name}`);
   }
 }
 
+function pruneSnapshots(store, now = Date.now()) {
+  const keepMs = 40 * 24 * 60 * 60 * 1000;
+  const minAt = now - keepMs;
+  store.channelSnapshots = asArray(store.channelSnapshots).filter((item) => Date.parse(item.at) >= minAt);
+  store.videoSnapshots = asArray(store.videoSnapshots).filter((item) => Date.parse(item.at) >= minAt);
+  return store;
+}
+
+function buildPublicStats(catalog, snapshots) {
+  return {
+    syncedAt: catalog.syncedAt,
+    timezone: 'Europe/Zurich',
+    channels: catalog.channels.map((channel) => ({
+      id: channel.id,
+      channelId: channel.channelId,
+      name: channel.name,
+      slug: channel.slug || '',
+      stats: channel.stats || { ...EMPTY_CHANNEL_STATS },
+    })),
+    videos: catalog.videos.slice(0, 40).map((video) => ({
+      id: video.id,
+      channelId: video.channelId,
+      stats: video.stats || { ...EMPTY_VIDEO_STATS },
+    })),
+    channelSnapshots: asArray(snapshots.channelSnapshots).slice(-2000),
+    videoSnapshots: asArray(snapshots.videoSnapshots).slice(-8000),
+  };
+}
+
 async function main() {
   const config = JSON.parse(await readFile(configPath, 'utf8'));
   const previous = await readJson(catalogPath, { videos: [], channels: [], live: null });
   const overlay = await readJson(overlayPath, { headline: '', ticker: '', custom: '' });
+  const snapshots = pruneSnapshots(
+    await readJson(snapshotsPath, {
+      timezone: 'Europe/Zurich',
+      channelSnapshots: [],
+      videoSnapshots: [],
+    }),
+  );
   const apiKey = process.env.YOUTUBE_API_KEY?.trim() || '';
   const overrideId = process.env.YOUTUBE_CHANNEL_ID?.trim() || '';
 
@@ -337,6 +422,7 @@ async function main() {
   let usedApi = false;
   let usedRss = false;
   let failed = 0;
+  const syncedAt = new Date().toISOString();
 
   for (const channel of channels.sort((a, b) => a.displayOrder - b.displayOrder)) {
     if (!channel.enabled) {
@@ -347,6 +433,10 @@ async function main() {
         videoCount: 0,
         status: 'deaktiviert',
         avatar: channel.avatar || '/brand/mark.jpg',
+        slug: channel.slug,
+        handle: channel.handle,
+        channelUrl: channel.channelUrl,
+        stats: { ...EMPTY_CHANNEL_STATS },
       });
       continue;
     }
@@ -355,11 +445,13 @@ async function main() {
 
     try {
       let raw = [];
+      let publicStats = { ...EMPTY_CHANNEL_STATS };
       if (apiKey) {
         const api = await fetchApi(channel, apiKey, config.maxVideos || 200);
         raw = api.videos;
         usedApi = true;
         if (!live && api.live) live = api.live;
+        publicStats = await fetchChannelStats(channel, apiKey);
       } else {
         raw = await fetchRss(channel);
         usedRss = true;
@@ -374,12 +466,40 @@ async function main() {
         videoCount: mapped.length,
         status: 'verbunden',
         avatar: channel.featured ? '/brand/mark.jpg' : channel.avatar || `/brand/${channel.channelId}.jpg`,
+        slug: channel.slug,
+        handle: channel.handle,
+        channelUrl: channel.channelUrl,
+        stats: publicStats,
       });
+
+      if (apiKey) {
+        snapshots.channelSnapshots.push({
+          at: syncedAt,
+          channelId: channel.channelId,
+          subscriberCount: publicStats.subscriberCount,
+          viewCount: publicStats.viewCount,
+          videoCount: publicStats.videoCount,
+        });
+        for (const video of mapped.slice(0, 30)) {
+          snapshots.videoSnapshots.push({
+            at: syncedAt,
+            videoId: video.id,
+            channelId: video.channelId,
+            viewCount: video.stats.viewCount,
+            likeCount: video.stats.likeCount,
+            commentCount: video.stats.commentCount,
+          });
+        }
+      }
     } catch (error) {
       failed += 1;
       console.error(`Kanal ${channel.name}: ${error instanceof Error ? error.message : 'Fehler'}`);
       const cached = asArray(previous.videos).filter((video) => video.channelId === channel.channelId);
-      videos.push(...cached);
+      videos.push(...cached.map((video) => ({
+        ...video,
+        stats: video.stats || { ...EMPTY_VIDEO_STATS },
+      })));
+      const previousChannel = asArray(previous.channels).find((item) => item.channelId === channel.channelId);
       channelStats.push({
         id: channel.id,
         channelId: channel.channelId,
@@ -387,15 +507,19 @@ async function main() {
         videoCount: cached.length,
         status: 'fehler',
         avatar: channel.avatar || '/brand/mark.jpg',
+        slug: channel.slug,
+        handle: channel.handle,
+        channelUrl: channel.channelUrl,
+        stats: previousChannel?.stats || { ...EMPTY_CHANNEL_STATS },
       });
     }
   }
 
   if (!apiKey && !live) {
-    const featured = channels.find((channel) => channel.enabled && channel.featured) || channels.find((channel) => channel.enabled);
-    if (featured) {
+    for (const channel of channels.filter((item) => item.enabled)) {
       try {
-        live = await detectLive(featured);
+        live = await detectLive(channel);
+        if (live) break;
       } catch {
         live = null;
       }
@@ -407,7 +531,10 @@ async function main() {
   for (const video of videos) {
     if (!video?.id || seen.has(video.id)) continue;
     seen.add(video.id);
-    deduped.push(video);
+    deduped.push({
+      ...video,
+      stats: video.stats || { ...EMPTY_VIDEO_STATS },
+    });
   }
   deduped.sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
 
@@ -426,10 +553,12 @@ async function main() {
 
   const source = usedApi && usedRss ? 'mixed' : usedApi ? 'youtube-data-api' : usedRss ? 'rss' : previous.source || 'none';
   const catalog = {
-    syncedAt: new Date().toISOString(),
+    syncedAt,
     ok: failed === 0 && deduped.length > 0,
     source,
-    error: failed ? 'Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.' : null,
+    error: failed
+      ? 'Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.'
+      : null,
     live,
     channels: channelStats,
     videos: deduped,
@@ -451,8 +580,17 @@ async function main() {
           pageUrl: `/videos/${latest.slug}/`,
           thumbnail: latest.thumbnail,
           publishedAt: latest.publishedAt,
+          channelId: latest.channelId,
+          channelName: latest.channelName,
         }
       : null,
+    channels: channelStats.map((channel) => ({
+      id: channel.id,
+      channelId: channel.channelId,
+      name: channel.name,
+      slug: channel.slug || '',
+      stats: channel.stats || { ...EMPTY_CHANNEL_STATS },
+    })),
     message: {
       headline: overlay.headline || '',
       ticker: overlay.ticker || '',
@@ -460,11 +598,18 @@ async function main() {
     },
   };
 
+  pruneSnapshots(snapshots);
+  const publicStats = buildPublicStats(catalog, snapshots);
+
   await writeJson(catalogPath, catalog);
   await writeJson(feedPath, feed);
+  await writeJson(snapshotsPath, snapshots);
   await mkdir(publicData, { recursive: true });
   await writeJson(path.join(publicData, 'feed.json'), feed);
-  console.log(`Synchronisiert: ${deduped.length} Videos, Quelle ${source}, Live ${live ? 'ja' : 'nein'}.`);
+  await writeJson(path.join(publicData, 'stats.json'), publicStats);
+  console.log(
+    `Synchronisiert: ${deduped.length} Videos, ${channelStats.filter((item) => item.status === 'verbunden').length} Kanäle, Quelle ${source}, Live ${live ? 'ja' : 'nein'}.`,
+  );
 }
 
 main().catch((error) => {

@@ -1,13 +1,41 @@
 {
-  "syncedAt": "2026-09-28T10:33:45.244Z",
+  "syncedAt": "2026-10-11T15:19:27.713Z",
   "live": null,
   "latest": {
-    "title": "Strafanzeige gegen Dobrindt, Unterlassung gegen Reiche – Linke dreht juristisch auf",
-    "url": "https://www.youtube.com/watch?v=mL0X5aKg6es",
-    "pageUrl": "/videos/strafanzeige-gegen-dobrindt-unterlassung-gegen-reiche-linke-dreht-juri-mL0X5aKg6es/",
-    "thumbnail": "/media/mL0X5aKg6es.jpg",
-    "publishedAt": "2026-09-28T08:18:55+00:00"
+    "title": "SPD-Sumpf: Fraktionschef tritt zurück – Klinikaffäre, Ermittlungen & Parteigeld für privaten Anwalt?",
+    "url": "https://www.youtube.com/watch?v=xcf8vvH39Qc",
+    "pageUrl": "/videos/spd-sumpf-fraktionschef-tritt-zurueck-klinikaffaere-ermittlungen-parte-xcf8vvH39Qc/",
+    "thumbnail": "/media/xcf8vvH39Qc.jpg",
+    "publishedAt": "2026-10-11T08:57:38+00:00",
+    "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+    "channelName": "Politik mit Kopf"
   },
+  "channels": [
+    {
+      "id": "primary",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "name": "Politik mit Kopf",
+      "slug": "politik-mit-kopf",
+      "stats": {
+        "subscriberCount": null,
+        "viewCount": null,
+        "videoCount": null,
+        "hiddenSubscriberCount": false
+      }
+    },
+    {
+      "id": "reagiert",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "name": "Politik mit Kopf REAGIERT",
+      "slug": "politik-mit-kopf-reagiert",
+      "stats": {
+        "subscriberCount": null,
+        "viewCount": null,
+        "videoCount": null,
+        "hiddenSubscriberCount": false
+      }
+    }
+  ],
   "message": {
     "headline": "",
     "ticker": "",

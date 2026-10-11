@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { publisherLines, site } from '../config/site';
+
+const mailHref = `mailto:${site.contactEmail}?subject=${encodeURIComponent('Hinweis an Politik mit Kopf')}`;
+const address = publisherLines.join('\n');
+---
+<Base title="Informant werden" description="Hinweise und Unterlagen vertraulich an Politik mit Kopf übermitteln.">
+  <div class="wrap prose">
+    <Breadcrumbs items={[{ href: '/informant-werden/', label: 'Informant werden' }]} />
+    <PageHeader
+      kicker="Hinweise"
+      title="Informant werden"
+      lede="Sie verfügen über Informationen, Dokumente oder Hinweise, die für die Öffentlichkeit von Bedeutung sein könnten?"
+    />
+    <p>Politik mit Kopf bietet Ihnen die Möglichkeit, relevante Informationen und Unterlagen zur Prüfung einzureichen. Wir behandeln eingehende Hinweise mit größtmöglicher Sorgfalt und Diskretion.</p>
+
+    <div class="info-cards" style="margin:28px 0">
+      <article class="info-card">
+        <h2>Hinweise per E-Mail</h2>
+        <p>Sie können Ihre Hinweise und vorhandenen Dokumente per E-Mail übermitteln.</p>
+        <p><a href={mailHref}>{site.contactEmail}</a></p>
+        <div class="hero-actions">
+          <a class="button" href={mailHref}>E-Mail verfassen</a>
+          <button class="button ghost" type="button" data-copy={site.contactEmail}>E-Mail kopieren</button>
+        </div>
+      </article>
+
+      <article class="info-card">
+        <h2>Postweg</h2>
+        <p>Wenn Sie besonders sensible Informationen oder Dokumente übermitteln möchten und eine digitale Kontaktaufnahme für Sie nicht geeignet erscheint, können Sie Ihre Unterlagen auch auf dem Postweg einsenden.</p>
+        <p set:html={publisherLines.map((line) => `${line}<br />`).join('')} />
+        <button class="button ghost" type="button" data-copy={address}>Adresse kopieren</button>
+      </article>
+
+      <article class="info-card">
+        <h2>Vertraulichkeit</h2>
+        <p>Wir gehen mit eingehenden Informationen verantwortungsvoll und diskret um. Bitte beachten Sie, dass gewöhnliche E-Mails nicht automatisch Ende-zu-Ende-verschlüsselt sind. Prüfen Sie bei besonders sensiblen Informationen sorgfältig, welcher Übermittlungsweg für Sie geeignet ist.</p>
+      </article>
+    </div>
+  </div>
+</Base>

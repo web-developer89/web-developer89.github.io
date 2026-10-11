@@ -1,0 +1,205 @@
+{
+  "syncedAt": "2026-10-11T15:19:27.713Z",
+  "timezone": "Europe/Zurich",
+  "channels": [
+    {
+      "id": "primary",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "name": "Politik mit Kopf",
+      "slug": "politik-mit-kopf",
+      "stats": {
+        "subscriberCount": null,
+        "viewCount": null,
+        "videoCount": null,
+        "hiddenSubscriberCount": false
+      }
+    },
+    {
+      "id": "reagiert",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "name": "Politik mit Kopf REAGIERT",
+      "slug": "politik-mit-kopf-reagiert",
+      "stats": {
+        "subscriberCount": null,
+        "viewCount": null,
+        "videoCount": null,
+        "hiddenSubscriberCount": false
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": "xcf8vvH39Qc",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "UBOk0cmt2lk",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "jMomr0FvTKU",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "UJxJxU1mAag",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "-KYbzhDgcwI",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "hEJTi89VnR8",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "1PR6pWZ6PR0",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "MISEloK_dGk",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "o7b-7kqkCpA",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "IwN85V0wcww",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "p-oLLm0G6Y8",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "BCqa4c_A90M",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "Y6e_dlubhe4",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "atNSeBB6RV8",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "RJ_-BOFZ1zk",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "PWzRo3FWjbo",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "4vqdluC_F_U",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "1vtk3_xDG78",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "rsJnBsIWRUU",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    }
+  ],
+  "channelSnapshots": [],
+  "videoSnapshots": []
+}

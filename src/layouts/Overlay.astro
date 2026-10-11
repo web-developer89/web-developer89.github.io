@@ -72,7 +72,11 @@ const custom = feed.message.custom || '';
       const params = new URLSearchParams(window.location.search);
       if (params.has('preview')) document.documentElement.classList.add('is-preview');
 
-      const apply = (feed) => {
+      const apply = (feed: {
+        latest?: { title?: string; publishedAt?: string; thumbnail?: string } | null;
+        live?: { title?: string } | null;
+        message?: { headline?: string; ticker?: string; custom?: string };
+      }) => {
         const headline = feed.message?.headline || feed.latest?.title || '';
         const ticker = feed.message?.ticker || feed.latest?.title || '';
         const custom = feed.message?.custom || '';

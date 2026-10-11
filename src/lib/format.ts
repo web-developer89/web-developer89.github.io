@@ -6,7 +6,7 @@ export function formatDate(iso: string | null | undefined): string {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
-    timeZone: 'Europe/Berlin',
+    timeZone: 'Europe/Zurich',
   }).format(date);
 }
 
@@ -20,8 +20,29 @@ export function formatDateTime(iso: string | null | undefined): string {
     year: 'numeric',
     hour: '2-digit',
     minute: '2-digit',
-    timeZone: 'Europe/Berlin',
+    timeZone: 'Europe/Zurich',
   }).format(date);
+}
+
+export function formatNumber(value: number | null | undefined): string {
+  if (value == null || Number.isNaN(value)) return '—';
+  return new Intl.NumberFormat('de-DE').format(value);
+}
+
+export function formatCompact(value: number | null | undefined): string {
+  if (value == null || Number.isNaN(value)) return '—';
+  return new Intl.NumberFormat('de-DE', {
+    notation: 'compact',
+    maximumFractionDigits: 1,
+  }).format(value);
+}
+
+export function formatSignedNumber(value: number | null | undefined): string {
+  if (value == null || Number.isNaN(value)) return '—';
+  const formatted = formatNumber(Math.abs(value));
+  if (value > 0) return `+${formatted}`;
+  if (value < 0) return `−${formatted}`;
+  return formatted;
 }
 
 export function currentYear(): number {

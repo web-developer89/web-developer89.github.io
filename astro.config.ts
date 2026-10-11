@@ -17,4 +17,12 @@ export default defineConfig({
   build: {
     format: 'directory',
   },
+  redirects: {
+    '/kontakt/': '/informant-werden/',
+    '/themen/': '/videos/',
+    '/themen/gesellschaft/': '/videos/',
+    '/themen/wirtschaft/': '/videos/',
+    '/themen/medien/': '/videos/',
+    '/themen/politik/': '/videos/',
+  },
 });

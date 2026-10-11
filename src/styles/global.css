@@ -1,43 +1,29 @@
 :root {
-  --bg: #f2efe8;
-  --bg-raised: #faf8f4;
-  --ink: #1c1916;
-  --muted: #534d45;
-  --line: #e0d8cc;
-  --line-strong: #cfc4b4;
-  --accent: #6f2f2c;
-  --accent-ink: #fbf7f2;
-  --band: #121a27;
-  --band-ink: #f3efe8;
-  --band-muted: #c9c1b6;
-  --band-line: rgba(243, 239, 232, 0.16);
-  --danger: #8d1c1c;
-  --focus: #6f2f2c;
-  --header: 76px;
-  --serif: "Fraunces Variable", "Iowan Old Style", Palatino, "Palatino Linotype", serif;
-  --sans: "Source Sans 3 Variable", "Segoe UI", sans-serif;
-  --content: 1180px;
-  color-scheme: light;
-  background: var(--bg);
-  color: var(--ink);
-}
-
-[data-theme="dark"] {
-  --bg: #10141b;
-  --bg-raised: #181e28;
-  --ink: #f1ece5;
-  --muted: #c4bdb3;
-  --line: #2d3544;
-  --line-strong: #414b5e;
-  --accent: #e4c09a;
-  --accent-ink: #1b140e;
-  --band: #1a2332;
+  --bg: #0a0b0d;
+  --bg-raised: rgba(18, 20, 24, 0.88);
+  --bg-elevated: rgba(28, 30, 36, 0.92);
+  --ink: #f4f1ea;
+  --muted: #b7b1a7;
+  --line: rgba(255, 255, 255, 0.1);
+  --line-strong: rgba(255, 255, 255, 0.18);
+  --accent: #d4b07a;
+  --accent-ink: #14110d;
+  --accent-secondary: #8fa3b8;
+  --band: rgba(14, 16, 20, 0.82);
   --band-ink: #f3efe8;
   --band-muted: #cfc6ba;
   --band-line: rgba(243, 239, 232, 0.14);
   --danger: #ffb4ae;
-  --focus: #e4c09a;
+  --focus: #d4b07a;
+  --header: 76px;
+  --display: "Jost Variable", "Jost", "Avenir Next", "Segoe UI", sans-serif;
+  --serif: var(--display);
+  --sans: "Source Sans 3 Variable", "Segoe UI", sans-serif;
+  --content: 1180px;
+  --texture: url("/images/politik-mit-kopf-background.jpg");
   color-scheme: dark;
+  background: var(--bg);
+  color: var(--ink);
 }
 
 *,
@@ -52,13 +38,26 @@ html.lock body { overflow: hidden; }
 body {
   margin: 0;
   min-height: 100vh;
-  background: var(--bg);
   color: var(--ink);
   font-family: var(--sans);
   font-size: 1.0625rem;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   overflow-x: clip;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(180deg, rgba(6, 7, 9, 0.72), rgba(6, 7, 9, 0.84)),
+    var(--texture);
+  background-size: auto, cover;
+  background-position: center, center;
+  background-attachment: scroll;
+  background-repeat: no-repeat, no-repeat;
+}
+
+@supports (background-attachment: fixed) {
+  @media (min-width: 900px) {
+    body { background-attachment: scroll, fixed; }
+  }
 }
 
 img { max-width: 100%; height: auto; }
@@ -67,10 +66,11 @@ button { cursor: pointer; }
 h1, h2, h3, h4, p { overflow-wrap: anywhere; }
 
 h1, h2, h3, .wordmark, .pullquote blockquote, .topic-index a, .menu-nav a {
-  font-family: var(--serif);
-  font-weight: 560;
-  font-variation-settings: "SOFT" 0, "WONK" 0, "opsz" 72, "wght" 560;
-  letter-spacing: -0.02em;
+  font-family: var(--display);
+  font-weight: 650;
+  font-variation-settings: "wght" 650;
+  letter-spacing: -0.03em;
+  text-transform: none;
 }
 
 a { color: inherit; }
@@ -114,13 +114,16 @@ a { color: inherit; }
   top: 0;
   z-index: 30;
   height: var(--header);
-  background: var(--bg);
-  box-shadow: inset 0 3px 0 var(--accent);
-  transition: height 0.2s ease;
+  background: rgba(10, 11, 13, 0.78);
+  backdrop-filter: blur(14px);
+  box-shadow: inset 0 2px 0 var(--accent);
+  border-bottom: 1px solid transparent;
+  transition: height 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 .site-header.is-scrolled {
   height: 62px;
-  border-bottom: 1px solid var(--line);
+  border-bottom-color: var(--line);
+  background: rgba(10, 11, 13, 0.9);
 }
 .header-bar {
   height: 100%;
@@ -185,9 +188,6 @@ a { color: inherit; }
   text-decoration: none;
   font-weight: 600;
 }
-[data-theme="light"] .when-dark { display: none; }
-[data-theme="dark"] .when-light { display: none; }
-
 .menu-button {
   display: none;
   width: 44px;
@@ -434,8 +434,8 @@ a { color: inherit; }
 }
 .band a { color: var(--band-ink); }
 .band .kicker,
-[data-theme="dark"] .band .kicker,
-[data-theme="dark"] .band .link-arrow,
+.band .kicker,
+.band .link-arrow,
 .band .link-arrow { color: #e4c09a; }
 .band .muted, .band .channel-panel p { color: var(--band-muted); }
 .social-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; }

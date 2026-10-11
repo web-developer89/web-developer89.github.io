@@ -1,6 +1,6 @@
 ---
 import type { Video } from '../types';
-import { formatDate } from '../lib/format';
+import { formatCompact, formatDate } from '../lib/format';
 import { videoPath } from '../lib/catalog';
 import Icon from './Icon.astro';
 
@@ -11,6 +11,7 @@ interface Props {
   priority?: boolean;
 }
 const { video, variant = 'standard', hidden = false, priority = false } = Astro.props;
+const stats = video.stats || { viewCount: null, likeCount: null, commentCount: null };
 ---
 <article
   class:list={['video-card', `is-${variant}`]}
@@ -18,6 +19,7 @@ const { video, variant = 'standard', hidden = false, priority = false } = Astro.
   data-video
   data-year={video.publishedAt.slice(0, 4)}
   data-tags={video.tags.join('|')}
+  data-channel={video.channelId}
   data-time={video.publishedAt}
 >
   <a href={videoPath(video)}>
@@ -35,8 +37,18 @@ const { video, variant = 'standard', hidden = false, priority = false } = Astro.
       <span class="play"><Icon name="play" /></span>
       {video.durationLabel && <span class="duration">{video.durationLabel}</span>}
     </div>
-    <p class="card-meta"><time datetime={video.publishedAt}>{formatDate(video.publishedAt)}</time></p>
+    <p class="card-meta">
+      <span>{video.channelName}</span>
+      <time datetime={video.publishedAt}>{formatDate(video.publishedAt)}</time>
+    </p>
     <h3>{video.title}</h3>
     {variant !== 'rail' && <p class="excerpt">{video.excerpt}</p>}
+    {(stats.viewCount != null || stats.likeCount != null || stats.commentCount != null) && (
+      <p class="stat-row" aria-label="YouTube-Statistiken">
+        {stats.viewCount != null && <span><span class="sr-only">Aufrufe: </span>{formatCompact(stats.viewCount)} Aufrufe</span>}
+        {stats.likeCount != null && <span><span class="sr-only">Likes: </span>{formatCompact(stats.likeCount)} Likes</span>}
+        {stats.commentCount != null && <span><span class="sr-only">Kommentare: </span>{formatCompact(stats.commentCount)} Kommentare</span>}
+      </p>
+    )}
   </a>
 </article>

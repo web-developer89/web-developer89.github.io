@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import VideoCard from '../components/VideoCard.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { catalog, channelBySlug, videoPath } from '../lib/catalog';
+import { formatNumber } from '../lib/format';
+
+const channel = channelBySlug('politik-mit-kopf-reagiert');
+if (!channel) return Astro.redirect('/unsere-kanaele/');
+const videos = catalog.videos.filter((video) => video.channelId === channel.channelId);
+const featured = videos[0] ?? null;
+---
+<Base title={channel.name} description={channel.description} image={channel.avatar}>
+  <div class="wrap">
+    <Breadcrumbs items={[{ href: '/unsere-kanaele/', label: 'Unsere Kanäle' }, { href: '/politik-mit-kopf-reagiert/', label: channel.name }]} />
+    <section class="channel-card" style="margin:18px 0 28px;border-color:rgba(143,163,184,0.35)">
+      <div class="header">
+        <img src={channel.avatar} alt="" width="92" height="92" />
+        <div>
+          <PageHeader kicker="Reaktionskanal" title={channel.name} />
+          <p>{channel.description}</p>
+          {channel.stats.subscriberCount != null && (
+            <p><strong>{formatNumber(channel.stats.subscriberCount)}</strong> Abonnenten insgesamt</p>
+          )}
+          <div class="hero-actions">
+            <a class="button" href={channel.channelUrl} rel="noopener noreferrer">Jetzt abonnieren</a>
+            <a class="button ghost" href="/videos/?kanal=reagiert">Videoarchiv</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {featured && (
+      <section class="section" style="padding-top:0">
+        <div class="section-head">
+          <h2>Aktuelle Reaktion</h2>
+          <a class="link-arrow" href={videoPath(featured)}>Beitrag öffnen</a>
+        </div>
+        <VideoCard video={featured} variant="lead" priority={true} />
+      </section>
+    )}
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Reaktionsarchiv</h2>
+      </div>
+      <div class="mosaic">
+        {videos.slice(0, 12).map((video) => <VideoCard video={video} />)}
+      </div>
+    </section>
+  </div>
+</Base>

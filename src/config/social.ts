@@ -4,15 +4,25 @@ export type SocialLink = {
   href: string;
   description: string;
   connected: boolean;
+  prominence?: 'channel' | 'standard';
 };
 
 export const socials: SocialLink[] = [
   {
     id: 'youtube',
-    label: 'YouTube',
+    label: 'YouTube · Politik mit Kopf',
     href: 'https://www.youtube.com/@PolitikmitKopf',
-    description: 'Videos, Analysen und aktuelle Beiträge.',
+    description: 'Der Hauptkanal mit Analysen und aktuellen Beiträgen.',
     connected: true,
+    prominence: 'channel',
+  },
+  {
+    id: 'youtube-reagiert',
+    label: 'YouTube · REAGIERT',
+    href: 'https://www.youtube.com/@PolitikmitKopfReagiert',
+    description: 'Der Kanal für Reaktionsvideos und längere Einordnungen.',
+    connected: true,
+    prominence: 'channel',
   },
   {
     id: 'telegram',
@@ -59,5 +69,7 @@ export const socials: SocialLink[] = [
 ];
 
 export const connectedSocials = socials.filter((item) => item.connected && item.href);
+export const channelSocials = connectedSocials.filter((item) => item.prominence === 'channel');
+export const standardSocials = connectedSocials.filter((item) => item.prominence !== 'channel');
 
 export const shareTargets = ['copy', 'native', 'x', 'telegram', 'whatsapp'] as const;

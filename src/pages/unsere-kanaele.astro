@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { channelDirectory } from '../lib/catalog';
+import { formatNumber } from '../lib/format';
+
+const channels = channelDirectory();
+---
+<Base title="Unsere Kanäle" description="Politik mit Kopf und Politik mit Kopf REAGIERT auf einen Blick.">
+  <div class="wrap">
+    <Breadcrumbs items={[{ href: '/unsere-kanaele/', label: 'Unsere Kanäle' }]} />
+    <PageHeader kicker="YouTube" title="Unsere Kanäle" lede="Zwei unabhängige Kanäle, eine gemeinsame redaktionelle Linie." />
+    <div class="channel-grid" style="margin:28px 0 48px">
+      {channels.map((channel) => (
+        <article class="channel-card">
+          <div class="header">
+            <img src={channel.avatar} alt="" width="72" height="72" />
+            <div>
+              <h2>{channel.name}</h2>
+              <p class="sync-note" style="margin:6px 0 0">{channel.handle}</p>
+            </div>
+          </div>
+          <p>{channel.description}</p>
+          {channel.stats.subscriberCount != null && (
+            <p><strong>{formatNumber(channel.stats.subscriberCount)}</strong> Abonnenten</p>
+          )}
+          <div class="hero-actions">
+            <a class="button" href={`/${channel.slug}/`}>Kanalseite</a>
+            <a class="button ghost" href={channel.channelUrl} rel="noopener noreferrer">Jetzt abonnieren</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</Base>

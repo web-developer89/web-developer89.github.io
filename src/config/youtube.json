@@ -12,10 +12,26 @@
       "enabled": true,
       "displayOrder": 1,
       "featured": true,
-      "category": "",
-      "description": "Ich habe eine abgeschlossene Ausbildung und jahrelange Berufserfahrung. Ich teile mein Wissen in Videos zu allen Themen, insbesondere Gesellschaft, Wirtschaft, Medien und Politik.",
+      "category": "hauptkanal",
+      "slug": "politik-mit-kopf",
+      "description": "Analysen und Beiträge zu Gesellschaft, Wirtschaft, Medien und Politik.",
       "avatarUrl": "https://yt3.googleusercontent.com/n-S9mvCPXUdW9swgu2SpadxPf7Yn98YD4EvwFW1etstnmzLUv2s1CSvXOiB7D3POLicJSIBY=s480-c-k-c0x00ffffff-no-rj",
       "avatar": "/brand/mark.jpg"
+    },
+    {
+      "id": "reagiert",
+      "name": "Politik mit Kopf REAGIERT",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "channelUrl": "https://www.youtube.com/@PolitikmitKopfReagiert",
+      "handle": "@PolitikmitKopfReagiert",
+      "enabled": true,
+      "displayOrder": 2,
+      "featured": false,
+      "category": "reaktion",
+      "slug": "politik-mit-kopf-reagiert",
+      "description": "Reaktionsvideos und längere Einordnungen von Politik mit Kopf.",
+      "avatarUrl": "https://yt3.googleusercontent.com/ID7jeJLOfdaxTZXPt2oS2bu6LejUgKDQ6gEYkMStL_kDQ5YjwtLkXAUJBgFa5COUXZzUkwJn7g=s480-c-k-c0x00ffffff-no-rj",
+      "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg"
     }
   ]
 }

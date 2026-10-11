@@ -4,21 +4,23 @@ import PageHeader from '../../components/PageHeader.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import VideoCard from '../../components/VideoCard.astro';
 import EmptyState from '../../components/EmptyState.astro';
-import { catalog, uniqueTags, uniqueYears } from '../../lib/catalog';
+import { catalog, channelDirectory, uniqueYears } from '../../lib/catalog';
 
 const q = Astro.url.searchParams.get('q') ?? '';
-const thema = Astro.url.searchParams.get('thema') ?? '';
+const kanal = Astro.url.searchParams.get('kanal') ?? '';
 const jahr = Astro.url.searchParams.get('jahr') ?? '';
 const sort = Astro.url.searchParams.get('sort') === 'alt' ? 'alt' : 'neu';
 const page = Math.max(1, Number(Astro.url.searchParams.get('seite') || '1') || 1);
 const limit = page * 12;
-const tags = uniqueTags();
 const years = uniqueYears();
+const channels = channelDirectory();
+const selectedChannel = channels.find((channel) => channel.id === kanal);
 
 const matches = (video: (typeof catalog.videos)[number]) => {
   const needle = q.trim().toLowerCase();
-  const haystack = `${video.title} ${video.excerpt} ${video.tags.join(' ')}`.toLowerCase();
-  return (!needle || haystack.includes(needle)) && (!jahr || video.publishedAt.startsWith(jahr)) && (!thema || video.tags.some((tag) => tag.toLowerCase() === thema.toLowerCase()));
+  const haystack = `${video.title} ${video.excerpt} ${video.channelName} ${video.tags.join(' ')}`.toLowerCase();
+  const channelOk = !selectedChannel || video.channelId === selectedChannel.channelId;
+  return channelOk && (!needle || haystack.includes(needle)) && (!jahr || video.publishedAt.startsWith(jahr));
 };
 
 const ordered = [...catalog.videos].sort((a, b) => {
@@ -34,16 +36,16 @@ const rows = ordered.map((video) => {
 });
 const params = new URLSearchParams();
 if (q) params.set('q', q);
-if (thema) params.set('thema', thema);
+if (kanal) params.set('kanal', kanal);
 if (jahr) params.set('jahr', jahr);
 if (sort === 'alt') params.set('sort', 'alt');
 params.set('seite', String(page + 1));
 const moreHref = `/videos/?${params.toString()}`;
 ---
-<Base title="Videos" description="Die zuletzt veröffentlichten Videos von Politik mit Kopf.">
+<Base title="Videos" description="Das Videoarchiv von Politik mit Kopf und Politik mit Kopf REAGIERT.">
   <div class="wrap">
     <Breadcrumbs items={[{ href: '/videos/', label: 'Videos' }]} />
-    <PageHeader kicker="Archiv" title="Videos" lede="Die zuletzt veröffentlichten Videos. Neue Beiträge werden automatisch übernommen." />
+    <PageHeader kicker="Archiv" title="Videos" lede="Neue Beiträge werden automatisch aus YouTube übernommen." />
     {!catalog.ok && catalog.videos.length > 0 && (
       <p class="notice" role="status">Inhalte konnten momentan nicht vollständig geladen werden. Angezeigt werden die zuletzt gespeicherten Videos. <a href="/videos/">Erneut versuchen</a></p>
     )}
@@ -54,17 +56,19 @@ const moreHref = `/videos/?${params.toString()}`;
           <input name="q" value={q} autocomplete="off" />
         </label>
         <label class="field">
+          <span>Kanal</span>
+          <select name="kanal">
+            <option value="">Alle Kanäle</option>
+            {channels.map((channel) => (
+              <option value={channel.id} data-channel-id={channel.channelId} selected={kanal === channel.id}>{channel.name}</option>
+            ))}
+          </select>
+        </label>
+        <label class="field">
           <span>Sortierung</span>
           <select name="sort">
             <option value="neu" selected={sort === 'neu'}>Neueste zuerst</option>
             <option value="alt" selected={sort === 'alt'}>Älteste zuerst</option>
-          </select>
-        </label>
-        <label class="field">
-          <span>Thema</span>
-          <select name="thema">
-            <option value="">Alle Themen</option>
-            {tags.map((tag) => <option value={tag} selected={thema === tag}>{tag}</option>)}
           </select>
         </label>
         <label class="field">

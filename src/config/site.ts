@@ -3,9 +3,10 @@ export const site = {
   url: 'https://web-developer89.github.io',
   locale: 'de-DE',
   description:
-    'Ich habe eine abgeschlossene Ausbildung und jahrelange Berufserfahrung. Ich teile mein Wissen in Videos zu allen Themen, insbesondere Gesellschaft, Wirtschaft, Medien und Politik.',
+    'Politik mit Kopf ist die unabhängige Medienplattform für Analysen, Einordnungen und Reaktionsvideos zu Politik, Gesellschaft, Wirtschaft und Medien.',
   quote: 'Chancen multiplizieren sich, wenn man sie ergreift.',
   quoteAttribution: 'Sun Tzu',
+  contactEmail: 'kontakt@politikmitkopf.de',
   analytics: {
     enabled: false,
     provider: null as null | 'matomo' | 'plausible',

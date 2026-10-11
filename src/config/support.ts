@@ -23,7 +23,6 @@ export const support = {
       iban: 'CH15 0077 7009 8834 0191 4',
       currencyNote: 'CHF-Konto',
       purpose: 'Spende',
-      city: '8840 Einsiedeln',
     },
   ] satisfies BankAccount[],
   links: [] as { label: string; href: string }[],

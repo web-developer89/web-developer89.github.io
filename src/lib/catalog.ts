@@ -1,8 +1,9 @@
 import catalogFile from '../data/catalog.json';
 import feedFile from '../data/feed.json';
 import youtubeConfig from '../config/youtube.json';
+import tiktokConfig from '../config/tiktok.json';
 import { topics } from '../config/topics';
-import type { Catalog, CatalogChannel, Feed, Video } from '../types';
+import type { Catalog, CatalogChannel, Feed, TikTokChannel, Video } from '../types';
 
 function normalizeCatalog(raw: Catalog): Catalog {
   return {
@@ -24,6 +25,16 @@ function normalizeCatalog(raw: Catalog): Catalog {
         commentCount: null,
       },
     })),
+    tiktok: raw.tiktok
+      ? {
+          ...raw.tiktok,
+          stats: raw.tiktok.stats || {
+            followerCount: null,
+            likeCount: null,
+            videoCount: null,
+          },
+        }
+      : null,
   };
 }
 
@@ -33,6 +44,27 @@ export const feed = feedFile as Feed;
 export type ChannelConfig = (typeof youtubeConfig.channels)[number];
 
 export const youtube = youtubeConfig;
+export const tiktok = tiktokConfig;
+
+export function getTikTok(): TikTokChannel | null {
+  if (catalog.tiktok) return catalog.tiktok;
+  if (!tiktokConfig.enabled) return null;
+  return {
+    id: tiktokConfig.id,
+    name: tiktokConfig.name,
+    handle: tiktokConfig.handle,
+    uniqueId: tiktokConfig.uniqueId,
+    profileUrl: tiktokConfig.profileUrl,
+    description: tiktokConfig.description,
+    avatar: tiktokConfig.avatar,
+    status: 'verbunden',
+    stats: {
+      followerCount: null,
+      likeCount: null,
+      videoCount: null,
+    },
+  };
+}
 
 export function videoPath(video: Pick<Video, 'slug'>): string {
   return `/videos/${video.slug}/`;

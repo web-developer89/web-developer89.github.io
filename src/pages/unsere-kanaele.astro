@@ -2,15 +2,16 @@
 import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import { channelDirectory, youtubeSubscribeUrl } from '../lib/catalog';
+import { channelDirectory, getTikTok, youtubeSubscribeUrl } from '../lib/catalog';
 import { formatNumber } from '../lib/format';
 
 const channels = channelDirectory();
+const tiktokChannel = getTikTok();
 ---
-<Base title="Unsere Kanäle" description="Politik mit Kopf und Politik mit Kopf REAGIERT auf einen Blick.">
+<Base title="Unsere Kanäle" description="Politik mit Kopf auf YouTube und TikTok.">
   <div class="wrap">
     <Breadcrumbs items={[{ href: '/unsere-kanaele/', label: 'Unsere Kanäle' }]} />
-    <PageHeader kicker="YouTube" title="Unsere Kanäle" lede="Zwei unabhängige Kanäle, eine gemeinsame redaktionelle Linie." />
+    <PageHeader kicker="Kanäle" title="Unsere Kanäle" lede="YouTube-Hauptkanal, REAGIERT und TikTok – eine gemeinsame redaktionelle Linie." />
     <div class="channel-grid" style="margin:28px 0 48px">
       {channels.map((channel) => (
         <article class="channel-card">
@@ -18,7 +19,7 @@ const channels = channelDirectory();
             <img src={channel.avatar} alt="" width="72" height="72" />
             <div>
               <h2>{channel.name}</h2>
-              <p class="sync-note" style="margin:6px 0 0">{channel.handle}</p>
+              <p class="sync-note" style="margin:6px 0 0">YouTube · {channel.handle}</p>
             </div>
           </div>
           <p>{channel.description}</p>
@@ -31,6 +32,42 @@ const channels = channelDirectory();
           </div>
         </article>
       ))}
+      {tiktokChannel && (
+        <article class="channel-card">
+          <div class="header">
+            <img src={tiktokChannel.avatar} alt="" width="72" height="72" data-fallback="/brand/mark.jpg" />
+            <div>
+              <h2>TikTok · {tiktokChannel.name}</h2>
+              <p class="sync-note" style="margin:6px 0 0">{tiktokChannel.handle}</p>
+            </div>
+          </div>
+          <p>{tiktokChannel.description}</p>
+          <p class="channel-metrics">
+            {tiktokChannel.stats.followerCount != null && (
+              <span><strong>{formatNumber(tiktokChannel.stats.followerCount)}</strong> Follower</span>
+            )}
+            {tiktokChannel.stats.likeCount != null && (
+              <span><strong>{formatNumber(tiktokChannel.stats.likeCount)}</strong> Likes</span>
+            )}
+            {tiktokChannel.stats.videoCount != null && (
+              <span><strong>{formatNumber(tiktokChannel.stats.videoCount)}</strong> Videos</span>
+            )}
+          </p>
+          <div class="hero-actions">
+            <a class="button" href={tiktokChannel.profileUrl} rel="noopener noreferrer">TikTok öffnen</a>
+          </div>
+        </article>
+      )}
     </div>
   </div>
 </Base>
+<style>
+  .channel-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    margin: 0 0 8px;
+  }
+  .channel-metrics span { color: var(--muted); }
+  .channel-metrics strong { color: var(--ink); }
+</style>

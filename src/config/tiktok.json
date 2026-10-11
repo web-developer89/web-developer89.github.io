@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "id": "tiktok",
+  "name": "Politik mit Kopf",
+  "handle": "@politik.mit.kopf",
+  "uniqueId": "politik.mit.kopf",
+  "profileUrl": "https://www.tiktok.com/@politik.mit.kopf",
+  "description": "Kurze Clips und Hinweise zum YouTube-Kanal von Politik mit Kopf.",
+  "avatar": "/brand/tiktok.jpg"
+}

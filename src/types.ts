@@ -52,6 +52,24 @@ export type LiveItem = {
   thumbnailRemote: string;
 };
 
+export type TikTokStats = {
+  followerCount: number | null;
+  likeCount: number | null;
+  videoCount: number | null;
+};
+
+export type TikTokChannel = {
+  id: string;
+  name: string;
+  handle: string;
+  uniqueId: string;
+  profileUrl: string;
+  description: string;
+  avatar: string;
+  status: 'verbunden' | 'deaktiviert' | 'fehler';
+  stats: TikTokStats;
+};
+
 export type Catalog = {
   syncedAt: string | null;
   ok: boolean;
@@ -60,6 +78,7 @@ export type Catalog = {
   live: LiveItem | null;
   channels: CatalogChannel[];
   videos: Video[];
+  tiktok?: TikTokChannel | null;
 };
 
 export type Feed = {

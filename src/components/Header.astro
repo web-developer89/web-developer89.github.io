@@ -22,7 +22,7 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
       ))}
     </nav>
     <div class="header-tools">
-      <div class="header-socials" aria-label="YouTube-Kanäle">
+      <div class="header-socials" aria-label="Kanäle">
         {channelSocials.map((item) => (
           <a class="tool" href={item.href} rel="noopener noreferrer" title={item.label}>
             <Icon name="play" size={16} />

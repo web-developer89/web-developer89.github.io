@@ -4,6 +4,7 @@ import { XMLParser } from 'fast-xml-parser';
 
 const root = path.resolve(import.meta.dirname, '..');
 const configPath = path.join(root, 'src/config/youtube.json');
+const tiktokConfigPath = path.join(root, 'src/config/tiktok.json');
 const overlayPath = path.join(root, 'src/content/overlay.json');
 const catalogPath = path.join(root, 'src/data/catalog.json');
 const feedPath = path.join(root, 'src/data/feed.json');
@@ -557,6 +558,79 @@ async function saveImage(file, buffer) {
   await writeFile(file, buffer);
 }
 
+async function fetchTikTokProfile(config, previousTikTok) {
+  const empty = {
+    id: config.id || 'tiktok',
+    name: config.name || 'TikTok',
+    handle: config.handle || `@${config.uniqueId}`,
+    uniqueId: config.uniqueId,
+    profileUrl: config.profileUrl || `https://www.tiktok.com/@${config.uniqueId}`,
+    description: config.description || '',
+    avatar: config.avatar || '/brand/tiktok.jpg',
+    status: 'fehler',
+    stats: {
+      followerCount: previousTikTok?.stats?.followerCount ?? null,
+      likeCount: previousTikTok?.stats?.likeCount ?? null,
+      videoCount: previousTikTok?.stats?.videoCount ?? null,
+    },
+  };
+  if (!config.enabled || !config.uniqueId) return { ...empty, status: 'deaktiviert' };
+
+  try {
+    const response = await fetch(config.profileUrl || `https://www.tiktok.com/@${config.uniqueId}`, {
+      headers: {
+        'user-agent':
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'accept-language': 'de-DE,de;q=0.9,en;q=0.8',
+      },
+      signal: AbortSignal.timeout(20000),
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const html = await response.text();
+    const match = html.match(/<script id="__UNIVERSAL_DATA_FOR_REHYDRATION__"[^>]*>(.*?)<\/script>/s);
+    if (!match) throw new Error('TikTok-Profildaten nicht gefunden');
+    const payload = JSON.parse(match[1]);
+    const info = payload?.__DEFAULT_SCOPE__?.['webapp.user-detail']?.userInfo;
+    const user = info?.user;
+    const stats = info?.stats || {};
+    if (!user?.uniqueId) throw new Error('TikTok-Nutzer nicht gefunden');
+
+    const avatarUrl = user.avatarMedium || user.avatarLarger || user.avatarThumb;
+    if (avatarUrl && config.avatar) {
+      try {
+        const avatarResponse = await fetch(avatarUrl, { signal: AbortSignal.timeout(20000) });
+        if (avatarResponse.ok) {
+          const buffer = Buffer.from(await avatarResponse.arrayBuffer());
+          if (buffer.length > 500) {
+            await saveImage(path.join(root, 'public', config.avatar.replace(/^\//, '')), buffer);
+          }
+        }
+      } catch {
+        // Keep previous avatar.
+      }
+    }
+
+    return {
+      id: config.id || 'tiktok',
+      name: user.nickname || config.name || 'TikTok',
+      handle: `@${user.uniqueId}`,
+      uniqueId: user.uniqueId,
+      profileUrl: config.profileUrl || `https://www.tiktok.com/@${user.uniqueId}`,
+      description: user.signature || config.description || '',
+      avatar: config.avatar || '/brand/tiktok.jpg',
+      status: 'verbunden',
+      stats: {
+        followerCount: parseCount(stats.followerCount),
+        likeCount: parseCount(stats.heartCount ?? stats.heart),
+        videoCount: parseCount(stats.videoCount),
+      },
+    };
+  } catch (error) {
+    console.error(`TikTok: ${error instanceof Error ? error.message : 'Fehler'}`);
+    return empty;
+  }
+}
+
 async function downloadAvatar(channel) {
   if (!channel.avatarUrl) return;
   try {
@@ -604,7 +678,8 @@ function buildPublicStats(catalog, snapshots) {
 
 async function main() {
   const config = JSON.parse(await readFile(configPath, 'utf8'));
-  const previous = await readJson(catalogPath, { videos: [], channels: [], live: null });
+  const tiktokConfig = await readJson(tiktokConfigPath, { enabled: false, uniqueId: '' });
+  const previous = await readJson(catalogPath, { videos: [], channels: [], live: null, tiktok: null });
   const overlay = await readJson(overlayPath, { headline: '', ticker: '', custom: '' });
   const snapshots = pruneSnapshots(
     await readJson(snapshotsPath, {
@@ -630,6 +705,7 @@ async function main() {
   let usedPublic = false;
   let failed = 0;
   const syncedAt = new Date().toISOString();
+  const tiktok = await fetchTikTokProfile(tiktokConfig, previous.tiktok);
 
   for (const channel of channels.sort((a, b) => a.displayOrder - b.displayOrder)) {
     if (!channel.enabled) {
@@ -794,6 +870,7 @@ async function main() {
     live,
     channels: channelStats,
     videos: deduped,
+    tiktok,
   };
 
   if (!deduped.length && asArray(previous.videos).length) {
@@ -840,7 +917,7 @@ async function main() {
   await writeJson(path.join(publicData, 'feed.json'), feed);
   await writeJson(path.join(publicData, 'stats.json'), publicStats);
   console.log(
-    `Synchronisiert: ${deduped.length} Videos, ${channelStats.filter((item) => item.status === 'verbunden').length} Kanäle, Quelle ${source}, Live ${live ? 'ja' : 'nein'}.`,
+    `Synchronisiert: ${deduped.length} Videos, ${channelStats.filter((item) => item.status === 'verbunden').length} Kanäle, Quelle ${source}, Live ${live ? 'ja' : 'nein'}, TikTok ${tiktok.status}${tiktok.stats.followerCount != null ? ` (${tiktok.stats.followerCount} Follower)` : ''}.`,
   );
 }
 

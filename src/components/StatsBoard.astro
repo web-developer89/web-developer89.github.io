@@ -1,9 +1,10 @@
 ---
-import { channelDirectory, catalog } from '../lib/catalog';
-import { formatDateTime } from '../lib/format';
+import { channelDirectory, catalog, getTikTok } from '../lib/catalog';
+import { formatDateTime, formatNumber } from '../lib/format';
 import snapshotsFile from '../data/snapshots.json';
 
 const channels = channelDirectory();
+const tiktokChannel = getTikTok();
 const payload = {
   syncedAt: catalog.syncedAt,
   channels: channels.map((channel) => ({
@@ -26,9 +27,33 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
     <div class="section-head">
       <div>
         <h2>Unsere Kanäle in Zahlen</h2>
-        <p class="lede">Aktuelle Zahlen und Entwicklungen unserer YouTube-Kanäle.</p>
+        <p class="lede">Aktuelle Zahlen und Entwicklungen unserer Kanäle.</p>
       </div>
     </div>
+    {tiktokChannel && (
+      <aside class="tiktok-stats" aria-label="TikTok-Statistiken">
+        <div class="tiktok-stats-copy">
+          <p class="kicker">TikTok</p>
+          <h3>{tiktokChannel.handle}</h3>
+          <p>{tiktokChannel.description}</p>
+        </div>
+        <dl class="tiktok-stats-metrics">
+          <div>
+            <dt>Follower</dt>
+            <dd>{formatNumber(tiktokChannel.stats.followerCount)}</dd>
+          </div>
+          <div>
+            <dt>Likes</dt>
+            <dd>{formatNumber(tiktokChannel.stats.likeCount)}</dd>
+          </div>
+          <div>
+            <dt>Videos</dt>
+            <dd>{formatNumber(tiktokChannel.stats.videoCount)}</dd>
+          </div>
+        </dl>
+        <a class="button ghost" href={tiktokChannel.profileUrl} rel="noopener noreferrer">TikTok öffnen</a>
+      </aside>
+    )}
     <div class="stats-board" data-stats-board>
       <div class="stats-controls">
         <div class="chip-row" role="group" aria-label="Kanalauswahl" data-channel-filters>

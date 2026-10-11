@@ -70,10 +70,12 @@ export const socials: SocialLink[] = [
   },
   {
     id: 'tiktok',
-    label: 'TikTok',
-    href: '',
-    description: '',
-    connected: false,
+    label: 'TikTok · Politik mit Kopf',
+    href: 'https://www.tiktok.com/@politik.mit.kopf',
+    profileUrl: 'https://www.tiktok.com/@politik.mit.kopf',
+    description: 'Kurze Clips und Hinweise zum YouTube-Kanal.',
+    connected: true,
+    prominence: 'channel',
   },
 ];
 

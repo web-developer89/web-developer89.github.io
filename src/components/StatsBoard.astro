@@ -32,9 +32,9 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
     <div class="stats-board" data-stats-board>
       <div class="stats-controls">
         <div class="chip-row" role="group" aria-label="Kanalauswahl" data-channel-filters>
-          <button class="chip is-active" type="button" data-channel="all">Beide Kanäle</button>
+          <button class="chip" type="button" data-channel="all">Beide Kanäle</button>
           {channels.map((item) => (
-            <button class="chip" type="button" data-channel={item.id}>{item.name}</button>
+            <button class:list={['chip', { 'is-active': item.id === 'primary' }]} type="button" data-channel={item.id}>{item.name}</button>
           ))}
         </div>
         <div class="chip-row" role="group" aria-label="Zeitraum" data-period-filters>

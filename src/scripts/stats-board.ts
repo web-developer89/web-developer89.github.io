@@ -97,7 +97,7 @@ export function setupStatsBoard(): void {
     return;
   }
 
-  let channelFilter = 'all';
+  let channelFilter = payload.channels.some((channel) => channel.id === 'primary') ? 'primary' : 'all';
   let period: Period = '7d';
   const grid = root.querySelector('[data-metric-grid]');
   const chartRoot = root.querySelector('[data-chart-root]');
@@ -150,19 +150,52 @@ export function setupStatsBoard(): void {
     };
 
     const insufficient = previousChannels.length === 0 && previousVideos.size === 0;
+    const subscriberHint =
+      channelFilter === 'all' && totals.subscribers != null
+        ? 'Summe beider Kanäle laut YouTube'
+        : 'Abonnenten insgesamt laut YouTube';
+
     const cards = [
-      { label: 'Aufrufe', total: totals.views, change: totals.views != null && previous.views != null ? totals.views - previous.views : null },
-      { label: 'Likes', total: totals.likes, change: totals.likes != null && previous.likes != null ? totals.likes - previous.likes : null },
-      { label: 'Kommentare', total: totals.comments, change: totals.comments != null && previous.comments != null ? totals.comments - previous.comments : null },
-      { label: 'Abonnenten', total: totals.subscribers, change: totals.subscribers != null && previous.subscribers != null ? totals.subscribers - previous.subscribers : null },
+      {
+        label: 'Aufrufe',
+        total: totals.views,
+        change: totals.views != null && previous.views != null ? totals.views - previous.views : null,
+        emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
+        okHint: periodLabel(period),
+        totalHint: channelFilter === 'all' ? 'Aufrufe insgesamt beider Kanäle' : 'Aufrufe insgesamt laut YouTube',
+      },
+      {
+        label: 'Likes',
+        total: totals.likes,
+        change: totals.likes != null && previous.likes != null ? totals.likes - previous.likes : null,
+        emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
+        okHint: periodLabel(period),
+        totalHint: 'Likes der übernommenen Videos',
+      },
+      {
+        label: 'Kommentare',
+        total: totals.comments,
+        change: totals.comments != null && previous.comments != null ? totals.comments - previous.comments : null,
+        emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
+        okHint: periodLabel(period),
+        totalHint: 'Kommentare der übernommenen Videos',
+      },
+      {
+        label: 'Abonnenten',
+        total: totals.subscribers,
+        change: totals.subscribers != null && previous.subscribers != null ? totals.subscribers - previous.subscribers : null,
+        emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
+        okHint: periodLabel(period),
+        totalHint: subscriberHint,
+      },
     ];
 
     grid.innerHTML = cards
       .map((card) => {
         const changeBlock =
           insufficient || card.change == null
-            ? `<p class="hint">Für diesen Zeitraum liegen noch nicht genügend Daten vor.</p>`
-            : `<p class="change">${formatSigned(card.change)}</p><p class="hint">${periodLabel(period)}</p>`;
+            ? `<p class="hint">${card.total != null ? card.totalHint : card.emptyHint}</p>`
+            : `<p class="change">${formatSigned(card.change)}</p><p class="hint">${card.okHint}</p>`;
         return `<article class="metric-card"><p class="label">${card.label}</p><p class="value">${formatNumber(card.total)}</p>${changeBlock}</article>`;
       })
       .join('');
@@ -208,6 +241,10 @@ export function setupStatsBoard(): void {
       root.querySelectorAll('[data-period]').forEach((node) => node.classList.toggle('is-active', node === button));
       render();
     });
+  });
+
+  root.querySelectorAll('[data-channel]').forEach((node) => {
+    node.classList.toggle('is-active', (node as HTMLElement).dataset.channel === channelFilter);
   });
 
   render();

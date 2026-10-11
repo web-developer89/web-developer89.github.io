@@ -340,22 +340,31 @@ async function fetchPublicChannelStats(channel) {
     try {
       const response = await fetch(url, {
         headers: {
-          'user-agent': 'Mozilla/5.0',
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36',
           'accept-language': 'de-DE,de;q=0.9',
         },
         signal: AbortSignal.timeout(20000),
       });
       if (!response.ok) continue;
       const html = await response.text();
-      const follow = html.match(
-        /"interactionType":\{"@type":"FollowAction"\},"userInteractionCount":"(\d+)"/,
-      );
-      const subscriberCount = parseLocalizedCount(follow?.[1]);
-      if (subscriberCount == null) continue;
+
+      // Prefer the same public fields YouTube shows on the channel About tab.
+      const subscriberText =
+        html.match(/"subscriberCountText":"([^"]+)"/)?.[1] ||
+        html.match(/"interactionType":\{"@type":"FollowAction"\},"userInteractionCount":"(\d+)"/)?.[1];
+      const viewText = html.match(/"viewCountText":"([^"]+)"/)?.[1];
+      const videoText = html.match(/"videoCountText":"([^"]+)"/)?.[1];
+
+      const subscriberCount = parseLocalizedCount(subscriberText);
+      const viewCount = parseLocalizedCount(viewText);
+      const videoCount = parseLocalizedCount(videoText);
+
+      if (subscriberCount == null && viewCount == null && videoCount == null) continue;
+
       return {
         subscriberCount,
-        viewCount: null,
-        videoCount: null,
+        viewCount,
+        videoCount,
         hiddenSubscriberCount: false,
       };
     } catch {

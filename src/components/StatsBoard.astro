@@ -1,23 +1,42 @@
 ---
 import { channelDirectory, catalog, getTikTok } from '../lib/catalog';
-import { formatDateTime, formatNumber } from '../lib/format';
+import { formatDateTime } from '../lib/format';
 import snapshotsFile from '../data/snapshots.json';
 
 const channels = channelDirectory();
 const tiktokChannel = getTikTok();
 const payload = {
   syncedAt: catalog.syncedAt,
-  channels: channels.map((channel) => ({
-    id: channel.id,
-    channelId: channel.channelId,
-    name: channel.name,
-    stats: channel.stats,
-  })),
+  channels: [
+    ...channels.map((channel) => ({
+      id: channel.id,
+      channelId: channel.channelId,
+      name: channel.name,
+      platform: 'youtube',
+      stats: channel.stats,
+    })),
+    ...(tiktokChannel
+      ? [{
+          id: 'tiktok',
+          channelId: 'tiktok',
+          name: 'TikTok',
+          platform: 'tiktok',
+          stats: {
+            subscriberCount: tiktokChannel.stats.followerCount,
+            viewCount: null,
+            videoCount: tiktokChannel.stats.videoCount,
+            likeCount: tiktokChannel.stats.likeCount,
+            hiddenSubscriberCount: false,
+          },
+        }]
+      : []),
+  ],
   videos: catalog.videos.map((video) => ({
     id: video.id,
     channelId: video.channelId,
     stats: video.stats,
   })),
+  tiktok: tiktokChannel,
   snapshots: snapshotsFile,
 };
 const json = JSON.stringify(payload).replace(/</g, '\\u003c');
@@ -27,40 +46,19 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
     <div class="section-head">
       <div>
         <h2>Unsere Kanäle in Zahlen</h2>
-        <p class="lede">Aktuelle Zahlen und Entwicklungen unserer Kanäle.</p>
+        <p class="lede">YouTube und TikTok – aktuelle Zahlen und Entwicklungen.</p>
       </div>
     </div>
-    {tiktokChannel && (
-      <aside class="tiktok-stats" aria-label="TikTok-Statistiken">
-        <div class="tiktok-stats-copy">
-          <p class="kicker">TikTok</p>
-          <h3>{tiktokChannel.handle}</h3>
-          <p>{tiktokChannel.description}</p>
-        </div>
-        <dl class="tiktok-stats-metrics">
-          <div>
-            <dt>Follower</dt>
-            <dd>{formatNumber(tiktokChannel.stats.followerCount)}</dd>
-          </div>
-          <div>
-            <dt>Likes</dt>
-            <dd>{formatNumber(tiktokChannel.stats.likeCount)}</dd>
-          </div>
-          <div>
-            <dt>Videos</dt>
-            <dd>{formatNumber(tiktokChannel.stats.videoCount)}</dd>
-          </div>
-        </dl>
-        <a class="button ghost" href={tiktokChannel.profileUrl} rel="noopener noreferrer">TikTok öffnen</a>
-      </aside>
-    )}
     <div class="stats-board" data-stats-board>
       <div class="stats-controls">
         <div class="chip-row" role="group" aria-label="Kanalauswahl" data-channel-filters>
-          <button class="chip" type="button" data-channel="all">Beide Kanäle</button>
+          <button class="chip" type="button" data-channel="all">Alle Kanäle</button>
           {channels.map((item) => (
             <button class:list={['chip', { 'is-active': item.id === 'primary' }]} type="button" data-channel={item.id}>{item.name}</button>
           ))}
+          {tiktokChannel && (
+            <button class="chip" type="button" data-channel="tiktok">TikTok</button>
+          )}
         </div>
         <div class="chip-row" role="group" aria-label="Zeitraum" data-period-filters>
           <button class="chip" type="button" data-period="24h">24 Stunden</button>
@@ -76,7 +74,7 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
           <div class="growth-copy">
             <div class="growth-meta">
               <h3>Kanalentwicklung</h3>
-              <div class="chip-row" role="group" aria-label="Kennzahl der Entwicklung">
+              <div class="chip-row" role="group" aria-label="Kennzahl der Entwicklung" data-growth-metric-filters>
                 <button class="chip chip-mini is-active" type="button" data-growth-metric="views">Aufrufe</button>
                 <button class="chip chip-mini" type="button" data-growth-metric="subscribers">Abonnenten</button>
               </div>
@@ -87,6 +85,7 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
               <time data-sync-stamp datetime={catalog.syncedAt || ''}>
                 {catalog.syncedAt ? formatDateTime(catalog.syncedAt) : 'noch keine Synchronisierung'}
               </time>
+              <span data-refresh-note> · Aktualisierung jede Minute</span>
             </p>
             <p class="growth-note" data-growth-caption></p>
           </div>

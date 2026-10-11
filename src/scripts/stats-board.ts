@@ -1,17 +1,22 @@
 type Period = '24h' | '7d' | '30d';
 type GrowthMetric = 'views' | 'subscribers';
 
+type ChannelStats = {
+  subscriberCount: number | null;
+  viewCount: number | null;
+  videoCount: number | null;
+  likeCount?: number | null;
+  hiddenSubscriberCount?: boolean;
+};
+
 type Payload = {
   syncedAt: string | null;
   channels: Array<{
     id: string;
     channelId: string;
     name: string;
-    stats: {
-      subscriberCount: number | null;
-      viewCount: number | null;
-      videoCount: number | null;
-    };
+    platform?: 'youtube' | 'tiktok' | string;
+    stats: ChannelStats;
   }>;
   videos: Array<{
     id: string;
@@ -59,6 +64,17 @@ function formatSigned(value: number | null): string {
   return abs;
 }
 
+function formatStamp(iso: string): string {
+  return new Intl.DateTimeFormat('de-DE', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Europe/Zurich',
+  }).format(new Date(iso));
+}
+
 function periodLabel(period: Period): string {
   if (period === '24h') return 'In den letzten 24 Stunden';
   if (period === '7d') return 'In den letzten 7 Tagen';
@@ -86,6 +102,21 @@ function closestBefore<T extends { at: string }>(items: T[], target: number): T 
   return best;
 }
 
+function normalizeRemoteStats(data: Record<string, unknown>): Payload | null {
+  if (!data || typeof data !== 'object') return null;
+  const channels = Array.isArray(data.channels) ? data.channels : [];
+  const videos = Array.isArray(data.videos) ? data.videos : [];
+  return {
+    syncedAt: typeof data.syncedAt === 'string' ? data.syncedAt : null,
+    channels: channels as Payload['channels'],
+    videos: videos as Payload['videos'],
+    snapshots: {
+      channelSnapshots: (Array.isArray(data.channelSnapshots) ? data.channelSnapshots : []) as Payload['snapshots']['channelSnapshots'],
+      videoSnapshots: (Array.isArray(data.videoSnapshots) ? data.videoSnapshots : []) as Payload['snapshots']['videoSnapshots'],
+    },
+  };
+}
+
 function buildSeries(
   payload: Payload,
   ids: Set<string>,
@@ -110,7 +141,6 @@ function buildSeries(
       points.set(snap.at, (points.get(snap.at) || 0) + snap.viewCount);
     }
 
-    // If channel lifetime views are still flat/scarce, show authentic video-view growth.
     if (points.size < 2) {
       points.clear();
       const byTime = new Map<string, Map<string, number>>();
@@ -171,6 +201,7 @@ function renderSparkline(series: Array<{ at: string; value: number }>): string {
 export function setupStatsBoard(): void {
   const root = document.querySelector('[data-stats-board]');
   const payloadNode = document.querySelector('#stats-payload');
+  const section = document.querySelector('[data-stats-refresh]');
   if (!(root instanceof HTMLElement) || !(payloadNode instanceof HTMLElement)) return;
 
   let payload: Payload;
@@ -187,26 +218,65 @@ export function setupStatsBoard(): void {
   const chartRoot = root.querySelector('[data-chart-root]');
   const growthDelta = root.querySelector('[data-growth-delta]');
   const growthCaption = root.querySelector('[data-growth-caption]');
+  const growthMetricFilters = root.querySelector('[data-growth-metric-filters]');
+  const stamp = section?.querySelector('[data-sync-stamp]');
   if (!(grid instanceof HTMLElement) || !(chartRoot instanceof HTMLElement)) return;
 
-  const channelIds = () => {
-    if (channelFilter === 'all') return payload.channels.map((channel) => channel.channelId);
-    const match = payload.channels.find((channel) => channel.id === channelFilter);
-    return match ? [match.channelId] : [];
+  const selectedChannels = () => {
+    if (channelFilter === 'all') return payload.channels;
+    return payload.channels.filter((channel) => channel.id === channelFilter);
+  };
+
+  const channelIds = () => selectedChannels().map((channel) => channel.channelId);
+
+  const isTikTokOnly = () => channelFilter === 'tiktok';
+  const includesTikTok = () => selectedChannels().some((channel) => channel.platform === 'tiktok' || channel.id === 'tiktok');
+
+  const syncGrowthLabels = () => {
+    if (!(growthMetricFilters instanceof HTMLElement)) return;
+    const buttons = [...growthMetricFilters.querySelectorAll<HTMLButtonElement>('[data-growth-metric]')];
+    for (const button of buttons) {
+      if (button.dataset.growthMetric === 'views') {
+        button.textContent = isTikTokOnly() ? 'Likes' : 'Aufrufe';
+      }
+      if (button.dataset.growthMetric === 'subscribers') {
+        button.textContent = isTikTokOnly() ? 'Follower' : 'Abonnenten';
+      }
+    }
   };
 
   const render = () => {
+    syncGrowthLabels();
     const ids = new Set(channelIds());
-    const channels = payload.channels.filter((channel) => ids.has(channel.channelId));
+    const channels = selectedChannels();
+    const youtubeChannels = channels.filter((channel) => channel.platform !== 'tiktok' && channel.id !== 'tiktok');
+    const tiktokChannels = channels.filter((channel) => channel.platform === 'tiktok' || channel.id === 'tiktok');
     const videos = payload.videos.filter((video) => ids.has(video.channelId));
     const target = Date.now() - PERIOD_MS[period];
 
-    const totals = {
-      subscribers: sum(channels.map((channel) => channel.stats?.subscriberCount)),
-      views: sum(channels.map((channel) => channel.stats?.viewCount)) ?? sum(videos.map((video) => video.stats?.viewCount)),
-      likes: sum(videos.map((video) => video.stats?.likeCount)),
-      comments: sum(videos.map((video) => video.stats?.commentCount)),
-    };
+    const youtubeLikes = sum(videos.map((video) => video.stats?.likeCount));
+    const tiktokLikes = sum(tiktokChannels.map((channel) => channel.stats?.likeCount ?? null));
+
+    const totals = isTikTokOnly()
+      ? {
+          followers: sum(tiktokChannels.map((channel) => channel.stats?.subscriberCount)),
+          likes: tiktokLikes,
+          videos: sum(tiktokChannels.map((channel) => channel.stats?.videoCount)),
+          views: null as number | null,
+          comments: null as number | null,
+          subscribers: null as number | null,
+        }
+      : {
+          views: sum(youtubeChannels.map((channel) => channel.stats?.viewCount)) ?? sum(videos.map((video) => video.stats?.viewCount)),
+          likes: sum([youtubeLikes, includesTikTok() ? tiktokLikes : null]),
+          comments: sum(videos.map((video) => video.stats?.commentCount)),
+          subscribers: sum([
+            sum(youtubeChannels.map((channel) => channel.stats?.subscriberCount)),
+            includesTikTok() ? sum(tiktokChannels.map((channel) => channel.stats?.subscriberCount)) : null,
+          ]),
+          followers: null as number | null,
+          videos: null as number | null,
+        };
 
     const previousChannels = [...ids]
       .map((channelId) =>
@@ -226,56 +296,93 @@ export function setupStatsBoard(): void {
       if (closest) previousVideos.set(videoId, closest);
     }
 
-    const previous = {
-      subscribers: sum(previousChannels.map((item) => item?.subscriberCount ?? null)),
-      views:
-        sum(previousChannels.map((item) => item?.viewCount ?? null)) ??
-        sum([...previousVideos.values()].map((item) => item.viewCount)),
-      likes: sum([...previousVideos.values()].map((item) => item.likeCount)),
-      comments: sum([...previousVideos.values()].map((item) => item.commentCount)),
-    };
+    const previousTikTok = previousChannels.filter((item) => item?.channelId === 'tiktok');
+    const previousYoutube = previousChannels.filter((item) => item?.channelId !== 'tiktok');
+
+    const prevFollowers = sum(previousTikTok.map((item) => item?.subscriberCount ?? null));
+    const prevTikTokLikes = sum(previousTikTok.map((item) => item?.viewCount ?? null));
+    const prevTikTokVideos = sum(previousTikTok.map((item) => (item as { videoCount?: number | null })?.videoCount ?? null));
+    const prevSubscribers = sum([
+      sum(previousYoutube.map((item) => item?.subscriberCount ?? null)),
+      includesTikTok() ? prevFollowers : null,
+    ]);
+    const prevViews =
+      sum(previousYoutube.map((item) => item?.viewCount ?? null)) ??
+      sum([...previousVideos.values()].map((item) => item.viewCount));
+    const prevLikes = sum([
+      sum([...previousVideos.values()].map((item) => item.likeCount)),
+      includesTikTok() ? prevTikTokLikes : null,
+    ]);
+    const prevComments = sum([...previousVideos.values()].map((item) => item.commentCount));
 
     const insufficient = previousChannels.length === 0 && previousVideos.size === 0;
-    const subscriberHint =
-      channelFilter === 'all' && totals.subscribers != null
-        ? 'Summe beider Kanäle laut YouTube'
-        : 'Abonnenten insgesamt laut YouTube';
 
-    const cards = [
-      {
-        label: 'Aufrufe',
-        total: totals.views,
-        change: totals.views != null && previous.views != null ? totals.views - previous.views : null,
-        emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
-        okHint: periodLabel(period),
-        totalHint: channelFilter === 'all' ? 'Aufrufe insgesamt beider Kanäle' : 'Aufrufe insgesamt laut YouTube',
-      },
-      {
-        label: 'Likes',
-        total: totals.likes,
-        change: totals.likes != null && previous.likes != null ? totals.likes - previous.likes : null,
-        emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
-        okHint: periodLabel(period),
-        totalHint: 'Likes der übernommenen Videos',
-      },
-      {
-        label: 'Kommentare',
-        total: totals.comments,
-        change: totals.comments != null && previous.comments != null ? totals.comments - previous.comments : null,
-        emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
-        okHint: periodLabel(period),
-        totalHint: 'Kommentare der übernommenen Videos',
-      },
-      {
-        label: 'Abonnenten',
-        total: totals.subscribers,
-        change: totals.subscribers != null && previous.subscribers != null ? totals.subscribers - previous.subscribers : null,
-        emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
-        okHint: periodLabel(period),
-        totalHint: subscriberHint,
-      },
-    ];
+    const cards = isTikTokOnly()
+      ? [
+          {
+            label: 'Follower',
+            total: totals.followers,
+            change: totals.followers != null && prevFollowers != null ? totals.followers - prevFollowers : null,
+            emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
+            okHint: periodLabel(period),
+            totalHint: 'Follower insgesamt laut TikTok',
+          },
+          {
+            label: 'Likes',
+            total: totals.likes,
+            change: totals.likes != null && prevTikTokLikes != null ? totals.likes - prevTikTokLikes : null,
+            emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
+            okHint: periodLabel(period),
+            totalHint: 'Likes insgesamt laut TikTok',
+          },
+          {
+            label: 'Videos',
+            total: totals.videos,
+            change: totals.videos != null && prevTikTokVideos != null ? totals.videos - prevTikTokVideos : null,
+            emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
+            okHint: periodLabel(period),
+            totalHint: 'Videos insgesamt laut TikTok',
+          },
+        ]
+      : [
+          {
+            label: 'Aufrufe',
+            total: totals.views,
+            change: totals.views != null && prevViews != null ? totals.views - prevViews : null,
+            emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
+            okHint: periodLabel(period),
+            totalHint: channelFilter === 'all' ? 'YouTube-Aufrufe insgesamt' : 'Aufrufe insgesamt laut YouTube',
+          },
+          {
+            label: 'Likes',
+            total: totals.likes,
+            change: totals.likes != null && prevLikes != null ? totals.likes - prevLikes : null,
+            emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
+            okHint: periodLabel(period),
+            totalHint: includesTikTok() ? 'YouTube-Video-Likes + TikTok-Likes' : 'Likes der übernommenen Videos',
+          },
+          {
+            label: 'Kommentare',
+            total: totals.comments,
+            change: totals.comments != null && prevComments != null ? totals.comments - prevComments : null,
+            emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
+            okHint: periodLabel(period),
+            totalHint: 'Kommentare der übernommenen Videos',
+          },
+          {
+            label: 'Abonnenten',
+            total: totals.subscribers,
+            change: totals.subscribers != null && prevSubscribers != null ? totals.subscribers - prevSubscribers : null,
+            emptyHint: 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.',
+            okHint: periodLabel(period),
+            totalHint:
+              channelFilter === 'all' && includesTikTok()
+                ? 'YouTube-Abonnenten + TikTok-Follower'
+                : 'Abonnenten insgesamt laut YouTube',
+          },
+        ];
 
+    grid.classList.toggle('is-compact', isTikTokOnly());
     grid.innerHTML = cards
       .map((card) => {
         const changeBlock =
@@ -290,7 +397,13 @@ export function setupStatsBoard(): void {
     const first = series[0]?.value ?? null;
     const last = series[series.length - 1]?.value ?? null;
     const delta = first != null && last != null ? last - first : null;
-    const metricLabel = growthMetric === 'subscribers' ? 'Abonnenten' : 'Aufrufe';
+    const metricLabel = isTikTokOnly()
+      ? growthMetric === 'subscribers'
+        ? 'Follower'
+        : 'Likes'
+      : growthMetric === 'subscribers'
+        ? 'Abonnenten'
+        : 'Aufrufe';
 
     if (growthDelta instanceof HTMLElement) {
       growthDelta.textContent =
@@ -304,11 +417,18 @@ export function setupStatsBoard(): void {
     if (growthCaption instanceof HTMLElement) {
       if (series.length < 2) {
         growthCaption.textContent = 'Sobald mehrere Syncs vorliegen, erscheint hier die echte Wachstumskurve.';
-      } else if (growthMetric === 'views' && !(payload.snapshots.channelSnapshots || []).some((item) => ids.has(item.channelId) && item.viewCount != null)) {
+      } else if (isTikTokOnly()) {
+        growthCaption.textContent = `Echte TikTok-Messwerte · ${periodLabel(period)}`;
+      } else if (growthMetric === 'views' && !(payload.snapshots.channelSnapshots || []).some((item) => ids.has(item.channelId) && item.viewCount != null && item.channelId !== 'tiktok')) {
         growthCaption.textContent = `Echte Aufruf-Zunahme der aktuellen Videos · ${periodLabel(period)}`;
       } else {
         growthCaption.textContent = `Echte Messwerte · ${periodLabel(period)}`;
       }
+    }
+
+    if (stamp instanceof HTMLElement && payload.syncedAt) {
+      stamp.setAttribute('datetime', payload.syncedAt);
+      stamp.textContent = formatStamp(payload.syncedAt);
     }
 
     if (series.length < 2) {
@@ -347,5 +467,20 @@ export function setupStatsBoard(): void {
     node.classList.toggle('is-active', (node as HTMLElement).dataset.channel === channelFilter);
   });
 
+  const refreshFromNetwork = async () => {
+    try {
+      const response = await fetch(`/data/stats.json?t=${Date.now()}`, { cache: 'no-store' });
+      if (!response.ok) return;
+      const next = normalizeRemoteStats(await response.json());
+      if (!next?.channels?.length) return;
+      payload = next;
+      payloadNode.textContent = JSON.stringify(next);
+      render();
+    } catch {
+      // Keep last known payload.
+    }
+  };
+
   render();
+  window.setInterval(refreshFromNetwork, 60_000);
 }

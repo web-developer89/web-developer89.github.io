@@ -3,12 +3,18 @@ name: Sync and deploy
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "src/data/**"
+      - "public/data/**"
+      - "public/brand/tiktok.jpg"
+      - "public/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg"
   schedule:
-    - cron: "17 * * * *"
+    # GitHub Actions erlaubt keinen kürzeren Takt als alle 5 Minuten.
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -26,6 +32,8 @@ jobs:
     steps:
       - name: Repository holen
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Node einrichten
         uses: actions/setup-node@v4
@@ -54,3 +62,16 @@ jobs:
       - name: Veröffentlichen
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Sync-Daten zurückschreiben
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/catalog.json src/data/feed.json src/data/snapshots.json public/data/feed.json public/data/stats.json public/brand || true
+          if git diff --staged --quiet; then
+            echo "Keine Sync-Änderungen"
+          else
+            git commit -m "chore: sync channel stats"
+            git push
+          fi

@@ -655,23 +655,49 @@ function pruneSnapshots(store, now = Date.now()) {
   return store;
 }
 
+function tiktokAsStatsChannel(tiktok) {
+  if (!tiktok) return null;
+  return {
+    id: 'tiktok',
+    channelId: 'tiktok',
+    name: 'TikTok',
+    slug: '',
+    platform: 'tiktok',
+    handle: tiktok.handle || '',
+    profileUrl: tiktok.profileUrl || '',
+    stats: {
+      subscriberCount: tiktok.stats?.followerCount ?? null,
+      viewCount: null,
+      videoCount: tiktok.stats?.videoCount ?? null,
+      likeCount: tiktok.stats?.likeCount ?? null,
+      hiddenSubscriberCount: false,
+    },
+  };
+}
+
 function buildPublicStats(catalog, snapshots) {
+  const tiktokChannel = tiktokAsStatsChannel(catalog.tiktok);
   return {
     syncedAt: catalog.syncedAt,
     timezone: 'Europe/Zurich',
-    channels: catalog.channels.map((channel) => ({
-      id: channel.id,
-      channelId: channel.channelId,
-      name: channel.name,
-      slug: channel.slug || '',
-      stats: channel.stats || { ...EMPTY_CHANNEL_STATS },
-    })),
+    channels: [
+      ...catalog.channels.map((channel) => ({
+        id: channel.id,
+        channelId: channel.channelId,
+        name: channel.name,
+        slug: channel.slug || '',
+        platform: 'youtube',
+        stats: channel.stats || { ...EMPTY_CHANNEL_STATS },
+      })),
+      ...(tiktokChannel ? [tiktokChannel] : []),
+    ],
     videos: catalog.videos.slice(0, 40).map((video) => ({
       id: video.id,
       channelId: video.channelId,
       stats: video.stats || { ...EMPTY_VIDEO_STATS },
     })),
-    channelSnapshots: asArray(snapshots.channelSnapshots).slice(-2000),
+    tiktok: catalog.tiktok || null,
+    channelSnapshots: asArray(snapshots.channelSnapshots).slice(-4000),
     videoSnapshots: asArray(snapshots.videoSnapshots).slice(-8000),
   };
 }
@@ -706,6 +732,15 @@ async function main() {
   let failed = 0;
   const syncedAt = new Date().toISOString();
   const tiktok = await fetchTikTokProfile(tiktokConfig, previous.tiktok);
+  if (tiktok.status === 'verbunden') {
+    snapshots.channelSnapshots.push({
+      at: syncedAt,
+      channelId: 'tiktok',
+      subscriberCount: tiktok.stats.followerCount,
+      viewCount: tiktok.stats.likeCount,
+      videoCount: tiktok.stats.videoCount,
+    });
+  }
 
   for (const channel of channels.sort((a, b) => a.displayOrder - b.displayOrder)) {
     if (!channel.enabled) {

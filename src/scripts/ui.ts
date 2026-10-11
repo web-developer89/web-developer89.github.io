@@ -172,27 +172,3 @@ setupSearch();
 setupCopy();
 setupImages();
 
-const statsRoot = document.querySelector('[data-stats-refresh]');
-if (statsRoot instanceof HTMLElement) {
-  const stamp = statsRoot.querySelector('[data-sync-stamp]');
-  window.setInterval(async () => {
-    try {
-      const response = await fetch('/data/feed.json', { cache: 'no-store' });
-      if (!response.ok) return;
-      const data = await response.json();
-      if (stamp instanceof HTMLElement && data.syncedAt) {
-        stamp.setAttribute('datetime', data.syncedAt);
-        stamp.textContent = new Intl.DateTimeFormat('de-DE', {
-          day: 'numeric',
-          month: 'long',
-          year: 'numeric',
-          hour: '2-digit',
-          minute: '2-digit',
-          timeZone: 'Europe/Zurich',
-        }).format(new Date(data.syncedAt));
-      }
-    } catch {
-      // Keep last known stamp when the feed is temporarily unavailable.
-    }
-  }, 60_000);
-}

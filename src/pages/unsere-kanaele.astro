@@ -3,98 +3,15 @@ import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ChannelBadges from '../components/ChannelBadges.astro';
-import Icon from '../components/Icon.astro';
-import { channelDirectory, getTikTok, youtubeSubscribeUrl } from '../lib/catalog';
-import { formatCompact, formatNumber } from '../lib/format';
-
-const channels = channelDirectory();
-const tiktokChannel = getTikTok();
-
-const entries = [
-  ...channels.map((channel) => ({
-    key: channel.id,
-    platform: 'YouTube' as const,
-    icon: 'youtube' as const,
-    name: channel.id === 'reagiert' ? 'REAGIERT' : 'Politik mit Kopf',
-    handle: channel.handle || '',
-    avatar: channel.avatar,
-    href: youtubeSubscribeUrl(channel),
-    pageHref: `/${channel.slug}/`,
-    pageLabel: 'Zum Kanal',
-    metric:
-      channel.stats.subscriberCount != null
-        ? {
-            value: formatCompact(channel.stats.subscriberCount),
-            label: 'Abos',
-            title: `${formatNumber(channel.stats.subscriberCount)} Abonnenten`,
-          }
-        : null,
-  })),
-  ...(tiktokChannel
-    ? [{
-        key: 'tiktok',
-        platform: 'TikTok' as const,
-        icon: 'tiktok' as const,
-        name: 'Politik mit Kopf',
-        handle: tiktokChannel.handle,
-        avatar: tiktokChannel.avatar,
-        href: tiktokChannel.profileUrl,
-        pageHref: tiktokChannel.profileUrl,
-        pageLabel: 'Zum Kanal',
-        metric:
-          tiktokChannel.stats.followerCount != null
-            ? {
-                value: formatCompact(tiktokChannel.stats.followerCount),
-                label: 'Follower',
-                title: `${formatNumber(tiktokChannel.stats.followerCount)} Follower`,
-              }
-            : null,
-      }]
-    : []),
-];
 ---
-<Base title="Unsere Kanäle" description="Politik mit Kopf auf YouTube und TikTok.">
+<Base title="Unsere Kanäle" description="Politik mit Kopf auf YouTube, TikTok, Telegram, WhatsApp und X.">
   <div class="wrap">
     <Breadcrumbs items={[{ href: '/unsere-kanaele/', label: 'Unsere Kanäle' }]} />
-    <PageHeader kicker="Kanäle" title="Unsere Kanäle" lede="YouTube und TikTok – kompakt auf einen Blick." />
-
+    <PageHeader
+      kicker="Kanäle"
+      title="Unsere Kanäle"
+      lede="YouTube, TikTok, Telegram, WhatsApp und X – direkt erreichbar."
+    />
     <ChannelBadges size="section" />
-
-    <ul class="channel-tiles">
-      {entries.map((entry) => (
-        <li>
-          <a
-            class:list={['channel-tile', `is-${entry.icon}`]}
-            href={entry.href}
-            rel="noopener noreferrer"
-          >
-            <span class="channel-tile-top">
-              <span class="channel-tile-platform">{entry.platform}</span>
-              <span class="channel-tile-brand" aria-hidden="true">
-                <Icon name={entry.icon} size={16} />
-              </span>
-            </span>
-            <span class="channel-tile-body">
-              <img src={entry.avatar} alt="" width="40" height="40" data-fallback="/brand/mark.jpg" />
-              <span class="channel-tile-copy">
-                <strong>{entry.name}</strong>
-                <span class="channel-tile-handle">{entry.handle}</span>
-              </span>
-              <span class="channel-tile-metric" title={entry.metric?.title || undefined}>
-                <strong>{entry.metric?.value || '—'}</strong>
-                <span>{entry.metric?.label || ' '}</span>
-              </span>
-            </span>
-          </a>
-          <a
-            class="channel-tile-sub"
-            href={entry.pageHref}
-            rel={entry.pageHref.startsWith('http') ? 'noopener noreferrer' : undefined}
-          >
-            {entry.pageLabel}
-          </a>
-        </li>
-      ))}
-    </ul>
   </div>
 </Base>

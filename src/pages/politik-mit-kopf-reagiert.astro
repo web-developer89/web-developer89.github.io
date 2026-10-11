@@ -13,7 +13,7 @@ const featured = videos[0] ?? null;
 ---
 <Base title={channel.name} description={channel.description} image={channel.avatar}>
   <div class="wrap">
-    <Breadcrumbs items={[{ href: '/unsere-kanaele/', label: 'Unsere Kanäle' }, { href: '/politik-mit-kopf-reagiert/', label: channel.name }]} />
+    <Breadcrumbs items={[{ href: '/unsere-kanaele/', label: 'Meine Kanäle' }, { href: '/politik-mit-kopf-reagiert/', label: channel.name }]} />
     <section class="channel-card" style="margin:18px 0 28px;border-color:rgba(143,163,184,0.35)">
       <div class="header">
         <img src={channel.avatar} alt="" width="92" height="92" />

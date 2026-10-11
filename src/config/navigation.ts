@@ -1,7 +1,7 @@
 export const navigation = [
   { href: '/', label: 'Startseite' },
   { href: '/videos/', label: 'Videos' },
-  { href: '/unsere-kanaele/', label: 'Unsere Kanäle' },
+  { href: '/unsere-kanaele/', label: 'Meine Kanäle' },
   { href: '/aktuelles/', label: 'Aktuelles' },
   { href: '/informant-werden/', label: 'Informant werden' },
   { href: '/unterstuetzen/', label: 'Unterstützen' },
@@ -10,7 +10,7 @@ export const navigation = [
 
 export const footerDiscover = [
   { href: '/videos/', label: 'Videos' },
-  { href: '/unsere-kanaele/', label: 'Unsere Kanäle' },
+  { href: '/unsere-kanaele/', label: 'Meine Kanäle' },
   { href: '/aktuelles/', label: 'Aktuelles' },
   { href: '/suche/', label: 'Suche' },
 ] as const;

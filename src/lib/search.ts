@@ -18,7 +18,7 @@ const pages: SearchItem[] = [
   },
   {
     href: '/unsere-kanaele/',
-    title: 'Unsere Kanäle',
+    title: 'Meine Kanäle',
     kind: 'Seite',
     text: 'Politik mit Kopf REAGIERT YouTube Kanäle',
   },

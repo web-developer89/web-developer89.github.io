@@ -25,7 +25,7 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
       <div class="header-socials" aria-label="Kanäle">
         {channelSocials.map((item) => (
           <a class="tool" href={item.href} rel="noopener noreferrer" title={item.label}>
-            <Icon name="play" size={16} />
+            <Icon name={item.id === 'tiktok' ? 'tiktok' : 'youtube'} size={16} />
             <span class="sr-only">{item.label}</span>
           </a>
         ))}

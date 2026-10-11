@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Icon from '../components/Icon.astro';
 import { channelDirectory, getTikTok, youtubeSubscribeUrl } from '../lib/catalog';
 import { formatCompact, formatNumber } from '../lib/format';
 
@@ -11,36 +12,40 @@ const tiktokChannel = getTikTok();
 const entries = [
   ...channels.map((channel) => ({
     key: channel.id,
-    platform: 'YouTube',
-    name: channel.name,
+    platform: 'YouTube' as const,
+    icon: 'youtube' as const,
+    name: channel.id === 'reagiert' ? 'REAGIERT' : 'Politik mit Kopf',
     handle: channel.handle || '',
     avatar: channel.avatar,
-    href: `/${channel.slug}/`,
-    cta: 'Kanalseite',
-    external: false,
-    subscribeHref: youtubeSubscribeUrl(channel),
+    href: youtubeSubscribeUrl(channel),
+    pageHref: `/${channel.slug}/`,
+    external: true,
     metric:
       channel.stats.subscriberCount != null
-        ? { value: formatCompact(channel.stats.subscriberCount), label: 'Abonnenten', title: formatNumber(channel.stats.subscriberCount) }
+        ? {
+            value: formatCompact(channel.stats.subscriberCount),
+            label: 'Abos',
+            title: `${formatNumber(channel.stats.subscriberCount)} Abonnenten`,
+          }
         : null,
   })),
   ...(tiktokChannel
     ? [{
         key: 'tiktok',
-        platform: 'TikTok',
-        name: tiktokChannel.name,
+        platform: 'TikTok' as const,
+        icon: 'tiktok' as const,
+        name: 'Politik mit Kopf',
         handle: tiktokChannel.handle,
         avatar: tiktokChannel.avatar,
         href: tiktokChannel.profileUrl,
-        cta: 'Profil öffnen',
+        pageHref: null as string | null,
         external: true,
-        subscribeHref: null as string | null,
         metric:
           tiktokChannel.stats.followerCount != null
             ? {
                 value: formatCompact(tiktokChannel.stats.followerCount),
                 label: 'Follower',
-                title: formatNumber(tiktokChannel.stats.followerCount),
+                title: `${formatNumber(tiktokChannel.stats.followerCount)} Follower`,
               }
             : null,
       }]
@@ -50,29 +55,35 @@ const entries = [
 <Base title="Unsere Kanäle" description="Politik mit Kopf auf YouTube und TikTok.">
   <div class="wrap">
     <Breadcrumbs items={[{ href: '/unsere-kanaele/', label: 'Unsere Kanäle' }]} />
-    <PageHeader kicker="Kanäle" title="Unsere Kanäle" lede="Drei Ausspielwege, eine redaktionelle Linie." />
+    <PageHeader kicker="Kanäle" title="Unsere Kanäle" lede="YouTube und TikTok – kompakt auf einen Blick." />
 
-    <ul class="channel-directory">
+    <ul class="channel-tiles">
       {entries.map((entry) => (
-        <li class="channel-row">
-          <img src={entry.avatar} alt="" width="48" height="48" data-fallback="/brand/mark.jpg" />
-          <div class="channel-row-copy">
-            <p class="channel-row-platform">{entry.platform}</p>
-            <h2>{entry.name}</h2>
-            <p class="channel-row-handle">{entry.handle}</p>
-          </div>
-          {entry.metric && (
-            <p class="channel-row-metric" title={entry.metric.title}>
-              <strong>{entry.metric.value}</strong>
-              <span>{entry.metric.label}</span>
-            </p>
-          )}
-          <div class="channel-row-actions">
-            <a class="link-arrow" href={entry.href} rel={entry.external ? 'noopener noreferrer' : undefined}>{entry.cta}</a>
-            {entry.subscribeHref && (
-              <a class="link-arrow" href={entry.subscribeHref} rel="noopener noreferrer">Abonnieren</a>
+        <li>
+          <a
+            class:list={['channel-tile', `is-${entry.icon}`]}
+            href={entry.href}
+            rel={entry.external ? 'noopener noreferrer' : undefined}
+          >
+            <span class="channel-tile-brand" aria-hidden="true">
+              <Icon name={entry.icon} size={18} />
+            </span>
+            <img src={entry.avatar} alt="" width="40" height="40" data-fallback="/brand/mark.jpg" />
+            <span class="channel-tile-copy">
+              <span class="channel-tile-platform">{entry.platform}</span>
+              <strong>{entry.name}</strong>
+              <span class="channel-tile-handle">{entry.handle}</span>
+            </span>
+            {entry.metric && (
+              <span class="channel-tile-metric" title={entry.metric.title}>
+                <strong>{entry.metric.value}</strong>
+                <span>{entry.metric.label}</span>
+              </span>
             )}
-          </div>
+          </a>
+          {entry.pageHref && (
+            <a class="channel-tile-sub" href={entry.pageHref}>Zur Seite</a>
+          )}
         </li>
       ))}
     </ul>

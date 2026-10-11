@@ -4,9 +4,14 @@ import { badgeSocials } from '../config/social';
 interface Props {
   size?: 'header' | 'section' | 'menu';
   label?: string;
+  /** If set, only these social ids are shown (e.g. ['youtube']). */
+  only?: string[];
 }
-const { size = 'section', label = 'Kanäle' } = Astro.props;
+const { size = 'section', label = 'Kanäle', only } = Astro.props;
 const px = size === 'header' ? 30 : size === 'menu' ? 56 : 112;
+const items = only?.length
+  ? badgeSocials.filter((item) => only.includes(item.id))
+  : badgeSocials;
 
 const platformClass = (id: string) => {
   if (id.startsWith('youtube')) return 'is-youtube';
@@ -18,7 +23,7 @@ const platformClass = (id: string) => {
 };
 ---
 <nav class:list={['channel-badges', `is-${size}`]} aria-label={label}>
-  {badgeSocials.map((item) => (
+  {items.map((item) => (
     <a
       class:list={['channel-badge', platformClass(item.id)]}
       href={item.href}

@@ -1,6 +1,5 @@
 ---
 import { navigation } from '../config/navigation';
-import { badgeSocials } from '../config/social';
 import ChannelBadges from './ChannelBadges.astro';
 import Icon from './Icon.astro';
 
@@ -23,7 +22,7 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
       ))}
     </nav>
     <div class="header-tools">
-      <ChannelBadges size="header" />
+      <ChannelBadges size="header" only={['youtube']} label="YouTube" />
       <a class="tool tool-search" href="/suche/" data-search-open>
         <Icon name="search" size={18} />
         <span class="search-text">Suche</span>
@@ -49,11 +48,9 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
     ))}
   </nav>
   <a class="button" href="/unterstuetzen/">Unterstützen</a>
-  <ChannelBadges size="menu" />
+  <ChannelBadges size="menu" only={['youtube']} label="YouTube" />
   <div class="menu-social">
-    {badgeSocials.map((item) => (
-      <a href={item.href} rel="noopener noreferrer">{item.label}</a>
-    ))}
+    <a href="/unsere-kanaele/">Meine Kanäle</a>
     <a href="/suche/" data-search-open>Suche</a>
   </div>
 </div>

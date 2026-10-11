@@ -291,7 +291,7 @@
   background: var(--bg-raised);
 }
 
-.channel-card.header {
+.channel-card .header {
   display: flex;
   gap: 14px;
   align-items: center;
@@ -308,6 +308,94 @@
 .channel-card h2,
 .channel-card h3 {
   margin: 0;
+}
+
+.channel-directory {
+  list-style: none;
+  margin: 20px 0 48px;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--bg-raised);
+}
+
+.channel-row {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1.4fr) auto auto;
+  gap: 14px 18px;
+  align-items: center;
+  padding: 14px 18px;
+  border-top: 1px solid var(--line);
+}
+
+.channel-row:first-child {
+  border-top: 0;
+}
+
+.channel-row img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line-strong);
+}
+
+.channel-row-copy {
+  min-width: 0;
+}
+
+.channel-row-platform {
+  margin: 0 0 2px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.channel-row h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.channel-row-handle {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.channel-row-metric {
+  margin: 0;
+  text-align: right;
+  line-height: 1.15;
+}
+
+.channel-row-metric strong {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.channel-row-metric span {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.channel-row-actions {
+  display: grid;
+  gap: 6px;
+  justify-items: end;
+}
+
+.channel-row-actions .link-arrow {
+  font-size: 0.9rem;
 }
 
 .informant-banner {
@@ -524,6 +612,19 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .channel-row {
+    grid-template-columns: 48px minmax(0, 1fr) auto;
+  }
+
+  .channel-row-actions {
+    grid-column: 2 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    justify-items: start;
+    justify-content: flex-start;
+  }
+
   .header-socials { display: none; }
 }
 
@@ -531,4 +632,24 @@
   .metric-grid { grid-template-columns: 1fr; }
   .tiktok-stats-metrics { grid-template-columns: 1fr; }
   .hero-brand { padding-top: 24px; }
+
+  .channel-row {
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 12px;
+    padding: 14px 14px;
+  }
+
+  .channel-row img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .channel-row-metric {
+    grid-column: 2;
+    text-align: left;
+  }
+
+  .channel-row-actions {
+    grid-column: 2;
+  }
 }

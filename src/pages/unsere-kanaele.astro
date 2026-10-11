@@ -3,71 +3,78 @@ import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { channelDirectory, getTikTok, youtubeSubscribeUrl } from '../lib/catalog';
-import { formatNumber } from '../lib/format';
+import { formatCompact, formatNumber } from '../lib/format';
 
 const channels = channelDirectory();
 const tiktokChannel = getTikTok();
+
+const entries = [
+  ...channels.map((channel) => ({
+    key: channel.id,
+    platform: 'YouTube',
+    name: channel.name,
+    handle: channel.handle || '',
+    avatar: channel.avatar,
+    href: `/${channel.slug}/`,
+    cta: 'Kanalseite',
+    external: false,
+    subscribeHref: youtubeSubscribeUrl(channel),
+    metric:
+      channel.stats.subscriberCount != null
+        ? { value: formatCompact(channel.stats.subscriberCount), label: 'Abonnenten', title: formatNumber(channel.stats.subscriberCount) }
+        : null,
+  })),
+  ...(tiktokChannel
+    ? [{
+        key: 'tiktok',
+        platform: 'TikTok',
+        name: tiktokChannel.name,
+        handle: tiktokChannel.handle,
+        avatar: tiktokChannel.avatar,
+        href: tiktokChannel.profileUrl,
+        cta: 'Profil öffnen',
+        external: true,
+        subscribeHref: null as string | null,
+        metric:
+          tiktokChannel.stats.followerCount != null
+            ? {
+                value: formatCompact(tiktokChannel.stats.followerCount),
+                label: 'Follower',
+                title: formatNumber(tiktokChannel.stats.followerCount),
+              }
+            : null,
+      }]
+    : []),
+];
 ---
 <Base title="Unsere Kanäle" description="Politik mit Kopf auf YouTube und TikTok.">
   <div class="wrap">
     <Breadcrumbs items={[{ href: '/unsere-kanaele/', label: 'Unsere Kanäle' }]} />
-    <PageHeader kicker="Kanäle" title="Unsere Kanäle" lede="YouTube-Hauptkanal, REAGIERT und TikTok – eine gemeinsame redaktionelle Linie." />
-    <div class="channel-grid" style="margin:28px 0 48px">
-      {channels.map((channel) => (
-        <article class="channel-card">
-          <div class="header">
-            <img src={channel.avatar} alt="" width="72" height="72" />
-            <div>
-              <h2>{channel.name}</h2>
-              <p class="sync-note" style="margin:6px 0 0">YouTube · {channel.handle}</p>
-            </div>
+    <PageHeader kicker="Kanäle" title="Unsere Kanäle" lede="Drei Ausspielwege, eine redaktionelle Linie." />
+
+    <ul class="channel-directory">
+      {entries.map((entry) => (
+        <li class="channel-row">
+          <img src={entry.avatar} alt="" width="48" height="48" data-fallback="/brand/mark.jpg" />
+          <div class="channel-row-copy">
+            <p class="channel-row-platform">{entry.platform}</p>
+            <h2>{entry.name}</h2>
+            <p class="channel-row-handle">{entry.handle}</p>
           </div>
-          <p>{channel.description}</p>
-          {channel.stats.subscriberCount != null && (
-            <p><strong>{formatNumber(channel.stats.subscriberCount)}</strong> Abonnenten</p>
+          {entry.metric && (
+            <p class="channel-row-metric" title={entry.metric.title}>
+              <strong>{entry.metric.value}</strong>
+              <span>{entry.metric.label}</span>
+            </p>
           )}
-          <div class="hero-actions">
-            <a class="button" href={`/${channel.slug}/`}>Kanalseite</a>
-            <a class="button ghost" href={youtubeSubscribeUrl(channel)} rel="noopener noreferrer">Jetzt abonnieren</a>
+          <div class="channel-row-actions">
+            <a class="link-arrow" href={entry.href} rel={entry.external ? 'noopener noreferrer' : undefined}>{entry.cta}</a>
+            {entry.subscribeHref && (
+              <a class="link-arrow" href={entry.subscribeHref} rel="noopener noreferrer">Abonnieren</a>
+            )}
           </div>
-        </article>
+        </li>
       ))}
-      {tiktokChannel && (
-        <article class="channel-card">
-          <div class="header">
-            <img src={tiktokChannel.avatar} alt="" width="72" height="72" data-fallback="/brand/mark.jpg" />
-            <div>
-              <h2>TikTok · {tiktokChannel.name}</h2>
-              <p class="sync-note" style="margin:6px 0 0">{tiktokChannel.handle}</p>
-            </div>
-          </div>
-          <p>{tiktokChannel.description}</p>
-          <p class="channel-metrics">
-            {tiktokChannel.stats.followerCount != null && (
-              <span><strong>{formatNumber(tiktokChannel.stats.followerCount)}</strong> Follower</span>
-            )}
-            {tiktokChannel.stats.likeCount != null && (
-              <span><strong>{formatNumber(tiktokChannel.stats.likeCount)}</strong> Likes</span>
-            )}
-            {tiktokChannel.stats.videoCount != null && (
-              <span><strong>{formatNumber(tiktokChannel.stats.videoCount)}</strong> Videos</span>
-            )}
-          </p>
-          <div class="hero-actions">
-            <a class="button" href={tiktokChannel.profileUrl} rel="noopener noreferrer">TikTok öffnen</a>
-          </div>
-        </article>
-      )}
-    </div>
+    </ul>
   </div>
 </Base>
-<style>
-  .channel-metrics {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 20px;
-    margin: 0 0 8px;
-  }
-  .channel-metrics span { color: var(--muted); }
-  .channel-metrics strong { color: var(--ink); }
-</style>

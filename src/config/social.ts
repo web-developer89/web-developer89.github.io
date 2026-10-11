@@ -11,7 +11,7 @@ export const socials: SocialLink[] = [
   {
     id: 'youtube',
     label: 'YouTube · Politik mit Kopf',
-    href: 'https://www.youtube.com/@PolitikmitKopf',
+    href: 'https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1',
     description: 'Der Hauptkanal mit Analysen und aktuellen Beiträgen.',
     connected: true,
     prominence: 'channel',
@@ -19,7 +19,7 @@ export const socials: SocialLink[] = [
   {
     id: 'youtube-reagiert',
     label: 'YouTube · REAGIERT',
-    href: 'https://www.youtube.com/@PolitikmitKopfReagiert',
+    href: 'https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1',
     description: 'Der Kanal für Reaktionsvideos und längere Einordnungen.',
     connected: true,
     prominence: 'channel',

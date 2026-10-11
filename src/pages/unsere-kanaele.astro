@@ -27,7 +27,7 @@ const channels = channelDirectory();
           )}
           <div class="hero-actions">
             <a class="button" href={`/${channel.slug}/`}>Kanalseite</a>
-            <a class="button ghost" href={channel.channelUrl} rel="noopener noreferrer">Jetzt abonnieren</a>
+            <a class="button ghost" href={channel.subscribeUrl || `${channel.channelUrl}?sub_confirmation=1`} rel="noopener noreferrer">Jetzt abonnieren</a>
           </div>
         </article>
       ))}

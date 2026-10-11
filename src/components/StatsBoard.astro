@@ -46,17 +46,27 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
 
       <div class="metric-grid" data-metric-grid></div>
 
-      <div class="chart-panel">
-        <div class="section-head" style="margin:0 0 12px;border:0">
-          <h3 style="margin:0;font-size:1.15rem">Kanalentwicklung</h3>
-          <p class="sync-note">
-            Stand:
-            <time data-sync-stamp datetime={catalog.syncedAt || ''}>
-              {catalog.syncedAt ? formatDateTime(catalog.syncedAt) : 'noch keine Synchronisierung'}
-            </time>
-          </p>
+      <div class="chart-panel" data-growth-panel>
+        <div class="growth-strip">
+          <div class="growth-copy">
+            <div class="growth-meta">
+              <h3>Kanalentwicklung</h3>
+              <div class="chip-row" role="group" aria-label="Kennzahl der Entwicklung">
+                <button class="chip chip-mini is-active" type="button" data-growth-metric="views">Aufrufe</button>
+                <button class="chip chip-mini" type="button" data-growth-metric="subscribers">Abonnenten</button>
+              </div>
+            </div>
+            <p class="growth-delta" data-growth-delta>—</p>
+            <p class="growth-note">
+              Stand:
+              <time data-sync-stamp datetime={catalog.syncedAt || ''}>
+                {catalog.syncedAt ? formatDateTime(catalog.syncedAt) : 'noch keine Synchronisierung'}
+              </time>
+            </p>
+            <p class="growth-note" data-growth-caption></p>
+          </div>
+          <div class="growth-chart" data-chart-root aria-live="polite"></div>
         </div>
-        <div data-chart-root></div>
       </div>
     </div>
   </div>

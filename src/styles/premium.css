@@ -154,16 +154,81 @@
 }
 
 .chart-panel {
-  padding: 18px;
-  border-radius: 18px;
+  padding: 14px 16px;
+  border-radius: 16px;
   border: 1px solid var(--line);
   background: rgba(12, 13, 16, 0.72);
 }
 
-.chart-panel svg {
+.growth-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px 20px;
+  align-items: center;
+}
+
+.growth-copy {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.growth-copy h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  letter-spacing: -0.02em;
+}
+
+.growth-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+}
+
+.growth-delta {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+}
+
+.growth-delta.is-flat { color: var(--muted); }
+.growth-delta.is-down { color: var(--danger); }
+
+.growth-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.growth-chart {
+  width: min(280px, 42vw);
+  min-width: 160px;
+}
+
+.growth-chart svg {
   width: 100%;
-  height: auto;
+  height: 64px;
   display: block;
+}
+
+.chip.chip-mini {
+  min-height: 30px;
+  padding: 0 10px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 720px) {
+  .growth-strip {
+    grid-template-columns: 1fr;
+  }
+  .growth-chart {
+    width: 100%;
+    min-width: 0;
+  }
 }
 
 .channel-grid {

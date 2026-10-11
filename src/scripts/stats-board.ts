@@ -1,4 +1,5 @@
 type Period = '24h' | '7d' | '30d';
+type GrowthMetric = 'views' | 'subscribers';
 
 type Payload = {
   syncedAt: string | null;
@@ -85,6 +86,88 @@ function closestBefore<T extends { at: string }>(items: T[], target: number): T 
   return best;
 }
 
+function buildSeries(
+  payload: Payload,
+  ids: Set<string>,
+  period: Period,
+  metric: GrowthMetric,
+): Array<{ at: string; value: number }> {
+  const since = Date.now() - PERIOD_MS[period];
+  const points = new Map<string, number>();
+
+  if (metric === 'subscribers') {
+    for (const snap of payload.snapshots.channelSnapshots || []) {
+      if (!ids.has(snap.channelId) || snap.subscriberCount == null) continue;
+      const at = Date.parse(snap.at);
+      if (Number.isNaN(at) || at < since) continue;
+      points.set(snap.at, (points.get(snap.at) || 0) + snap.subscriberCount);
+    }
+  } else {
+    for (const snap of payload.snapshots.channelSnapshots || []) {
+      if (!ids.has(snap.channelId) || snap.viewCount == null) continue;
+      const at = Date.parse(snap.at);
+      if (Number.isNaN(at) || at < since) continue;
+      points.set(snap.at, (points.get(snap.at) || 0) + snap.viewCount);
+    }
+
+    // If channel lifetime views are still flat/scarce, show authentic video-view growth.
+    if (points.size < 2) {
+      points.clear();
+      const byTime = new Map<string, Map<string, number>>();
+      for (const snap of payload.snapshots.videoSnapshots || []) {
+        if (!ids.has(snap.channelId) || snap.viewCount == null) continue;
+        const at = Date.parse(snap.at);
+        if (Number.isNaN(at) || at < since) continue;
+        const bucket = byTime.get(snap.at) || new Map<string, number>();
+        bucket.set(snap.videoId, snap.viewCount);
+        byTime.set(snap.at, bucket);
+      }
+      for (const [at, bucket] of byTime) {
+        points.set(at, [...bucket.values()].reduce((total, value) => total + value, 0));
+      }
+    }
+  }
+
+  return [...points.entries()]
+    .map(([at, value]) => ({ at, value }))
+    .sort((a, b) => Date.parse(a.at) - Date.parse(b.at));
+}
+
+function renderSparkline(series: Array<{ at: string; value: number }>): string {
+  const width = 280;
+  const height = 64;
+  const padX = 4;
+  const padY = 8;
+  const values = series.map((point) => point.value);
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const span = Math.max(max - min, 1);
+  const coords = series.map((point, index) => {
+    const x = padX + (series.length === 1 ? 0 : (index / (series.length - 1)) * (width - padX * 2));
+    const y = height - padY - ((point.value - min) / span) * (height - padY * 2);
+    return { x, y };
+  });
+  const line = coords.map((point) => `${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(' ');
+  const area = `${padX},${height - padY} ${line} ${width - padX},${height - padY}`;
+  const last = coords[coords.length - 1];
+  const rising = values[values.length - 1] >= values[0];
+  const stroke = rising ? 'var(--accent)' : 'var(--danger)';
+
+  return `
+    <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Kompakte Entwicklung der gewählten Kennzahl">
+      <defs>
+        <linearGradient id="growthFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="${rising ? '#d4b07a' : '#ffb4ae'}" stop-opacity="0.28" />
+          <stop offset="100%" stop-color="${rising ? '#d4b07a' : '#ffb4ae'}" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+      <polygon fill="url(#growthFill)" points="${area}"></polygon>
+      <polyline fill="none" stroke="${stroke}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" points="${line}"></polyline>
+      <circle cx="${last.x.toFixed(1)}" cy="${last.y.toFixed(1)}" r="3.2" fill="${stroke}"></circle>
+    </svg>
+  `;
+}
+
 export function setupStatsBoard(): void {
   const root = document.querySelector('[data-stats-board]');
   const payloadNode = document.querySelector('#stats-payload');
@@ -99,8 +182,11 @@ export function setupStatsBoard(): void {
 
   let channelFilter = payload.channels.some((channel) => channel.id === 'primary') ? 'primary' : 'all';
   let period: Period = '7d';
+  let growthMetric: GrowthMetric = 'views';
   const grid = root.querySelector('[data-metric-grid]');
   const chartRoot = root.querySelector('[data-chart-root]');
+  const growthDelta = root.querySelector('[data-growth-delta]');
+  const growthCaption = root.querySelector('[data-growth-caption]');
   if (!(grid instanceof HTMLElement) || !(chartRoot instanceof HTMLElement)) return;
 
   const channelIds = () => {
@@ -200,31 +286,37 @@ export function setupStatsBoard(): void {
       })
       .join('');
 
-    const pointsMap = new Map<string, number>();
-    for (const snap of payload.snapshots.channelSnapshots || []) {
-      if (!ids.has(snap.channelId) || snap.viewCount == null) continue;
-      const at = Date.parse(snap.at);
-      if (Number.isNaN(at) || at < target) continue;
-      pointsMap.set(snap.at, (pointsMap.get(snap.at) || 0) + snap.viewCount);
+    const series = buildSeries(payload, ids, period, growthMetric);
+    const first = series[0]?.value ?? null;
+    const last = series[series.length - 1]?.value ?? null;
+    const delta = first != null && last != null ? last - first : null;
+    const metricLabel = growthMetric === 'subscribers' ? 'Abonnenten' : 'Aufrufe';
+
+    if (growthDelta instanceof HTMLElement) {
+      growthDelta.textContent =
+        delta == null
+          ? 'Noch zu wenig Messpunkte'
+          : `${formatSigned(delta)} ${metricLabel}`;
+      growthDelta.classList.toggle('is-flat', delta === 0);
+      growthDelta.classList.toggle('is-down', typeof delta === 'number' && delta < 0);
     }
-    const series = [...pointsMap.entries()]
-      .map(([at, value]) => ({ at, value }))
-      .sort((a, b) => Date.parse(a.at) - Date.parse(b.at));
+
+    if (growthCaption instanceof HTMLElement) {
+      if (series.length < 2) {
+        growthCaption.textContent = 'Sobald mehrere Syncs vorliegen, erscheint hier die echte Wachstumskurve.';
+      } else if (growthMetric === 'views' && !(payload.snapshots.channelSnapshots || []).some((item) => ids.has(item.channelId) && item.viewCount != null)) {
+        growthCaption.textContent = `Echte Aufruf-Zunahme der aktuellen Videos · ${periodLabel(period)}`;
+      } else {
+        growthCaption.textContent = `Echte Messwerte · ${periodLabel(period)}`;
+      }
+    }
 
     if (series.length < 2) {
-      chartRoot.innerHTML = `<p class="hint">Für diesen Zeitraum liegen noch nicht genügend Daten vor.</p>`;
+      chartRoot.innerHTML = `<p class="growth-note">Kurve folgt mit den nächsten Synchronisierungen.</p>`;
       return;
     }
 
-    const max = Math.max(...series.map((point) => point.value), 1);
-    const points = series
-      .map((point, index) => {
-        const x = series.length === 1 ? 0 : (index / (series.length - 1)) * 100;
-        const y = 100 - (point.value / max) * 88 - 6;
-        return `${x},${y}`;
-      })
-      .join(' ');
-    chartRoot.innerHTML = `<svg viewBox="0 0 100 100" role="img" aria-label="Entwicklung der Aufrufe im gewählten Zeitraum"><polyline fill="none" stroke="var(--accent)" stroke-width="1.8" points="${points}"></polyline></svg>`;
+    chartRoot.innerHTML = renderSparkline(series);
   };
 
   root.querySelectorAll<HTMLButtonElement>('[data-channel]').forEach((button) => {
@@ -239,6 +331,14 @@ export function setupStatsBoard(): void {
     button.addEventListener('click', () => {
       period = (button.dataset.period as Period) || '7d';
       root.querySelectorAll('[data-period]').forEach((node) => node.classList.toggle('is-active', node === button));
+      render();
+    });
+  });
+
+  root.querySelectorAll<HTMLButtonElement>('[data-growth-metric]').forEach((button) => {
+    button.addEventListener('click', () => {
+      growthMetric = (button.dataset.growthMetric as GrowthMetric) || 'views';
+      root.querySelectorAll('[data-growth-metric]').forEach((node) => node.classList.toggle('is-active', node === button));
       render();
     });
   });

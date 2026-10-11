@@ -1,12 +1,31 @@
+export type BankAccount = {
+  enabled: boolean;
+  accountName: string;
+  iban: string;
+  currencyNote: string;
+  purpose: string;
+  city?: string;
+};
+
 export const support = {
   intro: 'Du möchtest die Arbeit von Politik mit Kopf unterstützen?',
-  bank: {
-    enabled: true,
-    accountName: 'MK Swiss Media GmbH',
-    iban: 'CH42 0077 7009 8834 0181 6',
-    currencyNote: 'Euro-Konto',
-    purpose: 'Spende',
-  },
+  banks: [
+    {
+      enabled: true,
+      accountName: 'MK Swiss Media GmbH',
+      iban: 'CH42 0077 7009 8834 0181 6',
+      currencyNote: 'Euro-Konto',
+      purpose: 'Spende',
+    },
+    {
+      enabled: true,
+      accountName: 'MK Swiss Media GmbH',
+      iban: 'CH15 0077 7009 8834 0191 4',
+      currencyNote: 'CHF-Konto',
+      purpose: 'Spende',
+      city: '8840 Einsiedeln',
+    },
+  ] satisfies BankAccount[],
   links: [] as { label: string; href: string }[],
   recommendations: [
     {

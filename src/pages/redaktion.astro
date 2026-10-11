@@ -60,7 +60,7 @@ const sourceLabel = {
       </tbody>
     </table>
     <h2>Unterstützung</h2>
-    <p>Überweisung: {support.bank.enabled ? 'Hinterlegt' : 'Nicht hinterlegt'}</p>
+    <p>Überweisung: {support.banks.some((bank) => bank.enabled) ? `${support.banks.filter((bank) => bank.enabled).length} Konten hinterlegt` : 'Nicht hinterlegt'}</p>
     <p>Weitere Zahlungswege: {support.links.length ? 'Hinterlegt' : 'Nicht hinterlegt'}</p>
     <h2>Overlays für OBS</h2>
     <ul>

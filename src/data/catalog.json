@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-12T07:15:41.217Z",
+  "syncedAt": "2026-10-12T07:37:41.414Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 284000,
         "viewCount": 167975656,
-        "videoCount": 1512,
+        "videoCount": 1513,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,30 @@
   ],
   "videos": [
     {
+      "id": "KNIYc7EjtRg",
+      "slug": "mimose-bas-tritt-zurueck-und-fluechtet-vor-kritik-mandat-und-2-jahre-u-KNIYc7EjtRg",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Mimose Bas tritt zurück und flüchtet vor Kritik – Mandat und 2 Jahre Übergangsgeld bleiben!",
+      "description": "Bärbel Bas tritt überraschend als SPD-Vorsitzende und Bundesarbeitsministerin zurück und begründet den Schritt mit dem Tod ihrer Stieftochter sowie anhaltenden Angriffen.\nMandat und Übergangsgeld will Sie behalten!\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Bärbel Bas tritt überraschend als SPD-Vorsitzende und Bundesarbeitsministerin zurück und begründet den Schritt mit dem Tod ihrer Stieftochter sowie anhaltenden Angriffen.…",
+      "publishedAt": "2026-10-12T07:28:39+00:00",
+      "url": "https://www.youtube.com/watch?v=KNIYc7EjtRg",
+      "thumbnail": "/media/KNIYc7EjtRg.jpg",
+      "thumbnailRemote": "https://i4.ytimg.com/vi/KNIYc7EjtRg/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 1516,
+        "likeCount": null,
+        "commentCount": 34
+      }
+    },
+    {
       "id": "NCnORR0sLME",
       "slug": "bundeswehr-will-bei-mir-vollstrecken-beordert-leopard-2-fahrer-bis-65-NCnORR0sLME",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 161167,
+        "viewCount": 162763,
         "likeCount": null,
-        "commentCount": 1697
+        "commentCount": 1717
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 178762,
+        "viewCount": 179246,
         "likeCount": 11351,
-        "commentCount": 759
+        "commentCount": 760
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 137798,
+        "viewCount": 137923,
         "likeCount": 8619,
-        "commentCount": 826
+        "commentCount": 828
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 132674,
+        "viewCount": 132860,
         "likeCount": 7770,
-        "commentCount": 732
+        "commentCount": 733
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 125912,
+        "viewCount": 126154,
         "likeCount": 9490,
-        "commentCount": 648
+        "commentCount": 650
       }
     },
     {
@@ -182,7 +206,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 124479,
+        "viewCount": 124504,
         "likeCount": 8689,
         "commentCount": 585
       }
@@ -206,7 +230,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 93948,
+        "viewCount": 93972,
         "likeCount": 8464,
         "commentCount": 1614
       }
@@ -230,9 +254,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 95487,
+        "viewCount": 95538,
         "likeCount": 7634,
-        "commentCount": 590
+        "commentCount": 592
       }
     },
     {
@@ -254,7 +278,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 143195,
+        "viewCount": 143093,
         "likeCount": 9158,
         "commentCount": 915
       }
@@ -280,7 +304,7 @@
       "stats": {
         "viewCount": 83180,
         "likeCount": 7626,
-        "commentCount": 756
+        "commentCount": 754
       }
     },
     {
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 140347,
+        "viewCount": 140363,
         "likeCount": 7048,
         "commentCount": 584
       }
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 154683,
+        "viewCount": 154698,
         "likeCount": 11791,
         "commentCount": 1036
       }
@@ -374,33 +398,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 183999,
+        "viewCount": 184002,
         "likeCount": 13431,
         "commentCount": 1202
-      }
-    },
-    {
-      "id": "atNSeBB6RV8",
-      "slug": "neue-kosten-fuer-rentner-pflege-neuordnungsgesetz-ab-2028-kostenlose-m-atNSeBB6RV8",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Neue Kosten für Rentner: Pflege-Neuordnungsgesetz ab 2028! Kostenlose Mitversicherung fällt weg ...",
-      "description": "Das Bundeskabinett hat das Pflege-Neuordnungsgesetz auf den Weg gebracht: Ab 2028 soll die bisher kostenlose Mitversicherung von Ehe- und Lebenspartnern in der Pflegeversicherung wegfallen und durch einen Beitragszuschlag ersetzt werden. Im Video geht es darum, wen das trifft, was der Zuschlag bei einer Rente bedeuten kann und warum die Reform vor allem Rentnerpaare mit nur einem Einkommen belastet.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Das Bundeskabinett hat das Pflege-Neuordnungsgesetz auf den Weg gebracht: Ab 2028 soll die bisher kostenlose Mitversicherung von Ehe- und Lebenspartnern in der…",
-      "publishedAt": "2026-10-06T08:25:56+00:00",
-      "url": "https://www.youtube.com/watch?v=atNSeBB6RV8",
-      "thumbnail": "/media/atNSeBB6RV8.jpg",
-      "thumbnailRemote": "https://i2.ytimg.com/vi/atNSeBB6RV8/hqdefault.jpg",
-      "durationLabel": "10:35",
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 87536,
-        "likeCount": 5757,
-        "commentCount": 556
       }
     },
     {
@@ -422,7 +422,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 32756,
+        "viewCount": 32765,
         "likeCount": 3363,
         "commentCount": 629
       }
@@ -446,7 +446,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 86313,
+        "viewCount": 86314,
         "likeCount": 4492,
         "commentCount": 397
       }

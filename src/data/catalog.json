@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-12T18:03:27.372Z",
+  "syncedAt": "2026-10-12T18:22:27.146Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 284000,
         "viewCount": 168184399,
-        "videoCount": 1514,
+        "videoCount": 1515,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,30 @@
   ],
   "videos": [
     {
+      "id": "cDE3Xy6fw-0",
+      "slug": "merz-luegt-sich-die-cdu-kaputt-pinocchio-kanzler-packt-aus-bas-stromst-cDE3Xy6fw-0",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Merz lügt sich die CDU kaputt - Pinocchio-Kanzler packt aus: Bas, Stromsteuer & Ukraine-Märchen",
+      "description": "Friedrich Merz stellt sich in der Pressekonferenz als vertrauensvoller Partner von Bärbel Bas hin, während er gleichzeitig Wahlversprechen wie die Stromsteuer-Senkung und die Ukraine-Politik als große Erfolge verkauft. In dieser Reaktion nehme ich die größten Lügen und Widersprüche des Pinocchio-Kanzlers auseinander und zeige, wie er damit die CDU weiter in die Bedeutungslosigkeit führt.\n\nhttps://youtu.be/iKwFHNpAUjs \n\nQuelle: https://www.youtube.com/watch?v=BZkQG3fzcdk\n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Friedrich Merz stellt sich in der Pressekonferenz als vertrauensvoller Partner von Bärbel Bas hin, während er gleichzeitig Wahlversprechen wie die Stromsteuer-Senkung und die…",
+      "publishedAt": "2026-10-12T18:10:25+00:00",
+      "url": "https://www.youtube.com/watch?v=cDE3Xy6fw-0",
+      "thumbnail": "/media/cDE3Xy6fw-0.jpg",
+      "thumbnailRemote": "https://i4.ytimg.com/vi/cDE3Xy6fw-0/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 2382,
+        "likeCount": null,
+        "commentCount": 36
+      }
+    },
+    {
       "id": "3UO5meh6e4w",
       "slug": "merz-faellt-drauf-rein-spd-schiebt-verlierer-schweitzer-als-arbeitsmin-3UO5meh6e4w",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 60515,
+        "viewCount": 67445,
         "likeCount": null,
-        "commentCount": 342
+        "commentCount": 351
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 114845,
+        "viewCount": 117353,
         "likeCount": null,
-        "commentCount": 1421
+        "commentCount": 1429
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 205839,
+        "viewCount": 207299,
         "likeCount": null,
-        "commentCount": 1993
+        "commentCount": 1995
       }
     },
     {
@@ -134,7 +158,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 187030,
+        "viewCount": 187184,
         "likeCount": 11351,
         "commentCount": 773
       }
@@ -158,7 +182,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 141581,
+        "viewCount": 141678,
         "likeCount": 8619,
         "commentCount": 836
       }
@@ -182,7 +206,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 137947,
+        "viewCount": 138020,
         "likeCount": 7770,
         "commentCount": 728
       }
@@ -206,7 +230,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 129429,
+        "viewCount": 129482,
         "likeCount": 9490,
         "commentCount": 659
       }
@@ -230,9 +254,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 125118,
+        "viewCount": 125129,
         "likeCount": 8689,
-        "commentCount": 586
+        "commentCount": 587
       }
     },
     {
@@ -254,7 +278,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 94737,
+        "viewCount": 94759,
         "likeCount": 8464,
         "commentCount": 1620
       }
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 97308,
+        "viewCount": 97366,
         "likeCount": 7634,
-        "commentCount": 593
+        "commentCount": 594
       }
     },
     {
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 143362,
+        "viewCount": 143356,
         "likeCount": 9158,
         "commentCount": 915
       }
@@ -328,7 +352,7 @@
       "stats": {
         "viewCount": 83249,
         "likeCount": 7626,
-        "commentCount": 754
+        "commentCount": 756
       }
     },
     {
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 140784,
+        "viewCount": 140797,
         "likeCount": 7048,
         "commentCount": 589
       }
@@ -377,30 +401,6 @@
         "viewCount": 146053,
         "likeCount": 11162,
         "commentCount": 2084
-      }
-    },
-    {
-      "id": "BCqa4c_A90M",
-      "slug": "magdeburg-2026-afd-stellt-den-praesidenten-die-altparteien-die-nsdap-c-BCqa4c_A90M",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Magdeburg 2026: AfD stellt den Präsidenten, die Altparteien die NSDAP-CDU-Geschichtslücke",
-      "description": "Tobias Rausch ist heute zum ersten AfD-Landtagspräsidenten in der Geschichte der Bundesrepublik gewählt worden. Im Video wird die Empörung darüber der Nachkriegskarriere früherer NSDAP-Mitglieder gegenübergestellt, darunter Karl Carstens, Richard Stücklen, Carl Neinhaus, Franz Gurk und Camill Wurz. Außerdem geht es um Rauschs Antrittsrede, mutmaßliche Stimmen aus der CDU und die Frage, ob in Magdeburg wirklich die Demokratie endet.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Tobias Rausch ist heute zum ersten AfD-Landtagspräsidenten in der Geschichte der Bundesrepublik gewählt worden. Im Video wird die Empörung darüber der Nachkriegskarriere…",
-      "publishedAt": "2026-10-06T18:37:10+00:00",
-      "url": "https://www.youtube.com/watch?v=BCqa4c_A90M",
-      "thumbnail": "/media/BCqa4c_A90M.jpg",
-      "thumbnailRemote": "https://i3.ytimg.com/vi/BCqa4c_A90M/hqdefault.jpg",
-      "durationLabel": "14:30",
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 155094,
-        "likeCount": 11791,
-        "commentCount": 1036
       }
     },
     {

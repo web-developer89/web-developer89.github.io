@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-13T08:05:19.977Z",
+  "syncedAt": "2026-10-13T08:25:18.947Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 284000,
         "viewCount": 168184399,
-        "videoCount": 1515,
+        "videoCount": 1516,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,30 @@
   ],
   "videos": [
     {
+      "id": "PCSl9J6_50A",
+      "slug": "neuer-minister-schon-ein-luegner-schweitzer-erwischt-vor-laufender-kam-PCSl9J6_50A",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Neuer Minister schon ein Lügner: Schweitzer erwischt vor laufender Kamera",
+      "description": "Alexander Schweitzer wird als designierter Bundesarbeitsminister vor laufender Kamera erwischt, wie er behauptet, privat aus dem Willy-Brandt-Haus zu kommen – ein Paradebeispiel für die Vertrauenskrise der SPD und die Zusammenarbeit mit Friedrich Merz.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Alexander Schweitzer wird als designierter Bundesarbeitsminister vor laufender Kamera erwischt, wie er behauptet, privat aus dem Willy-Brandt-Haus zu kommen – ein…",
+      "publishedAt": "2026-10-13T08:15:08+00:00",
+      "url": "https://www.youtube.com/watch?v=PCSl9J6_50A",
+      "thumbnail": "/media/PCSl9J6_50A.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/PCSl9J6_50A/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 1504,
+        "likeCount": null,
+        "commentCount": 29
+      }
+    },
+    {
       "id": "cDE3Xy6fw-0",
       "slug": "merz-luegt-sich-die-cdu-kaputt-pinocchio-kanzler-packt-aus-bas-stromst-cDE3Xy6fw-0",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 113499,
+        "viewCount": 115194,
         "likeCount": null,
-        "commentCount": 1432
+        "commentCount": 1446
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 116162,
+        "viewCount": 116664,
         "likeCount": null,
-        "commentCount": 407
+        "commentCount": 410
       }
     },
     {
@@ -110,7 +134,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 134676,
+        "viewCount": 134819,
         "likeCount": null,
         "commentCount": 1511
       }
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 225412,
+        "viewCount": 225725,
         "likeCount": null,
-        "commentCount": 2065
+        "commentCount": 2069
       }
     },
     {
@@ -158,7 +182,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 188423,
+        "viewCount": 188506,
         "likeCount": 11351,
         "commentCount": 777
       }
@@ -182,7 +206,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 142909,
+        "viewCount": 142947,
         "likeCount": 8619,
         "commentCount": 850
       }
@@ -206,7 +230,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 138701,
+        "viewCount": 138727,
         "likeCount": 7770,
         "commentCount": 734
       }
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 130183,
+        "viewCount": 130196,
         "likeCount": 9490,
         "commentCount": 659
       }
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 98347,
+        "viewCount": 98358,
         "likeCount": 7634,
         "commentCount": 594
       }
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 83285,
+        "viewCount": 83287,
         "likeCount": 7626,
         "commentCount": 756
       }
@@ -374,33 +398,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 141072,
+        "viewCount": 141076,
         "likeCount": 7048,
         "commentCount": 590
-      }
-    },
-    {
-      "id": "p-oLLm0G6Y8",
-      "slug": "5-prozent-spd-erklaert-sachsen-anhalt-zum-tabubruch-die-spd-singt-die-p-oLLm0G6Y8",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "5-Prozent-SPD erklärt Sachsen-Anhalt zum Tabubruch & die SPD singt die Nationalhymne!",
-      "description": "Die SPD erklärt die demokratische Landtagswahl in Sachsen-Anhalt zum Tabubruch und ruft auf dem Berliner Bebelplatz den Tag der Wut aus. Boris Pistorius und Matthias Miersch stehen am Ort der Bücherverbrennung und singen öffentlich die Nationalhymne.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Die SPD erklärt die demokratische Landtagswahl in Sachsen-Anhalt zum Tabubruch und ruft auf dem Berliner Bebelplatz den Tag der Wut aus. Boris Pistorius und Matthias Miersch…",
-      "publishedAt": "2026-10-07T06:47:47+00:00",
-      "url": "https://www.youtube.com/watch?v=p-oLLm0G6Y8",
-      "thumbnail": "/media/p-oLLm0G6Y8.jpg",
-      "thumbnailRemote": "https://i1.ytimg.com/vi/p-oLLm0G6Y8/hqdefault.jpg",
-      "durationLabel": "9:46",
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 146131,
-        "likeCount": 11162,
-        "commentCount": 2082
       }
     },
     {

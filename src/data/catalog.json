@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-15T07:05:28.795Z",
+  "syncedAt": "2026-10-15T07:41:45.408Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 284000,
         "viewCount": 169333210,
-        "videoCount": 1519,
+        "videoCount": 1520,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,30 @@
   ],
   "videos": [
     {
+      "id": "cPv5ulUZMv8",
+      "slug": "alarm-am-frankfurter-flughafen-lufthansa-fliegt-kerosin-ein-engpass-wi-cPv5ulUZMv8",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Alarm am Frankfurter Flughafen: Lufthansa fliegt Kerosin ein - Engpass & widersprüchliche Erklärung!",
+      "description": "Am Frankfurter Flughafen herrscht ein Kerosinengpass, der Lufthansa zu einer unbefristeten Tankering-Anordnung zwingt, während die Verantwortlichen widersprüchliche Erklärungen zu Pipeline-Wartung und Niedrigwasser auf dem Rhein liefern. Die Lage deutet auf tieferliegende Versorgungsprobleme bei Kerosin und Diesel in Europa hin und wirft Fragen nach der tatsächlichen Tankfüllstände und der Krisenfestigkeit der Infrastruktur auf.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Am Frankfurter Flughafen herrscht ein Kerosinengpass, der Lufthansa zu einer unbefristeten Tankering-Anordnung zwingt, während die Verantwortlichen widersprüchliche Erklärungen…",
+      "publishedAt": "2026-10-15T07:24:22+00:00",
+      "url": "https://www.youtube.com/watch?v=cPv5ulUZMv8",
+      "thumbnail": "/media/cPv5ulUZMv8.jpg",
+      "thumbnailRemote": "https://i4.ytimg.com/vi/cPv5ulUZMv8/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 2600,
+        "likeCount": null,
+        "commentCount": 45
+      }
+    },
+    {
       "id": "I89HtzHMA1A",
       "slug": "esken-flippt-aus-mikrofon-abgedreht-afd-im-ausschuss-das-wort-entzogen-I89HtzHMA1A",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 152576,
+        "viewCount": 153937,
         "likeCount": null,
-        "commentCount": 1111
+        "commentCount": 1133
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 154765,
+        "viewCount": 155253,
         "likeCount": null,
-        "commentCount": 1108
+        "commentCount": 1110
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 72837,
+        "viewCount": 73011,
         "likeCount": null,
-        "commentCount": 442
+        "commentCount": 444
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 79566,
+        "viewCount": 79701,
         "likeCount": null,
-        "commentCount": 1555
+        "commentCount": 1559
       }
     },
     {
@@ -158,7 +182,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 112135,
+        "viewCount": 112188,
         "likeCount": null,
         "commentCount": 579
       }
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 149061,
+        "viewCount": 149120,
         "likeCount": null,
-        "commentCount": 1669
+        "commentCount": 1670
       }
     },
     {
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 134545,
+        "viewCount": 134573,
         "likeCount": null,
-        "commentCount": 399
+        "commentCount": 389
       }
     },
     {
@@ -230,9 +254,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 139760,
+        "viewCount": 139763,
         "likeCount": null,
-        "commentCount": 1521
+        "commentCount": 1525
       }
     },
     {
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 250188,
+        "viewCount": 250334,
         "likeCount": null,
-        "commentCount": 2190
+        "commentCount": 2192
       }
     },
     {
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 192709,
+        "viewCount": 192724,
         "likeCount": 11351,
-        "commentCount": 777
+        "commentCount": 776
       }
     },
     {
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 144381,
+        "viewCount": 144387,
         "likeCount": 8619,
         "commentCount": 854
       }
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 131482,
+        "viewCount": 131504,
         "likeCount": 9490,
         "commentCount": 657
       }
@@ -404,30 +428,6 @@
       }
     },
     {
-      "id": "1PR6pWZ6PR0",
-      "slug": "krasse-abrechnung-bei-lanz-daniel-stelter-zerlegt-die-politiker-von-me-1PR6pWZ6PR0",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Krasse Abrechnung bei Lanz! Daniel Stelter zerlegt die Politiker von Merz und der CDU!",
-      "description": "Deutschland im Niedergang und die Politiker schauen zu, aus Angst vor der AfD.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Deutschland im Niedergang und die Politiker schauen zu, aus Angst vor der AfD.",
-      "publishedAt": "2026-10-09T08:27:48+00:00",
-      "url": "https://www.youtube.com/watch?v=1PR6pWZ6PR0",
-      "thumbnail": "/media/1PR6pWZ6PR0.jpg",
-      "thumbnailRemote": "https://i2.ytimg.com/vi/1PR6pWZ6PR0/hqdefault.jpg",
-      "durationLabel": "14:41",
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 99156,
-        "likeCount": 7634,
-        "commentCount": 589
-      }
-    },
-    {
       "id": "PWzRo3FWjbo",
       "slug": "merz-verleiht-sich-selbst-den-friedenspreis-pinocchio-sitzt-in-der-jur-PWzRo3FWjbo",
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 86681,
+        "viewCount": 86691,
         "likeCount": 4492,
         "commentCount": 398
       }

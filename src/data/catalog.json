@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-15T00:00:33.900Z",
+  "syncedAt": "2026-10-15T00:25:53.179Z",
   "ok": false,
   "source": "youtube-public",
   "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
@@ -62,9 +62,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 139385,
+        "viewCount": 140797,
         "likeCount": null,
-        "commentCount": 1023
+        "commentCount": 1025
       }
     },
     {
@@ -86,7 +86,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 150767,
+        "viewCount": 151063,
         "likeCount": null,
         "commentCount": 1089
       }
@@ -134,7 +134,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 79290,
+        "viewCount": 79329,
         "likeCount": null,
         "commentCount": 1545
       }
@@ -158,7 +158,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 112201,
+        "viewCount": 112221,
         "likeCount": null,
         "commentCount": 582
       }
@@ -182,7 +182,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 148444,
+        "viewCount": 148489,
         "likeCount": null,
         "commentCount": 1667
       }
@@ -206,7 +206,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 134389,
+        "viewCount": 134410,
         "likeCount": null,
         "commentCount": 413
       }
@@ -230,7 +230,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 139703,
+        "viewCount": 139709,
         "likeCount": null,
         "commentCount": 1525
       }
@@ -254,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 249517,
+        "viewCount": 249554,
         "likeCount": null,
         "commentCount": 2183
       }
@@ -422,7 +422,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 98986,
+        "viewCount": 99100,
         "likeCount": 7634,
         "commentCount": 589
       }

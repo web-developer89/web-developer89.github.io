@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-15T18:08:20.174Z",
+  "syncedAt": "2026-10-15T18:40:22.035Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 284000,
         "viewCount": 169353167,
-        "videoCount": 1521,
+        "videoCount": 1522,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,30 @@
   ],
   "videos": [
     {
+      "id": "NBfLWQEHvT4",
+      "slug": "2-flughafen-mit-kerosinmangel-deutsche-bahn-jetzt-schuld-schweiz-gibt-NBfLWQEHvT4",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "2. Flughafen mit Kerosinmangel - Deutsche Bahn jetzt schuld? Schweiz gibt Reserven für Zürich frei!",
+      "description": "Fraport, Lufthansa und RMR GmbH geben unterschiedliche Antworten. In Zürich kommt es fast zur Knappheit von Kerosin wegen der Deutschen Bahn? Bund gibt Reserven für Zürich frei.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Fraport, Lufthansa und RMR GmbH geben unterschiedliche Antworten. In Zürich kommt es fast zur Knappheit von Kerosin wegen der Deutschen Bahn? Bund gibt Reserven für Zürich frei.",
+      "publishedAt": "2026-10-15T18:11:03+00:00",
+      "url": "https://www.youtube.com/watch?v=NBfLWQEHvT4",
+      "thumbnail": "/media/NBfLWQEHvT4.jpg",
+      "thumbnailRemote": "https://i3.ytimg.com/vi/NBfLWQEHvT4/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 3125,
+        "likeCount": null,
+        "commentCount": 54
+      }
+    },
+    {
       "id": "z2h9irv7nH0",
       "slug": "merz-fluechtet-vor-weidel-kein-euro-fuer-die-ukraine-fehlt-in-deutschl-z2h9irv7nH0",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 16802,
+        "viewCount": 37895,
         "likeCount": null,
-        "commentCount": 653
+        "commentCount": 691
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 81645,
+        "viewCount": 87716,
         "likeCount": null,
-        "commentCount": 732
+        "commentCount": 734
       }
     },
     {
@@ -110,7 +134,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 169385,
+        "viewCount": 170696,
         "likeCount": null,
         "commentCount": 1225
       }
@@ -134,7 +158,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 160165,
+        "viewCount": 160230,
         "likeCount": null,
         "commentCount": 1085
       }
@@ -158,7 +182,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 78534,
+        "viewCount": 79379,
         "likeCount": null,
         "commentCount": 494
       }
@@ -182,7 +206,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 81068,
+        "viewCount": 81164,
         "likeCount": null,
         "commentCount": 1574
       }
@@ -206,7 +230,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 113077,
+        "viewCount": 113230,
         "likeCount": null,
         "commentCount": 564
       }
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 150111,
+        "viewCount": 150247,
         "likeCount": null,
         "commentCount": 1673
       }
@@ -254,7 +278,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 135225,
+        "viewCount": 135483,
         "likeCount": null,
         "commentCount": 387
       }
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 253048,
+        "viewCount": 253316,
         "likeCount": null,
         "commentCount": 2149
       }
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 144530,
+        "viewCount": 144567,
         "likeCount": 8619,
         "commentCount": 856
       }
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 140227,
+        "viewCount": 140278,
         "likeCount": 7770,
         "commentCount": 716
       }
@@ -401,30 +425,6 @@
         "viewCount": 131598,
         "likeCount": 9490,
         "commentCount": 656
-      }
-    },
-    {
-      "id": "-KYbzhDgcwI",
-      "slug": "merz-droht-der-spd-mit-rauswurf-die-pinocchio-nummer-aus-der-25er-grup--KYbzhDgcwI",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Merz droht der SPD mit Rauswurf? Die Pinocchio-Nummer aus der 25er-Gruppe.",
-      "description": "Ich halte die NIUS-Geschichte für eine Räuberpistole: Friedrich Merz soll in der 25er-Gruppe mit dem Rauswurf der SPD-Minister und einer Minderheitsregierung gedroht haben, wird das aber nicht machen. Selbst wenn er es täte, bliebe er Kanzler, weil ihn ohne die Union niemand per konstruktivem Misstrauensvotum stürzen kann und daraus keine Neuwahl folgt.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Ich halte die NIUS-Geschichte für eine Räuberpistole: Friedrich Merz soll in der 25er-Gruppe mit dem Rauswurf der SPD-Minister und einer Minderheitsregierung gedroht haben,…",
-      "publishedAt": "2026-10-09T18:55:42+00:00",
-      "url": "https://www.youtube.com/watch?v=-KYbzhDgcwI",
-      "thumbnail": "/media/-KYbzhDgcwI.jpg",
-      "thumbnailRemote": "https://i2.ytimg.com/vi/-KYbzhDgcwI/hqdefault.jpg",
-      "durationLabel": "13:54",
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 125649,
-        "likeCount": 8689,
-        "commentCount": 587
       }
     },
     {
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 86749,
+        "viewCount": 86771,
         "likeCount": 4492,
         "commentCount": 399
       }

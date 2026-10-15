@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-15T14:19:52.867Z",
+  "syncedAt": "2026-10-15T14:52:46.278Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 284000,
         "viewCount": 169333210,
-        "videoCount": 1520,
+        "videoCount": 1521,
         "hiddenSubscriberCount": false
       }
     },
@@ -36,13 +36,37 @@
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
         "subscriberCount": 17000,
-        "viewCount": 277378,
+        "viewCount": 279546,
         "videoCount": 5,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "z2h9irv7nH0",
+      "slug": "merz-fluechtet-vor-weidel-kein-euro-fuer-die-ukraine-fehlt-in-deutschl-z2h9irv7nH0",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Merz flüchtet vor Weidel: „Kein Euro für die Ukraine fehlt in Deutschland“ – Lüge oder Wahrheit?",
+      "description": "Friedrich Merz verlässt den Saal, als Alice Weidel ans Rednerpult tritt! \n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Friedrich Merz verlässt den Saal, als Alice Weidel ans Rednerpult tritt!",
+      "publishedAt": "2026-10-15T14:33:46+00:00",
+      "url": "https://www.youtube.com/watch?v=z2h9irv7nH0",
+      "thumbnail": "/media/z2h9irv7nH0.jpg",
+      "thumbnailRemote": "https://i3.ytimg.com/vi/z2h9irv7nH0/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 2964,
+        "likeCount": null,
+        "commentCount": 82
+      }
+    },
     {
       "id": "cPv5ulUZMv8",
       "slug": "alarm-am-frankfurter-flughafen-lufthansa-fliegt-kerosin-ein-engpass-wi-cPv5ulUZMv8",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 66510,
+        "viewCount": 69096,
         "likeCount": null,
-        "commentCount": 686
+        "commentCount": 702
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 166504,
+        "viewCount": 166979,
         "likeCount": null,
-        "commentCount": 1205
+        "commentCount": 1208
       }
     },
     {
@@ -110,7 +134,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 159433,
+        "viewCount": 159561,
         "likeCount": null,
         "commentCount": 1113
       }
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 76753,
+        "viewCount": 77004,
         "likeCount": null,
-        "commentCount": 483
+        "commentCount": 486
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 80809,
+        "viewCount": 80860,
         "likeCount": null,
-        "commentCount": 1571
+        "commentCount": 1574
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 112797,
+        "viewCount": 112839,
         "likeCount": null,
-        "commentCount": 585
+        "commentCount": 586
       }
     },
     {
@@ -206,7 +230,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 149808,
+        "viewCount": 149853,
         "likeCount": null,
         "commentCount": 1671
       }
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 134866,
+        "viewCount": 134916,
         "likeCount": null,
         "commentCount": 387
       }
@@ -254,7 +278,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 139863,
+        "viewCount": 139885,
         "likeCount": null,
         "commentCount": 1516
       }
@@ -278,7 +302,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 252280,
+        "viewCount": 252399,
         "likeCount": null,
         "commentCount": 2188
       }
@@ -304,7 +328,7 @@
       "stats": {
         "viewCount": 192962,
         "likeCount": 11351,
-        "commentCount": 773
+        "commentCount": 776
       }
     },
     {
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 140195,
+        "viewCount": 140212,
         "likeCount": 7770,
         "commentCount": 715
       }
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 131575,
+        "viewCount": 131593,
         "likeCount": 9490,
         "commentCount": 656
       }
@@ -398,33 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 125644,
+        "viewCount": 125646,
         "likeCount": 8689,
         "commentCount": 587
-      }
-    },
-    {
-      "id": "hEJTi89VnR8",
-      "slug": "bmw-verweigert-dem-landtag-sachsen-anhalt-den-dienstwagen-nach-der-wah-hEJTi89VnR8",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "BMW verweigert dem Landtag Sachsen-Anhalt den Dienstwagen – nach der Wahl von Tobias Rausch",
-      "description": "BMW hat offenbar ein bereits vorgelegtes Leasingangebot für den Dienstwagen des Landtagspräsidenten von Sachsen-Anhalt, Tobias Rausch (AfD), wenige Stunden nach dessen Wahl zurückgezogen. Sehe das als politisch motivierte Verweigerung gegenüber einem deutschen Verfassungsorgan, während BMW weltweit Regierungs- und Diplomatenfahrzeuge liefert, und zitiere dazu den offenen Brief Rauschs an Vorstandschef Nedeljković.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "BMW hat offenbar ein bereits vorgelegtes Leasingangebot für den Dienstwagen des Landtagspräsidenten von Sachsen-Anhalt, Tobias Rausch (AfD), wenige Stunden nach dessen Wahl…",
-      "publishedAt": "2026-10-09T15:17:25+00:00",
-      "url": "https://www.youtube.com/watch?v=hEJTi89VnR8",
-      "thumbnail": "/media/hEJTi89VnR8.jpg",
-      "thumbnailRemote": "https://i1.ytimg.com/vi/hEJTi89VnR8/hqdefault.jpg",
-      "durationLabel": "13:32",
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 95440,
-        "likeCount": 8464,
-        "commentCount": 1622
       }
     },
     {
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 86740,
+        "viewCount": 86748,
         "likeCount": 4492,
         "commentCount": 399
       }

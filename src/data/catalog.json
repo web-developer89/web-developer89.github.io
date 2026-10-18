@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-18T05:06:39.942Z",
-  "ok": false,
+  "syncedAt": "2026-10-18T09:29:26.304Z",
+  "ok": true,
   "source": "youtube-public",
-  "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
+  "error": null,
   "live": null,
   "channels": [
     {
@@ -10,7 +10,7 @@
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "name": "Politik mit Kopf",
       "videoCount": 15,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/mark.jpg",
       "slug": "politik-mit-kopf",
       "handle": "@PolitikmitKopf",
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 284000,
         "viewCount": 170165339,
-        "videoCount": 1525,
+        "videoCount": 1526,
         "hiddenSubscriberCount": false
       }
     },
@@ -28,7 +28,7 @@
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
       "videoCount": 5,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
       "handle": "@PolitikmitKopfReagiert",
@@ -43,6 +43,30 @@
     }
   ],
   "videos": [
+    {
+      "id": "PyRyuOfcnzI",
+      "slug": "berlin-liefert-linksgruene-sondierung-enteignung-mietendeckel-das-ende-PyRyuOfcnzI",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Berlin liefert – Linksgrüne Sondierung: Enteignung, Mietendeckel & das Ende der freien Stadt",
+      "description": "In diesem Video werte ich das Pressestatement der linksgrünen Sondierung in Berlin aus und zeige, was hinter den Ankündigungen zu Neubau, Mietendeckel und Enteignung wirklich steckt. Die geplanten Maßnahmen bedeuten weniger Freiheit auf dem Wohnungsmarkt, mehr Kontrolle und das Ende eines freien Berlins – inklusive der Folgen für Vermieter, Mieter und die Stadt insgesamt.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "In diesem Video werte ich das Pressestatement der linksgrünen Sondierung in Berlin aus und zeige, was hinter den Ankündigungen zu Neubau, Mietendeckel und Enteignung wirklich…",
+      "publishedAt": "2026-10-18T08:26:48+00:00",
+      "url": "https://www.youtube.com/watch?v=PyRyuOfcnzI",
+      "thumbnail": "/media/PyRyuOfcnzI.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/PyRyuOfcnzI/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 9261,
+        "likeCount": null,
+        "commentCount": 242
+      }
+    },
     {
       "id": "3JsoR42HCp4",
       "slug": "merz-flippt-aus-ju-mitglied-fordert-ruecktritt-fahren-sie-zum-bundespr-3JsoR42HCp4",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 145963,
+        "viewCount": 231809,
         "likeCount": null,
-        "commentCount": 986
+        "commentCount": 1244
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 89213,
+        "viewCount": 95580,
         "likeCount": null,
-        "commentCount": 1110
+        "commentCount": 1158
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 299281,
+        "viewCount": 305544,
         "likeCount": null,
-        "commentCount": 2312
+        "commentCount": 2324
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87053,
+        "viewCount": 87525,
         "likeCount": null,
-        "commentCount": 349
+        "commentCount": 350
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 97718,
+        "viewCount": 98190,
         "likeCount": null,
-        "commentCount": 955
+        "commentCount": 957
       }
     },
     {
@@ -182,7 +206,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 108513,
+        "viewCount": 108921,
         "likeCount": null,
         "commentCount": 817
       }
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 183792,
+        "viewCount": 184459,
         "likeCount": null,
-        "commentCount": 1300
+        "commentCount": 1304
       }
     },
     {
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 166700,
+        "viewCount": 166834,
         "likeCount": null,
         "commentCount": 1096
       }
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 89446,
+        "viewCount": 90810,
         "likeCount": null,
-        "commentCount": 528
+        "commentCount": 533
       }
     },
     {
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 84303,
+        "viewCount": 84430,
         "likeCount": null,
-        "commentCount": 1599
+        "commentCount": 1600
       }
     },
     {
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 115392,
+        "viewCount": 115425,
         "likeCount": null,
         "commentCount": 567
       }
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 155785,
+        "viewCount": 157925,
         "likeCount": null,
-        "commentCount": 1704
+        "commentCount": 1710
       }
     },
     {
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 136629,
+        "viewCount": 136671,
         "likeCount": null,
         "commentCount": 386
       }
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 140472,
+        "viewCount": 140506,
         "likeCount": null,
         "commentCount": 1487
       }
@@ -398,33 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 258974,
+        "viewCount": 260532,
         "likeCount": null,
-        "commentCount": 2174
-      }
-    },
-    {
-      "id": "xcf8vvH39Qc",
-      "slug": "spd-sumpf-fraktionschef-tritt-zurueck-klinikaffaere-ermittlungen-parte-xcf8vvH39Qc",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "SPD-Sumpf: Fraktionschef tritt zurück – Klinikaffäre, Ermittlungen & Parteigeld für privaten Anwalt?",
-      "description": "Die SPD versinkt immer tiefer im Sumpf aus Klinikaffäre, Ermittlungen gegen eigene Spitzenleute und dem Verdacht auf Missbrauch von Parteigeldern. Während Fraktionschefs zurücktreten und Verteidiger von der Partei bezahlt werden, bleibt die Frage offen, wie tief die Verquickung von Politik, Justiz und Vetternwirtschaft wirklich reicht.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Die SPD versinkt immer tiefer im Sumpf aus Klinikaffäre, Ermittlungen gegen eigene Spitzenleute und dem Verdacht auf Missbrauch von Parteigeldern. Während Fraktionschefs…",
-      "publishedAt": "2026-10-11T08:57:38+00:00",
-      "url": "https://www.youtube.com/watch?v=xcf8vvH39Qc",
-      "thumbnail": "/media/xcf8vvH39Qc.jpg",
-      "thumbnailRemote": "https://i1.ytimg.com/vi/xcf8vvH39Qc/hqdefault.jpg",
-      "durationLabel": "10:56",
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 193493,
-        "likeCount": 11351,
-        "commentCount": 745
+        "commentCount": 2178
       }
     },
     {
@@ -446,7 +446,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33356,
+        "viewCount": 33372,
         "likeCount": 3363,
         "commentCount": 632
       }
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 86973,
+        "viewCount": 87010,
         "likeCount": 4492,
         "commentCount": 399
       }
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42683,
+        "viewCount": 42689,
         "likeCount": 3038,
         "commentCount": 509
       }

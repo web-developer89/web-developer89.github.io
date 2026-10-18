@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-18T09:29:26.304Z",
+  "syncedAt": "2026-10-18T13:25:15.930Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -18,8 +18,8 @@
       "subscribeUrl": "https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1",
       "stats": {
         "subscriberCount": 284000,
-        "viewCount": 170165339,
-        "videoCount": 1526,
+        "viewCount": 170252263,
+        "videoCount": 1527,
         "hiddenSubscriberCount": false
       }
     },
@@ -36,13 +36,37 @@
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
         "subscriberCount": 17100,
-        "viewCount": 294546,
+        "viewCount": 297319,
         "videoCount": 5,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "Ty0PWGyj7Rk",
+      "slug": "paris-brennt-mailand-eskaliert-albanien-folgt-was-steckt-wirklich-dahi-Ty0PWGyj7Rk",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Paris brennt, Mailand eskaliert, Albanien folgt – Was steckt wirklich dahinter?",
+      "description": "In Frankreich eskalieren die sogenannten Schulbuchproteste landesweit – von Paris über Marseille bis Lyon brennen Autos und Gebäude, während die Gewalt inzwischen auch auf Mailand und Albanien übergreift. Das Video zeigt aktuelle Bilder der Ausschreitungen und hinterfragt, warum aus Protesten gegen schlechte Schulen eine Welle von Plünderungen und offenen Angriffen auf die Staatsgewalt geworden ist.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "In Frankreich eskalieren die sogenannten Schulbuchproteste landesweit – von Paris über Marseille bis Lyon brennen Autos und Gebäude, während die Gewalt inzwischen auch auf…",
+      "publishedAt": "2026-10-18T12:55:19+00:00",
+      "url": "https://www.youtube.com/watch?v=Ty0PWGyj7Rk",
+      "thumbnail": "/media/Ty0PWGyj7Rk.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/Ty0PWGyj7Rk/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 7169,
+        "likeCount": null,
+        "commentCount": 261
+      }
+    },
     {
       "id": "PyRyuOfcnzI",
       "slug": "berlin-liefert-linksgruene-sondierung-enteignung-mietendeckel-das-ende-PyRyuOfcnzI",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 9261,
+        "viewCount": 54522,
         "likeCount": null,
-        "commentCount": 242
+        "commentCount": 649
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 231809,
+        "viewCount": 253867,
         "likeCount": null,
-        "commentCount": 1244
+        "commentCount": 1294
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 95580,
+        "viewCount": 98456,
         "likeCount": null,
-        "commentCount": 1158
+        "commentCount": 1169
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 305544,
+        "viewCount": 309431,
         "likeCount": null,
-        "commentCount": 2324
+        "commentCount": 2334
       }
     },
     {
@@ -158,7 +182,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87525,
+        "viewCount": 87794,
         "likeCount": null,
         "commentCount": 350
       }
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 98190,
+        "viewCount": 98486,
         "likeCount": null,
-        "commentCount": 957
+        "commentCount": 958
       }
     },
     {
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 108921,
+        "viewCount": 109136,
         "likeCount": null,
-        "commentCount": 817
+        "commentCount": 819
       }
     },
     {
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 184459,
+        "viewCount": 184959,
         "likeCount": null,
         "commentCount": 1304
       }
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 166834,
+        "viewCount": 166943,
         "likeCount": null,
-        "commentCount": 1096
+        "commentCount": 1097
       }
     },
     {
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 90810,
+        "viewCount": 91541,
         "likeCount": null,
-        "commentCount": 533
+        "commentCount": 541
       }
     },
     {
@@ -302,9 +326,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 84430,
+        "viewCount": 84493,
         "likeCount": null,
-        "commentCount": 1600
+        "commentCount": 1601
       }
     },
     {
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 115425,
+        "viewCount": 115454,
         "likeCount": null,
-        "commentCount": 567
+        "commentCount": 569
       }
     },
     {
@@ -350,9 +374,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 157925,
+        "viewCount": 158573,
         "likeCount": null,
-        "commentCount": 1710
+        "commentCount": 1712
       }
     },
     {
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 136671,
+        "viewCount": 136695,
         "likeCount": null,
         "commentCount": 386
       }
@@ -398,33 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 140506,
+        "viewCount": 140534,
         "likeCount": null,
         "commentCount": 1487
-      }
-    },
-    {
-      "id": "NCnORR0sLME",
-      "slug": "bundeswehr-will-bei-mir-vollstrecken-beordert-leopard-2-fahrer-bis-65-NCnORR0sLME",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Bundeswehr will bei mir vollstrecken & beordert Leopard-2-Fahrer bis 65 zurück!",
-      "description": "Die Bundeswehr erwirkt einen vollstreckbaren Titel gegen mich. Der Grund ist einfach beschämend!\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Die Bundeswehr erwirkt einen vollstreckbaren Titel gegen mich. Der Grund ist einfach beschämend!",
-      "publishedAt": "2026-10-11T16:02:28+00:00",
-      "url": "https://www.youtube.com/watch?v=NCnORR0sLME",
-      "thumbnail": "/media/NCnORR0sLME.jpg",
-      "thumbnailRemote": "https://i3.ytimg.com/vi/NCnORR0sLME/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 260532,
-        "likeCount": null,
-        "commentCount": 2178
       }
     },
     {
@@ -446,7 +446,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33372,
+        "viewCount": 33384,
         "likeCount": 3363,
         "commentCount": 632
       }
@@ -470,9 +470,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87010,
+        "viewCount": 87048,
         "likeCount": 4492,
-        "commentCount": 399
+        "commentCount": 400
       }
     },
     {
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42689,
+        "viewCount": 42695,
         "likeCount": 3038,
         "commentCount": 509
       }

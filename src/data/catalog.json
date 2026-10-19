@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-19T10:58:33.418Z",
+  "syncedAt": "2026-10-19T17:18:26.849Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -27,7 +27,7 @@
       "id": "reagiert",
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
-      "videoCount": 5,
+      "videoCount": 6,
       "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
@@ -35,14 +35,38 @@
       "channelUrl": "https://www.youtube.com/@PolitikmitKopfReagiert",
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
-        "subscriberCount": 17100,
+        "subscriberCount": 17200,
         "viewCount": 301361,
-        "videoCount": 5,
+        "videoCount": 6,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "1OnErr4qSb0",
+      "slug": "bundestag-tickt-aus-afd-fordert-migrationsbilanz-rechnung-waere-faschi-1OnErr4qSb0",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "channelName": "Politik mit Kopf REAGIERT",
+      "title": "Bundestag tickt aus: AfD fordert Migrationsbilanz – Rechnung wäre faschistisch & rassistisch",
+      "description": "In dieser Bundestagsdebatte fordert die AfD eine regelmäßige Kosten-Nutzen-Bilanz der Zuwanderung für die sozialen Sicherungssysteme. Statt auf die Forderung einzugehen, werfen Vertreter von Union, SPD, Grünen und Linken der AfD vor, mit dem Antrag rassistisch, faschistisch und undemokratisch zu handeln.\n\nQuelle: https://www.bundestag.de/mediathek/video?videoid=7665931\n\nhttps://youtu.be/PWzRo3FWjbo\n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n\n#Bundestag #Politik #Bundesregierung\n\nhttps://youtu.be/4vqdluC_F_U\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "In dieser Bundestagsdebatte fordert die AfD eine regelmäßige Kosten-Nutzen-Bilanz der Zuwanderung für die sozialen Sicherungssysteme. Statt auf die Forderung einzugehen, werfen…",
+      "publishedAt": "2026-10-19T15:24:10+00:00",
+      "url": "https://www.youtube.com/watch?v=1OnErr4qSb0",
+      "thumbnail": "/media/1OnErr4qSb0.jpg",
+      "thumbnailRemote": "https://i2.ytimg.com/vi/1OnErr4qSb0/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 6130,
+        "likeCount": null,
+        "commentCount": 116
+      }
+    },
     {
       "id": "H2bKdplBw2c",
       "slug": "berlin-gefaehrdet-deutschland-unterwanderung-der-linken-faeser-spricht-H2bKdplBw2c",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 27114,
+        "viewCount": 90318,
         "likeCount": null,
-        "commentCount": 291
+        "commentCount": 587
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 217689,
+        "viewCount": 229991,
         "likeCount": null,
-        "commentCount": 2724
+        "commentCount": 2826
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 105260,
+        "viewCount": 109195,
         "likeCount": null,
-        "commentCount": 829
+        "commentCount": 849
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 276309,
+        "viewCount": 280879,
         "likeCount": null,
-        "commentCount": 1350
+        "commentCount": 1362
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 104200,
+        "viewCount": 105395,
         "likeCount": null,
-        "commentCount": 1201
+        "commentCount": 1212
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 318865,
+        "viewCount": 320547,
         "likeCount": null,
-        "commentCount": 2359
+        "commentCount": 2364
       }
     },
     {
@@ -206,7 +230,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 88649,
+        "viewCount": 88845,
         "likeCount": null,
         "commentCount": 350
       }
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 99277,
+        "viewCount": 99461,
         "likeCount": null,
         "commentCount": 962
       }
@@ -254,7 +278,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 109786,
+        "viewCount": 109906,
         "likeCount": null,
         "commentCount": 824
       }
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 186678,
+        "viewCount": 187136,
         "likeCount": null,
-        "commentCount": 1306
+        "commentCount": 1308
       }
     },
     {
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 167602,
+        "viewCount": 167718,
         "likeCount": null,
         "commentCount": 1099
       }
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 94043,
+        "viewCount": 94693,
         "likeCount": null,
-        "commentCount": 554
+        "commentCount": 558
       }
     },
     {
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 84706,
+        "viewCount": 84792,
         "likeCount": null,
         "commentCount": 1602
       }
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 115625,
+        "viewCount": 115678,
         "likeCount": null,
         "commentCount": 569
       }
@@ -398,9 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 160790,
+        "viewCount": 161202,
         "likeCount": null,
-        "commentCount": 1739
+        "commentCount": 1740
       }
     },
     {
@@ -422,7 +446,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 136993,
+        "viewCount": 137042,
         "likeCount": null,
         "commentCount": 386
       }
@@ -446,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33423,
+        "viewCount": 33436,
         "likeCount": 3363,
         "commentCount": 634
       }
@@ -470,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87152,
+        "viewCount": 87214,
         "likeCount": 4492,
         "commentCount": 398
       }
@@ -494,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42719,
+        "viewCount": 42726,
         "likeCount": 3038,
         "commentCount": 509
       }

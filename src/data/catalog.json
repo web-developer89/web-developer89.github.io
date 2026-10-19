@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-19T05:24:43.085Z",
-  "ok": false,
+  "syncedAt": "2026-10-19T10:58:33.418Z",
+  "ok": true,
   "source": "youtube-public",
-  "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
+  "error": null,
   "live": null,
   "channels": [
     {
@@ -10,16 +10,16 @@
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "name": "Politik mit Kopf",
       "videoCount": 15,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/mark.jpg",
       "slug": "politik-mit-kopf",
       "handle": "@PolitikmitKopf",
       "channelUrl": "https://www.youtube.com/@PolitikmitKopf",
       "subscribeUrl": "https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1",
       "stats": {
-        "subscriberCount": 284000,
-        "viewCount": 170358946,
-        "videoCount": 1527,
+        "subscriberCount": 285000,
+        "viewCount": 170658570,
+        "videoCount": 1528,
         "hiddenSubscriberCount": false
       }
     },
@@ -28,7 +28,7 @@
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
       "videoCount": 5,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
       "handle": "@PolitikmitKopfReagiert",
@@ -36,13 +36,37 @@
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
         "subscriberCount": 17100,
-        "viewCount": 298920,
+        "viewCount": 301361,
         "videoCount": 5,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "H2bKdplBw2c",
+      "slug": "berlin-gefaehrdet-deutschland-unterwanderung-der-linken-faeser-spricht-H2bKdplBw2c",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Berlin gefährdet Deutschland: Unterwanderung der Linken & Faeser spricht von Wertekompass!",
+      "description": "Faeser hat jahrelang beim Verfassungsschutz das linke Auge geschlossen und sieht sich nun mit den Folgen einer unterwanderten, antisemitismusbelasteten Linken konfrontiert, die in Berlin für verfassungswidrige Forderungen wie ein Ausländerwahlrecht eintritt. \n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Faeser hat jahrelang beim Verfassungsschutz das linke Auge geschlossen und sieht sich nun mit den Folgen einer unterwanderten, antisemitismusbelasteten Linken konfrontiert, die…",
+      "publishedAt": "2026-10-19T08:06:44+00:00",
+      "url": "https://www.youtube.com/watch?v=H2bKdplBw2c",
+      "thumbnail": "/media/H2bKdplBw2c.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/H2bKdplBw2c/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 27114,
+        "likeCount": null,
+        "commentCount": 291
+      }
+    },
     {
       "id": "Ty0PWGyj7Rk",
       "slug": "paris-brennt-mailand-eskaliert-albanien-folgt-was-steckt-wirklich-dahi-Ty0PWGyj7Rk",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 186279,
+        "viewCount": 217689,
         "likeCount": null,
-        "commentCount": 2473
+        "commentCount": 2724
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 92091,
+        "viewCount": 105260,
         "likeCount": null,
-        "commentCount": 778
+        "commentCount": 829
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 269033,
+        "viewCount": 276309,
         "likeCount": null,
-        "commentCount": 1330
+        "commentCount": 1350
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 101465,
+        "viewCount": 104200,
         "likeCount": null,
-        "commentCount": 1191
+        "commentCount": 1201
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 316533,
+        "viewCount": 318865,
         "likeCount": null,
-        "commentCount": 2349
+        "commentCount": 2359
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 88365,
+        "viewCount": 88649,
         "likeCount": null,
-        "commentCount": 349
+        "commentCount": 350
       }
     },
     {
@@ -206,7 +230,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 99021,
+        "viewCount": 99277,
         "likeCount": null,
         "commentCount": 962
       }
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 109588,
+        "viewCount": 109786,
         "likeCount": null,
         "commentCount": 824
       }
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 186076,
+        "viewCount": 186678,
         "likeCount": null,
-        "commentCount": 1303
+        "commentCount": 1306
       }
     },
     {
@@ -278,7 +302,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 167428,
+        "viewCount": 167602,
         "likeCount": null,
         "commentCount": 1099
       }
@@ -302,9 +326,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 93398,
+        "viewCount": 94043,
         "likeCount": null,
-        "commentCount": 552
+        "commentCount": 554
       }
     },
     {
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 84593,
+        "viewCount": 84706,
         "likeCount": null,
-        "commentCount": 1601
+        "commentCount": 1602
       }
     },
     {
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 115532,
+        "viewCount": 115625,
         "likeCount": null,
         "commentCount": 569
       }
@@ -374,9 +398,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 159349,
+        "viewCount": 160790,
         "likeCount": null,
-        "commentCount": 1727
+        "commentCount": 1739
       }
     },
     {
@@ -398,33 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 136784,
+        "viewCount": 136993,
         "likeCount": null,
         "commentCount": 386
-      }
-    },
-    {
-      "id": "KNIYc7EjtRg",
-      "slug": "mimose-bas-tritt-zurueck-und-fluechtet-vor-kritik-mandat-und-2-jahre-u-KNIYc7EjtRg",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Mimose Bas tritt zurück und flüchtet vor Kritik – Mandat und 2 Jahre Übergangsgeld bleiben!",
-      "description": "Bärbel Bas tritt überraschend als SPD-Vorsitzende und Bundesarbeitsministerin zurück und begründet den Schritt mit dem Tod ihrer Stieftochter sowie anhaltenden Angriffen.\nMandat und Übergangsgeld will Sie behalten!\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Bärbel Bas tritt überraschend als SPD-Vorsitzende und Bundesarbeitsministerin zurück und begründet den Schritt mit dem Tod ihrer Stieftochter sowie anhaltenden Angriffen.…",
-      "publishedAt": "2026-10-12T07:28:39+00:00",
-      "url": "https://www.youtube.com/watch?v=KNIYc7EjtRg",
-      "thumbnail": "/media/KNIYc7EjtRg.jpg",
-      "thumbnailRemote": "https://i4.ytimg.com/vi/KNIYc7EjtRg/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 140577,
-        "likeCount": null,
-        "commentCount": 1486
       }
     },
     {
@@ -446,7 +446,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33413,
+        "viewCount": 33423,
         "likeCount": 3363,
         "commentCount": 634
       }
@@ -470,9 +470,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87113,
+        "viewCount": 87152,
         "likeCount": 4492,
-        "commentCount": 400
+        "commentCount": 398
       }
     },
     {
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42707,
+        "viewCount": 42719,
         "likeCount": 3038,
         "commentCount": 509
       }
@@ -530,7 +530,7 @@
     "avatar": "/brand/tiktok.jpg",
     "status": "verbunden",
     "stats": {
-      "followerCount": 22,
+      "followerCount": 23,
       "likeCount": 21,
       "videoCount": 2
     }

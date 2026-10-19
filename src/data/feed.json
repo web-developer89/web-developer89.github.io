@@ -1,14 +1,14 @@
 {
-  "syncedAt": "2026-10-19T17:18:26.849Z",
+  "syncedAt": "2026-10-19T21:34:24.362Z",
   "live": null,
   "latest": {
-    "title": "Bundestag tickt aus: AfD fordert Migrationsbilanz – Rechnung wäre faschistisch & rassistisch",
-    "url": "https://www.youtube.com/watch?v=1OnErr4qSb0",
-    "pageUrl": "/videos/bundestag-tickt-aus-afd-fordert-migrationsbilanz-rechnung-waere-faschi-1OnErr4qSb0/",
-    "thumbnail": "/media/1OnErr4qSb0.jpg",
-    "publishedAt": "2026-10-19T15:24:10+00:00",
-    "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
-    "channelName": "Politik mit Kopf REAGIERT"
+    "title": "AfD IT-Desaster: 400.000 E-Mails geleakt | DDoS, Pfuscher & politische Folgen",
+    "url": "https://www.youtube.com/watch?v=K2Tq2n_QJZk",
+    "pageUrl": "/videos/afd-it-desaster-400-000-e-mails-geleakt-ddos-pfuscher-politische-folge-K2Tq2n_QJZk/",
+    "thumbnail": "/media/K2Tq2n_QJZk.jpg",
+    "publishedAt": "2026-10-19T19:03:16+00:00",
+    "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+    "channelName": "Politik mit Kopf"
   },
   "channels": [
     {
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 170658570,
-        "videoCount": 1528,
+        "videoCount": 1529,
         "hiddenSubscriberCount": false
       }
     },
@@ -29,7 +29,7 @@
       "name": "Politik mit Kopf REAGIERT",
       "slug": "politik-mit-kopf-reagiert",
       "stats": {
-        "subscriberCount": 17200,
+        "subscriberCount": 17300,
         "viewCount": 301361,
         "videoCount": 6,
         "hiddenSubscriberCount": false

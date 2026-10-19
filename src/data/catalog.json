@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-19T17:18:26.849Z",
+  "syncedAt": "2026-10-19T21:34:24.362Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 170658570,
-        "videoCount": 1528,
+        "videoCount": 1529,
         "hiddenSubscriberCount": false
       }
     },
@@ -35,7 +35,7 @@
       "channelUrl": "https://www.youtube.com/@PolitikmitKopfReagiert",
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
-        "subscriberCount": 17200,
+        "subscriberCount": 17300,
         "viewCount": 301361,
         "videoCount": 6,
         "hiddenSubscriberCount": false
@@ -43,6 +43,30 @@
     }
   ],
   "videos": [
+    {
+      "id": "K2Tq2n_QJZk",
+      "slug": "afd-it-desaster-400-000-e-mails-geleakt-ddos-pfuscher-politische-folge-K2Tq2n_QJZk",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "AfD IT-Desaster: 400.000 E-Mails geleakt | DDoS, Pfuscher & politische Folgen",
+      "description": "Über 400.000 interne E-Mails der AfD wurden geleakt – darunter Postfächer von Alexander Gauland und aktuelle Vorgänge bis September 2026. Die Daten stammen aus einem einzigen, unzureichend gesicherten Hosting-Cluster und sorgen bereits jetzt für massive Diskussionen über IT-Sicherheit, interne Abläufe und politische Folgen.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Über 400.000 interne E-Mails der AfD wurden geleakt – darunter Postfächer von Alexander Gauland und aktuelle Vorgänge bis September 2026. Die Daten stammen aus einem einzigen,…",
+      "publishedAt": "2026-10-19T19:03:16+00:00",
+      "url": "https://www.youtube.com/watch?v=K2Tq2n_QJZk",
+      "thumbnail": "/media/K2Tq2n_QJZk.jpg",
+      "thumbnailRemote": "https://i4.ytimg.com/vi/K2Tq2n_QJZk/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 29559,
+        "likeCount": null,
+        "commentCount": 471
+      }
+    },
     {
       "id": "1OnErr4qSb0",
       "slug": "bundestag-tickt-aus-afd-fordert-migrationsbilanz-rechnung-waere-faschi-1OnErr4qSb0",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 6130,
+        "viewCount": 38537,
         "likeCount": null,
-        "commentCount": 116
+        "commentCount": 318
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 90318,
+        "viewCount": 112712,
         "likeCount": null,
-        "commentCount": 587
+        "commentCount": 602
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 229991,
+        "viewCount": 237682,
         "likeCount": null,
-        "commentCount": 2826
+        "commentCount": 2867
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 109195,
+        "viewCount": 111098,
         "likeCount": null,
-        "commentCount": 849
+        "commentCount": 850
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 280879,
+        "viewCount": 283736,
         "likeCount": null,
-        "commentCount": 1362
+        "commentCount": 1367
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 105395,
+        "viewCount": 105769,
         "likeCount": null,
-        "commentCount": 1212
+        "commentCount": 1215
       }
     },
     {
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 320547,
+        "viewCount": 321364,
         "likeCount": null,
-        "commentCount": 2364
+        "commentCount": 2365
       }
     },
     {
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 88845,
+        "viewCount": 88897,
         "likeCount": null,
         "commentCount": 350
       }
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 99461,
+        "viewCount": 99560,
         "likeCount": null,
-        "commentCount": 962
+        "commentCount": 960
       }
     },
     {
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 109906,
+        "viewCount": 109990,
         "likeCount": null,
-        "commentCount": 824
+        "commentCount": 825
       }
     },
     {
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 187136,
+        "viewCount": 187459,
         "likeCount": null,
         "commentCount": 1308
       }
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 167718,
+        "viewCount": 167849,
         "likeCount": null,
-        "commentCount": 1099
+        "commentCount": 1097
       }
     },
     {
@@ -350,9 +374,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 94693,
+        "viewCount": 94968,
         "likeCount": null,
-        "commentCount": 558
+        "commentCount": 562
       }
     },
     {
@@ -374,9 +398,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 84792,
+        "viewCount": 84845,
         "likeCount": null,
-        "commentCount": 1602
+        "commentCount": 1600
       }
     },
     {
@@ -398,9 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 115678,
+        "viewCount": 115700,
         "likeCount": null,
-        "commentCount": 569
+        "commentCount": 570
       }
     },
     {
@@ -422,33 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 161202,
+        "viewCount": 161427,
         "likeCount": null,
-        "commentCount": 1740
-      }
-    },
-    {
-      "id": "3UO5meh6e4w",
-      "slug": "merz-faellt-drauf-rein-spd-schiebt-verlierer-schweitzer-als-arbeitsmin-3UO5meh6e4w",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Merz fällt drauf rein: SPD schiebt Verlierer Schweitzer als Arbeitsminister vor & eröffnet Wahlkampf",
-      "description": "Die SPD instrumentalisiert den Rücktritt von Bärbel Bas als Auftakt zum Bundestagswahlkampf und schiebt Alexander Schweitzer als Nachfolger vor, während die CDU und der Bundeskanzler die Personalie ungeprüft übernehmen. Ich erkläre Schweitzers umstrittene Bilanz als Ministerpräsident von Rheinland-Pfalz, frühere Skandale und warum die Union hier auf ein kalkuliertes Manöver hereinfallen könnte.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Die SPD instrumentalisiert den Rücktritt von Bärbel Bas als Auftakt zum Bundestagswahlkampf und schiebt Alexander Schweitzer als Nachfolger vor, während die CDU und der…",
-      "publishedAt": "2026-10-12T13:57:14+00:00",
-      "url": "https://www.youtube.com/watch?v=3UO5meh6e4w",
-      "thumbnail": "/media/3UO5meh6e4w.jpg",
-      "thumbnailRemote": "https://i4.ytimg.com/vi/3UO5meh6e4w/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 137042,
-        "likeCount": null,
-        "commentCount": 386
+        "commentCount": 1741
       }
     },
     {
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33436,
+        "viewCount": 33454,
         "likeCount": 3363,
         "commentCount": 634
       }
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87214,
+        "viewCount": 87234,
         "likeCount": 4492,
         "commentCount": 398
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42726,
+        "viewCount": 42733,
         "likeCount": 3038,
         "commentCount": 509
       }

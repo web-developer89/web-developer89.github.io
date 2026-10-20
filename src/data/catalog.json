@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-20T05:11:41.154Z",
-  "ok": false,
+  "syncedAt": "2026-10-20T09:59:50.743Z",
+  "ok": true,
   "source": "youtube-public",
-  "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
+  "error": null,
   "live": null,
   "channels": [
     {
@@ -10,7 +10,7 @@
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "name": "Politik mit Kopf",
       "videoCount": 15,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/mark.jpg",
       "slug": "politik-mit-kopf",
       "handle": "@PolitikmitKopf",
@@ -18,8 +18,8 @@
       "subscribeUrl": "https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1",
       "stats": {
         "subscriberCount": 285000,
-        "viewCount": 170658570,
-        "videoCount": 1529,
+        "viewCount": 171052320,
+        "videoCount": 1530,
         "hiddenSubscriberCount": false
       }
     },
@@ -28,21 +28,45 @@
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
       "videoCount": 6,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
       "handle": "@PolitikmitKopfReagiert",
       "channelUrl": "https://www.youtube.com/@PolitikmitKopfReagiert",
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
-        "subscriberCount": 17300,
-        "viewCount": 301361,
+        "subscriberCount": 17400,
+        "viewCount": 303614,
         "videoCount": 6,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "0_8-XxnUvQc",
+      "slug": "merz-wird-vorgefuehrt-jensen-huang-zerlegt-den-kanzler-beim-investor-s-0_8-XxnUvQc",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Merz wird vorgeführt! Jensen Huang zerlegt den Kanzler beim Investor Summit",
+      "description": "Jensen Huang (Nvidia) betont, dass man KI nicht regulieren kann, bevor man sie überhaupt hat, und setzt auf Unternehmensverantwortung und technische Innovation – während Merz vor allem mit Infrastruktur- und Verteidigungsausgaben sowie für Green Energy wirbt, was peinlich und untauglich ist.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Jensen Huang (Nvidia) betont, dass man KI nicht regulieren kann, bevor man sie überhaupt hat, und setzt auf Unternehmensverantwortung und technische Innovation – während Merz…",
+      "publishedAt": "2026-10-20T09:22:55+00:00",
+      "url": "https://www.youtube.com/watch?v=0_8-XxnUvQc",
+      "thumbnail": "/media/0_8-XxnUvQc.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/0_8-XxnUvQc/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 6229,
+        "likeCount": null,
+        "commentCount": 133
+      }
+    },
     {
       "id": "K2Tq2n_QJZk",
       "slug": "afd-it-desaster-400-000-e-mails-geleakt-ddos-pfuscher-politische-folge-K2Tq2n_QJZk",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 29559,
+        "viewCount": 156888,
         "likeCount": null,
-        "commentCount": 471
+        "commentCount": 888
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 38537,
+        "viewCount": 59167,
         "likeCount": null,
-        "commentCount": 318
+        "commentCount": 399
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 112712,
+        "viewCount": 119259,
         "likeCount": null,
-        "commentCount": 602
+        "commentCount": 614
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 237682,
+        "viewCount": 244120,
         "likeCount": null,
-        "commentCount": 2867
+        "commentCount": 2897
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 111098,
+        "viewCount": 113000,
         "likeCount": null,
-        "commentCount": 850
+        "commentCount": 851
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 283736,
+        "viewCount": 285218,
         "likeCount": null,
-        "commentCount": 1367
+        "commentCount": 1376
       }
     },
     {
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 105769,
+        "viewCount": 106353,
         "likeCount": null,
-        "commentCount": 1215
+        "commentCount": 1217
       }
     },
     {
@@ -230,9 +254,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 321364,
+        "viewCount": 321858,
         "likeCount": null,
-        "commentCount": 2365
+        "commentCount": 2354
       }
     },
     {
@@ -254,7 +278,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 88897,
+        "viewCount": 88996,
         "likeCount": null,
         "commentCount": 350
       }
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 99560,
+        "viewCount": 99683,
         "likeCount": null,
-        "commentCount": 960
+        "commentCount": 959
       }
     },
     {
@@ -302,9 +326,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 109990,
+        "viewCount": 110110,
         "likeCount": null,
-        "commentCount": 825
+        "commentCount": 823
       }
     },
     {
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 187459,
+        "viewCount": 187904,
         "likeCount": null,
-        "commentCount": 1308
+        "commentCount": 1309
       }
     },
     {
@@ -350,9 +374,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 167849,
+        "viewCount": 167991,
         "likeCount": null,
-        "commentCount": 1097
+        "commentCount": 1096
       }
     },
     {
@@ -374,9 +398,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 94968,
+        "viewCount": 95153,
         "likeCount": null,
-        "commentCount": 562
+        "commentCount": 564
       }
     },
     {
@@ -398,7 +422,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 84845,
+        "viewCount": 84919,
         "likeCount": null,
         "commentCount": 1600
       }
@@ -422,33 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 115700,
+        "viewCount": 115755,
         "likeCount": null,
         "commentCount": 570
-      }
-    },
-    {
-      "id": "cDE3Xy6fw-0",
-      "slug": "merz-luegt-sich-die-cdu-kaputt-pinocchio-kanzler-packt-aus-bas-stromst-cDE3Xy6fw-0",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Merz lügt sich die CDU kaputt - Pinocchio-Kanzler packt aus: Bas, Stromsteuer & Ukraine-Märchen",
-      "description": "Friedrich Merz stellt sich in der Pressekonferenz als vertrauensvoller Partner von Bärbel Bas hin, während er gleichzeitig Wahlversprechen wie die Stromsteuer-Senkung und die Ukraine-Politik als große Erfolge verkauft. In dieser Reaktion nehme ich die größten Lügen und Widersprüche des Pinocchio-Kanzlers auseinander und zeige, wie er damit die CDU weiter in die Bedeutungslosigkeit führt.\n\nhttps://youtu.be/iKwFHNpAUjs \n\nQuelle: https://www.youtube.com/watch?v=BZkQG3fzcdk\n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Friedrich Merz stellt sich in der Pressekonferenz als vertrauensvoller Partner von Bärbel Bas hin, während er gleichzeitig Wahlversprechen wie die Stromsteuer-Senkung und die…",
-      "publishedAt": "2026-10-12T18:10:25+00:00",
-      "url": "https://www.youtube.com/watch?v=cDE3Xy6fw-0",
-      "thumbnail": "/media/cDE3Xy6fw-0.jpg",
-      "thumbnailRemote": "https://i4.ytimg.com/vi/cDE3Xy6fw-0/hqdefault.jpg",
-      "durationLabel": "49:31",
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 161427,
-        "likeCount": null,
-        "commentCount": 1741
       }
     },
     {
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33454,
+        "viewCount": 33472,
         "likeCount": 3363,
         "commentCount": 634
       }
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87234,
+        "viewCount": 87281,
         "likeCount": 4492,
         "commentCount": 398
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42733,
+        "viewCount": 42744,
         "likeCount": 3038,
         "commentCount": 509
       }

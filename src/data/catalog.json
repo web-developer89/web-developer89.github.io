@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-20T18:43:21.568Z",
+  "syncedAt": "2026-10-20T21:52:41.043Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 171052320,
-        "videoCount": 1531,
+        "videoCount": 1532,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,30 @@
   ],
   "videos": [
     {
+      "id": "rShPoJn8lUo",
+      "slug": "pfusch-im-bundestag-gesetz-tritt-zu-frueh-in-kraft-produktionsstopp-dr-rShPoJn8lUo",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Pfusch im Bundestag: Gesetz tritt zu früh in Kraft – Produktionsstopp droht heute Nacht!",
+      "description": "Einmal mit Profis! Aber Russland ist die große Gefahr ... \n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Einmal mit Profis! Aber Russland ist die große Gefahr ...",
+      "publishedAt": "2026-10-20T19:14:32+00:00",
+      "url": "https://www.youtube.com/watch?v=rShPoJn8lUo",
+      "thumbnail": "/media/rShPoJn8lUo.jpg",
+      "thumbnailRemote": "https://i3.ytimg.com/vi/rShPoJn8lUo/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 36177,
+        "likeCount": null,
+        "commentCount": 582
+      }
+    },
+    {
       "id": "Aw2k1C5D5E8",
       "slug": "gewalt-demo-auch-bei-uns-gen-z-telegram-der-franzoesische-weg-in-deuts-Aw2k1C5D5E8",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 105362,
+        "viewCount": 151379,
         "likeCount": null,
-        "commentCount": 847
+        "commentCount": 963
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 66466,
+        "viewCount": 77088,
         "likeCount": null,
-        "commentCount": 586
+        "commentCount": 598
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 185430,
+        "viewCount": 191204,
         "likeCount": null,
-        "commentCount": 1016
+        "commentCount": 1042
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 66646,
+        "viewCount": 68540,
         "likeCount": null,
-        "commentCount": 456
+        "commentCount": 459
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 120414,
+        "viewCount": 120767,
         "likeCount": null,
-        "commentCount": 624
+        "commentCount": 622
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 248048,
+        "viewCount": 249646,
         "likeCount": null,
-        "commentCount": 2914
+        "commentCount": 2919
       }
     },
     {
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 113863,
+        "viewCount": 114044,
         "likeCount": null,
-        "commentCount": 855
+        "commentCount": 857
       }
     },
     {
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 286054,
+        "viewCount": 286323,
         "likeCount": null,
         "commentCount": 1375
       }
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 106642,
+        "viewCount": 106787,
         "likeCount": null,
-        "commentCount": 1221
+        "commentCount": 1223
       }
     },
     {
@@ -278,7 +302,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 322544,
+        "viewCount": 323028,
         "likeCount": null,
         "commentCount": 2352
       }
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 89082,
+        "viewCount": 89124,
         "likeCount": null,
         "commentCount": 351
       }
@@ -326,7 +350,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 99791,
+        "viewCount": 99832,
         "likeCount": null,
         "commentCount": 959
       }
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 110218,
+        "viewCount": 110271,
         "likeCount": null,
         "commentCount": 825
       }
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 188257,
+        "viewCount": 188415,
         "likeCount": null,
         "commentCount": 1308
       }
@@ -398,7 +422,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 168151,
+        "viewCount": 168210,
         "likeCount": null,
         "commentCount": 1096
       }
@@ -422,33 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 95375,
+        "viewCount": 95444,
         "likeCount": null,
         "commentCount": 565
-      }
-    },
-    {
-      "id": "7oaUfP6OfJc",
-      "slug": "pistorius-vs-realitaet-afd-putin-schueren-angst-die-bundesregierung-ru-7oaUfP6OfJc",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Pistorius vs. Realität: AfD & Putin schüren Angst – Die Bundesregierung rüstet auf",
-      "description": "Boris Pistorius und die Bundesregierung werfen der AfD und Putin vor, Kriegsangst zu schüren – während sie selbst die Bundeswehr massiv aufrüsten, Wehrpflicht modernisieren und eine Brigade nach Litauen verlegen wollen. In diesem Video geht es um die Widersprüche, alternative Fakten und die Frage, wer hier eigentlich Angst sät und Deutschland kriegstüchtig machen möchte.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Boris Pistorius und die Bundesregierung werfen der AfD und Putin vor, Kriegsangst zu schüren – während sie selbst die Bundeswehr massiv aufrüsten, Wehrpflicht modernisieren und…",
-      "publishedAt": "2026-10-13T13:47:21+00:00",
-      "url": "https://www.youtube.com/watch?v=7oaUfP6OfJc",
-      "thumbnail": "/media/7oaUfP6OfJc.jpg",
-      "thumbnailRemote": "https://i4.ytimg.com/vi/7oaUfP6OfJc/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 84969,
-        "likeCount": null,
-        "commentCount": 1603
       }
     },
     {
@@ -470,9 +470,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33480,
+        "viewCount": 33487,
         "likeCount": 3363,
-        "commentCount": 634
+        "commentCount": 635
       }
     },
     {
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87339,
+        "viewCount": 87371,
         "likeCount": 4492,
         "commentCount": 399
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42749,
+        "viewCount": 42758,
         "likeCount": 3038,
         "commentCount": 509
       }

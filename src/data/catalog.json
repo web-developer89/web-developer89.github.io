@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-20T09:59:50.743Z",
+  "syncedAt": "2026-10-20T14:41:05.070Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 171052320,
-        "videoCount": 1530,
+        "videoCount": 1531,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,30 @@
   ],
   "videos": [
     {
+      "id": "Aw2k1C5D5E8",
+      "slug": "gewalt-demo-auch-bei-uns-gen-z-telegram-der-franzoesische-weg-in-deuts-Aw2k1C5D5E8",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Gewalt-Demo auch bei uns? Gen Z, Telegram & der französische Weg in Deutschland",
+      "description": "„Gen-Z-regelt“-Proteste in Deutschland und der Schweiz angekündigt, die als Fortsetzung der gewaltsamen Ausschreitungen in Frankreich und als Ausdruck einer wohlstandsverwahrlosten Generation gewertet werden müssen. Ein Blick in die Telegram-Gruppen könnte für ein böses Erwachen führen.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Gewalt-Demo auch bei uns? Gen Z, Telegram & der französische Weg in Deutschland",
+      "publishedAt": "2026-10-20T13:12:16+00:00",
+      "url": "https://www.youtube.com/watch?v=Aw2k1C5D5E8",
+      "thumbnail": "/media/Aw2k1C5D5E8.jpg",
+      "thumbnailRemote": "https://i2.ytimg.com/vi/Aw2k1C5D5E8/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 14584,
+        "likeCount": null,
+        "commentCount": 385
+      }
+    },
+    {
       "id": "0_8-XxnUvQc",
       "slug": "merz-wird-vorgefuehrt-jensen-huang-zerlegt-den-kanzler-beim-investor-s-0_8-XxnUvQc",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 6229,
+        "viewCount": 46551,
         "likeCount": null,
-        "commentCount": 133
+        "commentCount": 510
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 156888,
+        "viewCount": 176182,
         "likeCount": null,
-        "commentCount": 888
+        "commentCount": 975
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 59167,
+        "viewCount": 63526,
         "likeCount": null,
-        "commentCount": 399
+        "commentCount": 434
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 119259,
+        "viewCount": 120314,
         "likeCount": null,
-        "commentCount": 614
+        "commentCount": 623
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 244120,
+        "viewCount": 246390,
         "likeCount": null,
-        "commentCount": 2897
+        "commentCount": 2909
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 113000,
+        "viewCount": 113600,
         "likeCount": null,
-        "commentCount": 851
+        "commentCount": 855
       }
     },
     {
@@ -206,7 +230,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 285218,
+        "viewCount": 285728,
         "likeCount": null,
         "commentCount": 1376
       }
@@ -230,9 +254,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 106353,
+        "viewCount": 106536,
         "likeCount": null,
-        "commentCount": 1217
+        "commentCount": 1219
       }
     },
     {
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 321858,
+        "viewCount": 322100,
         "likeCount": null,
-        "commentCount": 2354
+        "commentCount": 2352
       }
     },
     {
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 88996,
+        "viewCount": 89044,
         "likeCount": null,
-        "commentCount": 350
+        "commentCount": 351
       }
     },
     {
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 99683,
+        "viewCount": 99752,
         "likeCount": null,
         "commentCount": 959
       }
@@ -326,7 +350,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 110110,
+        "viewCount": 110169,
         "likeCount": null,
         "commentCount": 823
       }
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 187904,
+        "viewCount": 188105,
         "likeCount": null,
         "commentCount": 1309
       }
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 167991,
+        "viewCount": 168130,
         "likeCount": null,
         "commentCount": 1096
       }
@@ -398,9 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 95153,
+        "viewCount": 95297,
         "likeCount": null,
-        "commentCount": 564
+        "commentCount": 565
       }
     },
     {
@@ -422,33 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 84919,
+        "viewCount": 84943,
         "likeCount": null,
-        "commentCount": 1600
-      }
-    },
-    {
-      "id": "PCSl9J6_50A",
-      "slug": "neuer-minister-schon-ein-luegner-schweitzer-erwischt-vor-laufender-kam-PCSl9J6_50A",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Neuer Minister schon ein Lügner: Schweitzer erwischt vor laufender Kamera",
-      "description": "Alexander Schweitzer wird als designierter Bundesarbeitsminister vor laufender Kamera erwischt, wie er behauptet, privat aus dem Willy-Brandt-Haus zu kommen – ein Paradebeispiel für die Vertrauenskrise der SPD und die Zusammenarbeit mit Friedrich Merz.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Alexander Schweitzer wird als designierter Bundesarbeitsminister vor laufender Kamera erwischt, wie er behauptet, privat aus dem Willy-Brandt-Haus zu kommen – ein…",
-      "publishedAt": "2026-10-13T08:15:08+00:00",
-      "url": "https://www.youtube.com/watch?v=PCSl9J6_50A",
-      "thumbnail": "/media/PCSl9J6_50A.jpg",
-      "thumbnailRemote": "https://i1.ytimg.com/vi/PCSl9J6_50A/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 115755,
-        "likeCount": null,
-        "commentCount": 570
+        "commentCount": 1601
       }
     },
     {
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33472,
+        "viewCount": 33480,
         "likeCount": 3363,
         "commentCount": 634
       }
@@ -494,9 +494,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87281,
+        "viewCount": 87331,
         "likeCount": 4492,
-        "commentCount": 398
+        "commentCount": 399
       }
     },
     {
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42744,
+        "viewCount": 42749,
         "likeCount": 3038,
         "commentCount": 509
       }

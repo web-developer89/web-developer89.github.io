@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-21T18:52:36.454Z",
+  "syncedAt": "2026-10-21T22:00:44.456Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 171209811,
-        "videoCount": 1533,
+        "videoCount": 1534,
         "hiddenSubscriberCount": false
       }
     },
@@ -35,7 +35,7 @@
       "channelUrl": "https://www.youtube.com/@PolitikmitKopfReagiert",
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
-        "subscriberCount": 17400,
+        "subscriberCount": 17500,
         "viewCount": 359432,
         "videoCount": 7,
         "hiddenSubscriberCount": false
@@ -43,6 +43,30 @@
     }
   ],
   "videos": [
+    {
+      "id": "8AGD4P3tpoU",
+      "slug": "hip-hop-ministerialdirektor-klingbeil-weist-zoll-an-neues-tabaksteuerg-8AGD4P3tpoU",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Hip-Hop-Ministerialdirektor & Klingbeil weist Zoll an: Neues Tabaksteuergesetz einfach ignorieren!",
+      "description": "Bundesfinanzminister Lars Klingbeil hat den Zoll angewiesen, das neue Tabaksteuergesetz einfach nicht anzuwenden – obwohl es formell gültig verkündet ist. Was als handwerklicher Fehler verkauft wird, ist in Wahrheit ein offener Rechtsbruch mitten im Finanzministerium.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Bundesfinanzminister Lars Klingbeil hat den Zoll angewiesen, das neue Tabaksteuergesetz einfach nicht anzuwenden – obwohl es formell gültig verkündet ist. Was als…",
+      "publishedAt": "2026-10-21T19:13:08+00:00",
+      "url": "https://www.youtube.com/watch?v=8AGD4P3tpoU",
+      "thumbnail": "/media/8AGD4P3tpoU.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/8AGD4P3tpoU/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 25502,
+        "likeCount": null,
+        "commentCount": 267
+      }
+    },
     {
       "id": "fEchecle3Sw",
       "slug": "friedliche-schuelerproteste-phoenix-runde-vs-realitaet-phoenix-runde-b-fEchecle3Sw",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 22481,
+        "viewCount": 40877,
         "likeCount": null,
-        "commentCount": 198
+        "commentCount": 232
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 165013,
+        "viewCount": 185491,
         "likeCount": null,
-        "commentCount": 1436
+        "commentCount": 1501
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 225360,
+        "viewCount": 232673,
         "likeCount": null,
-        "commentCount": 1071
+        "commentCount": 1082
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 182663,
+        "viewCount": 184931,
         "likeCount": null,
-        "commentCount": 1088
+        "commentCount": 1092
       }
     },
     {
@@ -158,7 +182,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 88940,
+        "viewCount": 90264,
         "likeCount": null,
         "commentCount": 626
       }
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 200864,
+        "viewCount": 201881,
         "likeCount": null,
-        "commentCount": 1186
+        "commentCount": 1205
       }
     },
     {
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 72782,
+        "viewCount": 73122,
         "likeCount": null,
-        "commentCount": 480
+        "commentCount": 482
       }
     },
     {
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 122121,
+        "viewCount": 122287,
         "likeCount": null,
         "commentCount": 623
       }
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 252154,
+        "viewCount": 252494,
         "likeCount": null,
-        "commentCount": 2927
+        "commentCount": 2928
       }
     },
     {
@@ -278,7 +302,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 115317,
+        "viewCount": 115590,
         "likeCount": null,
         "commentCount": 858
       }
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 287429,
+        "viewCount": 287702,
         "likeCount": null,
         "commentCount": 1374
       }
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 106994,
+        "viewCount": 107051,
         "likeCount": null,
-        "commentCount": 1225
+        "commentCount": 1226
       }
     },
     {
@@ -350,9 +374,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 324421,
+        "viewCount": 324774,
         "likeCount": null,
-        "commentCount": 2353
+        "commentCount": 2357
       }
     },
     {
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 89246,
+        "viewCount": 89248,
         "likeCount": null,
         "commentCount": 351
       }
@@ -398,7 +422,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 99995,
+        "viewCount": 99997,
         "likeCount": null,
         "commentCount": 960
       }
@@ -422,33 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 110406,
+        "viewCount": 110451,
         "likeCount": null,
         "commentCount": 825
-      }
-    },
-    {
-      "id": "I89HtzHMA1A",
-      "slug": "esken-flippt-aus-mikrofon-abgedreht-afd-im-ausschuss-das-wort-entzogen-I89HtzHMA1A",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Esken flippt aus: Mikrofon abgedreht – AfD im Ausschuss das Wort entzogen!",
-      "description": "In einer öffentlichen Anhörung des Ausschusses für Bildung, Familie, Senioren, Frauen und Jugend unterbricht Vorsitzende Saskia Esken (SPD) eine AfD-Abgeordnete und entzieht ihr schließlich das Wort, weil sie auf die Auswirkungen der Coronamaßnahmen auf Kinder eingeht. Der Vorgang wirft Fragen auf, ob dies mit den Befugnissen nach § 59 der Geschäftsordnung des Deutschen Bundestages vereinbar ist.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "In einer öffentlichen Anhörung des Ausschusses für Bildung, Familie, Senioren, Frauen und Jugend unterbricht Vorsitzende Saskia Esken (SPD) eine AfD-Abgeordnete und entzieht…",
-      "publishedAt": "2026-10-14T14:17:17+00:00",
-      "url": "https://www.youtube.com/watch?v=I89HtzHMA1A",
-      "thumbnail": "/media/I89HtzHMA1A.jpg",
-      "thumbnailRemote": "https://i2.ytimg.com/vi/I89HtzHMA1A/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 188803,
-        "likeCount": null,
-        "commentCount": 1313
       }
     },
     {
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 95650,
+        "viewCount": 95678,
         "likeCount": null,
         "commentCount": 566
       }
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33507,
+        "viewCount": 33514,
         "likeCount": 3363,
         "commentCount": 635
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87470,
+        "viewCount": 87514,
         "likeCount": 4492,
         "commentCount": 399
       }
@@ -542,7 +542,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42774,
+        "viewCount": 42777,
         "likeCount": 3038,
         "commentCount": 509
       }

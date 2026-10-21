@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-21T00:11:24.561Z",
+  "syncedAt": "2026-10-21T04:38:48.957Z",
   "timezone": "Europe/Zurich",
   "channels": [
     {
@@ -7636,6 +7636,13 @@
       "subscriberCount": 17400,
       "viewCount": 303614,
       "videoCount": 6
+    },
+    {
+      "at": "2026-10-21T04:38:48.957Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23,
+      "viewCount": 21,
+      "videoCount": 2
     }
   ],
   "videoSnapshots": [

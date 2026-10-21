@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-21T04:38:48.957Z",
-  "ok": false,
+  "syncedAt": "2026-10-21T09:35:34.749Z",
+  "ok": true,
   "source": "youtube-public",
-  "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
+  "error": null,
   "live": null,
   "channels": [
     {
@@ -10,7 +10,7 @@
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "name": "Politik mit Kopf",
       "videoCount": 15,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/mark.jpg",
       "slug": "politik-mit-kopf",
       "handle": "@PolitikmitKopf",
@@ -18,8 +18,8 @@
       "subscribeUrl": "https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1",
       "stats": {
         "subscriberCount": 285000,
-        "viewCount": 171052320,
-        "videoCount": 1532,
+        "viewCount": 171209811,
+        "videoCount": 1533,
         "hiddenSubscriberCount": false
       }
     },
@@ -28,7 +28,7 @@
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
       "videoCount": 6,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
       "handle": "@PolitikmitKopfReagiert",
@@ -36,13 +36,37 @@
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
         "subscriberCount": 17400,
-        "viewCount": 303614,
+        "viewCount": 359432,
         "videoCount": 6,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "wQuE_Dm-0C8",
+      "slug": "merz-behauptet-rechte-haben-frankreich-angezuendet-luegt-im-bloomberg-wQuE_Dm-0C8",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Merz behauptet: Rechte haben Frankreich angezündet & lügt im Bloomberg-Interview",
+      "description": "Merz ist und bleibt ein Lügner! Rechte hätten Frankreich angezündet ... \n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Merz ist und bleibt ein Lügner! Rechte hätten Frankreich angezündet ...",
+      "publishedAt": "2026-10-21T07:57:49+00:00",
+      "url": "https://www.youtube.com/watch?v=wQuE_Dm-0C8",
+      "thumbnail": "/media/wQuE_Dm-0C8.jpg",
+      "thumbnailRemote": "https://i4.ytimg.com/vi/wQuE_Dm-0C8/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 14776,
+        "likeCount": null,
+        "commentCount": 456
+      }
+    },
     {
       "id": "rShPoJn8lUo",
       "slug": "pfusch-im-bundestag-gesetz-tritt-zu-frueh-in-kraft-produktionsstopp-dr-rShPoJn8lUo",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 110933,
+        "viewCount": 184137,
         "likeCount": null,
-        "commentCount": 696
+        "commentCount": 965
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 159776,
+        "viewCount": 172619,
         "likeCount": null,
-        "commentCount": 985
+        "commentCount": 1046
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 79837,
+        "viewCount": 84751,
         "likeCount": null,
-        "commentCount": 603
+        "commentCount": 615
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 193375,
+        "viewCount": 196457,
         "likeCount": null,
-        "commentCount": 1051
+        "commentCount": 1105
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 69090,
+        "viewCount": 70452,
         "likeCount": null,
-        "commentCount": 462
+        "commentCount": 473
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 120945,
+        "viewCount": 121652,
         "likeCount": null,
-        "commentCount": 622
+        "commentCount": 623
       }
     },
     {
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 250289,
+        "viewCount": 251125,
         "likeCount": null,
-        "commentCount": 2926
+        "commentCount": 2930
       }
     },
     {
@@ -230,9 +254,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 114101,
+        "viewCount": 114427,
         "likeCount": null,
-        "commentCount": 857
+        "commentCount": 858
       }
     },
     {
@@ -254,7 +278,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 286416,
+        "viewCount": 286676,
         "likeCount": null,
         "commentCount": 1375
       }
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 106826,
+        "viewCount": 106884,
         "likeCount": null,
-        "commentCount": 1223
+        "commentCount": 1224
       }
     },
     {
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 323238,
+        "viewCount": 323577,
         "likeCount": null,
         "commentCount": 2352
       }
@@ -326,7 +350,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 89124,
+        "viewCount": 89152,
         "likeCount": null,
         "commentCount": 351
       }
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 99854,
+        "viewCount": 99899,
         "likeCount": null,
         "commentCount": 959
       }
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 110279,
+        "viewCount": 110336,
         "likeCount": null,
         "commentCount": 825
       }
@@ -398,33 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 188487,
+        "viewCount": 188630,
         "likeCount": null,
-        "commentCount": 1308
-      }
-    },
-    {
-      "id": "pcHQhxkfxH0",
-      "slug": "saal-verlassen-statt-waehlen-die-cdu-tritt-die-landesverfassung-mit-fu-pcHQhxkfxH0",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Saal verlassen statt wählen: Die CDU tritt die Landesverfassung mit Füßen",
-      "description": "Die CDU in Sachsen-Anhalt will ihre Abgeordneten bei der Wahl des Ministerpräsidenten geschlossen aus dem Plenarsaal führen. Mit nur 14 Stimmen und einer Enthaltung soll verhindert werden, dass jemand „aus Versehen“ falsch abstimmt – also möglicherweise für den AfD-Kandidaten Ulrich Siegmund.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Die CDU in Sachsen-Anhalt will ihre Abgeordneten bei der Wahl des Ministerpräsidenten geschlossen aus dem Plenarsaal führen. Mit nur 14 Stimmen und einer Enthaltung soll…",
-      "publishedAt": "2026-10-14T07:08:12+00:00",
-      "url": "https://www.youtube.com/watch?v=pcHQhxkfxH0",
-      "thumbnail": "/media/pcHQhxkfxH0.jpg",
-      "thumbnailRemote": "https://i1.ytimg.com/vi/pcHQhxkfxH0/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 168263,
-        "likeCount": null,
-        "commentCount": 1096
+        "commentCount": 1311
       }
     },
     {
@@ -446,7 +446,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 95469,
+        "viewCount": 95523,
         "likeCount": null,
         "commentCount": 566
       }
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33487,
+        "viewCount": 33493,
         "likeCount": 3363,
         "commentCount": 635
       }
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87395,
+        "viewCount": 87409,
         "likeCount": 4492,
         "commentCount": 399
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42758,
+        "viewCount": 42762,
         "likeCount": 3038,
         "commentCount": 509
       }

@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-21T14:37:31.007Z",
+  "syncedAt": "2026-10-21T18:52:36.454Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -27,7 +27,7 @@
       "id": "reagiert",
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
-      "videoCount": 6,
+      "videoCount": 7,
       "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
@@ -37,12 +37,36 @@
       "stats": {
         "subscriberCount": 17400,
         "viewCount": 359432,
-        "videoCount": 6,
+        "videoCount": 7,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "fEchecle3Sw",
+      "slug": "friedliche-schuelerproteste-phoenix-runde-vs-realitaet-phoenix-runde-b-fEchecle3Sw",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "channelName": "Politik mit Kopf REAGIERT",
+      "title": "„Friedliche“ Schülerproteste? Phönix-Runde vs. Realität - Phönix-Runde betreibt Propaganda",
+      "description": "Friedliche Schülerdemo in Frankreich. Migration als Ursache ist rechte Verschwörung?\n\nQuelle: https://www.youtube.com/watch?v=iQJV_7rJUlY\n\nhttps://youtu.be/PWzRo3FWjbo\n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n\n#Bundestag #Politik #Bundesregierung\n\nhttps://youtu.be/4vqdluC_F_U\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Friedliche Schülerdemo in Frankreich. Migration als Ursache ist rechte Verschwörung? Quelle: https://www.youtube.com/watch?v=iQJV_7rJUlY",
+      "publishedAt": "2026-10-21T14:54:44+00:00",
+      "url": "https://www.youtube.com/watch?v=fEchecle3Sw",
+      "thumbnail": "/media/fEchecle3Sw.jpg",
+      "thumbnailRemote": "https://i3.ytimg.com/vi/fEchecle3Sw/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 22481,
+        "likeCount": null,
+        "commentCount": 198
+      }
+    },
     {
       "id": "wQuE_Dm-0C8",
       "slug": "merz-behauptet-rechte-haben-frankreich-angezuendet-luegt-im-bloomberg-wQuE_Dm-0C8",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 101411,
+        "viewCount": 165013,
         "likeCount": null,
-        "commentCount": 1182
+        "commentCount": 1436
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 209898,
+        "viewCount": 225360,
         "likeCount": null,
-        "commentCount": 1036
+        "commentCount": 1071
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 178672,
+        "viewCount": 182663,
         "likeCount": null,
-        "commentCount": 1077
+        "commentCount": 1088
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87272,
+        "viewCount": 88940,
         "likeCount": null,
-        "commentCount": 621
+        "commentCount": 626
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 198955,
+        "viewCount": 200864,
         "likeCount": null,
-        "commentCount": 1143
+        "commentCount": 1186
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 71848,
+        "viewCount": 72782,
         "likeCount": null,
-        "commentCount": 474
+        "commentCount": 480
       }
     },
     {
@@ -206,7 +230,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 121904,
+        "viewCount": 122121,
         "likeCount": null,
         "commentCount": 623
       }
@@ -230,9 +254,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 251684,
+        "viewCount": 252154,
         "likeCount": null,
-        "commentCount": 2928
+        "commentCount": 2927
       }
     },
     {
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 114904,
+        "viewCount": 115317,
         "likeCount": null,
-        "commentCount": 859
+        "commentCount": 858
       }
     },
     {
@@ -278,7 +302,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 287018,
+        "viewCount": 287429,
         "likeCount": null,
         "commentCount": 1374
       }
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 106938,
+        "viewCount": 106994,
         "likeCount": null,
         "commentCount": 1225
       }
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 323985,
+        "viewCount": 324421,
         "likeCount": null,
-        "commentCount": 2352
+        "commentCount": 2353
       }
     },
     {
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 89189,
+        "viewCount": 89246,
         "likeCount": null,
         "commentCount": 351
       }
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 99952,
+        "viewCount": 99995,
         "likeCount": null,
         "commentCount": 960
       }
@@ -398,7 +422,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 110373,
+        "viewCount": 110406,
         "likeCount": null,
         "commentCount": 825
       }
@@ -422,9 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 188730,
+        "viewCount": 188803,
         "likeCount": null,
-        "commentCount": 1312
+        "commentCount": 1313
       }
     },
     {
@@ -446,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 95591,
+        "viewCount": 95650,
         "likeCount": null,
         "commentCount": 566
       }
@@ -470,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33498,
+        "viewCount": 33507,
         "likeCount": 3363,
         "commentCount": 635
       }
@@ -494,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87425,
+        "viewCount": 87470,
         "likeCount": 4492,
         "commentCount": 399
       }
@@ -518,7 +542,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42770,
+        "viewCount": 42774,
         "likeCount": 3038,
         "commentCount": 509
       }

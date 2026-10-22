@@ -37,9 +37,6 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
 <section class="section community-section" id="community" data-subscriber-refresh>
   <div class="wrap">
     <header class="section-intro">
-      <p class="kicker">YouTube</p>
-      <h2>Meine Community wächst</h2>
-      <p class="lede">Die aktuelle Abonnentenentwicklung meiner YouTube-Kanäle im Überblick.</p>
       {combined != null && (
         <p class="community-combined">
           <span class="label">Meine YouTube-Community</span>
@@ -83,7 +80,7 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
       <div class="section-head">
         <div>
           <h3>Meine Kanalentwicklung</h3>
-          <p class="lede" style="margin:8px 0 0;font-size:1rem">Öffentliche Abonnentenzahlen aus echten YouTube-Messpunkten.</p>
+          <p class="lede" style="margin:4px 0 0;font-size:0.88rem">Öffentliche Abonnentenzahlen aus echten YouTube-Messpunkten.</p>
         </div>
         <div class="chip-row" role="group" aria-label="Zeitraum" data-period-filters>
           <button class="chip" type="button" data-period="24h">24 Stunden</button>

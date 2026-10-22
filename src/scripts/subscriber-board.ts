@@ -113,7 +113,7 @@ function renderSpark(series: Array<{ at: string; value: number }>, color: string
     return `<p class="growth-note">Für diesen Zeitraum liegen noch nicht genügend Daten vor.</p>`;
   }
   const width = 320;
-  const height = 56;
+  const height = 32;
   const padX = 4;
   const padY = 8;
   const values = series.map((point) => point.value);
@@ -127,7 +127,7 @@ function renderSpark(series: Array<{ at: string; value: number }>, color: string
   });
   return `
     <svg viewBox="0 0 ${width} ${height}" role="img" aria-hidden="true">
-      <polyline fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="${coords.join(' ')}"></polyline>
+      <polyline fill="none" stroke="${color}" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" points="${coords.join(' ')}"></polyline>
     </svg>
   `;
 }
@@ -141,8 +141,8 @@ function renderComparisonChart(
   }
 
   const width = 720;
-  const height = 280;
-  const pad = { top: 24, right: 18, bottom: 36, left: 64 };
+  const height = 156;
+  const pad = { top: 12, right: 12, bottom: 18, left: 58 };
   const allValues = usable.flatMap((channel) => channel.series.map((point) => point.value));
   const min = Math.min(...allValues);
   const max = Math.max(...allValues);
@@ -155,12 +155,12 @@ function renderComparisonChart(
   const xOf = (iso: string) => pad.left + ((Date.parse(iso) - tMin) / tSpan) * (width - pad.left - pad.right);
   const yOf = (value: number) => pad.top + (1 - (value - min) / span) * (height - pad.top - pad.bottom);
 
-  const gridLines = [0, 0.25, 0.5, 0.75, 1].map((ratio) => {
+  const gridLines = [0, 0.5, 1].map((ratio) => {
     const value = min + span * (1 - ratio);
     const y = pad.top + ratio * (height - pad.top - pad.bottom);
     return `
-      <line x1="${pad.left}" y1="${y.toFixed(1)}" x2="${width - pad.right}" y2="${y.toFixed(1)}" stroke="rgba(255,255,255,0.08)" />
-      <text x="${pad.left - 10}" y="${(y + 4).toFixed(1)}" text-anchor="end" fill="#9BA7B5" font-size="11">${formatNumber(Math.round(value))}</text>
+      <line x1="${pad.left}" y1="${y.toFixed(1)}" x2="${width - pad.right}" y2="${y.toFixed(1)}" stroke="rgba(255,255,255,0.06)" />
+      <text x="${pad.left - 8}" y="${(y + 3).toFixed(1)}" text-anchor="end" fill="#7d8896" font-size="10">${formatNumber(Math.round(value))}</text>
     `;
   });
 
@@ -169,8 +169,8 @@ function renderComparisonChart(
     const points = channel.series.map((point) => `${xOf(point.at).toFixed(1)},${yOf(point.value).toFixed(1)}`).join(' ');
     const last = channel.series[channel.series.length - 1];
     return `
-      <polyline fill="none" stroke="${color}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" points="${points}"></polyline>
-      <circle cx="${xOf(last.at).toFixed(1)}" cy="${yOf(last.value).toFixed(1)}" r="3.5" fill="${color}"></circle>
+      <polyline fill="none" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="${points}"></polyline>
+      <circle cx="${xOf(last.at).toFixed(1)}" cy="${yOf(last.value).toFixed(1)}" r="2.2" fill="${color}"></circle>
     `;
   });
 

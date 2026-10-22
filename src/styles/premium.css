@@ -120,115 +120,56 @@
   padding-bottom: 28px;
 }
 
-.consult-offer {
+.consult-form {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
-  gap: 28px;
-  margin: 28px 0 18px;
-  padding: 28px;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 760px;
+  margin: 8px auto 48px;
+  padding: 24px;
   border-radius: 12px;
-  border: 1px solid rgba(212, 176, 122, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(12, 16, 22, 0.94);
-  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.28);
+  text-align: left;
 }
 
-.consult-offer-copy h2 {
-  margin: 0 0 12px;
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  line-height: 1.12;
+.consult-form .wide {
+  grid-column: 1 / -1;
 }
 
-.consult-offer-copy p,
-.consult-offer-copy li {
-  color: var(--muted);
+.consult-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
-.consult-offer-copy ul {
-  margin: 16px 0;
-  padding-left: 1.1rem;
+.consult-check input {
+  width: 18px;
+  height: 18px;
+  min-height: 18px;
+  accent-color: var(--accent);
 }
 
-.consult-offer-copy li + li {
-  margin-top: 6px;
+.consult-actions .button {
+  min-width: 180px;
 }
 
-.consult-note {
-  margin: 0;
-  font-size: 0.92rem;
+.consult-form .error {
+  min-height: 1.1em;
+  color: var(--danger);
+  font-size: 0.84rem;
 }
 
-.consult-price {
-  display: grid;
-  align-content: start;
-  justify-items: center;
-  gap: 6px;
-  padding: 22px 18px;
-  border-radius: 10px;
-  background: rgba(9, 12, 17, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  text-align: center;
+.consult-form .status {
+  min-height: 1.4em;
+  margin: 10px 0 0;
 }
 
-.consult-amount {
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(3rem, 6vw, 4.2rem);
-  line-height: 0.9;
-  letter-spacing: -0.04em;
-  color: var(--ink);
-}
-
-.consult-unit {
-  margin: 0 0 12px;
-  color: var(--accent);
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.consult-buy {
-  width: 100%;
-  min-height: 48px;
-}
-
-.consult-pay {
-  display: grid;
-  gap: 4px;
-  width: 100%;
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  color: var(--muted);
-  font-size: 0.88rem;
-}
-
-.consult-pay p,
-.consult-pay strong {
-  margin: 0;
-}
-
-.consult-pay strong {
-  color: var(--ink);
-  font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
-  font-size: 0.92rem;
-  letter-spacing: 0.01em;
-}
-
-.consult-points {
-  margin: 18px 0 36px;
-}
-
-@media (max-width: 800px) {
-  .consult-offer {
+@media (max-width: 720px) {
+  .consult-form {
     grid-template-columns: 1fr;
-    padding: 22px 18px;
-    text-align: center;
-  }
-
-  .consult-offer-copy ul {
-    display: inline-block;
-    text-align: left;
+    padding: 18px 16px;
   }
 }
 

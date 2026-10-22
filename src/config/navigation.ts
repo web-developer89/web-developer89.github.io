@@ -8,7 +8,7 @@ export const navigation = [
 
 export const primaryCta = {
   href: '/beratungsgespraech/',
-  label: 'Beratung buchen',
+  label: 'Beratungsgespräch',
 } as const;
 
 export const footerDiscover = [

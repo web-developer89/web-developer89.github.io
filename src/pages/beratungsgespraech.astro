@@ -3,88 +3,120 @@ import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { site } from '../config/site';
-import { support } from '../config/support';
 
-const price = '499 €';
-const subject = 'Buchung Beratungsgespräch – 499 € / Stunde';
-const body = [
-  'Guten Tag,',
-  '',
-  'ich möchte ein Beratungsgespräch zum Preis von 499 € pro Stunde buchen.',
-  '',
-  'Anliegen:',
-  '',
-  'Bevorzugte Zeiten:',
-  '',
-  'Name:',
-  'Telefon:',
-].join('\n');
-const mailHref = `mailto:${site.contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-const euro = support.banks.find((bank) => bank.enabled && bank.currencyNote.toLowerCase().includes('euro'));
+const topics = [
+  'Allgemeine Fragen',
+  'Beratungsgespräch',
+  'Zusammenarbeit',
+  'Presse',
+  'Sonstiges',
+] as const;
 ---
 <Base
-  title="Beratungsgespräch buchen"
-  description="Professionelles Einzelgespräch mit Politik mit Kopf. 499 Euro pro Stunde."
+  title="Beratungsgespräch"
+  description="Schreiben Sie Politik mit Kopf direkt eine E-Mail zu allgemeinen Fragen, einem Beratungsgespräch oder einer Zusammenarbeit."
 >
   <div class="wrap">
     <Breadcrumbs items={[{ href: '/beratungsgespraech/', label: 'Beratungsgespräch' }]} />
     <PageHeader
-      kicker="Einzelgespräch"
-      title="Beratungsgespräch buchen"
-      lede="Ein Stunde, ein Anliegen, eine klare Einordnung. Kein öffentliches Format und keine Standardantwort."
+      kicker="Kontakt"
+      title="Beratungsgespräch"
+      lede={`Wählen Sie ein Thema, schreiben Sie dazu, was Sie wissen möchten, und senden Sie die Nachricht an ${site.contactEmail}.`}
     />
 
-    <article class="consult-offer">
-      <div class="consult-offer-copy">
-        <p class="kicker">Professionelles Gespräch</p>
-        <h2>Zugang zu einer Stunde, die nur Ihnen gehört.</h2>
-        <p>
-          Die Beratung hat einen hohen Preis. Dafür erhalten Sie wertvolle Informationen
-          und eine persönliche Einordnung, die über ein öffentliches Video hinausgeht.
-        </p>
-        <ul>
-          <li>Eine Stunde im direkten Gespräch</li>
-          <li>Ihr konkretes Anliegen, nicht ein allgemeines Thema</li>
-          <li>Diskrete Behandlung der Inhalte</li>
-        </ul>
-        <p class="consult-note">
-          Der Button öffnet eine vorbereitete E-Mail an {site.contactEmail}.
-          Abgebucht wird hier nichts automatisch. Der Termin gilt nach Bestätigung und Zahlungseingang.
+    <form class="consult-form" data-consult-mail data-address={site.contactEmail} novalidate>
+      <label class="field">
+        <span>Thema</span>
+        <select name="topic" required>
+          <option value="">Bitte wählen</option>
+          {topics.map((topic) => <option value={topic}>{topic}</option>)}
+        </select>
+        <span class="error" data-error-for="topic"></span>
+      </label>
+      <label class="field">
+        <span>Name</span>
+        <input name="name" autocomplete="name" required maxlength="120" />
+        <span class="error" data-error-for="name"></span>
+      </label>
+      <label class="field wide">
+        <span>Ihre E-Mail-Adresse</span>
+        <input name="email" type="email" autocomplete="email" required maxlength="200" />
+        <span class="error" data-error-for="email"></span>
+      </label>
+      <label class="field wide consult-check">
+        <input name="interest" type="checkbox" />
+        <span>Ich interessiere mich für ein Beratungsgespräch.</span>
+      </label>
+      <label class="field wide">
+        <span>Was möchten Sie zusätzlich mitteilen?</span>
+        <textarea name="message" required maxlength="4000" placeholder="Ihr Anliegen"></textarea>
+        <span class="error" data-error-for="message"></span>
+      </label>
+      <div class="wide consult-actions">
+        <button class="button" type="submit">E-Mail senden</button>
+        <p class="status" data-consult-status role="status"></p>
+        <p class="legal-note">
+          Es öffnet sich Ihr E-Mail-Programm mit der fertigen Nachricht an {site.contactEmail}.
+          Dort bestätigen Sie den Versand. Gewöhnliche E-Mail ist nicht Ende-zu-Ende-verschlüsselt.
         </p>
       </div>
-      <div class="consult-price">
-        <p class="consult-amount">{price}</p>
-        <p class="consult-unit">pro Stunde</p>
-        <a class="button consult-buy" href={mailHref}>Beratung buchen</a>
-        {euro && (
-          <div class="consult-pay">
-            <p>Zahlung per Überweisung</p>
-            <p>{euro.accountName}</p>
-            <strong>{euro.iban}</strong>
-            <p>Verwendungszweck: Beratungsgespräch</p>
-            <button class="button ghost" type="button" data-copy={euro.iban}>IBAN kopieren</button>
-          </div>
-        )}
-      </div>
-    </article>
-
-    <div class="info-cards consult-points">
-      <article class="info-card">
-        <h2>Ablauf</h2>
-        <p>Sie senden das Anliegen und ein oder zwei Zeitfenster. Sie erhalten eine Rückmeldung mit der Bestätigung des Termins.</p>
-      </article>
-      <article class="info-card">
-        <h2>Für wen</h2>
-        <p>Für Personen, die eine Sache einmal gründlich besprechen wollen, statt sie in Kommentaren zu verhandeln.</p>
-      </article>
-      <article class="info-card">
-        <h2>Datenschutz</h2>
-        <p>
-          Für die Buchung werden die von Ihnen übermittelten Kontaktdaten verwendet.
-          Gewöhnliche E-Mail ist nicht Ende-zu-Ende-verschlüsselt.
-          Hinweise stehen in der <a href="/datenschutz/">Datenschutzerklärung</a>.
-        </p>
-      </article>
-    </div>
+    </form>
   </div>
 </Base>
+<script>
+  const topics = new Set(['Allgemeine Fragen', 'Beratungsgespräch', 'Zusammenarbeit', 'Presse', 'Sonstiges']);
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  document.querySelectorAll('[data-consult-mail]').forEach((node) => {
+    if (!(node instanceof HTMLFormElement) || node.dataset.bound === 'true') return;
+    node.dataset.bound = 'true';
+    const address = node.dataset.address || '';
+    const status = node.querySelector('[data-consult-status]');
+
+    const setError = (name: string, message: string) => {
+      const field = node.elements.namedItem(name);
+      const slot = node.querySelector(`[data-error-for="${name}"]`);
+      if (field instanceof HTMLElement) field.setAttribute('aria-invalid', message ? 'true' : 'false');
+      if (slot) slot.textContent = message;
+    };
+
+    node.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(node);
+      const topic = String(data.get('topic') || '').trim();
+      const name = String(data.get('name') || '').trim();
+      const email = String(data.get('email') || '').trim();
+      const message = String(data.get('message') || '').trim();
+      const interested = data.get('interest') === 'on';
+
+      const errors = {
+        topic: topics.has(topic) ? '' : 'Bitte ein Thema wählen.',
+        name: name.length < 2 ? 'Bitte einen Namen angeben.' : '',
+        email: emailPattern.test(email) ? '' : 'Bitte eine gültige E-Mail-Adresse angeben.',
+        message: message.length < 10 ? 'Bitte noch etwas zum Anliegen schreiben.' : '',
+      };
+      Object.entries(errors).forEach(([key, value]) => setError(key, value));
+      if (Object.values(errors).some(Boolean)) {
+        if (status) status.textContent = 'Bitte die markierten Felder prüfen.';
+        return;
+      }
+
+      const subject = interested
+        ? `Interesse an einem Beratungsgespräch – ${topic}`
+        : `Anfrage – ${topic}`;
+      const body = [
+        `Thema: ${topic}`,
+        `Interesse an einem Beratungsgespräch: ${interested ? 'Ja' : 'Nein'}`,
+        `Name: ${name}`,
+        `E-Mail: ${email}`,
+        '',
+        message,
+      ].join('\n');
+
+      window.location.href = `mailto:${address}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      if (status) {
+        status.textContent = `Die E-Mail an ${address} wurde in Ihrem Programm geöffnet. Bitte dort auf Senden klicken.`;
+      }
+    });
+  });
+</script>

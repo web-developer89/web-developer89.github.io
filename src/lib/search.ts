@@ -47,6 +47,12 @@ const pages: SearchItem[] = [
     text: 'Hinweise Unterlagen E-Mail Post Diskretion',
   },
   {
+    href: '/beratungsgespraech/',
+    title: 'Beratungsgespräch vereinbaren',
+    kind: 'Seite',
+    text: 'Beratung Anfrage Zusammenarbeit kontakt@politikmitkopf.de',
+  },
+  {
     href: '/ueber-uns/',
     title: 'Über uns',
     kind: 'Seite',

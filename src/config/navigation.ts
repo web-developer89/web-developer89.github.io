@@ -2,11 +2,14 @@ export const navigation = [
   { href: '/', label: 'Startseite' },
   { href: '/videos/', label: 'Videos' },
   { href: '/unsere-kanaele/', label: 'Meine Kanäle' },
-  { href: '/aktuelles/', label: 'Aktuelles' },
   { href: '/informant-werden/', label: 'Informant werden' },
   { href: '/unterstuetzen/', label: 'Unterstützen' },
-  { href: '/impressum/', label: 'Impressum' },
 ] as const;
+
+export const primaryCta = {
+  href: '/beratungsgespraech/',
+  label: 'Beratungsgespräch vereinbaren',
+} as const;
 
 export const footerDiscover = [
   { href: '/videos/', label: 'Videos' },
@@ -18,6 +21,7 @@ export const footerDiscover = [
 export const footerProject = [
   { href: '/ueber-uns/', label: 'Über uns' },
   { href: '/informant-werden/', label: 'Informant werden' },
+  { href: '/beratungsgespraech/', label: 'Beratungsgespräch' },
   { href: '/unterstuetzen/', label: 'Unterstützen' },
   { href: '/redaktion/', label: 'Synchronisation' },
 ] as const;

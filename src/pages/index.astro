@@ -3,22 +3,25 @@ import Base from '../layouts/Base.astro';
 import VideoCard from '../components/VideoCard.astro';
 import SupportPanel from '../components/SupportPanel.astro';
 import EmptyState from '../components/EmptyState.astro';
-import StatsBoard from '../components/StatsBoard.astro';
+import SubscriberCommunity from '../components/SubscriberCommunity.astro';
 import { catalog, channelDirectory, getFeatured, videoPath } from '../lib/catalog';
-import { formatDate, formatDateTime, formatNumber } from '../lib/format';
-import { connectedSocials, channelSocials, standardSocials } from '../config/social';
+import { formatDate, formatDateTime } from '../lib/format';
 import ChannelBadges from '../components/ChannelBadges.astro';
 import { site } from '../config/site';
+import { primaryCta } from '../config/navigation';
 
 const featured = getFeatured();
 const liveVideo = catalog.live ? catalog.videos.find((video) => video.id === catalog.live?.videoId) ?? null : null;
 const hero = liveVideo ?? featured;
 const channels = channelDirectory();
+const primary = channels.find((channel) => channel.id === 'primary');
 const reagiert = channels.find((channel) => channel.id === 'reagiert');
 const reactionVideos = reagiert
   ? catalog.videos.filter((video) => video.channelId === reagiert.channelId).slice(0, 4)
   : [];
-const latest = catalog.videos.slice(0, 8);
+const latest = primary
+  ? catalog.videos.filter((video) => video.channelId === primary.channelId).slice(0, 8)
+  : catalog.videos.slice(0, 8);
 const origin = site.url;
 const jsonLd = [
   {
@@ -29,7 +32,6 @@ const jsonLd = [
     url: origin,
     email: site.contactEmail,
     logo: new URL('/brand/mark.jpg', origin).href,
-    sameAs: connectedSocials.map((item) => item.profileUrl || item.href),
     address: {
       '@type': 'PostalAddress',
       streetAddress: site.publisher.street,
@@ -72,7 +74,7 @@ const jsonLd = [
       <p class="lede">{site.description}</p>
       <div class="hero-actions">
         <a class="button" href="/videos/">Neueste Videos ansehen</a>
-        <a class="button ghost" href="/unsere-kanaele/">Meine Kanäle entdecken</a>
+        <a class="button ghost" href={primaryCta.href}>{primaryCta.label}</a>
       </div>
       {catalog.syncedAt && (
         <p class="sync-note">
@@ -83,39 +85,27 @@ const jsonLd = [
     </section>
 
     {hero ? (
-      <div class="hero-split">
-        <a class="hero-feature" href={videoPath(hero)}>
-          <div class="thumb">
-            <img src={hero.thumbnail} alt="" width="1280" height="720" fetchpriority="high" decoding="async" data-fallback={hero.thumbnailRemote} />
-            <span class="play" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7.2v9.6L17.5 12 9 7.2z"/></svg>
-            </span>
-          </div>
+      <a class="hero-feature hero-feature-solo" href={videoPath(hero)}>
+        <div class="thumb">
+          <img src={hero.thumbnail} alt="" width="1280" height="720" fetchpriority="high" decoding="async" data-fallback={hero.thumbnailRemote} />
+          <span class="play" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7.2v9.6L17.5 12 9 7.2z"/></svg>
+          </span>
+          {hero.durationLabel && <span class="duration">{hero.durationLabel}</span>}
+        </div>
+        <div class="hero-feature-copy">
           <p class="kicker">{catalog.live && liveVideo ? 'Live' : 'Im Fokus'}</p>
           <p class="byline"><span>{hero.channelName}</span><time datetime={hero.publishedAt}>{formatDate(hero.publishedAt)}</time></p>
           <h2>{hero.title}</h2>
           <p class="excerpt">{hero.excerpt}</p>
-        </a>
-        <aside class="surface" style="padding:20px;display:grid;gap:14px;align-content:start">
-          <p class="kicker">Zwei Kanäle — eine Plattform</p>
-          {channels.map((channel) => (
-            <article>
-              <h3 style="margin:0 0 6px;font-size:1.15rem">{channel.name}</h3>
-              <p class="sync-note" style="margin:0 0 8px">{channel.description}</p>
-              {channel.stats?.subscriberCount != null && (
-                <p style="margin:0 0 8px"><strong>{formatNumber(channel.stats.subscriberCount)}</strong> Abonnenten</p>
-              )}
-              <a class="link-arrow" href={`/${channel.slug || 'politik-mit-kopf'}/`}>Kanal öffnen</a>
-            </article>
-          ))}
-        </aside>
-      </div>
+        </div>
+      </a>
     ) : (
       <EmptyState title="Aktuell sind noch keine Videos übernommen." actionHref="/" action="Erneut versuchen" />
     )}
   </div>
 
-  <StatsBoard />
+  <SubscriberCommunity />
 
   <section class="section">
     <div class="wrap">
@@ -124,7 +114,9 @@ const jsonLd = [
         <a class="link-arrow" href="/videos/">Ins Archiv</a>
       </div>
       <div class="mosaic">
-        {latest.map((video, index) => <VideoCard video={video} variant={index === 0 ? 'lead' : 'standard'} priority={index === 0} />)}
+        {latest.map((video, index) => (
+          <VideoCard video={video} variant={index === 0 ? 'lead' : 'standard'} priority={index === 0} hideEngagement={true} />
+        ))}
       </div>
     </div>
   </section>
@@ -140,7 +132,7 @@ const jsonLd = [
           <a class="link-arrow" href="/politik-mit-kopf-reagiert/">Zum Kanal</a>
         </div>
         <div class="rail">
-          {reactionVideos.map((video) => <VideoCard video={video} variant="rail" />)}
+          {reactionVideos.map((video) => <VideoCard video={video} variant="rail" hideEngagement={true} />)}
         </div>
       </div>
     </section>
@@ -160,25 +152,9 @@ const jsonLd = [
   <section class="band section">
     <div class="wrap">
       <div class="section-head" style="border-color:var(--band-line)">
-        <h2>Politik mit Kopf folgen</h2>
+        <h2>Meine Social-Media-Kanäle</h2>
       </div>
       <ChannelBadges size="section" />
-      <div class="social-list">
-        {channelSocials.map((item) => (
-          <a class="row" href={item.href} rel="noopener noreferrer">
-            <h3>{item.label}</h3>
-            <p>{item.description}</p>
-            <span class="link-arrow">Kanal öffnen</span>
-          </a>
-        ))}
-        {standardSocials.map((item) => (
-          <a class="row" href={item.href} rel="noopener noreferrer">
-            <h3>{item.label}</h3>
-            <p>{item.description}</p>
-            <span class="link-arrow">{item.label} öffnen</span>
-          </a>
-        ))}
-      </div>
     </div>
   </section>
 

@@ -1,5 +1,5 @@
 ---
-import { navigation } from '../config/navigation';
+import { navigation, primaryCta } from '../config/navigation';
 import ChannelBadges from './ChannelBadges.astro';
 import Icon from './Icon.astro';
 
@@ -27,7 +27,7 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
         <Icon name="search" size={18} />
         <span class="search-text">Suche</span>
       </a>
-      <a class="button small" href="/unterstuetzen/">Unterstützen</a>
+      <a class="button small cta-consult" href={primaryCta.href}>{primaryCta.label}</a>
     </div>
   </div>
 </header>
@@ -47,7 +47,7 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
       <a href={item.href} aria-current={current(item.href) ? 'page' : undefined}>{item.label}</a>
     ))}
   </nav>
-  <a class="button" href="/unterstuetzen/">Unterstützen</a>
+  <a class="button cta-consult" href={primaryCta.href}>{primaryCta.label}</a>
   <ChannelBadges size="menu" label="Kanäle" />
   <div class="menu-social">
     <a href="/unsere-kanaele/">Meine Kanäle</a>

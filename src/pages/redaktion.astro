@@ -1,11 +1,24 @@
 ---
 import Base from '../layouts/Base.astro';
-import { catalog, allChannelDirectory, youtube } from '../lib/catalog';
-import { formatDateTime } from '../lib/format';
+import { catalog, allChannelDirectory, channelDirectory, youtube } from '../lib/catalog';
+import { formatDateTime, formatNumber } from '../lib/format';
 import { socials } from '../config/social';
 import { support } from '../config/support';
+import snapshotsFile from '../data/snapshots.json';
 
 const channels = allChannelDirectory();
+const youtubeLive = channelDirectory();
+const snapshots = (snapshotsFile as { channelSnapshots?: Array<{ at: string; channelId: string; subscriberCount: number | null }> }).channelSnapshots || [];
+const latestByChannel = youtubeLive.map((channel) => {
+  const snaps = snapshots.filter((item) => item.channelId === channel.channelId);
+  const latest = snaps[snaps.length - 1] ?? null;
+  return {
+    ...channel,
+    snapshotCount: snaps.length,
+    latestSnapshotAt: latest?.at ?? null,
+  };
+});
+
 const statusLabel = {
   verbunden: 'Verbunden',
   deaktiviert: 'Deaktiviert',
@@ -19,13 +32,43 @@ const sourceLabel = {
   none: 'Noch keine Übernahme',
 } as const;
 ---
-<Base title="Synchronisation" description="Stand der YouTube-Übernahme." noindex={true}>
+<Base title="Synchronisation" description="Stand der YouTube-Übernahme und Abonnentenstatistik." noindex={true}>
   <div class="wrap">
     <header class="page-head">
       <p class="kicker">Redaktion</p>
       <h1>Synchronisation</h1>
       <p class="lede">Diese Seite zeigt den Stand. Einstellungen liegen in der Konfiguration und werden nicht von hier aus geändert.</p>
     </header>
+
+    <section class="surface" style="padding:20px;margin:0 0 28px;display:grid;gap:12px">
+      <h2 style="margin:0">Abonnentenstatistik</h2>
+      <p class="legal-note" style="margin:0">Öffentliche Abonnentenzahlen aus der letzten erfolgreichen YouTube-Synchronisierung. Keine erfundenen Werte.</p>
+      <table class="table">
+        <thead>
+          <tr><th>Kanal</th><th>Kanal-ID</th><th>Abonnenten</th><th>Snapshots</th><th>Letzter Snapshot</th></tr>
+        </thead>
+        <tbody>
+          {latestByChannel.map((channel) => (
+            <tr>
+              <td>{channel.name}</td>
+              <td><span class="legal-note">{channel.channelId}</span></td>
+              <td>{channel.stats.subscriberCount != null ? formatNumber(channel.stats.subscriberCount) : '—'}</td>
+              <td>{channel.snapshotCount}</td>
+              <td>{channel.latestSnapshotAt ? formatDateTime(channel.latestSnapshotAt) : '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p>Letzte erfolgreiche Synchronisierung: {catalog.syncedAt ? formatDateTime(catalog.syncedAt) : 'noch keine'}</p>
+      <p>API-/Quellenstatus: {sourceLabel[catalog.source]}{catalog.error ? ` · Fehler: ${catalog.error}` : ''}</p>
+      <p class="legal-note">
+        Ein manueller Knopf „Jetzt aktualisieren“ setzt eine authentifizierte Backend-Aktion voraus.
+        Auf GitHub Pages läuft die Synchronisierung über den geplanten Workflow (mindestens alle 5 Minuten laut GitHub Actions).
+        Lokal: <code>npm run sync</code>.
+      </p>
+      <a class="button ghost" href="https://github.com/web-developer89/web-developer89.github.io/actions" rel="noopener noreferrer">Workflows öffnen</a>
+    </section>
+
     <p>Letzte Übernahme: {catalog.syncedAt ? formatDateTime(catalog.syncedAt) : 'noch keine'}</p>
     <p>Quelle: {sourceLabel[catalog.source]}</p>
     <p>Videos: {catalog.videos.length}</p>

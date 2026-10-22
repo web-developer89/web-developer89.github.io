@@ -9,9 +9,14 @@ interface Props {
   variant?: 'standard' | 'lead' | 'rail';
   hidden?: boolean;
   priority?: boolean;
+  /** Homepage and editorial surfaces: no views/likes/comments. */
+  hideEngagement?: boolean;
 }
-const { video, variant = 'standard', hidden = false, priority = false } = Astro.props;
+const { video, variant = 'standard', hidden = false, priority = false, hideEngagement = false } = Astro.props;
 const stats = video.stats || { viewCount: null, likeCount: null, commentCount: null };
+const showEngagement =
+  !hideEngagement &&
+  (stats.viewCount != null || stats.likeCount != null || stats.commentCount != null);
 ---
 <article
   class:list={['video-card', `is-${variant}`]}
@@ -43,7 +48,7 @@ const stats = video.stats || { viewCount: null, likeCount: null, commentCount: n
     </p>
     <h3>{video.title}</h3>
     {variant !== 'rail' && <p class="excerpt">{video.excerpt}</p>}
-    {(stats.viewCount != null || stats.likeCount != null || stats.commentCount != null) && (
+    {showEngagement && (
       <p class="stat-row" aria-label="YouTube-Statistiken">
         {stats.viewCount != null && <span><span class="sr-only">Aufrufe: </span>{formatCompact(stats.viewCount)} Aufrufe</span>}
         {stats.likeCount != null && <span><span class="sr-only">Likes: </span>{formatCompact(stats.likeCount)} Likes</span>}

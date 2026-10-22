@@ -1,18 +1,18 @@
 :root {
-  --bg: #0a0b0d;
-  --bg-raised: rgba(18, 20, 24, 0.88);
-  --bg-elevated: rgba(28, 30, 36, 0.92);
-  --ink: #f4f1ea;
-  --muted: #b7b1a7;
-  --line: rgba(255, 255, 255, 0.1);
-  --line-strong: rgba(255, 255, 255, 0.18);
+  --bg: #090c11;
+  --bg-raised: rgba(17, 23, 32, 0.92);
+  --bg-elevated: rgba(25, 33, 44, 0.94);
+  --ink: #f4f6f8;
+  --muted: #9ba7b5;
+  --line: rgba(40, 51, 64, 0.95);
+  --line-strong: rgba(159, 173, 189, 0.28);
   --accent: #d4b07a;
   --accent-ink: #14110d;
   --accent-secondary: #8fa3b8;
-  --band: rgba(14, 16, 20, 0.82);
-  --band-ink: #f3efe8;
-  --band-muted: #cfc6ba;
-  --band-line: rgba(243, 239, 232, 0.14);
+  --band: rgba(14, 18, 24, 0.88);
+  --band-ink: #f4f6f8;
+  --band-muted: #9ba7b5;
+  --band-line: rgba(159, 173, 189, 0.18);
   --danger: #ffb4ae;
   --focus: #d4b07a;
   --header: 76px;
@@ -46,7 +46,7 @@ body {
   overflow-x: clip;
   background-color: var(--bg);
   background-image:
-    linear-gradient(180deg, rgba(6, 7, 9, 0.72), rgba(6, 7, 9, 0.84)),
+    linear-gradient(180deg, rgba(9, 12, 17, 0.74), rgba(9, 12, 17, 0.86)),
     var(--texture);
   background-size: auto, cover;
   background-position: center, center;
@@ -609,8 +609,13 @@ dialog.search-dialog::backdrop { background: rgba(12, 16, 24, 0.52); }
 .table th, .table td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .table th { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
 
+.cta-consult {
+  white-space: nowrap;
+}
+
 @media (max-width: 1179px) {
-  .nav-main, .header-tools .button, .search-text { display: none; }
+  .nav-main, .search-text { display: none; }
+  .header-tools .button:not(.cta-consult) { display: none; }
   .menu-button { display: inline-flex; }
   .header-bar {
     display: grid;
@@ -620,6 +625,32 @@ dialog.search-dialog::backdrop { background: rgba(12, 16, 24, 0.52); }
   }
   .brand { justify-self: center; }
   .header-tools { margin-left: 0; }
+  .cta-consult {
+    display: none;
+  }
+  .menu-panel .cta-consult {
+    display: inline-flex;
+    width: min(100%, 320px);
+    margin-inline: auto;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.25;
+    min-height: 48px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 1179px) and (min-width: 721px) {
+  .header-tools .cta-consult {
+    display: inline-flex;
+    font-size: 0.78rem;
+    padding: 0 10px;
+    max-width: 160px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.15;
+    min-height: 42px;
+  }
 }
 
 @media (max-width: 900px) {

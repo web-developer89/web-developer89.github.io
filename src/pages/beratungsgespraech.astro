@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { site } from '../config/site';
+
+const subject = 'Anfrage Beratungsgespräch – Politik mit Kopf';
+const mailHref = `mailto:${site.contactEmail}?subject=${encodeURIComponent(subject)}`;
+---
+<Base
+  title="Beratungsgespräch vereinbaren"
+  description="Sie möchten ein Anliegen persönlich besprechen oder haben Fragen zu einer möglichen Zusammenarbeit? Hier können Sie ein Beratungsgespräch anfragen."
+>
+  <div class="wrap prose">
+    <Breadcrumbs items={[{ href: '/beratungsgespraech/', label: 'Beratungsgespräch' }]} />
+    <PageHeader
+      kicker="Kontakt"
+      title="Beratungsgespräch vereinbaren"
+      lede="Sie möchten ein Anliegen persönlich besprechen oder haben Fragen zu einer möglichen Zusammenarbeit? Hier können Sie ein Beratungsgespräch anfragen."
+    />
+
+    <div class="info-cards" style="margin:28px 0">
+      <article class="info-card">
+        <h2>Ablauf der Anfrage</h2>
+        <p>
+          Senden Sie eine kurze E-Mail mit Ihrem Anliegen und bevorzugten Kontaktzeiten.
+          Die Anfrage wird geprüft; eine Antwort erfolgt über die angegebene Adresse.
+          Es werden keine festen Zeitslots online angezeigt.
+        </p>
+      </article>
+      <article class="info-card">
+        <h2>Kontakt</h2>
+        <p>Verifizierte Kontaktadresse:</p>
+        <p><a href={mailHref}>{site.contactEmail}</a></p>
+        <div class="hero-actions">
+          <a class="button" href={mailHref}>Beratungsgespräch anfragen</a>
+          <button class="button ghost" type="button" data-copy={site.contactEmail}>E-Mail kopieren</button>
+        </div>
+      </article>
+      <article class="info-card">
+        <h2>Datenschutz</h2>
+        <p>
+          Für die Bearbeitung Ihrer Anfrage werden die von Ihnen übermittelten Kontaktdaten verwendet.
+          Weitere Hinweise finden Sie in der
+          <a href="/datenschutz/">Datenschutzerklärung</a>.
+        </p>
+      </article>
+    </div>
+  </div>
+</Base>

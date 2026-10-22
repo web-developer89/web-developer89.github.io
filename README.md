@@ -21,20 +21,26 @@ Konfiguration in `src/config/youtube.json`:
 - Politik mit Kopf — `UCsLN1bEfDJoZOs8udTwHatQ`
 - Politik mit Kopf REAGIERT — `UCOdBOgdBxkqo5CaGukX8z4g`
 
-## Statistiken
+## Abonnentenstatistik
 
-Mit `YOUTUBE_API_KEY` lädt der Sync öffentliche Kanal- und Videostatistiken und schreibt Zeitreihen nach `src/data/snapshots.json` sowie `/data/stats.json`.
+Mit `YOUTUBE_API_KEY` lädt der Sync öffentliche Kanalstatistiken und schreibt Zeitreihen nach `src/data/snapshots.json` sowie `public/data/stats.json`.
 
-Die Homepage aktualisiert den Sync-Zeitstempel alle 60 Sekunden aus `/data/feed.json`. Der Backend-Sync läuft über GitHub Actions (stündlich). Echte Minuten-Aktualität der YouTube-Zahlen braucht einen API-Schlüssel und genug Quota; historische Veränderungen erscheinen erst, nachdem mehrere Sync-Läufe Snapshots gespeichert haben.
+Die Homepage-Sektion **Meine Community wächst** zeigt ausschließlich echte YouTube-Abonnentenzahlen (keine Aufrufe, Likes oder Kommentare). Das Frontend prüft `/data/stats.json` alle **60 Sekunden**.
+
+### Backend-Takt
+
+GitHub Actions erlaubt keinen kürzeren Cron als alle **5 Minuten**. Der Workflow `.github/workflows/pages.yml` läuft daher `*/5 * * * *` sowie bei Push und manuell. Statisches GitHub Pages allein kann keinen persistenten 60-Sekunden-Worker ausführen.
 
 ## Konfiguration
 
 - `src/config/youtube.json` — Kanäle, Fokus, Limits
+- `src/config/navigation.ts` — Navigation und Beratungs-CTA
 - `src/config/social.ts` — nur belegte Profile sind öffentlich sichtbar
 - `src/config/support.ts` — Überweisung und Empfehlungen
 - `src/config/site.ts` — Name, Impressum, Kontakt-E-Mail
 - `src/content/overlay.json` — Texte für OBS-Einblendungen
 - `public/images/politik-mit-kopf-background.jpg` — Pflicht-Hintergrund
+- `public/brand/channels/` — originale Social-Badges
 
 ## Umgebung
 
@@ -42,6 +48,14 @@ Siehe `.env.example`.
 
 - `YOUTUBE_API_KEY` empfohlen für Statistiken, Laufzeiten und größeres Archiv
 - `YOUTUBE_CHANNEL_ID` optional, überschreibt den hervorgehobenen Kanal
+
+## Seiten
+
+- `/` — Premium-Homepage mit Abonnenten-Panels und Kanalentwicklung
+- `/beratungsgespraech/` — Anfrage per E-Mail (`kontakt@politikmitkopf.de`)
+- `/informant-werden/` — vertrauliche Hinweise
+- `/politik-mit-kopf/` und `/politik-mit-kopf-reagiert/` — Kanalarchive
+- `/redaktion/` — Sync-Status und Abonnentenstatistik (noindex)
 
 ## OBS
 
@@ -57,4 +71,4 @@ Browserquellen, transparent, 1920×1080:
 
 ## Veröffentlichung
 
-GitHub Actions baut stündlich und bei jedem Push auf `main` neu und stellt die Seite über GitHub Pages bereit. Manueller Lauf: „Sync and deploy“.
+GitHub Actions baut alle 5 Minuten (Schedule), bei Push auf `main` und manuell neu und stellt die Seite über GitHub Pages bereit.

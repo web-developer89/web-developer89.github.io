@@ -11,6 +11,10 @@ const topics = [
   'Presse',
   'Sonstiges',
 ] as const;
+
+const endpoint =
+  import.meta.env.PUBLIC_CONTACT_ENDPOINT ||
+  `https://formsubmit.co/ajax/${site.contactEmail}`;
 ---
 <Base
   title="Beratungsgespräch"
@@ -24,7 +28,16 @@ const topics = [
       lede={`Wählen Sie ein Thema, schreiben Sie dazu, was Sie wissen möchten, und senden Sie die Nachricht an ${site.contactEmail}.`}
     />
 
-    <form class="consult-form" data-consult-mail data-address={site.contactEmail} novalidate>
+    <form
+      class="consult-form"
+      data-consult-mail
+      data-endpoint={endpoint}
+      data-address={site.contactEmail}
+      novalidate
+    >
+      <input type="hidden" name="_subject" value="Anfrage über politikmitkopf.de" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
       <label class="field">
         <span>Thema</span>
         <select name="topic" required>
@@ -53,11 +66,11 @@ const topics = [
         <span class="error" data-error-for="message"></span>
       </label>
       <div class="wide consult-actions">
-        <button class="button" type="submit">E-Mail senden</button>
+        <button class="button" type="submit">Nachricht senden</button>
         <p class="status" data-consult-status role="status"></p>
         <p class="legal-note">
-          Es öffnet sich Ihr E-Mail-Programm mit der fertigen Nachricht an {site.contactEmail}.
-          Dort bestätigen Sie den Versand. Gewöhnliche E-Mail ist nicht Ende-zu-Ende-verschlüsselt.
+          Die Nachricht geht direkt an {site.contactEmail}.
+          Gewöhnliche E-Mail ist nicht Ende-zu-Ende-verschlüsselt.
         </p>
       </div>
     </form>
@@ -70,6 +83,7 @@ const topics = [
   document.querySelectorAll('[data-consult-mail]').forEach((node) => {
     if (!(node instanceof HTMLFormElement) || node.dataset.bound === 'true') return;
     node.dataset.bound = 'true';
+    const endpoint = node.dataset.endpoint || '';
     const address = node.dataset.address || '';
     const status = node.querySelector('[data-consult-status]');
 
@@ -80,7 +94,7 @@ const topics = [
       if (slot) slot.textContent = message;
     };
 
-    node.addEventListener('submit', (event) => {
+    node.addEventListener('submit', async (event) => {
       event.preventDefault();
       const data = new FormData(node);
       const topic = String(data.get('topic') || '').trim();
@@ -88,6 +102,7 @@ const topics = [
       const email = String(data.get('email') || '').trim();
       const message = String(data.get('message') || '').trim();
       const interested = data.get('interest') === 'on';
+      const honey = String(data.get('_honey') || '').trim();
 
       const errors = {
         topic: topics.has(topic) ? '' : 'Bitte ein Thema wählen.',
@@ -100,22 +115,57 @@ const topics = [
         if (status) status.textContent = 'Bitte die markierten Felder prüfen.';
         return;
       }
+      if (honey) {
+        if (status) status.textContent = 'Die Nachricht konnte nicht gesendet werden.';
+        return;
+      }
 
       const subject = interested
         ? `Interesse an einem Beratungsgespräch – ${topic}`
         : `Anfrage – ${topic}`;
-      const body = [
-        `Thema: ${topic}`,
-        `Interesse an einem Beratungsgespräch: ${interested ? 'Ja' : 'Nein'}`,
-        `Name: ${name}`,
-        `E-Mail: ${email}`,
-        '',
-        message,
-      ].join('\n');
 
-      window.location.href = `mailto:${address}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      if (status) {
-        status.textContent = `Die E-Mail an ${address} wurde in Ihrem Programm geöffnet. Bitte dort auf Senden klicken.`;
+      const button = node.querySelector('button[type="submit"]');
+      if (button instanceof HTMLButtonElement) button.disabled = true;
+      if (status) status.textContent = 'Wird gesendet…';
+
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            topic,
+            interest: interested ? 'Ja' : 'Nein',
+            message,
+            _subject: subject,
+            _template: 'table',
+            _replyto: email,
+            _captcha: 'false',
+          }),
+        });
+
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok) {
+          throw new Error(typeof result.message === 'string' ? result.message : 'request failed');
+        }
+
+        node.reset();
+        if (status) {
+          status.textContent = `Vielen Dank. Die Nachricht wurde an ${address} gesendet.`;
+        }
+      } catch {
+        if (status) {
+          status.textContent =
+            'Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut oder schreiben Sie direkt an ' +
+            address +
+            '.';
+        }
+      } finally {
+        if (button instanceof HTMLButtonElement) button.disabled = false;
       }
     });
   });

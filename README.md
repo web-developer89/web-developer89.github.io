@@ -52,7 +52,7 @@ Siehe `.env.example`.
 ## Seiten
 
 - `/` — Premium-Homepage mit Abonnenten-Panels und Kanalentwicklung
-- `/beratungsgespraech/` — Anfrage per E-Mail (`kontakt@politikmitkopf.de`)
+- `/beratungsgespraech/` — Anfrage direkt vom Browser an `kontakt@politikmitkopf.de` (FormSubmit; erste Nutzung einmal per Mail bestätigen)
 - `/informant-werden/` — vertrauliche Hinweise
 - `/politik-mit-kopf/` und `/politik-mit-kopf-reagiert/` — Kanalarchive
 

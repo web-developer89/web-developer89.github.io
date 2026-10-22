@@ -55,7 +55,8 @@ Siehe `.env.example`.
 - `/beratungsgespraech/` — Anfrage per E-Mail (`kontakt@politikmitkopf.de`)
 - `/informant-werden/` — vertrauliche Hinweise
 - `/politik-mit-kopf/` und `/politik-mit-kopf-reagiert/` — Kanalarchive
-- `/redaktion/` — Sync-Status und Abonnentenstatistik (noindex)
+
+Die interne Synchronisation wird nicht als Seite veröffentlicht.
 
 ## OBS
 

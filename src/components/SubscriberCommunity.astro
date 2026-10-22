@@ -1,6 +1,6 @@
 ---
 import { channelDirectory, catalog, youtubeSubscribeUrl } from '../lib/catalog';
-import { formatDateTime, formatNumber } from '../lib/format';
+import { formatNumber } from '../lib/format';
 import snapshotsFile from '../data/snapshots.json';
 
 const channels = channelDirectory().filter((channel) => channel.id === 'primary' || channel.id === 'reagiert');
@@ -53,11 +53,6 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
           </p>
           <p class="subscriber-delta" data-sub-delta>—</p>
           <div class="subscriber-spark" data-sub-spark aria-hidden="true"></div>
-          <p class="growth-note" data-sub-stamp>
-            {catalog.syncedAt
-              ? <>Zuletzt aktualisiert: <time datetime={catalog.syncedAt}>{formatDateTime(catalog.syncedAt)}</time></>
-              : 'Noch keine erfolgreiche Synchronisierung'}
-          </p>
           <div class="hero-actions">
             <a class="button" href={channel.subscribeUrl} rel="noopener noreferrer">Jetzt abonnieren</a>
             <a class="button ghost" href={`/${channel.slug}/`}>Zum Kanal</a>

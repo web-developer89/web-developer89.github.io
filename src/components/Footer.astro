@@ -2,8 +2,7 @@
 import { footerDiscover, footerLegal, footerProject } from '../config/navigation';
 import { connectedSocials } from '../config/social';
 import { publisherLines, site } from '../config/site';
-import { catalog } from '../lib/catalog';
-import { currentYear, formatDateTime } from '../lib/format';
+import { currentYear } from '../lib/format';
 ---
 <footer class="site-footer">
   <div class="wrap">
@@ -11,7 +10,6 @@ import { currentYear, formatDateTime } from '../lib/format';
       <div>
         <h2>Politik mit Kopf</h2>
         <p class="legal-note">{publisherLines.join(', ')}</p>
-        {catalog.syncedAt && <p class="legal-note">Stand der Videos: {formatDateTime(catalog.syncedAt)}</p>}
       </div>
       <div>
         <h2>Entdecken</h2>

@@ -30,7 +30,10 @@
 *::before,
 *::after { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  background: #090c11;
+}
 
 html.lock,
 html.lock body { overflow: hidden; }
@@ -44,20 +47,27 @@ body {
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   overflow-x: clip;
-  background-color: var(--bg);
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background-image:
-    linear-gradient(180deg, rgba(9, 12, 17, 0.74), rgba(9, 12, 17, 0.86)),
+    linear-gradient(180deg, rgba(9, 12, 17, 0.5), rgba(9, 12, 17, 0.72)),
     var(--texture);
-  background-size: auto, cover;
-  background-position: center, center;
-  background-attachment: scroll;
-  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 img { max-width: 100%; height: auto; }
 button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; }
-h1, h2, h3, h4, p { overflow-wrap: anywhere; }
+h1, h2, h3, h4, p { overflow-wrap: break-word; }
 
 h1, h2, h3, .wordmark, .pullquote blockquote, .topic-index a, .menu-nav a {
   font-family: var(--display);
@@ -833,8 +843,27 @@ dialog.search-dialog::backdrop { background: rgba(12, 16, 24, 0.52); }
   .wordmark { font-size: 1.08rem; }
   .section { padding: 40px 0; }
   .rail {
-    grid-auto-columns: 86%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    overflow: visible;
   }
+  .footer-mark {
+    font-size: clamp(1.8rem, 11vw, 2.8rem);
+    text-align: center;
+  }
+  .subscriber-panel {
+    padding: 22px 16px 18px;
+  }
+  .subscriber-count strong {
+    font-size: clamp(2.15rem, 11vw, 2.8rem);
+  }
+}
+
+@media (max-width: 420px) {
+  .wordmark { font-size: 0.95rem; }
+  .brand img { width: 30px; height: 30px; }
+  .header-bar { width: calc(100% - 16px); gap: 6px; }
 }
 
 @media (hover: hover) {

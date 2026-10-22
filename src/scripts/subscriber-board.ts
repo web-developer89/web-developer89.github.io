@@ -52,17 +52,6 @@ function formatSigned(value: number | null): string {
   return abs;
 }
 
-function formatStamp(iso: string): string {
-  return new Intl.DateTimeFormat('de-DE', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-    timeZone: 'Europe/Zurich',
-  }).format(new Date(iso));
-}
-
 function periodLabel(period: Period): string {
   if (period === '24h') return 'in den letzten 24 Stunden';
   if (period === '7d') return 'in den letzten 7 Tagen';
@@ -242,7 +231,6 @@ export function setupSubscriberBoard(): void {
   }
 
   let period: Period = '7d';
-  let delayed = false;
 
   const combinedNode = section.querySelector('[data-combined-count]');
   const chartRoot = section.querySelector('[data-dev-chart]');
@@ -260,7 +248,6 @@ export function setupSubscriberBoard(): void {
       const count = panel.querySelector('[data-sub-count]');
       const delta = panel.querySelector('[data-sub-delta]');
       const spark = panel.querySelector('[data-sub-spark]');
-      const stamp = panel.querySelector('[data-sub-stamp]');
       const change = netChange(payload, channel.channelId, period);
       const series = seriesForChannel(payload, channel.channelId, period);
       const color = COLORS[channel.id] || '#d4b07a';
@@ -278,15 +265,6 @@ export function setupSubscriberBoard(): void {
         }
       }
       if (spark instanceof HTMLElement) spark.innerHTML = renderSpark(series, color);
-      if (stamp instanceof HTMLElement) {
-        if (payload.syncedAt && !delayed) {
-          stamp.innerHTML = `Zuletzt aktualisiert: <time datetime="${payload.syncedAt}">${formatStamp(payload.syncedAt)}</time>`;
-        } else if (payload.syncedAt) {
-          stamp.innerHTML = `Aktualisierung verzögert – letzter verfügbarer Stand: <time datetime="${payload.syncedAt}">${formatStamp(payload.syncedAt)}</time>`;
-        } else {
-          stamp.textContent = 'Noch keine erfolgreiche Synchronisierung';
-        }
-      }
     }
 
     const chartSeries = payload.channels.map((channel) => ({
@@ -327,24 +305,14 @@ export function setupSubscriberBoard(): void {
   const refreshFromNetwork = async () => {
     try {
       const response = await fetch(`/data/stats.json?t=${Date.now()}`, { cache: 'no-store' });
-      if (!response.ok) {
-        delayed = true;
-        render();
-        return;
-      }
+      if (!response.ok) return;
       const next = normalizeRemote(await response.json(), payload);
-      if (!next) {
-        delayed = true;
-        render();
-        return;
-      }
-      delayed = false;
+      if (!next) return;
       payload = next;
       payloadNode.textContent = JSON.stringify(next);
       render();
     } catch {
-      delayed = true;
-      render();
+      return;
     }
   };
 

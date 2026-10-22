@@ -23,7 +23,6 @@ export const footerProject = [
   { href: '/informant-werden/', label: 'Informant werden' },
   { href: '/beratungsgespraech/', label: 'Beratungsgespräch' },
   { href: '/unterstuetzen/', label: 'Unterstützen' },
-  { href: '/redaktion/', label: 'Synchronisation' },
 ] as const;
 
 export const footerLegal = [

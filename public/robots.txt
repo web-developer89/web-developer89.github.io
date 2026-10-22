@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /redaktion/
 
 Sitemap: https://web-developer89.github.io/sitemap-index.xml

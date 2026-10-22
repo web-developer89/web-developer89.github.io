@@ -5,7 +5,7 @@ import SupportPanel from '../components/SupportPanel.astro';
 import EmptyState from '../components/EmptyState.astro';
 import SubscriberCommunity from '../components/SubscriberCommunity.astro';
 import { catalog, channelDirectory, getFeatured, videoPath } from '../lib/catalog';
-import { formatDate, formatDateTime } from '../lib/format';
+import { formatDate } from '../lib/format';
 import ChannelBadges from '../components/ChannelBadges.astro';
 import { site } from '../config/site';
 import { primaryCta } from '../config/navigation';
@@ -76,12 +76,6 @@ const jsonLd = [
         <a class="button" href="/videos/">Neueste Videos ansehen</a>
         <a class="button ghost" href={primaryCta.href}>{primaryCta.label}</a>
       </div>
-      {catalog.syncedAt && (
-        <p class="sync-note">
-          Stand der Videos:
-          <time data-sync-stamp datetime={catalog.syncedAt}>{formatDateTime(catalog.syncedAt)}</time>
-        </p>
-      )}
     </section>
 
     {hero ? (

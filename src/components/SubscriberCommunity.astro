@@ -36,16 +36,6 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
 ---
 <section class="section community-section" id="community" data-subscriber-refresh>
   <div class="wrap">
-    <header class="section-intro">
-      {combined != null && (
-        <p class="community-combined">
-          <span class="label">Meine YouTube-Community</span>
-          <strong data-combined-count>{formatNumber(combined)}</strong>
-          <span class="hint">Summe der öffentlich ausgewiesenen Abonnements beider Kanäle — nicht gleichbedeutend mit einzigartigen Personen.</span>
-        </p>
-      )}
-    </header>
-
     <div class="subscriber-panels" data-subscriber-panels>
       {youtubeChannels.map((channel) => (
         <article class:list={['subscriber-panel', `is-${channel.id}`]} data-channel-panel={channel.channelId}>
@@ -80,7 +70,6 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
       <div class="section-head">
         <div>
           <h3>Meine Kanalentwicklung</h3>
-          <p class="lede" style="margin:4px 0 0;font-size:0.88rem">Öffentliche Abonnentenzahlen aus echten YouTube-Messpunkten.</p>
         </div>
         <div class="chip-row" role="group" aria-label="Zeitraum" data-period-filters>
           <button class="chip" type="button" data-period="24h">24 Stunden</button>

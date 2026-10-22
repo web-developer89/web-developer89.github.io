@@ -48,7 +48,7 @@ const pages: SearchItem[] = [
   },
   {
     href: '/beratungsgespraech/',
-    title: 'Beratungsgespräch vereinbaren',
+    title: 'Beratung buchen',
     kind: 'Seite',
     text: 'Beratung Anfrage Zusammenarbeit kontakt@politikmitkopf.de',
   },

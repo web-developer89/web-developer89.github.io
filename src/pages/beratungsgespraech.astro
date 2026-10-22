@@ -3,46 +3,86 @@ import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { site } from '../config/site';
+import { support } from '../config/support';
 
-const subject = 'Anfrage Beratungsgespräch – Politik mit Kopf';
-const mailHref = `mailto:${site.contactEmail}?subject=${encodeURIComponent(subject)}`;
+const price = '499 €';
+const subject = 'Buchung Beratungsgespräch – 499 € / Stunde';
+const body = [
+  'Guten Tag,',
+  '',
+  'ich möchte ein Beratungsgespräch zum Preis von 499 € pro Stunde buchen.',
+  '',
+  'Anliegen:',
+  '',
+  'Bevorzugte Zeiten:',
+  '',
+  'Name:',
+  'Telefon:',
+].join('\n');
+const mailHref = `mailto:${site.contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+const euro = support.banks.find((bank) => bank.enabled && bank.currencyNote.toLowerCase().includes('euro'));
 ---
 <Base
-  title="Beratungsgespräch vereinbaren"
-  description="Sie möchten ein Anliegen persönlich besprechen oder haben Fragen zu einer möglichen Zusammenarbeit? Hier können Sie ein Beratungsgespräch anfragen."
+  title="Beratungsgespräch buchen"
+  description="Professionelles Einzelgespräch mit Politik mit Kopf. 499 Euro pro Stunde."
 >
-  <div class="wrap prose">
+  <div class="wrap">
     <Breadcrumbs items={[{ href: '/beratungsgespraech/', label: 'Beratungsgespräch' }]} />
     <PageHeader
-      kicker="Kontakt"
-      title="Beratungsgespräch vereinbaren"
-      lede="Sie möchten ein Anliegen persönlich besprechen oder haben Fragen zu einer möglichen Zusammenarbeit? Hier können Sie ein Beratungsgespräch anfragen."
+      kicker="Einzelgespräch"
+      title="Beratungsgespräch buchen"
+      lede="Ein Stunde, ein Anliegen, eine klare Einordnung. Kein öffentliches Format und keine Standardantwort."
     />
 
-    <div class="info-cards" style="margin:28px 0">
-      <article class="info-card">
-        <h2>Ablauf der Anfrage</h2>
+    <article class="consult-offer">
+      <div class="consult-offer-copy">
+        <p class="kicker">Professionelles Gespräch</p>
+        <h2>Zugang zu einer Stunde, die nur Ihnen gehört.</h2>
         <p>
-          Senden Sie eine kurze E-Mail mit Ihrem Anliegen und bevorzugten Kontaktzeiten.
-          Die Anfrage wird geprüft; eine Antwort erfolgt über die angegebene Adresse.
-          Es werden keine festen Zeitslots online angezeigt.
+          Die Beratung hat einen hohen Preis. Dafür erhalten Sie wertvolle Informationen
+          und eine persönliche Einordnung, die über ein öffentliches Video hinausgeht.
         </p>
+        <ul>
+          <li>Eine Stunde im direkten Gespräch</li>
+          <li>Ihr konkretes Anliegen, nicht ein allgemeines Thema</li>
+          <li>Diskrete Behandlung der Inhalte</li>
+        </ul>
+        <p class="consult-note">
+          Der Button öffnet eine vorbereitete E-Mail an {site.contactEmail}.
+          Abgebucht wird hier nichts automatisch. Der Termin gilt nach Bestätigung und Zahlungseingang.
+        </p>
+      </div>
+      <div class="consult-price">
+        <p class="consult-amount">{price}</p>
+        <p class="consult-unit">pro Stunde</p>
+        <a class="button consult-buy" href={mailHref}>Beratung buchen</a>
+        {euro && (
+          <div class="consult-pay">
+            <p>Zahlung per Überweisung</p>
+            <p>{euro.accountName}</p>
+            <strong>{euro.iban}</strong>
+            <p>Verwendungszweck: Beratungsgespräch</p>
+            <button class="button ghost" type="button" data-copy={euro.iban}>IBAN kopieren</button>
+          </div>
+        )}
+      </div>
+    </article>
+
+    <div class="info-cards consult-points">
+      <article class="info-card">
+        <h2>Ablauf</h2>
+        <p>Sie senden das Anliegen und ein oder zwei Zeitfenster. Sie erhalten eine Rückmeldung mit der Bestätigung des Termins.</p>
       </article>
       <article class="info-card">
-        <h2>Kontakt</h2>
-        <p>Verifizierte Kontaktadresse:</p>
-        <p><a href={mailHref}>{site.contactEmail}</a></p>
-        <div class="hero-actions">
-          <a class="button" href={mailHref}>Beratungsgespräch anfragen</a>
-          <button class="button ghost" type="button" data-copy={site.contactEmail}>E-Mail kopieren</button>
-        </div>
+        <h2>Für wen</h2>
+        <p>Für Personen, die eine Sache einmal gründlich besprechen wollen, statt sie in Kommentaren zu verhandeln.</p>
       </article>
       <article class="info-card">
         <h2>Datenschutz</h2>
         <p>
-          Für die Bearbeitung Ihrer Anfrage werden die von Ihnen übermittelten Kontaktdaten verwendet.
-          Weitere Hinweise finden Sie in der
-          <a href="/datenschutz/">Datenschutzerklärung</a>.
+          Für die Buchung werden die von Ihnen übermittelten Kontaktdaten verwendet.
+          Gewöhnliche E-Mail ist nicht Ende-zu-Ende-verschlüsselt.
+          Hinweise stehen in der <a href="/datenschutz/">Datenschutzerklärung</a>.
         </p>
       </article>
     </div>

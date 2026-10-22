@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-22T05:08:34.765Z",
-  "ok": false,
+  "syncedAt": "2026-10-22T10:05:01.747Z",
+  "ok": true,
   "source": "youtube-public",
-  "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
+  "error": null,
   "live": null,
   "channels": [
     {
@@ -10,7 +10,7 @@
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "name": "Politik mit Kopf",
       "videoCount": 15,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/mark.jpg",
       "slug": "politik-mit-kopf",
       "handle": "@PolitikmitKopf",
@@ -18,8 +18,8 @@
       "subscribeUrl": "https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1",
       "stats": {
         "subscriberCount": 285000,
-        "viewCount": 171209811,
-        "videoCount": 1534,
+        "viewCount": 172167487,
+        "videoCount": 1535,
         "hiddenSubscriberCount": false
       }
     },
@@ -28,7 +28,7 @@
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
       "videoCount": 7,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
       "handle": "@PolitikmitKopfReagiert",
@@ -36,13 +36,37 @@
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
         "subscriberCount": 17500,
-        "viewCount": 359432,
+        "viewCount": 378338,
         "videoCount": 7,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "4siwPi7eI8c",
+      "slug": "merz-gibt-zu-ki-ersetzt-eure-jobs-und-das-ist-absicht-4siwPi7eI8c",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Merz gibt zu: KI ersetzt eure Jobs – und das ist Absicht!",
+      "description": "Friedrich Merz erklärt im Interview, dass künstliche Intelligenz gezielt eingesetzt wird, um Arbeitsplätze in der Industrie zu ersetzen – während die Wirtschaft, Arbeitsplatzverluste und Schulden für ihn zweitrangig seien. Stattdessen sieht er Russland als größte Gefahr und lehnt jede Kapitulation der Ukraine kategorisch ab.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Friedrich Merz erklärt im Interview, dass künstliche Intelligenz gezielt eingesetzt wird, um Arbeitsplätze in der Industrie zu ersetzen – während die Wirtschaft,…",
+      "publishedAt": "2026-10-22T07:24:17+00:00",
+      "url": "https://www.youtube.com/watch?v=4siwPi7eI8c",
+      "thumbnail": "/media/4siwPi7eI8c.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/4siwPi7eI8c/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 19929,
+        "likeCount": null,
+        "commentCount": 566
+      }
+    },
     {
       "id": "8AGD4P3tpoU",
       "slug": "hip-hop-ministerialdirektor-klingbeil-weist-zoll-an-neues-tabaksteuerg-8AGD4P3tpoU",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 25502,
+        "viewCount": 125870,
         "likeCount": null,
-        "commentCount": 267
+        "commentCount": 529
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 40877,
+        "viewCount": 54086,
         "likeCount": null,
-        "commentCount": 232
+        "commentCount": 270
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 185491,
+        "viewCount": 204494,
         "likeCount": null,
-        "commentCount": 1501
+        "commentCount": 1602
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 232673,
+        "viewCount": 235886,
         "likeCount": null,
-        "commentCount": 1082
+        "commentCount": 1088
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 184931,
+        "viewCount": 187922,
         "likeCount": null,
-        "commentCount": 1092
+        "commentCount": 1102
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 90264,
+        "viewCount": 91453,
         "likeCount": null,
-        "commentCount": 626
+        "commentCount": 627
       }
     },
     {
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 201881,
+        "viewCount": 202978,
         "likeCount": null,
-        "commentCount": 1205
+        "commentCount": 1236
       }
     },
     {
@@ -230,9 +254,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 73122,
+        "viewCount": 73563,
         "likeCount": null,
-        "commentCount": 482
+        "commentCount": 486
       }
     },
     {
@@ -254,7 +278,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 122287,
+        "viewCount": 122479,
         "likeCount": null,
         "commentCount": 623
       }
@@ -278,7 +302,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 252494,
+        "viewCount": 253018,
         "likeCount": null,
         "commentCount": 2928
       }
@@ -302,9 +326,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 115590,
+        "viewCount": 115886,
         "likeCount": null,
-        "commentCount": 858
+        "commentCount": 859
       }
     },
     {
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 287702,
+        "viewCount": 288044,
         "likeCount": null,
-        "commentCount": 1374
+        "commentCount": 1373
       }
     },
     {
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 107051,
+        "viewCount": 107107,
         "likeCount": null,
         "commentCount": 1226
       }
@@ -374,9 +398,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 324774,
+        "viewCount": 325049,
         "likeCount": null,
-        "commentCount": 2357
+        "commentCount": 2349
       }
     },
     {
@@ -398,7 +422,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 89248,
+        "viewCount": 89299,
         "likeCount": null,
         "commentCount": 351
       }
@@ -422,33 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 99997,
+        "viewCount": 100066,
         "likeCount": null,
         "commentCount": 960
-      }
-    },
-    {
-      "id": "cPv5ulUZMv8",
-      "slug": "alarm-am-frankfurter-flughafen-lufthansa-fliegt-kerosin-ein-engpass-wi-cPv5ulUZMv8",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Alarm am Frankfurter Flughafen: Lufthansa fliegt Kerosin ein - Engpass & widersprüchliche Erklärung!",
-      "description": "Am Frankfurter Flughafen herrscht ein Kerosinengpass, der Lufthansa zu einer unbefristeten Tankering-Anordnung zwingt, während die Verantwortlichen widersprüchliche Erklärungen zu Pipeline-Wartung und Niedrigwasser auf dem Rhein liefern. Die Lage deutet auf tieferliegende Versorgungsprobleme bei Kerosin und Diesel in Europa hin und wirft Fragen nach der tatsächlichen Tankfüllstände und der Krisenfestigkeit der Infrastruktur auf.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Am Frankfurter Flughafen herrscht ein Kerosinengpass, der Lufthansa zu einer unbefristeten Tankering-Anordnung zwingt, während die Verantwortlichen widersprüchliche Erklärungen…",
-      "publishedAt": "2026-10-15T07:24:22+00:00",
-      "url": "https://www.youtube.com/watch?v=cPv5ulUZMv8",
-      "thumbnail": "/media/cPv5ulUZMv8.jpg",
-      "thumbnailRemote": "https://i4.ytimg.com/vi/cPv5ulUZMv8/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 110451,
-        "likeCount": null,
-        "commentCount": 825
       }
     },
     {
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 95678,
+        "viewCount": 95779,
         "likeCount": null,
         "commentCount": 566
       }
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33514,
+        "viewCount": 33520,
         "likeCount": 3363,
         "commentCount": 635
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87514,
+        "viewCount": 87526,
         "likeCount": 4492,
         "commentCount": 399
       }
@@ -542,7 +542,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42777,
+        "viewCount": 42782,
         "likeCount": 3038,
         "commentCount": 509
       }

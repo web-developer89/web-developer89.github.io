@@ -54,12 +54,6 @@ body {
   background-repeat: no-repeat, no-repeat;
 }
 
-@supports (background-attachment: fixed) {
-  @media (min-width: 900px) {
-    body { background-attachment: scroll, fixed; }
-  }
-}
-
 img { max-width: 100%; height: auto; }
 button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; }
@@ -114,16 +108,13 @@ a { color: inherit; }
   top: 0;
   z-index: 30;
   height: var(--header);
-  background: rgba(10, 11, 13, 0.78);
-  backdrop-filter: blur(14px);
+  background: rgba(9, 12, 17, 0.96);
   box-shadow: inset 0 2px 0 var(--accent);
   border-bottom: 1px solid transparent;
-  transition: height 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 .site-header.is-scrolled {
-  height: 62px;
   border-bottom-color: var(--line);
-  background: rgba(10, 11, 13, 0.9);
+  background: #090c11;
 }
 .header-bar {
   height: 100%;
@@ -864,14 +855,9 @@ dialog.search-dialog::backdrop { background: rgba(12, 16, 24, 0.52); }
 
 @media (prefers-reduced-motion: no-preference) {
   .live-dot { animation: pulse 1.8s ease infinite; }
-  .thumb img { animation: fade-in 0.45s ease both; }
 }
 
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.45; }
-}
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }

@@ -1,12 +1,12 @@
 {
-  "syncedAt": "2026-10-22T10:05:01.747Z",
+  "syncedAt": "2026-10-22T15:04:46.623Z",
   "live": null,
   "latest": {
-    "title": "Merz gibt zu: KI ersetzt eure Jobs – und das ist Absicht!",
-    "url": "https://www.youtube.com/watch?v=4siwPi7eI8c",
-    "pageUrl": "/videos/merz-gibt-zu-ki-ersetzt-eure-jobs-und-das-ist-absicht-4siwPi7eI8c/",
-    "thumbnail": "/media/4siwPi7eI8c.jpg",
-    "publishedAt": "2026-10-22T07:24:17+00:00",
+    "title": "Internet steht still! Warum gerade halb das Internet offline ist – PHP2SHELL-Lücke erklärt",
+    "url": "https://www.youtube.com/watch?v=cafatEl1BAg",
+    "pageUrl": "/videos/internet-steht-still-warum-gerade-halb-das-internet-offline-ist-php2sh-cafatEl1BAg/",
+    "thumbnail": "/media/cafatEl1BAg.jpg",
+    "publishedAt": "2026-10-22T12:36:10+00:00",
     "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
     "channelName": "Politik mit Kopf"
   },
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 172167487,
-        "videoCount": 1535,
+        "videoCount": 1536,
         "hiddenSubscriberCount": false
       }
     },

@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-22T10:05:01.747Z",
+  "syncedAt": "2026-10-22T15:04:46.623Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 172167487,
-        "videoCount": 1535,
+        "videoCount": 1536,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,30 @@
   ],
   "videos": [
     {
+      "id": "cafatEl1BAg",
+      "slug": "internet-steht-still-warum-gerade-halb-das-internet-offline-ist-php2sh-cafatEl1BAg",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Internet steht still! Warum gerade halb das Internet offline ist – PHP2SHELL-Lücke erklärt",
+      "description": "Eine kritische Sicherheitslücke in PHP (PHP2SHELL) sorgt weltweit für massive Ausfälle: Viele Webseiten von Firmen und Regierungen gingen offline, weil Angreifer aus der Ferne Code auf Servern ausführen konnten. Im Video erkläre ich einfach, was passiert ist, warum die Lücke so gefährlich ist und was Betreiber von Webseiten jetzt tun sollten.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Eine kritische Sicherheitslücke in PHP (PHP2SHELL) sorgt weltweit für massive Ausfälle: Viele Webseiten von Firmen und Regierungen gingen offline, weil Angreifer aus der Ferne…",
+      "publishedAt": "2026-10-22T12:36:10+00:00",
+      "url": "https://www.youtube.com/watch?v=cafatEl1BAg",
+      "thumbnail": "/media/cafatEl1BAg.jpg",
+      "thumbnailRemote": "https://i4.ytimg.com/vi/cafatEl1BAg/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 29533,
+        "likeCount": null,
+        "commentCount": 362
+      }
+    },
+    {
       "id": "4siwPi7eI8c",
       "slug": "merz-gibt-zu-ki-ersetzt-eure-jobs-und-das-ist-absicht-4siwPi7eI8c",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 19929,
+        "viewCount": 74028,
         "likeCount": null,
-        "commentCount": 566
+        "commentCount": 855
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 125870,
+        "viewCount": 143656,
         "likeCount": null,
-        "commentCount": 529
+        "commentCount": 555
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 54086,
+        "viewCount": 56871,
         "likeCount": null,
-        "commentCount": 270
+        "commentCount": 288
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 204494,
+        "viewCount": 209127,
         "likeCount": null,
-        "commentCount": 1602
+        "commentCount": 1623
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 235886,
+        "viewCount": 236834,
         "likeCount": null,
-        "commentCount": 1088
+        "commentCount": 1091
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 187922,
+        "viewCount": 189521,
         "likeCount": null,
-        "commentCount": 1102
+        "commentCount": 1105
       }
     },
     {
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 91453,
+        "viewCount": 92038,
         "likeCount": null,
-        "commentCount": 627
+        "commentCount": 637
       }
     },
     {
@@ -230,9 +254,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 202978,
+        "viewCount": 203485,
         "likeCount": null,
-        "commentCount": 1236
+        "commentCount": 1263
       }
     },
     {
@@ -254,7 +278,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 73563,
+        "viewCount": 73896,
         "likeCount": null,
         "commentCount": 486
       }
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 122479,
+        "viewCount": 122565,
         "likeCount": null,
-        "commentCount": 623
+        "commentCount": 619
       }
     },
     {
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 253018,
+        "viewCount": 253256,
         "likeCount": null,
         "commentCount": 2928
       }
@@ -326,7 +350,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 115886,
+        "viewCount": 116119,
         "likeCount": null,
         "commentCount": 859
       }
@@ -350,9 +374,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 288044,
+        "viewCount": 288252,
         "likeCount": null,
-        "commentCount": 1373
+        "commentCount": 1374
       }
     },
     {
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 107107,
+        "viewCount": 107155,
         "likeCount": null,
         "commentCount": 1226
       }
@@ -398,9 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 325049,
+        "viewCount": 325170,
         "likeCount": null,
-        "commentCount": 2349
+        "commentCount": 2347
       }
     },
     {
@@ -422,33 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 89299,
+        "viewCount": 89320,
         "likeCount": null,
         "commentCount": 351
-      }
-    },
-    {
-      "id": "z2h9irv7nH0",
-      "slug": "merz-fluechtet-vor-weidel-kein-euro-fuer-die-ukraine-fehlt-in-deutschl-z2h9irv7nH0",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Merz flüchtet vor Weidel: „Kein Euro für die Ukraine fehlt in Deutschland“ – Lüge oder Wahrheit?",
-      "description": "Friedrich Merz verlässt den Saal, als Alice Weidel ans Rednerpult tritt! \n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Friedrich Merz verlässt den Saal, als Alice Weidel ans Rednerpult tritt!",
-      "publishedAt": "2026-10-15T14:33:46+00:00",
-      "url": "https://www.youtube.com/watch?v=z2h9irv7nH0",
-      "thumbnail": "/media/z2h9irv7nH0.jpg",
-      "thumbnailRemote": "https://i3.ytimg.com/vi/z2h9irv7nH0/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 100066,
-        "likeCount": null,
-        "commentCount": 960
       }
     },
     {
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 95779,
+        "viewCount": 95816,
         "likeCount": null,
         "commentCount": 566
       }
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33520,
+        "viewCount": 33524,
         "likeCount": 3363,
         "commentCount": 635
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87526,
+        "viewCount": 87555,
         "likeCount": 4492,
         "commentCount": 399
       }

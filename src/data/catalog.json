@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-23T15:01:32.408Z",
+  "syncedAt": "2026-10-23T18:56:04.580Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -18,8 +18,8 @@
       "subscribeUrl": "https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1",
       "stats": {
         "subscriberCount": 285000,
-        "viewCount": 172650773,
-        "videoCount": 1538,
+        "viewCount": 172784040,
+        "videoCount": 1539,
         "hiddenSubscriberCount": false
       }
     },
@@ -36,13 +36,37 @@
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
         "subscriberCount": 17500,
-        "viewCount": 439192,
+        "viewCount": 441384,
         "videoCount": 7,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "0Em_lYz-chg",
+      "slug": "regierung-stuft-buerger-als-sicherheitsrisiko-ein-ifg-wird-beschnitten-0Em_lYz-chg",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Regierung stuft Bürger als Sicherheitsrisiko ein – IFG wird beschnitten",
+      "description": "Regierung erklärt den Bürger zum Sicherheitsrisiko und will deshalb das Informationsfreiheitsgesetz massiv beschneiden – obwohl sie keinen einzigen Beleg für eine Gefahr durch IFG-Anfragen liefern kann.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Regierung erklärt den Bürger zum Sicherheitsrisiko und will deshalb das Informationsfreiheitsgesetz massiv beschneiden – obwohl sie keinen einzigen Beleg für eine Gefahr durch…",
+      "publishedAt": "2026-10-23T15:22:29+00:00",
+      "url": "https://www.youtube.com/watch?v=0Em_lYz-chg",
+      "thumbnail": "/media/0Em_lYz-chg.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/0Em_lYz-chg/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 40746,
+        "likeCount": null,
+        "commentCount": 492
+      }
+    },
     {
       "id": "lEFb3HS9rGQ",
       "slug": "gaslage-der-nation-bundesnetzagentur-meldet-61-und-das-soll-uns-beruhi-lEFb3HS9rGQ",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 68203,
+        "viewCount": 88091,
         "likeCount": null,
-        "commentCount": 358
+        "commentCount": 406
       }
     },
     {
@@ -86,9 +110,9 @@
         "stromnetz"
       ],
       "stats": {
-        "viewCount": 118054,
+        "viewCount": 124446,
         "likeCount": null,
-        "commentCount": 507
+        "commentCount": 516
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 205601,
+        "viewCount": 209921,
         "likeCount": null,
-        "commentCount": 735
+        "commentCount": 734
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 103197,
+        "viewCount": 103986,
         "likeCount": null,
-        "commentCount": 976
+        "commentCount": 985
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 161564,
+        "viewCount": 164227,
         "likeCount": null,
-        "commentCount": 581
+        "commentCount": 569
       }
     },
     {
@@ -182,7 +206,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 63928,
+        "viewCount": 65650,
         "likeCount": null,
         "commentCount": 318
       }
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 225165,
+        "viewCount": 226802,
         "likeCount": null,
-        "commentCount": 1728
+        "commentCount": 1733
       }
     },
     {
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 239120,
+        "viewCount": 239569,
         "likeCount": null,
         "commentCount": 1090
       }
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 192232,
+        "viewCount": 192772,
         "likeCount": null,
-        "commentCount": 1110
+        "commentCount": 1109
       }
     },
     {
@@ -278,7 +302,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 93718,
+        "viewCount": 94121,
         "likeCount": null,
         "commentCount": 644
       }
@@ -302,9 +326,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 205843,
+        "viewCount": 206162,
         "likeCount": null,
-        "commentCount": 1286
+        "commentCount": 1287
       }
     },
     {
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 75949,
+        "viewCount": 76379,
         "likeCount": null,
-        "commentCount": 500
+        "commentCount": 503
       }
     },
     {
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 122843,
+        "viewCount": 122916,
         "likeCount": null,
         "commentCount": 619
       }
@@ -374,9 +398,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 254083,
+        "viewCount": 254349,
         "likeCount": null,
-        "commentCount": 2935
+        "commentCount": 2936
       }
     },
     {
@@ -398,7 +422,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 116337,
+        "viewCount": 116416,
         "likeCount": null,
         "commentCount": 856
       }
@@ -422,33 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 288956,
+        "viewCount": 289130,
         "likeCount": null,
-        "commentCount": 1373
-      }
-    },
-    {
-      "id": "0FreqxsCTWY",
-      "slug": "wir-brauchen-70-milliarden-mehr-selenskyj-erpresst-europa-0FreqxsCTWY",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "„Wir brauchen 70 Milliarden mehr“ – Selenskyj erpresst Europa",
-      "description": "Die EU und Deutschland schütten weiter Milliarden in die korrupte Ukraine und an den Kriegsverbrecher Selenskyj, während bei uns das Geld fehlt und die Preise steigen. Beide Seiten begehen Kriegsverbrechen, die Politik lügt und raubt den Steuerzahler aus – unser Geld gehört zuerst in unser eigenes Land.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Die EU und Deutschland schütten weiter Milliarden in die korrupte Ukraine und an den Kriegsverbrecher Selenskyj, während bei uns das Geld fehlt und die Preise steigen. Beide…",
-      "publishedAt": "2026-10-17T09:26:38+00:00",
-      "url": "https://www.youtube.com/watch?v=0FreqxsCTWY",
-      "thumbnail": "/media/0FreqxsCTWY.jpg",
-      "thumbnailRemote": "https://i1.ytimg.com/vi/0FreqxsCTWY/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 107245,
-        "likeCount": null,
-        "commentCount": 1227
+        "commentCount": 1374
       }
     },
     {
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 96170,
+        "viewCount": 96253,
         "likeCount": null,
         "commentCount": 566
       }
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33534,
+        "viewCount": 33540,
         "likeCount": 3363,
         "commentCount": 635
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87621,
+        "viewCount": 87634,
         "likeCount": 4492,
         "commentCount": 399
       }
@@ -542,7 +542,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42791,
+        "viewCount": 42793,
         "likeCount": 3038,
         "commentCount": 509
       }

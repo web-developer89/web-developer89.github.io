@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-23T05:20:15.678Z",
-  "ok": false,
+  "syncedAt": "2026-10-23T10:11:55.508Z",
+  "ok": true,
   "source": "youtube-public",
-  "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
+  "error": null,
   "live": null,
   "channels": [
     {
@@ -10,7 +10,7 @@
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "name": "Politik mit Kopf",
       "videoCount": 15,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/mark.jpg",
       "slug": "politik-mit-kopf",
       "handle": "@PolitikmitKopf",
@@ -18,8 +18,8 @@
       "subscribeUrl": "https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1",
       "stats": {
         "subscriberCount": 285000,
-        "viewCount": 172326888,
-        "videoCount": 1537,
+        "viewCount": 172650773,
+        "videoCount": 1538,
         "hiddenSubscriberCount": false
       }
     },
@@ -28,7 +28,7 @@
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
       "videoCount": 7,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
       "handle": "@PolitikmitKopfReagiert",
@@ -36,13 +36,37 @@
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
         "subscriberCount": 17500,
-        "viewCount": 433101,
+        "viewCount": 439192,
         "videoCount": 7,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "lEFb3HS9rGQ",
+      "slug": "gaslage-der-nation-bundesnetzagentur-meldet-61-und-das-soll-uns-beruhi-lEFb3HS9rGQ",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Gaslage der Nation: Bundesnetzagentur meldet 61 % – und das soll uns beruhigen?",
+      "description": "https://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Gaslage der Nation: Bundesnetzagentur meldet 61 % – und das soll uns beruhigen?",
+      "publishedAt": "2026-10-23T07:26:06+00:00",
+      "url": "https://www.youtube.com/watch?v=lEFb3HS9rGQ",
+      "thumbnail": "/media/lEFb3HS9rGQ.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/lEFb3HS9rGQ/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 21125,
+        "likeCount": null,
+        "commentCount": 240
+      }
+    },
     {
       "id": "GNZaZh2eWKU",
       "slug": "klingbeil-bricht-merz-sein-versprechen-nach-nur-10-tagen-stromsteuer-s-GNZaZh2eWKU",
@@ -62,9 +86,9 @@
         "stromnetz"
       ],
       "stats": {
-        "viewCount": 30353,
+        "viewCount": 107030,
         "likeCount": null,
-        "commentCount": 238
+        "commentCount": 469
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 170708,
+        "viewCount": 198601,
         "likeCount": null,
-        "commentCount": 674
+        "commentCount": 731
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 96833,
+        "viewCount": 102074,
         "likeCount": null,
-        "commentCount": 954
+        "commentCount": 966
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 156268,
+        "viewCount": 159697,
         "likeCount": null,
-        "commentCount": 567
+        "commentCount": 571
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 59418,
+        "viewCount": 62119,
         "likeCount": null,
-        "commentCount": 296
+        "commentCount": 311
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 213485,
+        "viewCount": 222166,
         "likeCount": null,
-        "commentCount": 1643
+        "commentCount": 1699
       }
     },
     {
@@ -206,7 +230,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 238176,
+        "viewCount": 238725,
         "likeCount": null,
         "commentCount": 1090
       }
@@ -230,9 +254,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 190862,
+        "viewCount": 191662,
         "likeCount": null,
-        "commentCount": 1108
+        "commentCount": 1110
       }
     },
     {
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 92690,
+        "viewCount": 93243,
         "likeCount": null,
-        "commentCount": 642
+        "commentCount": 643
       }
     },
     {
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 204743,
+        "viewCount": 205396,
         "likeCount": null,
-        "commentCount": 1286
+        "commentCount": 1289
       }
     },
     {
@@ -302,9 +326,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 74361,
+        "viewCount": 75275,
         "likeCount": null,
-        "commentCount": 487
+        "commentCount": 493
       }
     },
     {
@@ -326,7 +350,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 122687,
+        "viewCount": 122770,
         "likeCount": null,
         "commentCount": 619
       }
@@ -350,9 +374,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 253549,
+        "viewCount": 253890,
         "likeCount": null,
-        "commentCount": 2930
+        "commentCount": 2934
       }
     },
     {
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 116242,
+        "viewCount": 116268,
         "likeCount": null,
         "commentCount": 858
       }
@@ -398,9 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 288497,
+        "viewCount": 288797,
         "likeCount": null,
-        "commentCount": 1373
+        "commentCount": 1372
       }
     },
     {
@@ -422,33 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 107193,
+        "viewCount": 107217,
         "likeCount": null,
         "commentCount": 1227
-      }
-    },
-    {
-      "id": "ArjybYsjflE",
-      "slug": "das-auto-kann-fliegen-tesla-zeigt-den-neuen-roadster-mit-raketenantrie-ArjybYsjflE",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Das Auto kann fliegen! Tesla zeigt den neuen Roadster mit Raketenantrieb",
-      "description": "Tesla hat den neuen Roadster vorgestellt, der mithilfe von Kaltgastriebwerken fliegen, Back- und Sideflips machen und in unter einer Sekunde von 0 auf 100 beschleunigen kann. Das Fahrzeug, das gemeinsam mit SpaceX entwickelt wurde, setzt neue Maßstäbe in der Elektromobilität und sorgt mit seinen extremen Leistungsdaten für Aufsehen.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Das Auto kann fliegen! Tesla zeigt den neuen Roadster mit Raketenantrieb",
-      "publishedAt": "2026-10-16T07:16:26+00:00",
-      "url": "https://www.youtube.com/watch?v=ArjybYsjflE",
-      "thumbnail": "/media/ArjybYsjflE.jpg",
-      "thumbnailRemote": "https://i2.ytimg.com/vi/ArjybYsjflE/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 325405,
-        "likeCount": null,
-        "commentCount": 2347
       }
     },
     {
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 95908,
+        "viewCount": 96014,
         "likeCount": null,
         "commentCount": 566
       }
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33525,
+        "viewCount": 33530,
         "likeCount": 3363,
         "commentCount": 635
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87575,
+        "viewCount": 87612,
         "likeCount": 4492,
         "commentCount": 399
       }
@@ -542,7 +542,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42785,
+        "viewCount": 42789,
         "likeCount": 3038,
         "commentCount": 509
       }

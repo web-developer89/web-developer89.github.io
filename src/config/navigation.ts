@@ -1,7 +1,7 @@
 export const navigation = [
-  { href: '/', label: 'Startseite' },
   { href: '/videos/', label: 'Videos' },
   { href: '/unsere-kanaele/', label: 'Meine Kanäle' },
+  { href: '/shop/', label: 'Shop' },
   { href: '/informant-werden/', label: 'Informant werden' },
   { href: '/unterstuetzen/', label: 'Unterstützen' },
 ] as const;
@@ -14,6 +14,7 @@ export const primaryCta = {
 export const footerDiscover = [
   { href: '/videos/', label: 'Videos' },
   { href: '/unsere-kanaele/', label: 'Meine Kanäle' },
+  { href: '/shop/', label: 'Shop' },
   { href: '/aktuelles/', label: 'Aktuelles' },
   { href: '/suche/', label: 'Suche' },
 ] as const;

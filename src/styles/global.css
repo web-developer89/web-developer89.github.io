@@ -57,11 +57,12 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background-image:
-    linear-gradient(180deg, rgba(9, 12, 17, 0.5), rgba(9, 12, 17, 0.72)),
+    linear-gradient(180deg, rgba(9, 12, 17, 0.78), rgba(9, 12, 17, 0.88)),
     var(--texture);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  filter: saturate(0.55) contrast(0.92);
 }
 
 img { max-width: 100%; height: auto; }

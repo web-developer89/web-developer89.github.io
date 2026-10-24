@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { support } from '../config/support';
+---
+<Base
+  title="Shop"
+  description="Empfohlene Produkte und Partnerlinks von Politik mit Kopf."
+>
+  <div class="wrap">
+    <Breadcrumbs items={[{ href: '/shop/', label: 'Shop' }]} />
+    <PageHeader
+      kicker="Empfehlungen"
+      title="Shop"
+      lede="Hier finden Sie den Amazon-Shop und den Tesla-Empfehlungslink aus den Videobeschreibungen."
+    />
+
+    <div class="shop-grid">
+      {support.recommendations.map((item) => (
+        <a class="shop-card" href={item.href} rel="noopener noreferrer">
+          <h2>{item.title}</h2>
+          <p>{item.note}</p>
+          <span class="link-arrow">Öffnen</span>
+        </a>
+      ))}
+    </div>
+    <p class="legal-note shop-disclaimer">{support.disclaimer}</p>
+  </div>
+</Base>

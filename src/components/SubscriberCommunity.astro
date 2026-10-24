@@ -60,22 +60,6 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
         </article>
       ))}
     </div>
-
-    <div class="development-board" data-development-board>
-      <div class="section-head">
-        <div>
-          <h3>Meine Kanalentwicklung</h3>
-        </div>
-        <div class="chip-row" role="group" aria-label="Zeitraum" data-period-filters>
-          <button class="chip" type="button" data-period="24h">24 Stunden</button>
-          <button class="chip is-active" type="button" data-period="7d">7 Tage</button>
-          <button class="chip" type="button" data-period="30d">30 Tage</button>
-        </div>
-      </div>
-      <div class="development-chart" data-dev-chart role="img" aria-label="Abonnentenentwicklung beider YouTube-Kanäle"></div>
-      <p class="growth-note" data-dev-caption></p>
-      <ul class="development-legend" data-dev-legend aria-hidden="true"></ul>
-    </div>
   </div>
   <script type="application/json" id="subscriber-payload" set:html={json} />
 </section>

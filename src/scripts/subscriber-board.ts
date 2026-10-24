@@ -230,18 +230,9 @@ export function setupSubscriberBoard(): void {
     return;
   }
 
-  let period: Period = '7d';
-
-  const combinedNode = section.querySelector('[data-combined-count]');
-  const chartRoot = section.querySelector('[data-dev-chart]');
-  const caption = section.querySelector('[data-dev-caption]');
-  const legend = section.querySelector('[data-dev-legend]');
+  const period: Period = '7d';
 
   const render = () => {
-    if (combinedNode instanceof HTMLElement) {
-      combinedNode.textContent = formatNumber(payload.combined);
-    }
-
     for (const channel of payload.channels) {
       const panel = section.querySelector(`[data-channel-panel="${channel.channelId}"]`);
       if (!(panel instanceof HTMLElement)) continue;
@@ -266,41 +257,7 @@ export function setupSubscriberBoard(): void {
       }
       if (spark instanceof HTMLElement) spark.innerHTML = renderSpark(series, color);
     }
-
-    const chartSeries = payload.channels.map((channel) => ({
-      id: channel.id,
-      name: channel.name,
-      series: seriesForChannel(payload, channel.channelId, period),
-    }));
-
-    if (chartRoot instanceof HTMLElement) {
-      chartRoot.innerHTML = renderComparisonChart(chartSeries);
-    }
-
-    if (legend instanceof HTMLElement) {
-      legend.innerHTML = payload.channels
-        .map((channel) => {
-          const color = COLORS[channel.id] || '#d4b07a';
-          return `<li><span style="background:${color}"></span>${channel.name}</li>`;
-        })
-        .join('');
-    }
-
-    if (caption instanceof HTMLElement) {
-      const ready = chartSeries.every((channel) => channel.series.length >= 2);
-      caption.textContent = ready
-        ? `Öffentliche YouTube-Abonnentenzahlen · ${periodLabel(period)}`
-        : 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.';
-    }
   };
-
-  section.querySelectorAll<HTMLButtonElement>('[data-period]').forEach((button) => {
-    button.addEventListener('click', () => {
-      period = (button.dataset.period as Period) || '7d';
-      section.querySelectorAll('[data-period]').forEach((node) => node.classList.toggle('is-active', node === button));
-      render();
-    });
-  });
 
   const refreshFromNetwork = async () => {
     try {

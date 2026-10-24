@@ -65,6 +65,12 @@ const pages: SearchItem[] = [
     text: connectedSocials.map((item) => item.label).join(' '),
   },
   {
+    href: '/shop/',
+    title: 'Shop',
+    kind: 'Seite',
+    text: 'Amazon Shop Tesla Empfehlungslink Produkte',
+  },
+  {
     href: '/unterstuetzen/',
     title: 'Projekt unterstützen',
     kind: 'Seite',

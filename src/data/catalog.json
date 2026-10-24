@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-24T04:15:35.372Z",
-  "ok": false,
+  "syncedAt": "2026-10-24T08:53:03.767Z",
+  "ok": true,
   "source": "youtube-public",
-  "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
+  "error": null,
   "live": null,
   "channels": [
     {
@@ -10,7 +10,7 @@
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "name": "Politik mit Kopf",
       "videoCount": 15,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/mark.jpg",
       "slug": "politik-mit-kopf",
       "handle": "@PolitikmitKopf",
@@ -18,8 +18,8 @@
       "subscribeUrl": "https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1",
       "stats": {
         "subscriberCount": 285000,
-        "viewCount": 172784040,
-        "videoCount": 1539,
+        "viewCount": 172976639,
+        "videoCount": 1540,
         "hiddenSubscriberCount": false
       }
     },
@@ -28,7 +28,7 @@
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
       "videoCount": 7,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
       "handle": "@PolitikmitKopfReagiert",
@@ -36,13 +36,37 @@
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
         "subscriberCount": 17500,
-        "viewCount": 441384,
+        "viewCount": 448661,
         "videoCount": 7,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "DX7R8fTCcGg",
+      "slug": "digitaler-krieg-soeder-will-whatsapp-auf-wahrheit-pruefen-george-orwel-DX7R8fTCcGg",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Digitaler Krieg: Söder will WhatsApp auf Wahrheit prüfen – George Orwell lässt grüßen",
+      "description": "Markus Söder will Fake News in WhatsApp-Gruppen bekämpfen und spricht von digitalem Krieg. Das klingt stark nach George Orwells Wahrheitsministerium und bedeutet: Markus Söder verbietet sich selbst mit seinen Fake News!\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Digitaler Krieg: Söder will WhatsApp auf Wahrheit prüfen – George Orwell lässt grüßen",
+      "publishedAt": "2026-10-24T08:08:06+00:00",
+      "url": "https://www.youtube.com/watch?v=DX7R8fTCcGg",
+      "thumbnail": "/media/DX7R8fTCcGg.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/DX7R8fTCcGg/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 4840,
+        "likeCount": null,
+        "commentCount": 183
+      }
+    },
     {
       "id": "0Em_lYz-chg",
       "slug": "regierung-stuft-buerger-als-sicherheitsrisiko-ein-ifg-wird-beschnitten-0Em_lYz-chg",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 104086,
+        "viewCount": 129871,
         "likeCount": null,
-        "commentCount": 604
+        "commentCount": 699
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 98147,
+        "viewCount": 102801,
         "likeCount": null,
-        "commentCount": 422
+        "commentCount": 440
       }
     },
     {
@@ -110,9 +134,9 @@
         "stromnetz"
       ],
       "stats": {
-        "viewCount": 127507,
+        "viewCount": 128656,
         "likeCount": null,
-        "commentCount": 518
+        "commentCount": 523
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 212778,
+        "viewCount": 215791,
         "likeCount": null,
-        "commentCount": 739
+        "commentCount": 742
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 104323,
+        "viewCount": 105601,
         "likeCount": null,
-        "commentCount": 988
+        "commentCount": 1005
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 167662,
+        "viewCount": 169957,
         "likeCount": null,
-        "commentCount": 569
+        "commentCount": 570
       }
     },
     {
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 66318,
+        "viewCount": 66849,
         "likeCount": null,
-        "commentCount": 319
+        "commentCount": 323
       }
     },
     {
@@ -230,9 +254,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 227421,
+        "viewCount": 228149,
         "likeCount": null,
-        "commentCount": 1736
+        "commentCount": 1744
       }
     },
     {
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 239988,
+        "viewCount": 240240,
         "likeCount": null,
-        "commentCount": 1090
+        "commentCount": 1089
       }
     },
     {
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 193269,
+        "viewCount": 193584,
         "likeCount": null,
-        "commentCount": 1111
+        "commentCount": 1113
       }
     },
     {
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 94495,
+        "viewCount": 94622,
         "likeCount": null,
         "commentCount": 644
       }
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 206413,
+        "viewCount": 206542,
         "likeCount": null,
-        "commentCount": 1289
+        "commentCount": 1287
       }
     },
     {
@@ -350,9 +374,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 76705,
+        "viewCount": 77034,
         "likeCount": null,
-        "commentCount": 509
+        "commentCount": 510
       }
     },
     {
@@ -398,9 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 254769,
+        "viewCount": 255013,
         "likeCount": null,
-        "commentCount": 2937
+        "commentCount": 2948
       }
     },
     {
@@ -422,33 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 116468,
+        "viewCount": 116586,
         "likeCount": null,
         "commentCount": 856
-      }
-    },
-    {
-      "id": "3JsoR42HCp4",
-      "slug": "merz-flippt-aus-ju-mitglied-fordert-ruecktritt-fahren-sie-zum-bundespr-3JsoR42HCp4",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Merz flippt aus – JU-Mitglied fordert Rücktritt: „Fahren Sie zum Bundespräsidenten!“",
-      "description": "Beim Bundeskongress der Jungen Union in Bonn stellt ein JU-Mitglied Friedrich Merz offen die Rücktrittsfrage und fordert ihn auf, mit dem Dienstwagen zum Bundespräsidenten zu fahren.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Beim Bundeskongress der Jungen Union in Bonn stellt ein JU-Mitglied Friedrich Merz offen die Rücktrittsfrage und fordert ihn auf, mit dem Dienstwagen zum Bundespräsidenten zu…",
-      "publishedAt": "2026-10-17T17:26:45+00:00",
-      "url": "https://www.youtube.com/watch?v=3JsoR42HCp4",
-      "thumbnail": "/media/3JsoR42HCp4.jpg",
-      "thumbnailRemote": "https://i4.ytimg.com/vi/3JsoR42HCp4/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 289238,
-        "likeCount": null,
-        "commentCount": 1374
       }
     },
     {
@@ -470,9 +470,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 96334,
+        "viewCount": 96422,
         "likeCount": null,
-        "commentCount": 566
+        "commentCount": 567
       }
     },
     {
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33541,
+        "viewCount": 33545,
         "likeCount": 3363,
         "commentCount": 635
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87644,
+        "viewCount": 87651,
         "likeCount": 4492,
         "commentCount": 399
       }
@@ -542,7 +542,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42794,
+        "viewCount": 42795,
         "likeCount": 3038,
         "commentCount": 509
       }

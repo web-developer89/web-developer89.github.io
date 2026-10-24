@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-24T08:53:03.767Z",
+  "syncedAt": "2026-10-24T12:57:30.493Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 172976639,
-        "videoCount": 1540,
+        "videoCount": 1541,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,30 @@
   ],
   "videos": [
     {
+      "id": "1YHuBX1quAw",
+      "slug": "tempo-80-auf-der-autobahn-schweiz-bereitet-vor-deutschland-wartet-auf-1YHuBX1quAw",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Tempo 80 auf der Autobahn: Schweiz bereitet vor – Deutschland wartet auf Brüssel | Lage kritisch",
+      "description": "Während Deutschland und die EU weiterhin auf Dialoge und strategische Gespräche setzen bereitet die Schweiz bereits Tempo 80 auf Autobahnen als Notmaßnahme bei einer schweren Treibstoffknappheit vor.  Die Lage bei Diesel und Kerosin ist angespannt. Pflichtlager wurden bereits freigegeben – und die Versorgungssicherheit gerät immer stärker unter Druck.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#oilandgas  #diesel  #hormuzstrait \n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Während Deutschland und die EU weiterhin auf Dialoge und strategische Gespräche setzen bereitet die Schweiz bereits Tempo 80 auf Autobahnen als Notmaßnahme bei einer schweren…",
+      "publishedAt": "2026-10-24T12:03:51+00:00",
+      "url": "https://www.youtube.com/watch?v=1YHuBX1quAw",
+      "thumbnail": "/media/1YHuBX1quAw.jpg",
+      "thumbnailRemote": "https://i2.ytimg.com/vi/1YHuBX1quAw/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "oilandgas",
+        "diesel",
+        "hormuzstrait"
+      ],
+      "stats": {
+        "viewCount": 6570,
+        "likeCount": null,
+        "commentCount": 185
+      }
+    },
+    {
       "id": "DX7R8fTCcGg",
       "slug": "digitaler-krieg-soeder-will-whatsapp-auf-wahrheit-pruefen-george-orwel-DX7R8fTCcGg",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 4840,
+        "viewCount": 41128,
         "likeCount": null,
-        "commentCount": 183
+        "commentCount": 636
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 129871,
+        "viewCount": 140955,
         "likeCount": null,
-        "commentCount": 699
+        "commentCount": 727
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 102801,
+        "viewCount": 104979,
         "likeCount": null,
-        "commentCount": 440
+        "commentCount": 447
       }
     },
     {
@@ -134,9 +158,9 @@
         "stromnetz"
       ],
       "stats": {
-        "viewCount": 128656,
+        "viewCount": 129576,
         "likeCount": null,
-        "commentCount": 523
+        "commentCount": 527
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 215791,
+        "viewCount": 219228,
         "likeCount": null,
-        "commentCount": 742
+        "commentCount": 750
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 105601,
+        "viewCount": 106663,
         "likeCount": null,
-        "commentCount": 1005
+        "commentCount": 1006
       }
     },
     {
@@ -206,7 +230,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 169957,
+        "viewCount": 171590,
         "likeCount": null,
         "commentCount": 570
       }
@@ -230,9 +254,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 66849,
+        "viewCount": 67293,
         "likeCount": null,
-        "commentCount": 323
+        "commentCount": 326
       }
     },
     {
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 228149,
+        "viewCount": 229009,
         "likeCount": null,
-        "commentCount": 1744
+        "commentCount": 1752
       }
     },
     {
@@ -278,7 +302,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 240240,
+        "viewCount": 240537,
         "likeCount": null,
         "commentCount": 1089
       }
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 193584,
+        "viewCount": 193804,
         "likeCount": null,
         "commentCount": 1113
       }
@@ -326,7 +350,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 94622,
+        "viewCount": 94718,
         "likeCount": null,
         "commentCount": 644
       }
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 206542,
+        "viewCount": 206773,
         "likeCount": null,
         "commentCount": 1287
       }
@@ -374,9 +398,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 77034,
+        "viewCount": 77345,
         "likeCount": null,
-        "commentCount": 510
+        "commentCount": 512
       }
     },
     {
@@ -398,7 +422,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 122965,
+        "viewCount": 123018,
         "likeCount": null,
         "commentCount": 619
       }
@@ -422,33 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 255013,
+        "viewCount": 255206,
         "likeCount": null,
-        "commentCount": 2948
-      }
-    },
-    {
-      "id": "PyRyuOfcnzI",
-      "slug": "berlin-liefert-linksgruene-sondierung-enteignung-mietendeckel-das-ende-PyRyuOfcnzI",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Berlin liefert – Linksgrüne Sondierung: Enteignung, Mietendeckel & das Ende der freien Stadt",
-      "description": "In diesem Video werte ich das Pressestatement der linksgrünen Sondierung in Berlin aus und zeige, was hinter den Ankündigungen zu Neubau, Mietendeckel und Enteignung wirklich steckt. Die geplanten Maßnahmen bedeuten weniger Freiheit auf dem Wohnungsmarkt, mehr Kontrolle und das Ende eines freien Berlins – inklusive der Folgen für Vermieter, Mieter und die Stadt insgesamt.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "In diesem Video werte ich das Pressestatement der linksgrünen Sondierung in Berlin aus und zeige, was hinter den Ankündigungen zu Neubau, Mietendeckel und Enteignung wirklich…",
-      "publishedAt": "2026-10-18T08:26:48+00:00",
-      "url": "https://www.youtube.com/watch?v=PyRyuOfcnzI",
-      "thumbnail": "/media/PyRyuOfcnzI.jpg",
-      "thumbnailRemote": "https://i1.ytimg.com/vi/PyRyuOfcnzI/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 116586,
-        "likeCount": null,
-        "commentCount": 856
+        "commentCount": 2951
       }
     },
     {
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 96422,
+        "viewCount": 96483,
         "likeCount": null,
         "commentCount": 567
       }
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33545,
+        "viewCount": 33546,
         "likeCount": 3363,
         "commentCount": 635
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87651,
+        "viewCount": 87676,
         "likeCount": 4492,
         "commentCount": 399
       }
@@ -542,7 +542,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42795,
+        "viewCount": 42797,
         "likeCount": 3038,
         "commentCount": 509
       }

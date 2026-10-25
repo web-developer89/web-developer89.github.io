@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-25T01:09:09.691Z",
+  "syncedAt": "2026-10-25T06:00:47.924Z",
   "ok": false,
   "source": "youtube-public",
   "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
@@ -574,9 +574,9 @@
     "handle": "@politik.mit.kopf",
     "uniqueId": "politik.mit.kopf",
     "profileUrl": "https://www.tiktok.com/@politik.mit.kopf",
-    "description": "Der TikTok-Kanal zum Original https://www.youtube.com/@PolitikmitKopf",
+    "description": "Kurze Clips und Hinweise zum YouTube-Kanal von Politik mit Kopf.",
     "avatar": "/brand/tiktok.jpg",
-    "status": "verbunden",
+    "status": "fehler",
     "stats": {
       "followerCount": 23,
       "likeCount": 21,

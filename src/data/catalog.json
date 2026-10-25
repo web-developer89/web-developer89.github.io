@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-25T10:54:06.104Z",
+  "syncedAt": "2026-10-25T14:36:07.989Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 173151086,
-        "videoCount": 1543,
+        "videoCount": 1544,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,30 @@
   ],
   "videos": [
     {
+      "id": "hDiHA8CYxXI",
+      "slug": "merz-wollte-buendnisfall-artikel-5-der-nato-nach-leipzig-spannungsfall-hDiHA8CYxXI",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Merz wollte Bündnisfall: Artikel 5 der NATO nach Leipzig? Spannungsfall & Ausreisesperre?",
+      "description": "Friedrich Merz und seine Berater haben nach dem Drohnenvorfall in Leipzig ernsthaft erwogen, den NATO-Bündnisfall nach Artikel 5 auszurufen. Was das für den Spannungsfall, die Freizügigkeit und mögliche Wehrpflicht bedeutet, erfährst du hier.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Friedrich Merz und seine Berater haben nach dem Drohnenvorfall in Leipzig ernsthaft erwogen, den NATO-Bündnisfall nach Artikel 5 auszurufen. Was das für den Spannungsfall, die…",
+      "publishedAt": "2026-10-25T14:27:39+00:00",
+      "url": "https://www.youtube.com/watch?v=hDiHA8CYxXI",
+      "thumbnail": "/media/hDiHA8CYxXI.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/hDiHA8CYxXI/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 1970,
+        "likeCount": null,
+        "commentCount": 25
+      }
+    },
+    {
       "id": "25CJVayBvEs",
       "slug": "eskalation-in-frankreich-italien-spanien-nacht-der-zerstoerung-im-wert-25CJVayBvEs",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -62,9 +86,9 @@
         "spanien"
       ],
       "stats": {
-        "viewCount": 21040,
+        "viewCount": 93366,
         "likeCount": null,
-        "commentCount": 554
+        "commentCount": 1094
       }
     },
     {
@@ -86,9 +110,9 @@
         "paris"
       ],
       "stats": {
-        "viewCount": 143103,
+        "viewCount": 149216,
         "likeCount": null,
-        "commentCount": 842
+        "commentCount": 850
       }
     },
     {
@@ -110,9 +134,9 @@
         "hormuzstrait"
       ],
       "stats": {
-        "viewCount": 92757,
+        "viewCount": 95311,
         "likeCount": null,
-        "commentCount": 659
+        "commentCount": 680
       }
     },
     {
@@ -134,7 +158,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 75474,
+        "viewCount": 76184,
         "likeCount": null,
         "commentCount": 805
       }
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 150098,
+        "viewCount": 151238,
         "likeCount": null,
-        "commentCount": 735
+        "commentCount": 738
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 110012,
+        "viewCount": 110683,
         "likeCount": null,
-        "commentCount": 463
+        "commentCount": 467
       }
     },
     {
@@ -206,9 +230,9 @@
         "stromnetz"
       ],
       "stats": {
-        "viewCount": 132584,
+        "viewCount": 133276,
         "likeCount": null,
-        "commentCount": 529
+        "commentCount": 531
       }
     },
     {
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 237084,
+        "viewCount": 238725,
         "likeCount": null,
         "commentCount": 767
       }
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 108285,
+        "viewCount": 108500,
         "likeCount": null,
-        "commentCount": 1011
+        "commentCount": 1012
       }
     },
     {
@@ -278,7 +302,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 174834,
+        "viewCount": 175111,
         "likeCount": null,
         "commentCount": 571
       }
@@ -302,9 +326,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 68471,
+        "viewCount": 68646,
         "likeCount": null,
-        "commentCount": 326
+        "commentCount": 327
       }
     },
     {
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 231275,
+        "viewCount": 231661,
         "likeCount": null,
-        "commentCount": 1768
+        "commentCount": 1769
       }
     },
     {
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 242239,
+        "viewCount": 242701,
         "likeCount": null,
         "commentCount": 1089
       }
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 194939,
+        "viewCount": 195073,
         "likeCount": null,
         "commentCount": 1111
       }
@@ -398,33 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 95200,
+        "viewCount": 95289,
         "likeCount": null,
-        "commentCount": 641
-      }
-    },
-    {
-      "id": "K2Tq2n_QJZk",
-      "slug": "afd-it-desaster-400-000-e-mails-geleakt-ddos-pfuscher-politische-folge-K2Tq2n_QJZk",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "AfD IT-Desaster: 400.000 E-Mails geleakt | DDoS, Pfuscher & politische Folgen",
-      "description": "Über 400.000 interne E-Mails der AfD wurden geleakt – darunter Postfächer von Alexander Gauland und aktuelle Vorgänge bis September 2026. Die Daten stammen aus einem einzigen, unzureichend gesicherten Hosting-Cluster und sorgen bereits jetzt für massive Diskussionen über IT-Sicherheit, interne Abläufe und politische Folgen.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Über 400.000 interne E-Mails der AfD wurden geleakt – darunter Postfächer von Alexander Gauland und aktuelle Vorgänge bis September 2026. Die Daten stammen aus einem einzigen,…",
-      "publishedAt": "2026-10-19T19:03:16+00:00",
-      "url": "https://www.youtube.com/watch?v=K2Tq2n_QJZk",
-      "thumbnail": "/media/K2Tq2n_QJZk.jpg",
-      "thumbnailRemote": "https://i4.ytimg.com/vi/K2Tq2n_QJZk/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 207446,
-        "likeCount": null,
-        "commentCount": 1288
+        "commentCount": 640
       }
     },
     {
@@ -446,9 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 78654,
+        "viewCount": 78901,
         "likeCount": null,
-        "commentCount": 520
+        "commentCount": 522
       }
     },
     {
@@ -470,9 +470,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 96986,
+        "viewCount": 97051,
         "likeCount": null,
-        "commentCount": 572
+        "commentCount": 574
       }
     },
     {
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33564,
+        "viewCount": 33567,
         "likeCount": 3363,
         "commentCount": 634
       }
@@ -518,9 +518,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87733,
+        "viewCount": 87745,
         "likeCount": 4492,
-        "commentCount": 399
+        "commentCount": 400
       }
     },
     {
@@ -542,7 +542,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42803,
+        "viewCount": 42805,
         "likeCount": 3038,
         "commentCount": 509
       }

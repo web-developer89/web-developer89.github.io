@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-25T06:00:47.924Z",
-  "ok": false,
+  "syncedAt": "2026-10-25T10:54:06.104Z",
+  "ok": true,
   "source": "youtube-public",
-  "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
+  "error": null,
   "live": null,
   "channels": [
     {
@@ -10,7 +10,7 @@
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "name": "Politik mit Kopf",
       "videoCount": 15,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/mark.jpg",
       "slug": "politik-mit-kopf",
       "handle": "@PolitikmitKopf",
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 173151086,
-        "videoCount": 1542,
+        "videoCount": 1543,
         "hiddenSubscriberCount": false
       }
     },
@@ -28,7 +28,7 @@
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
       "videoCount": 7,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
       "handle": "@PolitikmitKopfReagiert",
@@ -43,6 +43,30 @@
     }
   ],
   "videos": [
+    {
+      "id": "25CJVayBvEs",
+      "slug": "eskalation-in-frankreich-italien-spanien-nacht-der-zerstoerung-im-wert-25CJVayBvEs",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Eskalation in Frankreich, Italien & Spanien – Nacht der Zerstörung im Wertewesten",
+      "description": "In Barcelona, Florenz, Turin und mehreren französischen Städten eskalierten die Proteste gestern Abend mit dem Einbruch der Dunkelheit zu massiver Zerstörung. Statt legitimen Protestes zeigten sich blanke Wut, gezielte Plünderungen und Gewalt – ein Vorgeschmack auf das, was Deutschland noch bevorstehen könnte.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#frankreich  #italien  #spanien \n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "In Barcelona, Florenz, Turin und mehreren französischen Städten eskalierten die Proteste gestern Abend mit dem Einbruch der Dunkelheit zu massiver Zerstörung. Statt legitimen…",
+      "publishedAt": "2026-10-25T09:00:56+00:00",
+      "url": "https://www.youtube.com/watch?v=25CJVayBvEs",
+      "thumbnail": "/media/25CJVayBvEs.jpg",
+      "thumbnailRemote": "https://i3.ytimg.com/vi/25CJVayBvEs/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "frankreich",
+        "italien",
+        "spanien"
+      ],
+      "stats": {
+        "viewCount": 21040,
+        "likeCount": null,
+        "commentCount": 554
+      }
+    },
     {
       "id": "D9UzkBPCA7g",
       "slug": "schlagstock-samstag-in-frankreich-explodierende-anleihen-was-passiert-D9UzkBPCA7g",
@@ -62,9 +86,9 @@
         "paris"
       ],
       "stats": {
-        "viewCount": 84019,
+        "viewCount": 143103,
         "likeCount": null,
-        "commentCount": 667
+        "commentCount": 842
       }
     },
     {
@@ -86,9 +110,9 @@
         "hormuzstrait"
       ],
       "stats": {
-        "viewCount": 80902,
+        "viewCount": 92757,
         "likeCount": null,
-        "commentCount": 612
+        "commentCount": 659
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 71459,
+        "viewCount": 75474,
         "likeCount": null,
-        "commentCount": 777
+        "commentCount": 805
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 147699,
+        "viewCount": 150098,
         "likeCount": null,
-        "commentCount": 729
+        "commentCount": 735
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 107108,
+        "viewCount": 110012,
         "likeCount": null,
-        "commentCount": 460
+        "commentCount": 463
       }
     },
     {
@@ -182,9 +206,9 @@
         "stromnetz"
       ],
       "stats": {
-        "viewCount": 131222,
+        "viewCount": 132584,
         "likeCount": null,
-        "commentCount": 530
+        "commentCount": 529
       }
     },
     {
@@ -206,7 +230,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 235239,
+        "viewCount": 237084,
         "likeCount": null,
         "commentCount": 767
       }
@@ -230,9 +254,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 107563,
+        "viewCount": 108285,
         "likeCount": null,
-        "commentCount": 1007
+        "commentCount": 1011
       }
     },
     {
@@ -254,7 +278,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 173463,
+        "viewCount": 174834,
         "likeCount": null,
         "commentCount": 571
       }
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 67925,
+        "viewCount": 68471,
         "likeCount": null,
-        "commentCount": 324
+        "commentCount": 326
       }
     },
     {
@@ -302,9 +326,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 230216,
+        "viewCount": 231275,
         "likeCount": null,
-        "commentCount": 1759
+        "commentCount": 1768
       }
     },
     {
@@ -326,7 +350,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 241612,
+        "viewCount": 242239,
         "likeCount": null,
         "commentCount": 1089
       }
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 194539,
+        "viewCount": 194939,
         "likeCount": null,
         "commentCount": 1111
       }
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 95019,
+        "viewCount": 95200,
         "likeCount": null,
         "commentCount": 641
       }
@@ -398,7 +422,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 207232,
+        "viewCount": 207446,
         "likeCount": null,
         "commentCount": 1288
       }
@@ -422,33 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 78075,
+        "viewCount": 78654,
         "likeCount": null,
         "commentCount": 520
-      }
-    },
-    {
-      "id": "H2bKdplBw2c",
-      "slug": "berlin-gefaehrdet-deutschland-unterwanderung-der-linken-faeser-spricht-H2bKdplBw2c",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Berlin gefährdet Deutschland: Unterwanderung der Linken & Faeser spricht von Wertekompass!",
-      "description": "Faeser hat jahrelang beim Verfassungsschutz das linke Auge geschlossen und sieht sich nun mit den Folgen einer unterwanderten, antisemitismusbelasteten Linken konfrontiert, die in Berlin für verfassungswidrige Forderungen wie ein Ausländerwahlrecht eintritt. \n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Faeser hat jahrelang beim Verfassungsschutz das linke Auge geschlossen und sieht sich nun mit den Folgen einer unterwanderten, antisemitismusbelasteten Linken konfrontiert, die…",
-      "publishedAt": "2026-10-19T08:06:44+00:00",
-      "url": "https://www.youtube.com/watch?v=H2bKdplBw2c",
-      "thumbnail": "/media/H2bKdplBw2c.jpg",
-      "thumbnailRemote": "https://i1.ytimg.com/vi/H2bKdplBw2c/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 123094,
-        "likeCount": null,
-        "commentCount": 618
       }
     },
     {
@@ -470,9 +470,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 96761,
+        "viewCount": 96986,
         "likeCount": null,
-        "commentCount": 570
+        "commentCount": 572
       }
     },
     {
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33552,
+        "viewCount": 33564,
         "likeCount": 3363,
         "commentCount": 634
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87704,
+        "viewCount": 87733,
         "likeCount": 4492,
         "commentCount": 399
       }
@@ -542,7 +542,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42804,
+        "viewCount": 42803,
         "likeCount": 3038,
         "commentCount": 509
       }
@@ -574,9 +574,9 @@
     "handle": "@politik.mit.kopf",
     "uniqueId": "politik.mit.kopf",
     "profileUrl": "https://www.tiktok.com/@politik.mit.kopf",
-    "description": "Kurze Clips und Hinweise zum YouTube-Kanal von Politik mit Kopf.",
+    "description": "Der TikTok-Kanal zum Original https://www.youtube.com/@PolitikmitKopf",
     "avatar": "/brand/tiktok.jpg",
-    "status": "fehler",
+    "status": "verbunden",
     "stats": {
       "followerCount": 23,
       "likeCount": 21,

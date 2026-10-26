@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-26T05:04:42.815Z",
-  "ok": false,
+  "syncedAt": "2026-10-26T10:58:11.404Z",
+  "ok": true,
   "source": "youtube-public",
-  "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
+  "error": null,
   "live": null,
   "channels": [
     {
@@ -10,7 +10,7 @@
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "name": "Politik mit Kopf",
       "videoCount": 15,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/mark.jpg",
       "slug": "politik-mit-kopf",
       "handle": "@PolitikmitKopf",
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 173551509,
-        "videoCount": 1544,
+        "videoCount": 1545,
         "hiddenSubscriberCount": false
       }
     },
@@ -28,7 +28,7 @@
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
       "videoCount": 7,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
       "handle": "@PolitikmitKopfReagiert",
@@ -43,6 +43,30 @@
     }
   ],
   "videos": [
+    {
+      "id": "Hrwc_JPMiPc",
+      "slug": "audi-werk-in-den-usa-skandal-oder-rettung-spd-dreht-durch-Hrwc_JPMiPc",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Audi-Werk in den USA – Skandal oder Rettung? SPD dreht durch!",
+      "description": "Audi plant ein neues Werk in den USA und erntet in Deutschland heftige Kritik – doch ist das wirklich ein Skandal oder einfach nur eine logische unternehmerische Entscheidung?\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Audi plant ein neues Werk in den USA und erntet in Deutschland heftige Kritik – doch ist das wirklich ein Skandal oder einfach nur eine logische unternehmerische Entscheidung?",
+      "publishedAt": "2026-10-26T08:27:11+00:00",
+      "url": "https://www.youtube.com/watch?v=Hrwc_JPMiPc",
+      "thumbnail": "/media/Hrwc_JPMiPc.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/Hrwc_JPMiPc/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 24406,
+        "likeCount": null,
+        "commentCount": 516
+      }
+    },
     {
       "id": "hDiHA8CYxXI",
       "slug": "merz-wollte-buendnisfall-artikel-5-der-nato-nach-leipzig-spannungsfall-hDiHA8CYxXI",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 155613,
+        "viewCount": 193735,
         "likeCount": null,
-        "commentCount": 1239
+        "commentCount": 1385
       }
     },
     {
@@ -86,9 +110,9 @@
         "spanien"
       ],
       "stats": {
-        "viewCount": 154675,
+        "viewCount": 167755,
         "likeCount": null,
-        "commentCount": 1389
+        "commentCount": 1458
       }
     },
     {
@@ -110,9 +134,9 @@
         "paris"
       ],
       "stats": {
-        "viewCount": 152836,
+        "viewCount": 155669,
         "likeCount": null,
-        "commentCount": 850
+        "commentCount": 858
       }
     },
     {
@@ -134,9 +158,9 @@
         "hormuzstrait"
       ],
       "stats": {
-        "viewCount": 97978,
+        "viewCount": 101813,
         "likeCount": null,
-        "commentCount": 687
+        "commentCount": 703
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 76725,
+        "viewCount": 79339,
         "likeCount": null,
-        "commentCount": 810
+        "commentCount": 826
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 153663,
+        "viewCount": 154881,
         "likeCount": null,
-        "commentCount": 739
+        "commentCount": 740
       }
     },
     {
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 111815,
+        "viewCount": 112527,
         "likeCount": null,
-        "commentCount": 469
+        "commentCount": 472
       }
     },
     {
@@ -230,9 +254,9 @@
         "stromnetz"
       ],
       "stats": {
-        "viewCount": 133961,
+        "viewCount": 134203,
         "likeCount": null,
-        "commentCount": 529
+        "commentCount": 530
       }
     },
     {
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 241007,
+        "viewCount": 241767,
         "likeCount": null,
-        "commentCount": 767
+        "commentCount": 768
       }
     },
     {
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 108837,
+        "viewCount": 109011,
         "likeCount": null,
-        "commentCount": 1013
+        "commentCount": 1012
       }
     },
     {
@@ -302,9 +326,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 175464,
+        "viewCount": 176756,
         "likeCount": null,
-        "commentCount": 571
+        "commentCount": 576
       }
     },
     {
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 68964,
+        "viewCount": 69208,
         "likeCount": null,
-        "commentCount": 327
+        "commentCount": 329
       }
     },
     {
@@ -350,9 +374,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 232293,
+        "viewCount": 233464,
         "likeCount": null,
-        "commentCount": 1774
+        "commentCount": 1751
       }
     },
     {
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 243612,
+        "viewCount": 243951,
         "likeCount": null,
         "commentCount": 1089
       }
@@ -398,33 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 195576,
+        "viewCount": 195809,
         "likeCount": null,
         "commentCount": 1109
-      }
-    },
-    {
-      "id": "0_8-XxnUvQc",
-      "slug": "merz-wird-vorgefuehrt-jensen-huang-zerlegt-den-kanzler-beim-investor-s-0_8-XxnUvQc",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Merz wird vorgeführt! Jensen Huang zerlegt den Kanzler beim Investor Summit",
-      "description": "Jensen Huang (Nvidia) betont, dass man KI nicht regulieren kann, bevor man sie überhaupt hat, und setzt auf Unternehmensverantwortung und technische Innovation – während Merz vor allem mit Infrastruktur- und Verteidigungsausgaben sowie für Green Energy wirbt, was peinlich und untauglich ist.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Jensen Huang (Nvidia) betont, dass man KI nicht regulieren kann, bevor man sie überhaupt hat, und setzt auf Unternehmensverantwortung und technische Innovation – während Merz…",
-      "publishedAt": "2026-10-20T09:22:55+00:00",
-      "url": "https://www.youtube.com/watch?v=0_8-XxnUvQc",
-      "thumbnail": "/media/0_8-XxnUvQc.jpg",
-      "thumbnailRemote": "https://i1.ytimg.com/vi/0_8-XxnUvQc/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 95472,
-        "likeCount": null,
-        "commentCount": 640
       }
     },
     {
@@ -446,7 +446,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 79258,
+        "viewCount": 79510,
         "likeCount": null,
         "commentCount": 523
       }
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 97197,
+        "viewCount": 97397,
         "likeCount": null,
         "commentCount": 574
       }
@@ -494,9 +494,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33574,
+        "viewCount": 33583,
         "likeCount": 3363,
-        "commentCount": 634
+        "commentCount": 633
       }
     },
     {
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87778,
+        "viewCount": 87818,
         "likeCount": 4492,
         "commentCount": 400
       }
@@ -542,7 +542,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42809,
+        "viewCount": 42816,
         "likeCount": 3038,
         "commentCount": 509
       }

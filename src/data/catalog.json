@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-26T17:05:40.493Z",
+  "syncedAt": "2026-10-26T21:34:48.874Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -18,8 +18,8 @@
       "subscribeUrl": "https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1",
       "stats": {
         "subscriberCount": 285000,
-        "viewCount": 173551509,
-        "videoCount": 1546,
+        "viewCount": 173988199,
+        "videoCount": 1548,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,55 @@
   ],
   "videos": [
     {
+      "id": "ctCLiMLvipo",
+      "slug": "ausreisesperre-spannungsfall-ctCLiMLvipo",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Ausreisesperre - Spannungsfall!",
+      "description": "Deutschland war näher an einer Ausreisesperre, als du denkst. Vor wenigen Wochen stand der NATO-Bündnisfall im Raum und damit ein Ausreiseverbot für fast jeden Mann im Land. Kaum jemandem ist klar, wie knapp das war.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Wehrpflicht #NATO #Ausreisesperre #Short\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Deutschland war näher an einer Ausreisesperre, als du denkst. Vor wenigen Wochen stand der NATO-Bündnisfall im Raum und damit ein Ausreiseverbot für fast jeden Mann im Land.…",
+      "publishedAt": "2026-10-26T18:45:34+00:00",
+      "url": "https://www.youtube.com/watch?v=ctCLiMLvipo",
+      "thumbnail": "/media/ctCLiMLvipo.jpg",
+      "thumbnailRemote": "https://i4.ytimg.com/vi/ctCLiMLvipo/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Wehrpflicht",
+        "NATO",
+        "Ausreisesperre",
+        "Short"
+      ],
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "V7U43EJNyQ8",
+      "slug": "merz-haut-ab-unbeliebtester-kanzler-aller-zeiten-fluechtet-vor-der-rea-V7U43EJNyQ8",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Merz haut ab: unbeliebtester Kanzler aller Zeiten flüchtet vor der Realität - längste Auslandsreise",
+      "description": "Spare 83 Prozent beim Abschluss eines Abos von Cyberghost VPN und erhalte vier Monate gratis dazu: https://cyberghostvpn.com/PolitikmitKopf *\n\nFriedrich Merz bricht zu seiner bisher längsten Auslandsreise nach Singapur, Japan und Südkorea auf – trotz historisch schlechter Zustimmungswerte.Er flüchtet vor den innenpolitischen Problemen und den bevorstehenden Protesten in Deutschland.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\nFoto: Bundesregierung/Christina Czybik\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Spare 83 Prozent beim Abschluss eines Abos von Cyberghost VPN und erhalte vier Monate gratis dazu: https://cyberghostvpn.com/PolitikmitKopf * Friedrich Merz bricht zu seiner…",
+      "publishedAt": "2026-10-26T17:47:52+00:00",
+      "url": "https://www.youtube.com/watch?v=V7U43EJNyQ8",
+      "thumbnail": "/media/V7U43EJNyQ8.jpg",
+      "thumbnailRemote": "https://i3.ytimg.com/vi/V7U43EJNyQ8/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 89437,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
       "id": "Dpe6i-3GRo4",
       "slug": "bundeswehr-einsatz-gegen-demo-junge-union-berlin-zeigt-wes-geistes-kin-Dpe6i-3GRo4",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -62,7 +111,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 40929,
+        "viewCount": 104976,
         "likeCount": null,
         "commentCount": 491
       }
@@ -86,7 +135,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 99630,
+        "viewCount": 119603,
         "likeCount": null,
         "commentCount": 903
       }
@@ -110,7 +159,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 200786,
+        "viewCount": 202215,
         "likeCount": null,
         "commentCount": 1429
       }
@@ -134,7 +183,7 @@
         "spanien"
       ],
       "stats": {
-        "viewCount": 169221,
+        "viewCount": 170414,
         "likeCount": null,
         "commentCount": 1469
       }
@@ -158,7 +207,7 @@
         "paris"
       ],
       "stats": {
-        "viewCount": 157556,
+        "viewCount": 159920,
         "likeCount": null,
         "commentCount": 863
       }
@@ -182,7 +231,7 @@
         "hormuzstrait"
       ],
       "stats": {
-        "viewCount": 104200,
+        "viewCount": 104799,
         "likeCount": null,
         "commentCount": 708
       }
@@ -206,7 +255,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 79944,
+        "viewCount": 80088,
         "likeCount": null,
         "commentCount": 828
       }
@@ -230,7 +279,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 155304,
+        "viewCount": 155613,
         "likeCount": null,
         "commentCount": 741
       }
@@ -254,7 +303,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 112851,
+        "viewCount": 113163,
         "likeCount": null,
         "commentCount": 472
       }
@@ -278,7 +327,7 @@
         "stromnetz"
       ],
       "stats": {
-        "viewCount": 134452,
+        "viewCount": 134683,
         "likeCount": null,
         "commentCount": 530
       }
@@ -302,7 +351,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 242544,
+        "viewCount": 242807,
         "likeCount": null,
         "commentCount": 769
       }
@@ -326,7 +375,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 109069,
+        "viewCount": 109087,
         "likeCount": null,
         "commentCount": 1012
       }
@@ -350,7 +399,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 177931,
+        "viewCount": 178847,
         "likeCount": null,
         "commentCount": 577
       }
@@ -374,57 +423,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 69377,
+        "viewCount": 69502,
         "likeCount": null,
         "commentCount": 329
-      }
-    },
-    {
-      "id": "wQuE_Dm-0C8",
-      "slug": "merz-behauptet-rechte-haben-frankreich-angezuendet-luegt-im-bloomberg-wQuE_Dm-0C8",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Merz behauptet: Rechte haben Frankreich angezündet & lügt im Bloomberg-Interview",
-      "description": "Merz ist und bleibt ein Lügner! Rechte hätten Frankreich angezündet ... \n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Merz ist und bleibt ein Lügner! Rechte hätten Frankreich angezündet ...",
-      "publishedAt": "2026-10-21T07:57:49+00:00",
-      "url": "https://www.youtube.com/watch?v=wQuE_Dm-0C8",
-      "thumbnail": "/media/wQuE_Dm-0C8.jpg",
-      "thumbnailRemote": "https://i4.ytimg.com/vi/wQuE_Dm-0C8/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 234100,
-        "likeCount": null,
-        "commentCount": 1751
-      }
-    },
-    {
-      "id": "rShPoJn8lUo",
-      "slug": "pfusch-im-bundestag-gesetz-tritt-zu-frueh-in-kraft-produktionsstopp-dr-rShPoJn8lUo",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Pfusch im Bundestag: Gesetz tritt zu früh in Kraft – Produktionsstopp droht heute Nacht!",
-      "description": "Einmal mit Profis! Aber Russland ist die große Gefahr ... \n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Einmal mit Profis! Aber Russland ist die große Gefahr ...",
-      "publishedAt": "2026-10-20T19:14:32+00:00",
-      "url": "https://www.youtube.com/watch?v=rShPoJn8lUo",
-      "thumbnail": "/media/rShPoJn8lUo.jpg",
-      "thumbnailRemote": "https://i3.ytimg.com/vi/rShPoJn8lUo/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 244298,
-        "likeCount": null,
-        "commentCount": 1087
       }
     },
     {
@@ -446,7 +447,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 79646,
+        "viewCount": 79713,
         "likeCount": null,
         "commentCount": 524
       }
@@ -470,7 +471,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 97566,
+        "viewCount": 97661,
         "likeCount": null,
         "commentCount": 574
       }
@@ -494,7 +495,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33588,
+        "viewCount": 33590,
         "likeCount": 3363,
         "commentCount": 633
       }
@@ -518,7 +519,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87828,
+        "viewCount": 87833,
         "likeCount": 4492,
         "commentCount": 400
       }
@@ -542,7 +543,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42817,
+        "viewCount": 42818,
         "likeCount": 3038,
         "commentCount": 509
       }
@@ -578,9 +579,9 @@
     "avatar": "/brand/tiktok.jpg",
     "status": "verbunden",
     "stats": {
-      "followerCount": 23,
-      "likeCount": 21,
-      "videoCount": 2
+      "followerCount": 32,
+      "likeCount": 25,
+      "videoCount": 3
     }
   }
 }

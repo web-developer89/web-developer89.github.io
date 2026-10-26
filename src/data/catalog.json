@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-26T10:58:11.404Z",
+  "syncedAt": "2026-10-26T17:05:40.493Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 173551509,
-        "videoCount": 1545,
+        "videoCount": 1546,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,30 @@
   ],
   "videos": [
     {
+      "id": "Dpe6i-3GRo4",
+      "slug": "bundeswehr-einsatz-gegen-demo-junge-union-berlin-zeigt-wes-geistes-kin-Dpe6i-3GRo4",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Bundeswehr-Einsatz gegen Demo: Junge Union Berlin zeigt, wes Geistes Kind sie ist",
+      "description": "Die Junge Union Berlin-Mitte fordert die Bundeswehr auf, geplante Schülerproteste zu unterbinden. Ich erkläre, warum ein solcher Einsatz der Bundeswehr im Inneren nach dem Grundgesetz klar verfassungswidrig ist.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Die Junge Union Berlin-Mitte fordert die Bundeswehr auf, geplante Schülerproteste zu unterbinden. Ich erkläre, warum ein solcher Einsatz der Bundeswehr im Inneren nach dem…",
+      "publishedAt": "2026-10-26T13:36:18+00:00",
+      "url": "https://www.youtube.com/watch?v=Dpe6i-3GRo4",
+      "thumbnail": "/media/Dpe6i-3GRo4.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/Dpe6i-3GRo4/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 40929,
+        "likeCount": null,
+        "commentCount": 491
+      }
+    },
+    {
       "id": "Hrwc_JPMiPc",
       "slug": "audi-werk-in-den-usa-skandal-oder-rettung-spd-dreht-durch-Hrwc_JPMiPc",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 24406,
+        "viewCount": 99630,
         "likeCount": null,
-        "commentCount": 516
+        "commentCount": 903
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 193735,
+        "viewCount": 200786,
         "likeCount": null,
-        "commentCount": 1385
+        "commentCount": 1429
       }
     },
     {
@@ -110,9 +134,9 @@
         "spanien"
       ],
       "stats": {
-        "viewCount": 167755,
+        "viewCount": 169221,
         "likeCount": null,
-        "commentCount": 1458
+        "commentCount": 1469
       }
     },
     {
@@ -134,9 +158,9 @@
         "paris"
       ],
       "stats": {
-        "viewCount": 155669,
+        "viewCount": 157556,
         "likeCount": null,
-        "commentCount": 858
+        "commentCount": 863
       }
     },
     {
@@ -158,9 +182,9 @@
         "hormuzstrait"
       ],
       "stats": {
-        "viewCount": 101813,
+        "viewCount": 104200,
         "likeCount": null,
-        "commentCount": 703
+        "commentCount": 708
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 79339,
+        "viewCount": 79944,
         "likeCount": null,
-        "commentCount": 826
+        "commentCount": 828
       }
     },
     {
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 154881,
+        "viewCount": 155304,
         "likeCount": null,
-        "commentCount": 740
+        "commentCount": 741
       }
     },
     {
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 112527,
+        "viewCount": 112851,
         "likeCount": null,
         "commentCount": 472
       }
@@ -254,7 +278,7 @@
         "stromnetz"
       ],
       "stats": {
-        "viewCount": 134203,
+        "viewCount": 134452,
         "likeCount": null,
         "commentCount": 530
       }
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 241767,
+        "viewCount": 242544,
         "likeCount": null,
-        "commentCount": 768
+        "commentCount": 769
       }
     },
     {
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 109011,
+        "viewCount": 109069,
         "likeCount": null,
         "commentCount": 1012
       }
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 176756,
+        "viewCount": 177931,
         "likeCount": null,
-        "commentCount": 576
+        "commentCount": 577
       }
     },
     {
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 69208,
+        "viewCount": 69377,
         "likeCount": null,
         "commentCount": 329
       }
@@ -374,7 +398,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 233464,
+        "viewCount": 234100,
         "likeCount": null,
         "commentCount": 1751
       }
@@ -398,33 +422,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 243951,
+        "viewCount": 244298,
         "likeCount": null,
-        "commentCount": 1089
-      }
-    },
-    {
-      "id": "Aw2k1C5D5E8",
-      "slug": "gewalt-demo-auch-bei-uns-gen-z-telegram-der-franzoesische-weg-in-deuts-Aw2k1C5D5E8",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Gewalt-Demo auch bei uns? Gen Z, Telegram & der französische Weg in Deutschland",
-      "description": "„Gen-Z-regelt“-Proteste in Deutschland und der Schweiz angekündigt, die als Fortsetzung der gewaltsamen Ausschreitungen in Frankreich und als Ausdruck einer wohlstandsverwahrlosten Generation gewertet werden müssen. Ein Blick in die Telegram-Gruppen könnte für ein böses Erwachen führen.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Gewalt-Demo auch bei uns? Gen Z, Telegram & der französische Weg in Deutschland",
-      "publishedAt": "2026-10-20T13:12:16+00:00",
-      "url": "https://www.youtube.com/watch?v=Aw2k1C5D5E8",
-      "thumbnail": "/media/Aw2k1C5D5E8.jpg",
-      "thumbnailRemote": "https://i2.ytimg.com/vi/Aw2k1C5D5E8/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 195809,
-        "likeCount": null,
-        "commentCount": 1109
+        "commentCount": 1087
       }
     },
     {
@@ -446,9 +446,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 79510,
+        "viewCount": 79646,
         "likeCount": null,
-        "commentCount": 523
+        "commentCount": 524
       }
     },
     {
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 97397,
+        "viewCount": 97566,
         "likeCount": null,
         "commentCount": 574
       }
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33583,
+        "viewCount": 33588,
         "likeCount": 3363,
         "commentCount": 633
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87818,
+        "viewCount": 87828,
         "likeCount": 4492,
         "commentCount": 400
       }
@@ -542,7 +542,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42816,
+        "viewCount": 42817,
         "likeCount": 3038,
         "commentCount": 509
       }

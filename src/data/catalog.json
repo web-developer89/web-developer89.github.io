@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-28T09:51:23.514Z",
+  "syncedAt": "2026-10-28T16:18:28.775Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 174825984,
-        "videoCount": 1551,
+        "videoCount": 1553,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,54 @@
   ],
   "videos": [
     {
+      "id": "TTM0m-ouAqI",
+      "slug": "merz-auf-der-flucht-vor-dem-waehler-TTM0m-ouAqI",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Merz auf der Flucht vor dem Wähler!",
+      "description": "Zustimmung am Boden, Merz hebt ab. Während ihm zu Hause das Land entgleitet, bricht der Kanzler zu seiner längsten Auslandsreise auf. Gegen Energiekrise und Probleme im eigenen Land hilft das niemandem.\n\n#Merz #Energiekrise #Bundesregierung \n\nhttps://youtu.be/iKwFHNpAUjs\n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Zustimmung am Boden, Merz hebt ab. Während ihm zu Hause das Land entgleitet, bricht der Kanzler zu seiner längsten Auslandsreise auf. Gegen Energiekrise und Probleme im eigenen…",
+      "publishedAt": "2026-10-28T15:57:31+00:00",
+      "url": "https://www.youtube.com/watch?v=TTM0m-ouAqI",
+      "thumbnail": "/media/TTM0m-ouAqI.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/TTM0m-ouAqI/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Merz",
+        "Energiekrise",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": null,
+        "likeCount": null,
+        "commentCount": 9
+      }
+    },
+    {
+      "id": "KXKFabHVK8Q",
+      "slug": "64-tote-in-spanien-etcs-asfa-und-warum-die-begruendungen-technisch-nic-KXKFabHVK8Q",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "64 Tote in Spanien: ETCS, ASFA und warum die Begründungen technisch nicht aufgehen",
+      "description": "In Spanien kollidieren zwei Hochgeschwindigkeitszüge – ein AVE fährt auf einen stehenden Iryo auf, dutzende Menschen sterben. Warum die offiziellen Erklärungen zu Signalstörung und menschlichem Versagen technisch kaum nachvollziehbar sind und warum sich das Unglück in eine Reihe schwerer Unfälle unter der sozialistischen Regierung einreiht.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "In Spanien kollidieren zwei Hochgeschwindigkeitszüge – ein AVE fährt auf einen stehenden Iryo auf, dutzende Menschen sterben. Warum die offiziellen Erklärungen zu Signalstörung…",
+      "publishedAt": "2026-10-28T14:15:02+00:00",
+      "url": "https://www.youtube.com/watch?v=KXKFabHVK8Q",
+      "thumbnail": "/media/KXKFabHVK8Q.jpg",
+      "thumbnailRemote": "https://i4.ytimg.com/vi/KXKFabHVK8Q/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 10633,
+        "likeCount": null,
+        "commentCount": 217
+      }
+    },
+    {
       "id": "ItKJWkfk4Xw",
       "slug": "die-eidesstattliche-versicherung-die-keiner-unterschreiben-wollte-ItKJWkfk4Xw",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -62,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 11568,
+        "viewCount": 105688,
         "likeCount": null,
-        "commentCount": 184
+        "commentCount": 549
       }
     },
     {
@@ -88,7 +136,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 101
+        "commentCount": 129
       }
     },
     {
@@ -110,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 232803,
+        "viewCount": 245776,
         "likeCount": null,
-        "commentCount": 960
+        "commentCount": 995
       }
     },
     {
@@ -137,7 +185,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 171
+        "commentCount": 172
       }
     },
     {
@@ -159,9 +207,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 230227,
+        "viewCount": 234285,
         "likeCount": null,
-        "commentCount": 1450
+        "commentCount": 1456
       }
     },
     {
@@ -183,9 +231,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 135329,
+        "viewCount": 136128,
         "likeCount": null,
-        "commentCount": 687
+        "commentCount": 689
       }
     },
     {
@@ -207,9 +255,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 140345,
+        "viewCount": 141317,
         "likeCount": null,
-        "commentCount": 1029
+        "commentCount": 1032
       }
     },
     {
@@ -231,9 +279,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 211607,
+        "viewCount": 211934,
         "likeCount": null,
-        "commentCount": 1471
+        "commentCount": 1473
       }
     },
     {
@@ -255,9 +303,9 @@
         "spanien"
       ],
       "stats": {
-        "viewCount": 175998,
+        "viewCount": 176343,
         "likeCount": null,
-        "commentCount": 1474
+        "commentCount": 1473
       }
     },
     {
@@ -279,7 +327,7 @@
         "paris"
       ],
       "stats": {
-        "viewCount": 161686,
+        "viewCount": 161821,
         "likeCount": null,
         "commentCount": 863
       }
@@ -303,9 +351,9 @@
         "hormuzstrait"
       ],
       "stats": {
-        "viewCount": 106947,
+        "viewCount": 107247,
         "likeCount": null,
-        "commentCount": 716
+        "commentCount": 717
       }
     },
     {
@@ -327,9 +375,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 81310,
+        "viewCount": 81513,
         "likeCount": null,
-        "commentCount": 824
+        "commentCount": 827
       }
     },
     {
@@ -351,57 +399,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 157056,
+        "viewCount": 157523,
         "likeCount": null,
-        "commentCount": 742
-      }
-    },
-    {
-      "id": "lEFb3HS9rGQ",
-      "slug": "gaslage-der-nation-bundesnetzagentur-meldet-61-und-das-soll-uns-beruhi-lEFb3HS9rGQ",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Gaslage der Nation: Bundesnetzagentur meldet 61 % – und das soll uns beruhigen?",
-      "description": "https://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Gaslage der Nation: Bundesnetzagentur meldet 61 % – und das soll uns beruhigen?",
-      "publishedAt": "2026-10-23T07:26:06+00:00",
-      "url": "https://www.youtube.com/watch?v=lEFb3HS9rGQ",
-      "thumbnail": "/media/lEFb3HS9rGQ.jpg",
-      "thumbnailRemote": "https://i1.ytimg.com/vi/lEFb3HS9rGQ/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 114724,
-        "likeCount": null,
-        "commentCount": 467
-      }
-    },
-    {
-      "id": "GNZaZh2eWKU",
-      "slug": "klingbeil-bricht-merz-sein-versprechen-nach-nur-10-tagen-stromsteuer-s-GNZaZh2eWKU",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Klingbeil bricht Merz sein Versprechen nach nur 10 Tagen | Stromsteuer-Senkung ist tot",
-      "description": "Lars Klingbeil zerstört Friedrich Merz sein Versprechen zur Senkung der Stromsteuer auf das europäische Minimum schon nach nur zehn Tagen und zeigt damit erneut, wie schnell die Politik bereit ist sich selbst zu zerfleischen! \n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #stromnetz \n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Lars Klingbeil zerstört Friedrich Merz sein Versprechen zur Senkung der Stromsteuer auf das europäische Minimum schon nach nur zehn Tagen und zeigt damit erneut, wie schnell…",
-      "publishedAt": "2026-10-22T19:17:16+00:00",
-      "url": "https://www.youtube.com/watch?v=GNZaZh2eWKU",
-      "thumbnail": "/media/GNZaZh2eWKU.jpg",
-      "thumbnailRemote": "https://i4.ytimg.com/vi/GNZaZh2eWKU/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "stromnetz"
-      ],
-      "stats": {
-        "viewCount": 135752,
-        "likeCount": null,
-        "commentCount": 511
+        "commentCount": 746
       }
     },
     {
@@ -423,9 +423,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 70078,
+        "viewCount": 70163,
         "likeCount": null,
-        "commentCount": 328
+        "commentCount": 329
       }
     },
     {
@@ -447,7 +447,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 80246,
+        "viewCount": 80287,
         "likeCount": null,
         "commentCount": 524
       }
@@ -471,7 +471,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 98288,
+        "viewCount": 98329,
         "likeCount": null,
         "commentCount": 575
       }
@@ -495,7 +495,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33610,
+        "viewCount": 33612,
         "likeCount": 3363,
         "commentCount": 633
       }
@@ -519,7 +519,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87954,
+        "viewCount": 87966,
         "likeCount": 4492,
         "commentCount": 400
       }
@@ -543,7 +543,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42836,
+        "viewCount": 42838,
         "likeCount": 3038,
         "commentCount": 508
       }
@@ -581,7 +581,7 @@
     "stats": {
       "followerCount": 36,
       "likeCount": 32,
-      "videoCount": 3
+      "videoCount": 5
     }
   }
 }

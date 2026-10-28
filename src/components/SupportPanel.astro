@@ -33,7 +33,7 @@ const banks = support.banks.filter((bank) => bank.enabled);
   )}
   {!compact && support.recommendations.length > 0 && (
     <div class="prose">
-      <h3>Empfehlungen</h3>
+      <h2 class="subhead">Empfehlungen</h2>
       <ul>
         {support.recommendations.map((item) => (
           <li><a href={item.href} rel="noopener noreferrer">{item.title}</a> — {item.note}</li>

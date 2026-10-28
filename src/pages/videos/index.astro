@@ -46,7 +46,7 @@ if (sort === 'alt') params.set('sort', 'alt');
 params.set('seite', String(page + 1));
 const moreHref = `/videos/?${params.toString()}`;
 ---
-<Base title="Videos" description="Das Videoarchiv von Politik mit Kopf und Politik mit Kopf REAGIERT.">
+<Base title="Videos" description="Das Videoarchiv von Politik mit Kopf und Politik mit Kopf REAGIERT." lcpImage={catalog.videos[0]?.thumbnail} lcpSizes="(max-width: 640px) 92vw, (max-width: 900px) 46vw, 360px">
   <div class="wrap">
     <Breadcrumbs items={[{ href: '/videos/', label: 'Videos' }]} />
     <PageHeader kicker="Archiv" title="Videos" lede="Neue Beiträge werden automatisch aus YouTube übernommen." />
@@ -89,7 +89,7 @@ const moreHref = `/videos/?${params.toString()}`;
       </div>
       <p data-archive-count class="legal-note">{matched.length === 1 ? '1 Video' : `${matched.length} Videos`}</p>
       <div class="cards" data-archive-grid>
-        {rows.map((row) => <VideoCard video={row.video} hidden={row.hidden} />)}
+        {rows.map((row, index) => <VideoCard video={row.video} hidden={row.hidden} priority={index === 0} level="h2" />)}
       </div>
       <div data-archive-empty hidden={matched.length !== 0}>
         <EmptyState title={catalog.videos.length ? 'Keine Videos passen zu dieser Auswahl.' : 'Aktuell sind in diesem Bereich noch keine Beiträge vorhanden.'} actionHref="/videos/" action="Filter zurücksetzen" />

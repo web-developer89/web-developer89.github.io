@@ -8,7 +8,7 @@ const q = Astro.url.searchParams.get('q')?.trim() ?? '';
 const results = q ? searchContent(q) : [];
 ---
 <Base title="Suche" description="Beiträge, Themen und Seiten von Politik mit Kopf durchsuchen." noindex={Boolean(q)}>
-  <div class="wrap">
+  <div class="wrap" data-search-page data-rendered={q ? 'server' : undefined}>
     <PageHeader kicker="Suche" title="Was möchten Sie finden?" />
     <form class="filters filters-search" action="/suche/" method="get" role="search">
       <label class="field">
@@ -17,19 +17,98 @@ const results = q ? searchContent(q) : [];
       </label>
       <button class="button" type="submit">Suchen</button>
     </form>
-    {q && results.length === 0 && <p class="empty">Keine Treffer.</p>}
-    {results.length > 0 && (
-      <ol class="wire">
-        {results.map((item) => (
-          <li>
-            <span class="badge">{item.kind}</span>
-            <div>
-              <h2><a href={item.href}>{item.title}</a></h2>
-              {item.date && <time datetime={item.date}>{formatDate(item.date)}</time>}
-            </div>
-          </li>
-        ))}
-      </ol>
-    )}
+    <div data-search-output>
+      {q && results.length === 0 && <p class="empty">Keine Treffer.</p>}
+      {results.length > 0 && (
+        <ol class="wire">
+          {results.map((item) => (
+            <li>
+              <span class="badge">{item.kind}</span>
+              <div>
+                <h2><a href={item.href}>{item.title}</a></h2>
+                {item.date && <time datetime={item.date}>{formatDate(item.date)}</time>}
+              </div>
+            </li>
+          ))}
+        </ol>
+      )}
+    </div>
   </div>
 </Base>
+<script>
+  const root = document.querySelector('[data-search-page]');
+  if (root instanceof HTMLElement && root.dataset.rendered !== 'server') {
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get('q')?.trim() || '';
+    const output = root.querySelector('[data-search-output]');
+    const input = root.querySelector('input[name="q"]');
+    if (query && output instanceof HTMLElement) {
+      if (input instanceof HTMLInputElement && !input.value) input.value = query;
+      const status = document.createElement('p');
+      status.className = 'legal-note';
+      status.setAttribute('role', 'status');
+      status.textContent = 'Suche läuft…';
+      output.replaceChildren(status);
+      fetch('/search-index.json')
+        .then((response) => (response.ok ? response.json() : []))
+        .then((data) => {
+          const needle = query.toLowerCase();
+          const items = (Array.isArray(data) ? data : []).filter((item) => {
+            const title = String(item.title || '').toLowerCase();
+            const text = String(item.text || '').toLowerCase();
+            return title.includes(needle) || text.includes(needle);
+          }).slice(0, 24);
+          output.replaceChildren();
+          if (!items.length) {
+            const empty = document.createElement('p');
+            empty.className = 'empty';
+            empty.textContent = 'Keine Treffer.';
+            output.append(empty);
+            return;
+          }
+          const list = document.createElement('ol');
+          list.className = 'wire';
+          const formatter = new Intl.DateTimeFormat('de-DE', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric',
+            timeZone: 'Europe/Zurich',
+          });
+          for (const item of items) {
+            const entry = document.createElement('li');
+            const badge = document.createElement('span');
+            badge.className = 'badge';
+            badge.textContent = String(item.kind || 'Seite');
+            const body = document.createElement('div');
+            const heading = document.createElement('h2');
+            const link = document.createElement('a');
+            link.href = String(item.href || '/');
+            link.textContent = String(item.title || 'Eintrag');
+            heading.append(link);
+            body.append(heading);
+            if (item.date) {
+              const time = document.createElement('time');
+              time.dateTime = String(item.date);
+              const parsed = new Date(String(item.date));
+              time.textContent = Number.isNaN(parsed.getTime()) ? '' : formatter.format(parsed);
+              if (time.textContent) body.append(time);
+            }
+            entry.append(badge, body);
+            list.append(entry);
+          }
+          const count = document.createElement('p');
+          count.className = 'legal-note';
+          count.setAttribute('role', 'status');
+          count.textContent = items.length === 1 ? '1 Treffer' : `${items.length} Treffer`;
+          output.append(count, list);
+        })
+        .catch(() => {
+          output.replaceChildren();
+          const error = document.createElement('p');
+          error.className = 'empty';
+          error.textContent = 'Die Suche ist gerade nicht erreichbar.';
+          output.append(error);
+        });
+    }
+  }
+</script>

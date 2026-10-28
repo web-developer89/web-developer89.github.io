@@ -121,56 +121,6 @@ function renderSpark(series: Array<{ at: string; value: number }>, color: string
   `;
 }
 
-function renderComparisonChart(
-  channels: Array<{ id: string; name: string; series: Array<{ at: string; value: number }> }>,
-): string {
-  const usable = channels.filter((channel) => channel.series.length >= 2);
-  if (!usable.length) {
-    return `<p class="growth-note">Für diesen Zeitraum liegen noch nicht genügend Daten vor.</p>`;
-  }
-
-  const width = 720;
-  const height = 156;
-  const pad = { top: 12, right: 12, bottom: 18, left: 58 };
-  const allValues = usable.flatMap((channel) => channel.series.map((point) => point.value));
-  const min = Math.min(...allValues);
-  const max = Math.max(...allValues);
-  const span = Math.max(max - min, 1);
-  const allTimes = usable.flatMap((channel) => channel.series.map((point) => Date.parse(point.at)));
-  const tMin = Math.min(...allTimes);
-  const tMax = Math.max(...allTimes);
-  const tSpan = Math.max(tMax - tMin, 1);
-
-  const xOf = (iso: string) => pad.left + ((Date.parse(iso) - tMin) / tSpan) * (width - pad.left - pad.right);
-  const yOf = (value: number) => pad.top + (1 - (value - min) / span) * (height - pad.top - pad.bottom);
-
-  const gridLines = [0, 0.5, 1].map((ratio) => {
-    const value = min + span * (1 - ratio);
-    const y = pad.top + ratio * (height - pad.top - pad.bottom);
-    return `
-      <line x1="${pad.left}" y1="${y.toFixed(1)}" x2="${width - pad.right}" y2="${y.toFixed(1)}" stroke="rgba(255,255,255,0.06)" />
-      <text x="${pad.left - 8}" y="${(y + 3).toFixed(1)}" text-anchor="end" fill="#7d8896" font-size="10">${formatNumber(Math.round(value))}</text>
-    `;
-  });
-
-  const paths = usable.map((channel) => {
-    const color = COLORS[channel.id] || '#d4b07a';
-    const points = channel.series.map((point) => `${xOf(point.at).toFixed(1)},${yOf(point.value).toFixed(1)}`).join(' ');
-    const last = channel.series[channel.series.length - 1];
-    return `
-      <polyline fill="none" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="${points}"></polyline>
-      <circle cx="${xOf(last.at).toFixed(1)}" cy="${yOf(last.value).toFixed(1)}" r="2.2" fill="${color}"></circle>
-    `;
-  });
-
-  return `
-    <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Vergleich der Abonnentenentwicklung">
-      ${gridLines.join('')}
-      ${paths.join('')}
-    </svg>
-  `;
-}
-
 function normalizeRemote(data: Record<string, unknown>, current: Payload): Payload | null {
   if (!data || typeof data !== 'object') return null;
   const remoteChannels = Array.isArray(data.channels) ? data.channels : [];

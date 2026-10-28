@@ -12,8 +12,10 @@ interface Props {
   priority?: boolean;
   /** Homepage and editorial surfaces: no views/likes/comments. */
   hideEngagement?: boolean;
+  /** Archive pages start at h1, so the card title is the next level. */
+  level?: 'h2' | 'h3';
 }
-const { video, variant = 'standard', hidden = false, priority = false, hideEngagement = false } = Astro.props;
+const { video, variant = 'standard', hidden = false, priority = false, hideEngagement = false, level = 'h3' } = Astro.props;
 const sizes = variant === 'lead'
   ? '(max-width: 900px) 92vw, 640px'
   : variant === 'rail'
@@ -50,7 +52,7 @@ const showEngagement =
       <span>{video.channelName}</span>
       <time datetime={video.publishedAt}>{formatDate(video.publishedAt)}</time>
     </p>
-    <h3>{video.title}</h3>
+    {level === 'h2' ? <h2>{video.title}</h2> : <h3>{video.title}</h3>}
     {variant !== 'rail' && <p class="excerpt">{video.excerpt}</p>}
     {showEngagement && (
       <p class="stat-row" aria-label="YouTube-Statistiken">

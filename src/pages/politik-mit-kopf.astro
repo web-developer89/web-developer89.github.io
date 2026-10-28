@@ -13,7 +13,7 @@ const videos = catalog.videos.filter((video) => video.channelId === channel.chan
 const featured = videos[0] ?? null;
 const archive = videos.slice(1, 13);
 ---
-<Base title={channel.name} description={channel.description} image={channel.avatar}>
+<Base title={channel.name} description={channel.description} image={channel.avatar} lcpImage={featured?.thumbnail} lcpSizes="(max-width: 900px) 92vw, 640px">
   <div class="wrap">
     <Breadcrumbs items={[{ href: '/unsere-kanaele/', label: 'Meine Kanäle' }, { href: '/politik-mit-kopf/', label: channel.name }]} />
     <section class="channel-card" style="margin:18px 0 28px">

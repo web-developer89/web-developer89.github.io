@@ -7,7 +7,12 @@ import { connectedSocials } from '../config/social';
 
 const customContactEndpoint = String(import.meta.env.PUBLIC_CONTACT_ENDPOINT || '').trim();
 ---
-<Base title="Datenschutz" description="Wie diese Website mit Daten umgeht.">
+<Base
+  title="Datenschutz"
+  description={customContactEndpoint
+    ? 'So geht diese Website mit Daten um: keine Tracking-Cookies, YouTube erst beim Abspielen, Beratungsformular an die MK Swiss Media GmbH.'
+    : 'So geht diese Website mit Daten um: keine Tracking-Cookies, YouTube erst beim Abspielen, Beratungsformular über FormSubmit an die MK Swiss Media GmbH.'}
+>
   <div class="wrap prose" style="max-width: 46rem">
     <Breadcrumbs items={[{ href: '/datenschutz/', label: 'Datenschutz' }]} />
     <PageHeader kicker="Rechtliches" title="Datenschutz" lede="Diese Seite beschreibt, was die Website tatsächlich tut." />

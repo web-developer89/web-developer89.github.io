@@ -117,7 +117,7 @@ async function encode(job) {
     '-frames:v', '1',
     '-c:v', 'libsvtav1',
     '-pix_fmt', 'yuv420p',
-    '-svtav1-params', 'still-picture=1:crf=32:preset=10',
+    '-svtav1-params', 'still-picture=1:crf=42:preset=10',
     job.target,
   ]);
 }

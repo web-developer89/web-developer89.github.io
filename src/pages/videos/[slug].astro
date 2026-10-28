@@ -1,7 +1,5 @@
 ---
 import Base from '../../layouts/Base.astro';
-import PageHeader from '../../components/PageHeader.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Player from '../../components/Player.astro';
 import ShareBar from '../../components/ShareBar.astro';
 import VideoCard from '../../components/VideoCard.astro';
@@ -58,7 +56,7 @@ const jsonLd = [
       <h1>{video.title}</h1>
       <p class="byline"><time datetime={video.publishedAt}>{formatDate(video.publishedAt)}</time>{video.durationLabel && <span>{video.durationLabel}</span>}</p>
     </header>
-    <Player label="Abspielen" id={video.id} title={video.title}>
+    <Player label="Video abspielen" id={video.id} title={video.title}>
       <img src={video.thumbnail} alt="" width="1280" height="720" fetchpriority="high" data-fallback={video.thumbnailRemote} />
     </Player>
     <ShareBar video={video} />

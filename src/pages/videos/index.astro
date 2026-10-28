@@ -9,6 +9,8 @@ import { catalog, channelDirectory, uniqueYears } from '../../lib/catalog';
 const q = Astro.url.searchParams.get('q') ?? '';
 const kanal = Astro.url.searchParams.get('kanal') ?? '';
 const jahr = Astro.url.searchParams.get('jahr') ?? '';
+const thema = Astro.url.searchParams.get('thema')?.trim() ?? '';
+const themaKey = thema.toLowerCase();
 const sort = Astro.url.searchParams.get('sort') === 'alt' ? 'alt' : 'neu';
 const page = Math.max(1, Number(Astro.url.searchParams.get('seite') || '1') || 1);
 const limit = page * 12;
@@ -20,7 +22,8 @@ const matches = (video: (typeof catalog.videos)[number]) => {
   const needle = q.trim().toLowerCase();
   const haystack = `${video.title} ${video.excerpt} ${video.channelName} ${video.tags.join(' ')}`.toLowerCase();
   const channelOk = !selectedChannel || video.channelId === selectedChannel.channelId;
-  return channelOk && (!needle || haystack.includes(needle)) && (!jahr || video.publishedAt.startsWith(jahr));
+  const topicOk = !themaKey || video.tags.some((tag) => tag.toLowerCase() === themaKey);
+  return channelOk && topicOk && (!needle || haystack.includes(needle)) && (!jahr || video.publishedAt.startsWith(jahr));
 };
 
 const ordered = [...catalog.videos].sort((a, b) => {
@@ -38,6 +41,7 @@ const params = new URLSearchParams();
 if (q) params.set('q', q);
 if (kanal) params.set('kanal', kanal);
 if (jahr) params.set('jahr', jahr);
+if (thema) params.set('thema', thema);
 if (sort === 'alt') params.set('sort', 'alt');
 params.set('seite', String(page + 1));
 const moreHref = `/videos/?${params.toString()}`;
@@ -48,6 +52,9 @@ const moreHref = `/videos/?${params.toString()}`;
     <PageHeader kicker="Archiv" title="Videos" lede="Neue Beiträge werden automatisch aus YouTube übernommen." />
     {!catalog.ok && catalog.videos.length > 0 && (
       <p class="notice" role="status">Inhalte konnten momentan nicht vollständig geladen werden. Angezeigt werden die zuletzt gespeicherten Videos. <a href="/videos/">Erneut versuchen</a></p>
+    )}
+    {thema && (
+      <p class="notice" role="status" data-topic-notice>Thema „{thema}“. <a href="/videos/">Thema zurücksetzen</a></p>
     )}
     <form action="/videos/" method="get" data-archive>
       <div class="filters">

@@ -261,7 +261,7 @@ export function setupSubscriberBoard(): void {
 
   const refreshFromNetwork = async () => {
     try {
-      const response = await fetch(`/data/stats.json?t=${Date.now()}`, { cache: 'no-store' });
+      const response = await fetch(`/data/community.json?t=${Date.now()}`, { cache: 'no-store' });
       if (!response.ok) return;
       const next = normalizeRemote(await response.json(), payload);
       if (!next) return;

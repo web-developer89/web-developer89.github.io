@@ -9,11 +9,11 @@ const results = q ? searchContent(q) : [];
 ---
 <Base title="Suche" description="Beiträge, Themen und Seiten von Politik mit Kopf durchsuchen." noindex={Boolean(q)}>
   <div class="wrap">
-    <PageHeader kicker="Suche" title="Was möchtest du finden?" />
-    <form class="filters" action="/suche/" method="get" role="search" style="grid-template-columns: 1fr auto">
+    <PageHeader kicker="Suche" title="Was möchten Sie finden?" />
+    <form class="filters filters-search" action="/suche/" method="get" role="search">
       <label class="field">
         <span class="sr-only">Suchbegriff</span>
-        <input name="q" value={q} />
+        <input name="q" type="search" value={q} enterkeyhint="search" />
       </label>
       <button class="button" type="submit">Suchen</button>
     </form>

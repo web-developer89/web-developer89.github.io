@@ -18,13 +18,13 @@ function setupMenu(): void {
   const closeButton = document.querySelector('[data-menu-close]');
   if (!(button instanceof HTMLButtonElement) || !(panel instanceof HTMLElement)) return;
 
-  const close = () => {
+  const close = (restoreFocus = true) => {
     panel.classList.remove('is-open');
     button.setAttribute('aria-expanded', 'false');
     document.documentElement.classList.remove('lock');
     const finish = () => {
       panel.hidden = true;
-      button.focus();
+      if (restoreFocus) button.focus();
     };
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) finish();
     else window.setTimeout(finish, 180);
@@ -42,7 +42,10 @@ function setupMenu(): void {
     if (panel.hidden) open();
     else close();
   });
-  closeButton?.addEventListener('click', close);
+  closeButton?.addEventListener('click', () => close());
+  document.addEventListener('pmk:close-menu', () => {
+    if (!panel.hidden) close(false);
+  });
   panel.addEventListener('click', (event) => {
     const target = event.target;
     if (target instanceof HTMLAnchorElement && target.hasAttribute('data-search-open')) return;
@@ -99,7 +102,10 @@ function setupSearch(): void {
       results.append(empty);
       return;
     }
+    const list = document.createElement('ul');
+    list.className = 'search-list';
     for (const item of source) {
+      const entry = document.createElement('li');
       const link = document.createElement('a');
       link.href = item.href;
       const badge = document.createElement('span');
@@ -108,12 +114,15 @@ function setupSearch(): void {
       const title = document.createElement('span');
       title.textContent = item.title;
       link.append(badge, title);
-      results.append(link);
+      entry.append(link);
+      list.append(entry);
     }
+    results.append(list);
   };
 
   const open = (event?: Event) => {
     event?.preventDefault();
+    document.dispatchEvent(new CustomEvent('pmk:close-menu'));
     if (!dialog.open) dialog.showModal();
     input.focus();
     render(input.value);
@@ -138,16 +147,19 @@ function setupCopy(): void {
     if (!(button instanceof HTMLButtonElement)) return;
     const value = button.dataset.copy;
     if (!value) return;
+    const original = button.dataset.copyLabel || button.textContent || 'Kopieren';
+    button.dataset.copyLabel = original;
     try {
       await navigator.clipboard.writeText(value);
-      const original = button.dataset.copyLabel || button.textContent || 'Kopieren';
-      button.dataset.copyLabel = original;
       button.textContent = button.dataset.copySuccess || 'Kopiert';
       window.setTimeout(() => {
         button.textContent = original;
       }, 1600);
     } catch {
       button.textContent = 'Kopieren nicht möglich';
+      window.setTimeout(() => {
+        button.textContent = original;
+      }, 1600);
     }
   });
 }
@@ -159,8 +171,16 @@ function setupImages(): void {
       const image = event.target;
       if (!(image instanceof HTMLImageElement)) return;
       const fallback = image.dataset.fallback;
-      if (!fallback || image.src === fallback) return;
-      image.src = fallback;
+      if (!fallback || image.dataset.fallbackTried === '1') return;
+      image.dataset.fallbackTried = '1';
+      let next = fallback;
+      try {
+        next = new URL(fallback, window.location.href).href;
+      } catch {
+        next = fallback;
+      }
+      if (image.src === next) return;
+      image.src = next;
     },
     true,
   );

@@ -1,0 +1,2930 @@
+{
+  "syncedAt": "2026-10-28T16:18:28.775Z",
+  "channels": [
+    {
+      "id": "primary",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "name": "Politik mit Kopf",
+      "stats": {
+        "subscriberCount": 285000,
+        "hiddenSubscriberCount": false
+      }
+    },
+    {
+      "id": "reagiert",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "name": "Politik mit Kopf REAGIERT",
+      "stats": {
+        "subscriberCount": 17500,
+        "hiddenSubscriberCount": false
+      }
+    }
+  ],
+  "channelSnapshots": [
+    {
+      "at": "2026-10-14T19:42:30.901Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-14T19:42:30.901Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-14T19:42:30.901Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 16900
+    },
+    {
+      "at": "2026-10-14T20:09:37.047Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-14T20:09:37.047Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-14T20:09:37.047Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 16900
+    },
+    {
+      "at": "2026-10-14T20:34:39.336Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-14T20:34:39.336Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-14T20:34:39.336Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 16900
+    },
+    {
+      "at": "2026-10-14T21:01:58.279Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-14T21:01:58.279Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-14T21:01:58.279Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 16900
+    },
+    {
+      "at": "2026-10-14T21:26:08.719Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-14T21:26:08.719Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-14T21:26:08.719Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 16900
+    },
+    {
+      "at": "2026-10-14T21:55:11.624Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-14T21:55:11.624Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-14T21:55:11.624Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 16900
+    },
+    {
+      "at": "2026-10-14T22:13:30.993Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-14T22:13:30.993Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-14T22:13:30.993Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 16900
+    },
+    {
+      "at": "2026-10-14T22:39:27.275Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-14T22:39:27.275Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-14T23:01:25.134Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-14T23:23:09.436Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-14T23:44:30.906Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T00:00:33.900Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T00:00:33.900Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T00:25:53.179Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T00:25:53.179Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T01:03:39.144Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T01:31:42.027Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T02:00:25.036Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T02:24:08.564Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T02:54:29.716Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T03:14:53.761Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T03:43:08.249Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T04:11:34.239Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T04:37:28.209Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T05:03:29.763Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T05:28:55.001Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T05:56:44.299Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T06:19:10.145Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T07:05:28.795Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T07:05:28.795Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T07:05:28.795Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T07:41:45.408Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T07:41:45.408Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T07:41:45.408Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T08:11:51.936Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T08:11:51.936Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T08:11:51.936Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T08:42:17.059Z",
+      "channelId": "tiktok",
+      "subscriberCount": 21
+    },
+    {
+      "at": "2026-10-15T08:42:17.059Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T08:42:17.059Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T09:11:25.849Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T09:11:25.849Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T09:11:25.849Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T09:40:03.785Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T09:40:03.785Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T09:40:03.785Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T10:08:45.245Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T10:08:45.245Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T10:08:45.245Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T10:37:17.907Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T10:37:17.907Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T10:37:17.907Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T11:05:11.247Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T11:05:11.247Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T11:32:13.479Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T11:32:13.479Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T11:32:13.479Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T12:00:28.672Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T12:00:28.672Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T12:00:28.672Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T12:29:40.490Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T12:29:40.490Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T12:29:40.490Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T13:13:39.690Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T13:13:39.690Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T13:13:39.690Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T13:49:42.078Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T13:49:42.078Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T13:49:42.078Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T14:19:52.867Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T14:19:52.867Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T14:19:52.867Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T14:52:46.278Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T14:52:46.278Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T14:52:46.278Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T15:19:56.301Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T15:19:56.301Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T15:19:56.301Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T15:53:44.493Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T15:53:44.493Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T15:53:44.493Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T16:16:42.830Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T16:16:42.830Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T16:16:42.830Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T16:48:23.325Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T16:48:23.325Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T16:48:23.325Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T17:16:32.759Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T17:16:32.759Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T17:16:32.759Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T17:43:26.805Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T17:43:26.805Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T17:43:26.805Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T18:08:20.174Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T18:08:20.174Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T18:08:20.174Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T18:40:22.035Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T18:40:22.035Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T18:40:22.035Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T19:13:52.743Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T19:13:52.743Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T19:13:52.743Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T19:39:17.610Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T19:39:17.610Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T19:39:17.610Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T20:03:49.739Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T20:03:49.739Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T20:03:49.739Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T20:27:13.735Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T20:27:13.735Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T20:27:13.735Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T20:55:50.919Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T20:55:50.919Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T20:55:50.919Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T21:17:39.392Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T21:17:39.392Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T21:17:39.392Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T21:46:50.056Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T21:46:50.056Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T21:46:50.056Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T22:09:09.722Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T22:09:09.722Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T22:09:09.722Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T22:34:40.021Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T22:34:40.021Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T22:34:40.021Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T22:56:31.380Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T22:56:31.380Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T22:56:31.380Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T23:10:34.521Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T23:10:34.521Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T23:10:34.521Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T23:31:40.475Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T23:31:40.475Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T23:31:40.475Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-15T23:51:51.157Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-15T23:51:51.157Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-15T23:51:51.157Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T00:04:25.364Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T00:04:25.364Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T00:04:25.364Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T00:37:55.898Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T01:10:39.328Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T01:35:48.235Z",
+      "channelId": "tiktok",
+      "subscriberCount": 0
+    },
+    {
+      "at": "2026-10-16T02:03:27.368Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T02:29:09.993Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T02:58:28.154Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T02:58:28.154Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T02:58:28.154Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T03:19:43.776Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T03:52:08.538Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T04:15:31.331Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T04:44:35.820Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T05:11:26.080Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T05:36:31.685Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T06:03:11.296Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T06:35:03.638Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T07:15:51.201Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T07:15:51.201Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T07:15:51.201Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T07:47:51.217Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T07:47:51.217Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T07:47:51.217Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T08:14:01.696Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T08:14:01.696Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T08:14:01.696Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T08:44:07.948Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T08:44:07.948Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T08:44:07.948Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T09:13:06.580Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T09:13:06.580Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T09:13:06.580Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T09:40:08.710Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T09:40:08.710Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T09:40:08.710Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T10:09:12.652Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T10:09:12.652Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T10:09:12.652Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T10:36:52.281Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T10:36:52.281Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T10:36:52.281Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T11:04:00.122Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T11:04:00.122Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T11:04:00.122Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T11:30:39.674Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T11:30:39.674Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T11:30:39.674Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T11:58:37.072Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T11:58:37.072Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T11:58:37.072Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T12:23:35.881Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T12:23:35.881Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T12:23:35.881Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T13:07:56.785Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T13:07:56.785Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T13:07:56.785Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T13:43:11.129Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T13:43:11.129Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T13:43:11.129Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T14:13:31.771Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T14:13:31.771Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T14:13:31.771Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T14:43:21.992Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T14:43:21.992Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T15:10:10.396Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T15:10:10.396Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T15:10:10.396Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T15:36:53.549Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T15:36:53.549Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T16:06:37.518Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T16:06:37.518Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T16:06:37.518Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T16:33:30.551Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T16:33:30.551Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T16:33:30.551Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T17:03:14.690Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T17:03:14.690Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T17:03:14.690Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T17:26:53.994Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T17:26:53.994Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T17:26:53.994Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T17:53:56.578Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T17:53:56.578Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T17:53:56.578Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T18:12:22.713Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T18:12:22.713Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T18:12:22.713Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T18:43:20.614Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T18:43:20.614Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T18:43:20.614Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T19:11:36.638Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T19:11:36.638Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T19:11:36.638Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-16T19:36:37.467Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T19:36:37.467Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T19:36:37.467Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T19:58:25.635Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T19:58:25.635Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T19:58:25.635Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17000
+    },
+    {
+      "at": "2026-10-16T20:15:29.764Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T20:15:29.764Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T20:15:29.764Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-16T20:43:59.502Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T20:43:59.502Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T20:43:59.502Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-16T21:09:04.503Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T21:09:04.503Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T21:09:04.503Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-16T21:33:21.860Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T21:33:21.860Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T21:33:21.860Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-16T21:59:18.417Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T21:59:18.417Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T21:59:18.417Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-16T22:20:40.733Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T22:20:40.733Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-16T22:49:35.105Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T22:49:35.105Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T22:49:35.105Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-16T23:08:48.614Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T23:08:48.614Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T23:08:48.614Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-16T23:29:20.357Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-16T23:29:20.357Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-16T23:29:20.357Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-16T23:48:11.234Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T00:02:40.139Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T00:34:37.850Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T01:11:11.334Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T01:35:07.295Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T02:01:50.055Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T02:24:34.164Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T02:52:48.446Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T02:52:48.446Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T03:12:45.966Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T03:37:27.834Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T04:03:30.074Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T04:27:12.811Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T04:53:47.588Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T05:12:13.207Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T05:35:49.288Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T05:58:03.229Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T06:17:47.759Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T06:56:07.176Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T07:23:20.335Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T07:23:20.335Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T07:23:20.335Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T07:48:56.860Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T07:48:56.860Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T07:48:56.860Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T08:06:58.301Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T08:06:58.301Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T08:06:58.301Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T08:31:10.328Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T08:31:10.328Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T08:31:10.328Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T08:55:46.385Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T08:55:46.385Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T08:55:46.385Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T09:12:17.684Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T09:12:17.684Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T09:12:17.684Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T09:36:08.834Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T09:36:08.834Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T09:36:08.834Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T09:58:35.644Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T09:58:35.644Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T09:58:35.644Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T10:15:49.969Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T10:15:49.969Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T10:15:49.969Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T10:40:53.787Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T10:40:53.787Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T10:40:53.787Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T11:00:21.917Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T11:00:21.917Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T11:00:21.917Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T11:18:14.803Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T11:18:14.803Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T11:18:14.803Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T11:42:28.010Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T11:42:28.010Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T11:42:28.010Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T12:00:41.081Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T12:00:41.081Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T12:00:41.081Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T12:22:25.601Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T12:22:25.601Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T12:22:25.601Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T12:56:25.788Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T12:56:25.788Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T12:56:25.788Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T13:19:03.861Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T13:19:03.861Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T13:19:03.861Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T13:44:34.297Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T13:44:34.297Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T13:44:34.297Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T14:04:07.202Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T14:04:07.202Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T14:04:07.202Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T14:25:03.796Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T14:25:03.796Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T14:25:03.796Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T14:47:36.595Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T14:47:36.595Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T14:47:36.595Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T15:05:02.165Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T15:05:02.165Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T15:05:02.165Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T15:26:33.973Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T15:26:33.973Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T15:26:33.973Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T15:49:19.337Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T15:49:19.337Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T15:49:19.337Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T16:05:56.526Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T16:05:56.526Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T16:05:56.526Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T16:28:15.737Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T16:28:15.737Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T16:28:15.737Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T16:51:32.522Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T16:51:32.522Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T16:51:32.522Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T17:08:09.914Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T17:08:09.914Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T17:08:09.914Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T17:28:58.866Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T17:28:58.866Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T17:28:58.866Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T17:48:44.720Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T17:48:44.720Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T17:48:44.720Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T18:02:42.414Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T18:02:42.414Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T18:02:42.414Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T18:24:26.798Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T18:24:26.798Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T18:24:26.798Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T18:51:14.212Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T18:51:14.212Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T18:51:14.212Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T19:09:02.151Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T19:09:02.151Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T19:09:02.151Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T19:28:39.932Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T19:28:39.932Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T19:28:39.932Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T19:46:51.100Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T19:46:51.100Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T19:46:51.100Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T20:01:18.389Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T20:01:18.389Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T20:01:18.389Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T20:18:48.127Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T20:18:48.127Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T20:18:48.127Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T20:43:50.134Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T20:43:50.134Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T20:43:50.134Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T21:03:32.860Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T21:03:32.860Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T21:03:32.860Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-17T23:00:32.706Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-17T23:00:32.706Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-17T23:00:32.706Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-18T00:40:57.717Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-18T05:06:39.942Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-18T09:29:26.304Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-18T09:29:26.304Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-18T09:29:26.304Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-18T13:25:15.930Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-18T13:25:15.930Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-18T13:25:15.930Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-18T16:37:49.055Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-18T16:37:49.055Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-18T16:37:49.055Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-18T18:52:46.876Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-18T18:52:46.876Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-18T18:52:46.876Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-18T21:06:04.310Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-18T21:06:04.310Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-18T21:06:04.310Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-18T23:01:01.008Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-18T23:01:01.008Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 284000
+    },
+    {
+      "at": "2026-10-18T23:01:01.008Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-19T00:54:13.109Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-19T05:24:43.085Z",
+      "channelId": "tiktok",
+      "subscriberCount": 22
+    },
+    {
+      "at": "2026-10-19T10:58:33.418Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-19T10:58:33.418Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-19T10:58:33.418Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17100
+    },
+    {
+      "at": "2026-10-19T17:18:26.849Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-19T17:18:26.849Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-19T17:18:26.849Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17200
+    },
+    {
+      "at": "2026-10-19T21:34:24.362Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-19T21:34:24.362Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-19T21:34:24.362Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17300
+    },
+    {
+      "at": "2026-10-20T00:35:01.603Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-20T05:11:41.154Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-20T09:59:50.743Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-20T09:59:50.743Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-20T09:59:50.743Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17400
+    },
+    {
+      "at": "2026-10-20T14:41:05.070Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-20T14:41:05.070Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-20T14:41:05.070Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17400
+    },
+    {
+      "at": "2026-10-20T18:43:21.568Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-20T18:43:21.568Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-20T18:43:21.568Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17400
+    },
+    {
+      "at": "2026-10-20T21:52:41.043Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-20T21:52:41.043Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-20T21:52:41.043Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17400
+    },
+    {
+      "at": "2026-10-21T00:11:24.561Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-21T00:11:24.561Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-21T00:11:24.561Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17400
+    },
+    {
+      "at": "2026-10-21T04:38:48.957Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-21T09:35:34.749Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-21T09:35:34.749Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-21T09:35:34.749Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17400
+    },
+    {
+      "at": "2026-10-21T14:37:31.007Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-21T14:37:31.007Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-21T14:37:31.007Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17400
+    },
+    {
+      "at": "2026-10-21T18:52:36.454Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-21T18:52:36.454Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-21T18:52:36.454Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17400
+    },
+    {
+      "at": "2026-10-21T22:00:44.456Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-21T22:00:44.456Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-21T22:00:44.456Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-22T00:27:53.637Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-22T05:08:34.765Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-22T10:05:01.747Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-22T10:05:01.747Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-22T10:05:01.747Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-22T15:04:46.623Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-22T15:04:46.623Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-22T15:04:46.623Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-22T19:09:24.887Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-22T19:09:24.887Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-22T19:09:24.887Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-22T22:16:05.686Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-22T22:16:05.686Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-22T22:16:05.686Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-23T00:41:10.938Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-23T05:20:15.678Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-23T10:11:55.508Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-23T10:11:55.508Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-23T10:11:55.508Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-23T15:01:32.408Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-23T15:01:32.408Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-23T15:01:32.408Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-23T18:56:04.580Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-23T18:56:04.580Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-23T18:56:04.580Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-23T21:45:03.896Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-23T21:45:03.896Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-23T21:45:03.896Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-24T00:02:54.096Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-24T00:02:54.096Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-24T00:02:54.096Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-24T04:15:35.372Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-24T08:53:03.767Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-24T08:53:03.767Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-24T08:53:03.767Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-24T12:57:30.493Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-24T12:57:30.493Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-24T12:57:30.493Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-24T16:23:27.829Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-24T16:23:27.829Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-24T16:23:27.829Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-24T18:51:36.359Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-24T18:51:36.359Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-24T18:51:36.359Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-24T21:14:43.287Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-24T21:14:43.287Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-24T21:14:43.287Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-24T23:13:49.929Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-24T23:13:49.929Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-24T23:13:49.929Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-25T01:09:09.691Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-25T10:54:06.104Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-25T10:54:06.104Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-25T10:54:06.104Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-25T14:36:07.989Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-25T14:36:07.989Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-25T14:36:07.989Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-25T17:48:26.183Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-25T17:48:26.183Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-25T17:48:26.183Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-25T20:00:11.830Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-25T20:00:11.830Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-25T20:00:11.830Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-25T22:19:12.033Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-25T22:19:12.033Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-25T22:19:12.033Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-26T00:26:58.662Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-26T05:04:42.815Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-26T10:58:11.404Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-26T10:58:11.404Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-26T10:58:11.404Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-26T17:05:40.493Z",
+      "channelId": "tiktok",
+      "subscriberCount": 23
+    },
+    {
+      "at": "2026-10-26T17:05:40.493Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-26T17:05:40.493Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-26T21:34:48.874Z",
+      "channelId": "tiktok",
+      "subscriberCount": 32
+    },
+    {
+      "at": "2026-10-26T21:34:48.874Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-26T21:34:48.874Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-27T00:44:29.313Z",
+      "channelId": "tiktok",
+      "subscriberCount": 32
+    },
+    {
+      "at": "2026-10-27T00:44:29.313Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-27T00:44:29.313Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-27T05:37:25.879Z",
+      "channelId": "tiktok",
+      "subscriberCount": 33
+    },
+    {
+      "at": "2026-10-27T10:54:45.486Z",
+      "channelId": "tiktok",
+      "subscriberCount": 35
+    },
+    {
+      "at": "2026-10-27T10:54:45.486Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-27T10:54:45.486Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-27T16:04:52.443Z",
+      "channelId": "tiktok",
+      "subscriberCount": 35
+    },
+    {
+      "at": "2026-10-27T16:04:52.443Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-27T16:04:52.443Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-27T20:36:15.398Z",
+      "channelId": "tiktok",
+      "subscriberCount": 36
+    },
+    {
+      "at": "2026-10-27T20:36:15.398Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-27T20:36:15.398Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-27T23:57:35.422Z",
+      "channelId": "tiktok",
+      "subscriberCount": 36
+    },
+    {
+      "at": "2026-10-28T03:23:10.767Z",
+      "channelId": "tiktok",
+      "subscriberCount": 36
+    },
+    {
+      "at": "2026-10-28T09:51:23.514Z",
+      "channelId": "tiktok",
+      "subscriberCount": 36
+    },
+    {
+      "at": "2026-10-28T09:51:23.514Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-28T09:51:23.514Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-28T16:18:28.775Z",
+      "channelId": "tiktok",
+      "subscriberCount": 36
+    },
+    {
+      "at": "2026-10-28T16:18:28.775Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-28T16:18:28.775Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    }
+  ]
+}

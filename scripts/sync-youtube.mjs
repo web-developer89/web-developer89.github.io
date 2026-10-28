@@ -675,6 +675,34 @@ function tiktokAsStatsChannel(tiktok) {
   };
 }
 
+function buildCommunityPayload(catalog, snapshots) {
+  const since = Date.now() - 14 * 24 * 60 * 60 * 1000;
+  return {
+    syncedAt: catalog.syncedAt,
+    channels: asArray(catalog.channels)
+      .filter((channel) => channel.id === 'primary' || channel.id === 'reagiert')
+      .map((channel) => ({
+        id: channel.id,
+        channelId: channel.channelId,
+        name: channel.name,
+        stats: {
+          subscriberCount: channel.stats?.subscriberCount ?? null,
+          hiddenSubscriberCount: Boolean(channel.stats?.hiddenSubscriberCount),
+        },
+      })),
+    channelSnapshots: asArray(snapshots.channelSnapshots)
+      .filter((item) => {
+        const at = Date.parse(item.at);
+        return !Number.isNaN(at) && at >= since;
+      })
+      .map((item) => ({
+        at: item.at,
+        channelId: item.channelId,
+        subscriberCount: item.subscriberCount ?? null,
+      })),
+  };
+}
+
 function buildPublicStats(catalog, snapshots) {
   const tiktokChannel = tiktokAsStatsChannel(catalog.tiktok);
   return {
@@ -951,6 +979,7 @@ async function main() {
   await mkdir(publicData, { recursive: true });
   await writeJson(path.join(publicData, 'feed.json'), feed);
   await writeJson(path.join(publicData, 'stats.json'), publicStats);
+  await writeJson(path.join(publicData, 'community.json'), buildCommunityPayload(catalog, snapshots));
   console.log(
     `Synchronisiert: ${deduped.length} Videos, ${channelStats.filter((item) => item.status === 'verbunden').length} Kanäle, Quelle ${source}, Live ${live ? 'ja' : 'nein'}, TikTok ${tiktok.status}${tiktok.stats.followerCount != null ? ` (${tiktok.stats.followerCount} Follower)` : ''}.`,
   );

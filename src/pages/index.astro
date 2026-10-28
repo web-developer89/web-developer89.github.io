@@ -9,6 +9,7 @@ import { formatDate } from '../lib/format';
 import ChannelBadges from '../components/ChannelBadges.astro';
 import { site } from '../config/site';
 import { primaryCta } from '../config/navigation';
+import { connectedSocials } from '../config/social';
 
 const featured = getFeatured();
 const liveVideo = catalog.live ? catalog.videos.find((video) => video.id === catalog.live?.videoId) ?? null : null;
@@ -32,6 +33,7 @@ const jsonLd = [
     url: origin,
     email: site.contactEmail,
     logo: new URL('/brand/mark.jpg', origin).href,
+    sameAs: connectedSocials.map((item) => item.profileUrl || item.href),
     address: {
       '@type': 'PostalAddress',
       streetAddress: site.publisher.street,

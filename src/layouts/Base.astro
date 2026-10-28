@@ -19,13 +19,14 @@ interface Props {
 
 const { title, description = site.description, image = '/brand/mark.jpg', ogType = 'website', noindex = false, jsonLd } = Astro.props;
 const fullTitle = title === site.name ? site.name : `${title} · ${site.name}`;
+const isNotFound = Astro.url.pathname === '/404/';
 const canonical = new URL(Astro.url.pathname, site.url);
 const imageUrl = image.startsWith('http') ? image : new URL(image, site.url).href;
 const indexJson = JSON.stringify(searchIndex()).replace(/</g, '\\u003c');
 const schema = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : '';
 ---
 <!doctype html>
-<html lang="de" data-theme="dark">
+<html lang="de-DE" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,7 +35,7 @@ const schema = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : '';
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical.href} />
+    {!isNotFound && <link rel="canonical" href={canonical.href} />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/brand/mark.jpg" />
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -43,12 +44,14 @@ const schema = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : '';
     <meta property="og:site_name" content={site.name} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonical.href} />
+    {!isNotFound && <meta property="og:url" content={canonical.href} />}
     <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content={fullTitle} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imageUrl} />
+    <meta name="twitter:image:alt" content={fullTitle} />
     {noindex && <meta name="robots" content="noindex" />}
     {schema && <script type="application/ld+json" set:html={schema} />}
   </head>
@@ -68,10 +71,10 @@ const schema = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : '';
         <form action="/suche/" method="get" role="search">
           <label class="field">
             <span>Was möchten Sie finden?</span>
-            <input name="q" data-search-input autocomplete="off" />
+            <input name="q" type="search" data-search-input autocomplete="off" enterkeyhint="search" />
           </label>
         </form>
-        <div class="search-results" data-search-results></div>
+        <div class="search-results" data-search-results aria-live="polite"></div>
       </div>
     </dialog>
     <script type="application/json" id="search-index" set:html={indexJson} />

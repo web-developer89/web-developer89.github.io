@@ -25,7 +25,7 @@ Konfiguration in `src/config/youtube.json`:
 
 Mit `YOUTUBE_API_KEY` lädt der Sync öffentliche Kanalstatistiken und schreibt Zeitreihen nach `src/data/snapshots.json` sowie `public/data/stats.json`.
 
-Die Homepage-Sektion **Meine Community wächst** zeigt ausschließlich echte YouTube-Abonnentenzahlen (keine Aufrufe, Likes oder Kommentare). Das Frontend prüft `/data/stats.json` alle **60 Sekunden**.
+Die Homepage-Sektion **Meine Community wächst** zeigt ausschließlich echte YouTube-Abonnentenzahlen (keine Aufrufe, Likes oder Kommentare). Das Frontend prüft `/data/community.json` alle **60 Sekunden**. Die Datei enthält nur die Abonnentenzahlen und die Messpunkte der letzten 14 Tage. `/data/stats.json` bleibt die ausführliche Sync-Datei.
 
 ### Backend-Takt
 

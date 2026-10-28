@@ -10,7 +10,7 @@ const banks = support.banks.filter((bank) => bank.enabled);
 ---
 <section>
   {showHeading && <p class="kicker">Unterstützung</p>}
-  {showHeading && <h2>{compact ? 'Projekt unterstützen' : 'Du möchtest die Arbeit von Politik mit Kopf unterstützen?'}</h2>}
+  {showHeading && <h2>{compact ? 'Projekt unterstützen' : 'Sie möchten die Arbeit von Politik mit Kopf unterstützen?'}</h2>}
   {compact && <p>{support.intro}</p>}
   {banks.map((bank) => (
     <div class="iban">

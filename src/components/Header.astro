@@ -23,7 +23,7 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
     </nav>
     <div class="header-tools">
       <ChannelBadges size="header" only={['youtube']} label="YouTube" />
-      <a class="tool tool-search" href="/suche/" data-search-open>
+      <a class="tool tool-search" href="/suche/" data-search-open aria-label="Suche">
         <Icon name="search" size={18} />
         <span class="search-text">Suche</span>
       </a>

@@ -10,6 +10,7 @@ const channel = channelBySlug('politik-mit-kopf-reagiert');
 if (!channel) return Astro.redirect('/unsere-kanaele/');
 const videos = catalog.videos.filter((video) => video.channelId === channel.channelId);
 const featured = videos[0] ?? null;
+const archive = videos.slice(1, 13);
 ---
 <Base title={channel.name} description={channel.description} image={channel.avatar}>
   <div class="wrap">
@@ -41,13 +42,15 @@ const featured = videos[0] ?? null;
       </section>
     )}
 
-    <section class="section">
-      <div class="section-head">
-        <h2>Reaktionsarchiv</h2>
-      </div>
-      <div class="mosaic">
-        {videos.slice(0, 12).map((video) => <VideoCard video={video} />)}
-      </div>
-    </section>
+    {archive.length > 0 && (
+      <section class="section">
+        <div class="section-head">
+          <h2>Reaktionsarchiv</h2>
+        </div>
+        <div class="mosaic">
+          {archive.map((video) => <VideoCard video={video} />)}
+        </div>
+      </section>
+    )}
   </div>
 </Base>

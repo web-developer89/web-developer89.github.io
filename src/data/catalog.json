@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-28T03:23:10.767Z",
-  "ok": false,
+  "syncedAt": "2026-10-28T09:51:23.514Z",
+  "ok": true,
   "source": "youtube-public",
-  "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
+  "error": null,
   "live": null,
   "channels": [
     {
@@ -10,7 +10,7 @@
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "name": "Politik mit Kopf",
       "videoCount": 15,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/mark.jpg",
       "slug": "politik-mit-kopf",
       "handle": "@PolitikmitKopf",
@@ -18,8 +18,8 @@
       "subscribeUrl": "https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1",
       "stats": {
         "subscriberCount": 285000,
-        "viewCount": 174390298,
-        "videoCount": 1550,
+        "viewCount": 174825984,
+        "videoCount": 1551,
         "hiddenSubscriberCount": false
       }
     },
@@ -28,7 +28,7 @@
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
       "videoCount": 7,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
       "handle": "@PolitikmitKopfReagiert",
@@ -36,13 +36,37 @@
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
         "subscriberCount": 17500,
-        "viewCount": 456938,
+        "viewCount": 458314,
         "videoCount": 7,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "ItKJWkfk4Xw",
+      "slug": "die-eidesstattliche-versicherung-die-keiner-unterschreiben-wollte-ItKJWkfk4Xw",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Die eidesstattliche Versicherung, die keiner unterschreiben wollte!",
+      "description": "In der CDU-Fraktion in Sachsen-Anhalt soll Sven Schulze nach der Wahl des AfD-Landtagspräsidenten Tobias Rausch eine eidesstattliche Versicherung vorgelegt haben, mit der Abgeordnete erklären sollten, nicht für ihn gestimmt zu haben – bei Falschangabe sollte man auf das Mandat verzichten.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "In der CDU-Fraktion in Sachsen-Anhalt soll Sven Schulze nach der Wahl des AfD-Landtagspräsidenten Tobias Rausch eine eidesstattliche Versicherung vorgelegt haben, mit der…",
+      "publishedAt": "2026-10-28T08:44:33+00:00",
+      "url": "https://www.youtube.com/watch?v=ItKJWkfk4Xw",
+      "thumbnail": "/media/ItKJWkfk4Xw.jpg",
+      "thumbnailRemote": "https://i2.ytimg.com/vi/ItKJWkfk4Xw/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 11568,
+        "likeCount": null,
+        "commentCount": 184
+      }
+    },
     {
       "id": "FofstNH8tm0",
       "slug": "audi-baut-werk-in-den-usa-FofstNH8tm0",
@@ -64,7 +88,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 35
+        "commentCount": 101
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 180426,
+        "viewCount": 232803,
         "likeCount": null,
-        "commentCount": 834
+        "commentCount": 960
       }
     },
     {
@@ -113,7 +137,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 155
+        "commentCount": 171
       }
     },
     {
@@ -135,9 +159,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 222731,
+        "viewCount": 230227,
         "likeCount": null,
-        "commentCount": 1421
+        "commentCount": 1450
       }
     },
     {
@@ -159,9 +183,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 132587,
+        "viewCount": 135329,
         "likeCount": null,
-        "commentCount": 681
+        "commentCount": 687
       }
     },
     {
@@ -183,9 +207,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 137229,
+        "viewCount": 140345,
         "likeCount": null,
-        "commentCount": 1023
+        "commentCount": 1029
       }
     },
     {
@@ -207,9 +231,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 210154,
+        "viewCount": 211607,
         "likeCount": null,
-        "commentCount": 1477
+        "commentCount": 1471
       }
     },
     {
@@ -231,9 +255,9 @@
         "spanien"
       ],
       "stats": {
-        "viewCount": 175166,
+        "viewCount": 175998,
         "likeCount": null,
-        "commentCount": 1476
+        "commentCount": 1474
       }
     },
     {
@@ -255,9 +279,9 @@
         "paris"
       ],
       "stats": {
-        "viewCount": 161360,
+        "viewCount": 161686,
         "likeCount": null,
-        "commentCount": 860
+        "commentCount": 863
       }
     },
     {
@@ -279,9 +303,9 @@
         "hormuzstrait"
       ],
       "stats": {
-        "viewCount": 106131,
+        "viewCount": 106947,
         "likeCount": null,
-        "commentCount": 714
+        "commentCount": 716
       }
     },
     {
@@ -303,9 +327,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 80862,
+        "viewCount": 81310,
         "likeCount": null,
-        "commentCount": 823
+        "commentCount": 824
       }
     },
     {
@@ -327,9 +351,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 156576,
+        "viewCount": 157056,
         "likeCount": null,
-        "commentCount": 743
+        "commentCount": 742
       }
     },
     {
@@ -351,9 +375,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 114032,
+        "viewCount": 114724,
         "likeCount": null,
-        "commentCount": 466
+        "commentCount": 467
       }
     },
     {
@@ -375,33 +399,9 @@
         "stromnetz"
       ],
       "stats": {
-        "viewCount": 135284,
+        "viewCount": 135752,
         "likeCount": null,
-        "commentCount": 512
-      }
-    },
-    {
-      "id": "cafatEl1BAg",
-      "slug": "internet-steht-still-warum-gerade-halb-das-internet-offline-ist-php2sh-cafatEl1BAg",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Internet steht still! Warum gerade halb das Internet offline ist – PHP2SHELL-Lücke erklärt",
-      "description": "Eine kritische Sicherheitslücke in PHP (PHP2SHELL) sorgt weltweit für massive Ausfälle: Viele Webseiten von Firmen und Regierungen gingen offline, weil Angreifer aus der Ferne Code auf Servern ausführen konnten. Im Video erkläre ich einfach, was passiert ist, warum die Lücke so gefährlich ist und was Betreiber von Webseiten jetzt tun sollten.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Eine kritische Sicherheitslücke in PHP (PHP2SHELL) sorgt weltweit für massive Ausfälle: Viele Webseiten von Firmen und Regierungen gingen offline, weil Angreifer aus der Ferne…",
-      "publishedAt": "2026-10-22T12:36:10+00:00",
-      "url": "https://www.youtube.com/watch?v=cafatEl1BAg",
-      "thumbnail": "/media/cafatEl1BAg.jpg",
-      "thumbnailRemote": "https://i4.ytimg.com/vi/cafatEl1BAg/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 243503,
-        "likeCount": null,
-        "commentCount": 765
+        "commentCount": 511
       }
     },
     {
@@ -423,7 +423,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 69910,
+        "viewCount": 70078,
         "likeCount": null,
         "commentCount": 328
       }
@@ -447,7 +447,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 80089,
+        "viewCount": 80246,
         "likeCount": null,
         "commentCount": 524
       }
@@ -471,7 +471,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 98112,
+        "viewCount": 98288,
         "likeCount": null,
         "commentCount": 575
       }
@@ -495,7 +495,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33602,
+        "viewCount": 33610,
         "likeCount": 3363,
         "commentCount": 633
       }
@@ -519,7 +519,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87907,
+        "viewCount": 87954,
         "likeCount": 4492,
         "commentCount": 400
       }
@@ -543,7 +543,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42830,
+        "viewCount": 42836,
         "likeCount": 3038,
         "commentCount": 508
       }

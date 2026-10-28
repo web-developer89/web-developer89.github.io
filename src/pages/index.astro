@@ -7,6 +7,7 @@ import SubscriberCommunity from '../components/SubscriberCommunity.astro';
 import { catalog, channelDirectory, getFeatured, videoPath } from '../lib/catalog';
 import { formatDate } from '../lib/format';
 import ChannelBadges from '../components/ChannelBadges.astro';
+import Picture from '../components/Picture.astro';
 import { site } from '../config/site';
 import { primaryCta } from '../config/navigation';
 import { connectedSocials } from '../config/social';
@@ -59,7 +60,7 @@ const jsonLd = [
   },
 ];
 ---
-<Base title={site.name} description={site.description} image={hero?.thumbnail || '/brand/mark.jpg'} jsonLd={jsonLd}>
+<Base title={site.name} description={site.description} image={hero?.thumbnail || '/brand/mark.jpg'} jsonLd={jsonLd} lcpImage={hero?.thumbnail} lcpSizes="(min-width: 981px) 640px, 92vw">
   {catalog.live && (
     <aside class="live-banner">
       <div class="wrap">
@@ -83,7 +84,7 @@ const jsonLd = [
     {hero ? (
       <a class="hero-feature hero-feature-solo" href={videoPath(hero)}>
         <div class="thumb">
-          <img src={hero.thumbnail} alt="" width="1280" height="720" fetchpriority="high" decoding="async" data-fallback={hero.thumbnailRemote} />
+          <Picture src={hero.thumbnail} width={1280} height={720} sizes="(min-width: 981px) 640px, 92vw" priority={true} fallback={hero.thumbnailRemote} />
           <span class="play" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7.2v9.6L17.5 12 9 7.2z"/></svg>
           </span>
@@ -111,7 +112,7 @@ const jsonLd = [
       </div>
       <div class="mosaic">
         {latest.map((video, index) => (
-          <VideoCard video={video} variant={index === 0 ? 'lead' : 'standard'} priority={index === 0} hideEngagement={true} />
+          <VideoCard video={video} variant={index === 0 ? 'lead' : 'standard'} hideEngagement={true} />
         ))}
       </div>
     </div>

@@ -6,7 +6,7 @@
     "sync": "node scripts/sync-youtube.mjs",
     "prebuild": "node scripts/sync-youtube.mjs",
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/optimize-images.mjs && astro build",
     "preview": "astro preview --host 127.0.0.1",
     "check": "astro check"
   },

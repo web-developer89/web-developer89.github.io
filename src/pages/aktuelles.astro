@@ -5,13 +5,14 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import VideoCard from '../components/VideoCard.astro';
 import EmptyState from '../components/EmptyState.astro';
 import { catalog, videoPath } from '../lib/catalog';
+import Picture from '../components/Picture.astro';
 import { formatCompact, formatDate } from '../lib/format';
 
 const videos = catalog.videos;
 const featured = videos[0] ?? null;
 const rest = videos.slice(1);
 ---
-<Base title="Aktuelles" description="Die neuesten Veröffentlichungen von Politik mit Kopf und Politik mit Kopf REAGIERT.">
+<Base title="Aktuelles" description="Die neuesten Veröffentlichungen von Politik mit Kopf und Politik mit Kopf REAGIERT." lcpImage={featured?.thumbnail} lcpSizes="(max-width: 980px) 92vw, 640px">
   <div class="wrap">
     <Breadcrumbs items={[{ href: '/aktuelles/', label: 'Aktuelles' }]} />
     <PageHeader
@@ -38,15 +39,7 @@ const rest = videos.slice(1);
         {featured && (
           <a class="aktuelles-lead" href={videoPath(featured)}>
             <div class="thumb">
-              <img
-                src={featured.thumbnail}
-                alt=""
-                width="1280"
-                height="720"
-                fetchpriority="high"
-                decoding="async"
-                data-fallback={featured.thumbnailRemote}
-              />
+              <Picture src={featured.thumbnail} width={1280} height={720} sizes="(max-width: 980px) 92vw, 640px" priority={true} fallback={featured.thumbnailRemote} />
               <span class="play" aria-hidden="true">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M9 7.2v9.6L17.5 12 9 7.2z"/></svg>
               </span>

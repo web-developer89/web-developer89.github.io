@@ -4,6 +4,7 @@ import VideoCard from '../components/VideoCard.astro';
 import PageHeader from '../components/PageHeader.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { catalog, channelBySlug, videoPath, youtubeSubscribeUrl } from '../lib/catalog';
+import Picture from '../components/Picture.astro';
 import { formatNumber } from '../lib/format';
 
 const channel = channelBySlug('politik-mit-kopf');
@@ -17,7 +18,7 @@ const archive = videos.slice(1, 13);
     <Breadcrumbs items={[{ href: '/unsere-kanaele/', label: 'Meine Kanäle' }, { href: '/politik-mit-kopf/', label: channel.name }]} />
     <section class="channel-card" style="margin:18px 0 28px">
       <div class="header">
-        <img src={channel.avatar} alt="" width="92" height="92" />
+        <Picture src={channel.avatar} width={92} height={92} sizes="92px" widths={[128, 256]} />
         <div>
           <PageHeader kicker="Hauptkanal" title={channel.name} />
           <p>{channel.description}</p>

@@ -1,7 +1,7 @@
 ---
 import { channelDirectory, catalog, youtubeSubscribeUrl } from '../lib/catalog';
 import { formatNumber } from '../lib/format';
-import snapshotsFile from '../data/snapshots.json';
+import Picture from './Picture.astro';
 
 const channels = channelDirectory().filter((channel) => channel.id === 'primary' || channel.id === 'reagiert');
 const youtubeChannels = channels.map((channel) => ({
@@ -22,19 +22,6 @@ const combined = youtubeChannels.reduce((sum, channel) => {
   return value == null ? sum : (sum ?? 0) + value;
 }, null as number | null);
 
-const snapshotWindowMs = 14 * 24 * 60 * 60 * 1000;
-const snapshotSince = Date.now() - snapshotWindowMs;
-const recentSnapshots = ((snapshotsFile as { channelSnapshots?: Array<{ at: string; channelId: string; subscriberCount: number | null }> }).channelSnapshots || [])
-  .filter((item) => {
-    const at = Date.parse(item.at);
-    return !Number.isNaN(at) && at >= snapshotSince;
-  })
-  .map((item) => ({
-    at: item.at,
-    channelId: item.channelId,
-    subscriberCount: item.subscriberCount,
-  }));
-
 const payload = {
   syncedAt: catalog.syncedAt,
   syncOk: Boolean(catalog.syncedAt) && !catalog.error,
@@ -42,7 +29,7 @@ const payload = {
   channels: youtubeChannels,
   combined,
   snapshots: {
-    channelSnapshots: recentSnapshots,
+    channelSnapshots: [] as Array<{ at: string; channelId: string; subscriberCount: number | null }>,
   },
 };
 const json = JSON.stringify(payload).replace(/</g, '\\u003c');
@@ -54,7 +41,7 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
       {youtubeChannels.map((channel) => (
         <article class:list={['subscriber-panel', `is-${channel.id}`]} data-channel-panel={channel.channelId}>
           <div class="subscriber-panel-top">
-            <img src={channel.avatar} alt="" width="72" height="72" loading="lazy" decoding="async" />
+            <Picture src={channel.avatar} width={72} height={72} sizes="64px" widths={[64, 128, 256]} />
             <div>
               <h3>{channel.name}</h3>
               <p class="sr-only">YouTube-Kanal-ID: {channel.channelId}</p>

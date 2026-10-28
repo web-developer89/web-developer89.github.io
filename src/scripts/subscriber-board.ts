@@ -273,6 +273,10 @@ export function setupSubscriberBoard(): void {
     }
   };
 
-  render();
   window.setInterval(refreshFromNetwork, 60_000);
+  const start = () => {
+    void refreshFromNetwork();
+  };
+  if (document.readyState === 'complete') start();
+  else window.addEventListener('load', start, { once: true });
 }

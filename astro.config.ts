@@ -16,6 +16,7 @@ export default defineConfig({
   },
   build: {
     format: 'directory',
+    inlineStylesheets: 'always',
   },
   redirects: {
     '/kontakt/': '/informant-werden/',

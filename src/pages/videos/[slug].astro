@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Player from '../../components/Player.astro';
+import Picture from '../../components/Picture.astro';
 import ShareBar from '../../components/ShareBar.astro';
 import VideoCard from '../../components/VideoCard.astro';
 import { catalog, relatedVideos, subscribeUrlForVideo, videoPath } from '../../lib/catalog';
@@ -42,7 +43,7 @@ const jsonLd = [
   },
 ];
 ---
-<Base title={video.title} description={video.excerpt} image={video.thumbnail} ogType="video.other" jsonLd={jsonLd}>
+<Base title={video.title} description={video.excerpt} image={video.thumbnail} ogType="video.other" jsonLd={jsonLd} lcpImage={video.thumbnail} lcpSizes="(max-width: 900px) 92vw, 760px">
   <article class="wrap">
     <nav aria-label="Brotkrumen">
       <ol class="crumbs">
@@ -57,7 +58,7 @@ const jsonLd = [
       <p class="byline"><time datetime={video.publishedAt}>{formatDate(video.publishedAt)}</time>{video.durationLabel && <span>{video.durationLabel}</span>}</p>
     </header>
     <Player label="Video abspielen" id={video.id} title={video.title}>
-      <img src={video.thumbnail} alt="" width="1280" height="720" fetchpriority="high" data-fallback={video.thumbnailRemote} />
+      <Picture src={video.thumbnail} width={1280} height={720} sizes="(max-width: 900px) 92vw, 760px" priority={true} fallback={video.thumbnailRemote} />
     </Player>
     <ShareBar video={video} />
     <p class="hero-actions" style="margin:18px 0 0">

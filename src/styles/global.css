@@ -17,14 +17,34 @@
   --danger: #ffb4ae;
   --focus: #d4b07a;
   --header: 76px;
-  --display: "Jost Variable", "Jost", "Avenir Next", "Segoe UI", sans-serif;
+  --display: "Jost Variable", "Jost Fallback", "Avenir Next", "Segoe UI", sans-serif;
   --serif: var(--display);
-  --sans: "Source Sans 3 Variable", "Segoe UI", sans-serif;
+  --sans: "Source Sans 3 Variable", "Source Sans Fallback", "Segoe UI", sans-serif;
   --content: 1180px;
-  --texture: url("/images/politik-mit-kopf-background.jpg");
+  --texture: none;
   color-scheme: dark;
   background: var(--bg);
   color: var(--ink);
+}
+
+@font-face {
+  font-family: "Jost Fallback";
+  src: local("Arimo"), local("Liberation Sans"), local("Arial");
+  font-weight: 100 900;
+  ascent-override: 112.02%;
+  descent-override: 39.26%;
+  line-gap-override: 0%;
+  size-adjust: 95.51%;
+}
+
+@font-face {
+  font-family: "Source Sans Fallback";
+  src: local("Arimo"), local("Liberation Sans"), local("Arial");
+  font-weight: 100 900;
+  ascent-override: 114.52%;
+  descent-override: 44.74%;
+  line-gap-override: 0%;
+  size-adjust: 89.41%;
 }
 
 *,
@@ -60,13 +80,14 @@ body::before {
   background-color: #0a0c10;
   background-image:
     linear-gradient(180deg, rgba(8, 10, 14, 0.35), rgba(8, 10, 14, 0.55)),
-    var(--texture);
+    var(--texture, none);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 img { max-width: 100%; height: auto; }
+picture { display: contents; }
 button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; }
 h1, h2, h3, h4, p { overflow-wrap: break-word; }
@@ -574,12 +595,12 @@ a { color: inherit; }
 .site-footer a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .footer-mark {
   margin: 28px 0 0;
-  font-family: var(--serif);
-  font-size: clamp(2.6rem, 9vw, 7rem);
-  line-height: 0.86;
-  letter-spacing: -0.03em;
-  opacity: 0.14;
-  white-space: nowrap;
+  line-height: 0;
+}
+.footer-mark img {
+  display: block;
+  width: min(100%, 920px);
+  height: auto;
 }
 .legal-note { color: var(--muted); font-size: 0.92rem; }
 
@@ -824,9 +845,8 @@ dialog.search-dialog::backdrop { background: rgba(12, 16, 24, 0.52); }
     justify-items: center;
   }
 
-  .footer-mark {
-    white-space: normal;
-    justify-content: center;
+  .footer-mark img {
+    margin-inline: auto;
   }
 
   .form-grid,
@@ -862,9 +882,8 @@ dialog.search-dialog::backdrop { background: rgba(12, 16, 24, 0.52); }
     grid-template-columns: 1fr;
     overflow: visible;
   }
-  .footer-mark {
-    font-size: clamp(1.8rem, 11vw, 2.8rem);
-    text-align: center;
+  .footer-mark img {
+    width: 100%;
   }
   .subscriber-panel {
     padding: 22px 16px 18px;

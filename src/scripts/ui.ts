@@ -78,15 +78,25 @@ function setupSearch(): void {
   const input = document.querySelector('[data-search-input]');
   const results = document.querySelector('[data-search-results]');
   const label = document.querySelector('[data-search-label]');
-  const data = document.querySelector('#search-index');
-  if (!(dialog instanceof HTMLDialogElement) || !(input instanceof HTMLInputElement) || !(results instanceof HTMLElement) || !data) return;
+  if (!(dialog instanceof HTMLDialogElement) || !(input instanceof HTMLInputElement) || !(results instanceof HTMLElement)) return;
 
   let index: { href: string; title: string; kind: string; date?: string; text: string }[] = [];
-  try {
-    index = JSON.parse(data.textContent || '[]');
-  } catch {
-    index = [];
-  }
+  let loading: Promise<typeof index> | null = null;
+  const ensureIndex = () => {
+    if (!loading) {
+      loading = fetch('/search-index.json')
+        .then((response) => (response.ok ? response.json() : []))
+        .then((data) => {
+          index = Array.isArray(data) ? data : [];
+          return index;
+        })
+        .catch(() => {
+          index = [];
+          return index;
+        });
+    }
+    return loading;
+  };
 
   const render = (query: string) => {
     const needle = query.trim().toLowerCase();
@@ -120,11 +130,12 @@ function setupSearch(): void {
     results.append(list);
   };
 
-  const open = (event?: Event) => {
+  const open = async (event?: Event) => {
     event?.preventDefault();
     document.dispatchEvent(new CustomEvent('pmk:close-menu'));
     if (!dialog.open) dialog.showModal();
     input.focus();
+    await ensureIndex();
     render(input.value);
   };
 
@@ -186,9 +197,24 @@ function setupImages(): void {
   );
 }
 
+function setupDeferredAssets(): void {
+  const apply = () => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/fonts/fonts.css';
+    document.head.append(link);
+    document.documentElement.style.setProperty(
+      '--texture',
+      'image-set(url("/optimized/images/politik-mit-kopf-background-1600.avif") type("image/avif"), url("/optimized/images/politik-mit-kopf-background-1600.webp") type("image/webp"))',
+    );
+  };
+  window.addEventListener('load', apply, { once: true });
+}
+
 setupHeader();
 setupMenu();
 setupSearch();
 setupCopy();
 setupImages();
+setupDeferredAssets();
 

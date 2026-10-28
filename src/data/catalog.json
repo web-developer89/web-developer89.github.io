@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-28T16:18:28.775Z",
+  "syncedAt": "2026-10-28T21:08:54.434Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 174825984,
-        "videoCount": 1553,
+        "videoCount": 1554,
         "hiddenSubscriberCount": false
       }
     },
@@ -36,13 +36,37 @@
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
         "subscriberCount": 17500,
-        "viewCount": 458314,
+        "viewCount": 458728,
         "videoCount": 7,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "9R5O6dnv53I",
+      "slug": "mir-platzt-der-kragen-danke-sagen-reicht-schon-fuer-einen-verstoss-9R5O6dnv53I",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Mir platzt der Kragen: Danke sagen reicht schon für einen Verstoß",
+      "description": "Es gibt solche Tage und solche Tage!\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nIBAN: CH15 0077 7009 8834 0191 4 (CHF-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Es gibt solche Tage und solche Tage!",
+      "publishedAt": "2026-10-28T20:24:04+00:00",
+      "url": "https://www.youtube.com/watch?v=9R5O6dnv53I",
+      "thumbnail": "/media/9R5O6dnv53I.jpg",
+      "thumbnailRemote": "https://i2.ytimg.com/vi/9R5O6dnv53I/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 10619,
+        "likeCount": null,
+        "commentCount": 205
+      }
+    },
     {
       "id": "TTM0m-ouAqI",
       "slug": "merz-auf-der-flucht-vor-dem-waehler-TTM0m-ouAqI",
@@ -64,7 +88,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 9
+        "commentCount": 68
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 10633,
+        "viewCount": 56095,
         "likeCount": null,
-        "commentCount": 217
+        "commentCount": 408
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 105688,
+        "viewCount": 141203,
         "likeCount": null,
-        "commentCount": 549
+        "commentCount": 619
       }
     },
     {
@@ -136,7 +160,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 129
+        "commentCount": 138
       }
     },
     {
@@ -158,9 +182,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 245776,
+        "viewCount": 252121,
         "likeCount": null,
-        "commentCount": 995
+        "commentCount": 997
       }
     },
     {
@@ -207,9 +231,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 234285,
+        "viewCount": 235796,
         "likeCount": null,
-        "commentCount": 1456
+        "commentCount": 1458
       }
     },
     {
@@ -231,9 +255,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 136128,
+        "viewCount": 136473,
         "likeCount": null,
-        "commentCount": 689
+        "commentCount": 690
       }
     },
     {
@@ -255,9 +279,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 141317,
+        "viewCount": 141771,
         "likeCount": null,
-        "commentCount": 1032
+        "commentCount": 1034
       }
     },
     {
@@ -279,7 +303,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 211934,
+        "viewCount": 212235,
         "likeCount": null,
         "commentCount": 1473
       }
@@ -303,9 +327,9 @@
         "spanien"
       ],
       "stats": {
-        "viewCount": 176343,
+        "viewCount": 176842,
         "likeCount": null,
-        "commentCount": 1473
+        "commentCount": 1467
       }
     },
     {
@@ -327,7 +351,7 @@
         "paris"
       ],
       "stats": {
-        "viewCount": 161821,
+        "viewCount": 161993,
         "likeCount": null,
         "commentCount": 863
       }
@@ -351,9 +375,9 @@
         "hormuzstrait"
       ],
       "stats": {
-        "viewCount": 107247,
+        "viewCount": 107454,
         "likeCount": null,
-        "commentCount": 717
+        "commentCount": 718
       }
     },
     {
@@ -375,33 +399,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 81513,
+        "viewCount": 81634,
         "likeCount": null,
         "commentCount": 827
-      }
-    },
-    {
-      "id": "0Em_lYz-chg",
-      "slug": "regierung-stuft-buerger-als-sicherheitsrisiko-ein-ifg-wird-beschnitten-0Em_lYz-chg",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Regierung stuft Bürger als Sicherheitsrisiko ein – IFG wird beschnitten",
-      "description": "Regierung erklärt den Bürger zum Sicherheitsrisiko und will deshalb das Informationsfreiheitsgesetz massiv beschneiden – obwohl sie keinen einzigen Beleg für eine Gefahr durch IFG-Anfragen liefern kann.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Regierung erklärt den Bürger zum Sicherheitsrisiko und will deshalb das Informationsfreiheitsgesetz massiv beschneiden – obwohl sie keinen einzigen Beleg für eine Gefahr durch…",
-      "publishedAt": "2026-10-23T15:22:29+00:00",
-      "url": "https://www.youtube.com/watch?v=0Em_lYz-chg",
-      "thumbnail": "/media/0Em_lYz-chg.jpg",
-      "thumbnailRemote": "https://i1.ytimg.com/vi/0Em_lYz-chg/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 157523,
-        "likeCount": null,
-        "commentCount": 746
       }
     },
     {
@@ -423,7 +423,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 70163,
+        "viewCount": 70242,
         "likeCount": null,
         "commentCount": 329
       }
@@ -447,7 +447,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 80287,
+        "viewCount": 80342,
         "likeCount": null,
         "commentCount": 524
       }
@@ -471,7 +471,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 98329,
+        "viewCount": 98368,
         "likeCount": null,
         "commentCount": 575
       }
@@ -495,7 +495,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33612,
+        "viewCount": 33616,
         "likeCount": 3363,
         "commentCount": 633
       }
@@ -519,7 +519,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87966,
+        "viewCount": 87994,
         "likeCount": 4492,
         "commentCount": 400
       }
@@ -579,8 +579,8 @@
     "avatar": "/brand/tiktok.jpg",
     "status": "verbunden",
     "stats": {
-      "followerCount": 36,
-      "likeCount": 32,
+      "followerCount": 49,
+      "likeCount": 41,
       "videoCount": 5
     }
   }

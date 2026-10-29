@@ -806,11 +806,13 @@ async function main() {
         await enrichVideosWithPublicStats(raw, channel, previousForChannel);
         publicStats = await fetchPublicChannelStats(channel);
         const previousChannel = asArray(previous.channels).find((item) => item.channelId === channel.channelId);
-        if (publicStats.subscriberCount == null && previousChannel?.stats?.subscriberCount != null) {
+        const previousStats = previousChannel?.stats;
+        if (previousStats) {
           publicStats = {
-            ...publicStats,
-            subscriberCount: previousChannel.stats.subscriberCount,
-            hiddenSubscriberCount: previousChannel.stats.hiddenSubscriberCount || false,
+            subscriberCount: publicStats.subscriberCount ?? previousStats.subscriberCount ?? null,
+            viewCount: publicStats.viewCount ?? previousStats.viewCount ?? null,
+            videoCount: publicStats.videoCount ?? previousStats.videoCount ?? null,
+            hiddenSubscriberCount: Boolean(publicStats.hiddenSubscriberCount || previousStats.hiddenSubscriberCount),
           };
         }
         usedPublic = true;

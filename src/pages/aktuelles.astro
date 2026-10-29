@@ -71,7 +71,7 @@ const rest = videos.slice(1);
               <a class="link-arrow" href="/videos/">Alle Videos</a>
             </div>
             <div class="aktuelles-grid">
-              {rest.map((video, index) => (
+              {rest.map((video) => (
                 <VideoCard video={video} variant="standard" />
               ))}
             </div>

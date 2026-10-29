@@ -212,7 +212,7 @@ export function setupStatsBoard(): void {
   }
 
   let channelFilter = payload.channels.some((channel) => channel.id === 'primary') ? 'primary' : 'all';
-  let period: Period = '7d';
+  let period: Period = '30d';
   let growthMetric: GrowthMetric = 'views';
   const grid = root.querySelector('[data-metric-grid]');
   const chartRoot = root.querySelector('[data-chart-root]');
@@ -474,7 +474,6 @@ export function setupStatsBoard(): void {
       const next = normalizeRemoteStats(await response.json());
       if (!next?.channels?.length) return;
       payload = next;
-      payloadNode.textContent = JSON.stringify(next);
       render();
     } catch {
       // Keep last known payload.
@@ -482,5 +481,6 @@ export function setupStatsBoard(): void {
   };
 
   render();
+  void refreshFromNetwork();
   window.setInterval(refreshFromNetwork, 60_000);
 }

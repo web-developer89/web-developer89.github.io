@@ -6,7 +6,10 @@ import { publisherLines, site } from '../config/site';
 
 const mailHref = `mailto:${site.contactEmail}`;
 ---
-<Base title="Impressum" description="Impressum der MK Swiss Media GmbH.">
+<Base
+  title="Impressum"
+  description={`Impressum der ${site.publisher.legalName}, ${site.publisher.street}, ${site.publisher.postalCode} ${site.publisher.city}, ${site.publisher.country}.`}
+>
   <div class="wrap prose">
     <Breadcrumbs items={[{ href: '/impressum/', label: 'Impressum' }]} />
     <PageHeader kicker="Rechtliches" title="Impressum" />

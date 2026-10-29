@@ -4,19 +4,21 @@ import VideoCard from '../components/VideoCard.astro';
 import PageHeader from '../components/PageHeader.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { catalog, channelBySlug, videoPath, youtubeSubscribeUrl } from '../lib/catalog';
+import Picture from '../components/Picture.astro';
 import { formatNumber } from '../lib/format';
 
 const channel = channelBySlug('politik-mit-kopf-reagiert');
 if (!channel) return Astro.redirect('/unsere-kanaele/');
 const videos = catalog.videos.filter((video) => video.channelId === channel.channelId);
 const featured = videos[0] ?? null;
+const archive = videos.slice(1, 13);
 ---
-<Base title={channel.name} description={channel.description} image={channel.avatar}>
+<Base title={channel.name} description={channel.description} image={channel.avatar} lcpImage={featured?.thumbnail} lcpSizes="(max-width: 900px) 92vw, 640px">
   <div class="wrap">
     <Breadcrumbs items={[{ href: '/unsere-kanaele/', label: 'Meine Kanäle' }, { href: '/politik-mit-kopf-reagiert/', label: channel.name }]} />
     <section class="channel-card" style="margin:18px 0 28px;border-color:rgba(143,163,184,0.35)">
       <div class="header">
-        <img src={channel.avatar} alt="" width="92" height="92" />
+        <Picture src={channel.avatar} width={92} height={92} sizes="92px" widths={[128, 256]} />
         <div>
           <PageHeader kicker="Reaktionskanal" title={channel.name} />
           <p>{channel.description}</p>
@@ -41,13 +43,15 @@ const featured = videos[0] ?? null;
       </section>
     )}
 
-    <section class="section">
-      <div class="section-head">
-        <h2>Reaktionsarchiv</h2>
-      </div>
-      <div class="mosaic">
-        {videos.slice(0, 12).map((video) => <VideoCard video={video} />)}
-      </div>
-    </section>
+    {archive.length > 0 && (
+      <section class="section">
+        <div class="section-head">
+          <h2>Reaktionsarchiv</h2>
+        </div>
+        <div class="mosaic">
+          {archive.map((video) => <VideoCard video={video} />)}
+        </div>
+      </section>
+    )}
   </div>
 </Base>

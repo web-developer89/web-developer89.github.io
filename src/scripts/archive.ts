@@ -16,8 +16,23 @@ export function setupArchive(): void {
     if (option.value) channelIds.set(option.value, option.dataset.channelId || '');
   }
 
-  let shown = Math.max(1, Number(new URLSearchParams(window.location.search).get('seite') || '1')) * 12;
+  const initialParams = new URLSearchParams(window.location.search);
+  const topicParam = initialParams.get('thema')?.trim() || '';
+  const topic = topicParam.toLowerCase();
+  let shown = Math.max(1, Number(initialParams.get('seite') || '1')) * 12;
   const cards = () => [...grid.querySelectorAll<HTMLElement>('[data-video]')];
+
+  if (topicParam && !root.querySelector('[data-topic-notice]')) {
+    const note = document.createElement('p');
+    note.className = 'notice';
+    note.setAttribute('role', 'status');
+    note.dataset.topicNotice = '';
+    const clear = document.createElement('a');
+    clear.href = '/videos/';
+    clear.textContent = 'Thema zurücksetzen';
+    note.append(`Thema „${topicParam}“. `, clear);
+    count?.before(note);
+  }
 
   const apply = (updateUrl: boolean) => {
     const needle = query.value.trim().toLowerCase();
@@ -36,8 +51,10 @@ export function setupArchive(): void {
     let matches = 0;
     for (const card of ordered) {
       const text = card.textContent?.toLowerCase() || '';
+      const tags = (card.dataset.tags || '').toLowerCase().split('|').filter(Boolean);
       const visible =
         (!needle || text.includes(needle)) &&
+        (!topic || tags.includes(topic)) &&
         (!selectedYear || card.dataset.year === selectedYear) &&
         (!selectedChannel || !selectedChannelId || card.dataset.channel === selectedChannelId);
       if (!visible) {
@@ -55,6 +72,7 @@ export function setupArchive(): void {
     if (needle) params.set('q', query.value.trim());
     if (selectedChannel) params.set('kanal', selectedChannel);
     if (selectedYear) params.set('jahr', selectedYear);
+    if (topicParam) params.set('thema', topicParam);
     if (direction === 'alt') params.set('sort', 'alt');
     if (!updateUrl) return;
     const next = `${window.location.pathname}${params.toString() ? `?${params}` : ''}`;

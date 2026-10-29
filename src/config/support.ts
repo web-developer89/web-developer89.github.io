@@ -8,7 +8,7 @@ export type BankAccount = {
 };
 
 export const support = {
-  intro: 'Du möchtest die Arbeit von Politik mit Kopf unterstützen?',
+  intro: 'Sie möchten die Arbeit von Politik mit Kopf unterstützen?',
   banks: [
     {
       enabled: true,
@@ -24,7 +24,7 @@ export const support = {
       currencyNote: 'CHF-Konto',
       purpose: 'Spende',
     },
-  ] satisfies BankAccount[],
+  ] as BankAccount[],
   links: [] as { label: string; href: string }[],
   recommendations: [
     {

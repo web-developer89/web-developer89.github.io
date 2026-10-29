@@ -68,7 +68,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/catalog.json src/data/feed.json src/data/snapshots.json public/data/feed.json public/data/stats.json public/brand || true
+          git add src/data/catalog.json src/data/feed.json src/data/snapshots.json public/data/feed.json public/data/stats.json public/data/community.json public/brand || true
           if git diff --staged --quiet; then
             echo "Keine Sync-Änderungen"
           else

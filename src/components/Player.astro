@@ -12,7 +12,7 @@ const { label, id, title = 'Video' } = Astro.props;
     <span class="play" aria-hidden="true">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 7.2v9.6L17.5 12 9 7.2z"/></svg>
     </span>
-    <span class="sr-only">Video abspielen</span>
+    <span class="sr-only">{label}</span>
   </a>
 </div>
 <script>

@@ -1,0 +1,41 @@
+---
+import { PHOTO_WIDTHS, buildSrcSet, supportsAvif } from '../lib/images';
+
+interface Props {
+  src: string;
+  alt?: string;
+  width: number;
+  height: number;
+  sizes: string;
+  widths?: readonly number[];
+  priority?: boolean;
+  fallback?: string;
+}
+const {
+  src,
+  alt = '',
+  width,
+  height,
+  sizes,
+  widths = PHOTO_WIDTHS,
+  priority = false,
+  fallback,
+} = Astro.props;
+const webp = buildSrcSet(src, widths, 'webp');
+const avif = supportsAvif(src) ? buildSrcSet(src, widths, 'avif') : '';
+---
+<picture>
+  {avif && <source type="image/avif" srcset={avif} sizes={sizes} />}
+  <source type="image/webp" srcset={webp} sizes={sizes} />
+  <img
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    sizes={sizes}
+    loading={priority ? 'eager' : 'lazy'}
+    decoding="async"
+    fetchpriority={priority ? 'high' : 'low'}
+    data-fallback={fallback}
+  />
+</picture>

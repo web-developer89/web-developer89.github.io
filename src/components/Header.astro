@@ -2,6 +2,7 @@
 import { navigation, primaryCta } from '../config/navigation';
 import ChannelBadges from './ChannelBadges.astro';
 import Icon from './Icon.astro';
+import Picture from './Picture.astro';
 
 const pathname = Astro.url.pathname;
 const current = (href: string) => (href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(href));
@@ -13,7 +14,7 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
       <Icon name="menu" />
     </button>
     <a class="brand" href="/">
-      <img src="/brand/mark.jpg" alt="" width="36" height="36" data-fallback="/favicon.svg" />
+      <Picture src="/brand/mark.jpg" width={36} height={36} sizes="36px" widths={[64, 128]} fallback="/favicon.svg" />
       <span class="wordmark">Politik <em>mit Kopf</em></span>
     </a>
     <nav class="nav-main" aria-label="Hauptnavigation">
@@ -23,7 +24,7 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
     </nav>
     <div class="header-tools">
       <ChannelBadges size="header" only={['youtube']} label="YouTube" />
-      <a class="tool tool-search" href="/suche/" data-search-open>
+      <a class="tool tool-search" href="/suche/" data-search-open aria-label="Suche">
         <Icon name="search" size={18} />
         <span class="search-text">Suche</span>
       </a>
@@ -34,7 +35,7 @@ const current = (href: string) => (href === '/' ? pathname === '/' : pathname ==
 <div id="menu" class="menu-panel" hidden data-menu-panel>
   <div class="menu-top">
     <a class="brand" href="/">
-      <img src="/brand/mark.jpg" alt="" width="36" height="36" data-fallback="/favicon.svg" />
+      <Picture src="/brand/mark.jpg" width={36} height={36} sizes="36px" widths={[64, 128]} fallback="/favicon.svg" />
       <span class="wordmark">Politik <em>mit Kopf</em></span>
     </a>
     <button class="menu-button" type="button" data-menu-close style="display:inline-flex">

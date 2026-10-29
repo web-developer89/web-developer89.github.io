@@ -21,11 +21,13 @@ Konfiguration in `src/config/youtube.json`:
 - Politik mit Kopf — `UCsLN1bEfDJoZOs8udTwHatQ`
 - Politik mit Kopf REAGIERT — `UCOdBOgdBxkqo5CaGukX8z4g`
 
-## Abonnentenstatistik
+## Kanalstatistik ohne Data API
 
-Mit `YOUTUBE_API_KEY` lädt der Sync öffentliche Kanalstatistiken und schreibt Zeitreihen nach `src/data/snapshots.json` sowie `public/data/stats.json`.
+Ohne `YOUTUBE_API_KEY` liest der Sync die öffentlichen About-Seiten der Kanäle (`/about`: Abonnenten, Aufrufe, Videoanzahl) und ergänzt Aufrufe einzelner Videos über die öffentliche YouTube-Seite. Die Zeitreihe liegt in `src/data/snapshots.json` und `public/data/stats.json`. Ein API-Key ist nur optional und wird für diese Anzeige nicht gebraucht.
 
-Die Homepage-Sektion **Meine Community wächst** zeigt ausschließlich echte YouTube-Abonnentenzahlen (keine Aufrufe, Likes oder Kommentare). Das Frontend prüft `/data/stats.json` alle **60 Sekunden**.
+Die Homepage zeigt darunter **Meine Kanäle in Zahlen**: aktuelle Aufrufe, Likes, Kommentare und Abonnenten plus die Entwicklung über 30 Tage. Das Diagramm lädt `/data/stats.json` erst, wenn der Abschnitt in die Nähe des sichtbaren Bereichs kommt, und prüft danach alle 60 Sekunden.
+
+Die Sektion **Meine Community wächst** zeigt zusätzlich nur die YouTube-Abonnentenzahlen. Dafür genügt `/data/community.json` (letzte 14 Tage).
 
 ### Backend-Takt
 

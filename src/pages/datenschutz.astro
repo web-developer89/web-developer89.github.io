@@ -4,24 +4,39 @@ import PageHeader from '../components/PageHeader.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { publisherLines, site } from '../config/site';
 import { connectedSocials } from '../config/social';
+
+const customContactEndpoint = String(import.meta.env.PUBLIC_CONTACT_ENDPOINT || '').trim();
 ---
-<Base title="Datenschutz" description="Wie diese Website mit Daten umgeht.">
+<Base
+  title="Datenschutz"
+  description={customContactEndpoint
+    ? 'So geht diese Website mit Daten um: keine Tracking-Cookies, YouTube erst beim Abspielen, Beratungsformular an die MK Swiss Media GmbH.'
+    : 'So geht diese Website mit Daten um: keine Tracking-Cookies, YouTube erst beim Abspielen, Beratungsformular über FormSubmit an die MK Swiss Media GmbH.'}
+>
   <div class="wrap prose" style="max-width: 46rem">
     <Breadcrumbs items={[{ href: '/datenschutz/', label: 'Datenschutz' }]} />
     <PageHeader kicker="Rechtliches" title="Datenschutz" lede="Diese Seite beschreibt, was die Website tatsächlich tut." />
     <h2>Verantwortliche Stelle</h2>
     <p>{publisherLines.join(', ')}<br />{site.publisher.registerNumber}, {site.publisher.registerCourt}</p>
     <h2>Speicherung auf dem Gerät</h2>
-    <p>Es werden keine Tracking-Cookies gesetzt und kein Analysewerkzeug geladen. Die gewählte helle oder dunkle Darstellung wird lokal im Browser gespeichert (localStorage), damit sie beim nächsten Besuch erhalten bleibt.</p>
+    <p>Es werden keine Tracking-Cookies gesetzt und kein Analysewerkzeug geladen. Die Website speichert keine Darstellungseinstellung im Browser.</p>
     <h2>Videos</h2>
     <p>Vorschaubilder werden nach Möglichkeit von dieser Website selbst ausgeliefert. Eine Verbindung zu YouTube entsteht erst, wenn ein Video abgespielt wird. Der Player wird dann über youtube-nocookie.com geladen. Ab diesem Moment kann Google Daten verarbeiten. Es gilt dann auch die Datenschutzerklärung von YouTube bzw. Google.</p>
     <h2>Externe Angebote</h2>
     <p>Links führen zu {connectedSocials.map((item) => item.label).join(', ')}. Auf der Seite „Unterstützen“ liegen außerdem als Werbung gekennzeichnete Empfehlungslinks. Erst ein Klick auf einen solchen Link verlässt diese Website.</p>
     <h2>Kontaktformular</h2>
-    <p>Solange kein Versand eingerichtet ist, werden Formulardaten nicht übermittelt. Die Felder bleiben im Browser.</p>
+    {customContactEndpoint ? (
+      <p>
+        Das Formular auf der Seite „Beratungsgespräch“ sendet Name, E-Mail-Adresse, Thema, die Angabe zum Interesse an einem Gespräch und den Nachrichtentext an einen vom Betreiber eingerichteten Versanddienst. Von dort geht die Nachricht als gewöhnliche E-Mail an {site.contactEmail}. Auf dieser Website wird die Nachricht nicht gespeichert.
+      </p>
+    ) : (
+      <p>
+        Das Formular auf der Seite „Beratungsgespräch“ sendet Name, E-Mail-Adresse, Thema, die Angabe zum Interesse an einem Gespräch und den Nachrichtentext an FormSubmit (formsubmit.co). FormSubmit leitet die Angaben als gewöhnliche E-Mail an {site.contactEmail} weiter. Auf dieser Website wird die Nachricht nicht gespeichert. Gewöhnliche E-Mail ist nicht Ende-zu-Ende-verschlüsselt.
+      </p>
+    )}
     <h2>Auslieferung</h2>
     <p>Die Website wird über GitHub Pages bereitgestellt. Der Anbieter kann dabei technisch erforderliche Verbindungsdaten verarbeiten.</p>
     <h2>Anfragen</h2>
-    <p>Auskunfts- und Löschersuchen können postalisch an die oben genannte Anschrift gerichtet werden.</p>
+    <p>Auskunfts- und Löschbegehren können postalisch an die oben genannte Anschrift gerichtet werden.</p>
   </div>
 </Base>

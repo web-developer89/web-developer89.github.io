@@ -1,7 +1,7 @@
 ---
 import { channelDirectory, catalog, youtubeSubscribeUrl } from '../lib/catalog';
 import { formatNumber } from '../lib/format';
-import snapshotsFile from '../data/snapshots.json';
+import Picture from './Picture.astro';
 
 const channels = channelDirectory().filter((channel) => channel.id === 'primary' || channel.id === 'reagiert');
 const youtubeChannels = channels.map((channel) => ({
@@ -29,18 +29,19 @@ const payload = {
   channels: youtubeChannels,
   combined,
   snapshots: {
-    channelSnapshots: (snapshotsFile as { channelSnapshots?: unknown[] }).channelSnapshots || [],
+    channelSnapshots: [] as Array<{ at: string; channelId: string; subscriberCount: number | null }>,
   },
 };
 const json = JSON.stringify(payload).replace(/</g, '\\u003c');
 ---
 <section class="section community-section" id="community" data-subscriber-refresh>
   <div class="wrap">
+    <h2 class="sr-only">Meine Community wächst</h2>
     <div class="subscriber-panels" data-subscriber-panels>
       {youtubeChannels.map((channel) => (
         <article class:list={['subscriber-panel', `is-${channel.id}`]} data-channel-panel={channel.channelId}>
           <div class="subscriber-panel-top">
-            <img src={channel.avatar} alt="" width="72" height="72" loading="lazy" decoding="async" />
+            <Picture src={channel.avatar} width={72} height={72} sizes="64px" widths={[64, 128, 256]} />
             <div>
               <h3>{channel.name}</h3>
               <p class="sr-only">YouTube-Kanal-ID: {channel.channelId}</p>

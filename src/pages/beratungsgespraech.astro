@@ -40,21 +40,21 @@ const endpoint =
       <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
       <label class="field">
         <span>Thema</span>
-        <select name="topic" required>
+        <select name="topic" required aria-describedby="error-topic">
           <option value="">Bitte wählen</option>
           {topics.map((topic) => <option value={topic}>{topic}</option>)}
         </select>
-        <span class="error" data-error-for="topic"></span>
+        <span class="error" id="error-topic" data-error-for="topic"></span>
       </label>
       <label class="field">
         <span>Name</span>
-        <input name="name" autocomplete="name" required maxlength="120" />
-        <span class="error" data-error-for="name"></span>
+        <input name="name" autocomplete="name" required maxlength="120" aria-describedby="error-name" />
+        <span class="error" id="error-name" data-error-for="name"></span>
       </label>
       <label class="field wide">
         <span>Ihre E-Mail-Adresse</span>
-        <input name="email" type="email" autocomplete="email" required maxlength="200" />
-        <span class="error" data-error-for="email"></span>
+        <input name="email" type="email" autocomplete="email" required maxlength="200" aria-describedby="error-email" />
+        <span class="error" id="error-email" data-error-for="email"></span>
       </label>
       <label class="field wide consult-check">
         <input name="interest" type="checkbox" />
@@ -62,8 +62,8 @@ const endpoint =
       </label>
       <label class="field wide">
         <span>Was möchten Sie zusätzlich mitteilen?</span>
-        <textarea name="message" required maxlength="4000" placeholder="Ihr Anliegen"></textarea>
-        <span class="error" data-error-for="message"></span>
+        <textarea name="message" required maxlength="4000" placeholder="Ihr Anliegen" aria-describedby="error-message"></textarea>
+        <span class="error" id="error-message" data-error-for="message"></span>
       </label>
       <div class="wide consult-actions">
         <button class="button" type="submit">Nachricht senden</button>
@@ -113,6 +113,8 @@ const endpoint =
       Object.entries(errors).forEach(([key, value]) => setError(key, value));
       if (Object.values(errors).some(Boolean)) {
         if (status) status.textContent = 'Bitte die markierten Felder prüfen.';
+        const invalid = node.querySelector('[aria-invalid="true"]');
+        if (invalid instanceof HTMLElement) invalid.focus();
         return;
       }
       if (honey) {

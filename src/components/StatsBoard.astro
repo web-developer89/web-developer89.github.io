@@ -1,7 +1,6 @@
 ---
 import { channelDirectory, catalog, getTikTok } from '../lib/catalog';
 import { formatDateTime } from '../lib/format';
-import snapshotsFile from '../data/snapshots.json';
 
 const channels = channelDirectory();
 const tiktokChannel = getTikTok();
@@ -37,7 +36,10 @@ const payload = {
     stats: video.stats,
   })),
   tiktok: tiktokChannel,
-  snapshots: snapshotsFile,
+  snapshots: {
+    channelSnapshots: [] as Array<{ at: string; channelId: string; subscriberCount: number | null; viewCount: number | null }>,
+    videoSnapshots: [] as Array<{ at: string; videoId: string; channelId: string; viewCount: number | null; likeCount: number | null; commentCount: number | null }>,
+  },
 };
 const json = JSON.stringify(payload).replace(/</g, '\\u003c');
 ---
@@ -62,8 +64,8 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
         </div>
         <div class="chip-row" role="group" aria-label="Zeitraum" data-period-filters>
           <button class="chip" type="button" data-period="24h">24 Stunden</button>
-          <button class="chip is-active" type="button" data-period="7d">7 Tage</button>
-          <button class="chip" type="button" data-period="30d">30 Tage</button>
+          <button class="chip" type="button" data-period="7d">7 Tage</button>
+          <button class="chip is-active" type="button" data-period="30d">30 Tage</button>
         </div>
       </div>
 
@@ -97,6 +99,18 @@ const json = JSON.stringify(payload).replace(/</g, '\\u003c');
   <script type="application/json" id="stats-payload" set:html={json} />
 </section>
 <script>
-  import { setupStatsBoard } from '../scripts/stats-board.ts';
-  setupStatsBoard();
+  const section = document.querySelector('[data-stats-refresh]');
+  const boot = () => {
+    import('../scripts/stats-board.ts').then((mod) => mod.setupStatsBoard());
+  };
+  if (section instanceof HTMLElement && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return;
+      observer.disconnect();
+      boot();
+    }, { rootMargin: '480px' });
+    observer.observe(section);
+  } else {
+    window.addEventListener('load', boot, { once: true });
+  }
 </script>

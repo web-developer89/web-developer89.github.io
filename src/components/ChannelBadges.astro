@@ -1,5 +1,6 @@
 ---
 import { badgeSocials } from '../config/social';
+import Picture from './Picture.astro';
 
 interface Props {
   size?: 'header' | 'section' | 'menu';
@@ -9,6 +10,7 @@ interface Props {
 }
 const { size = 'section', label = 'Kanäle', only } = Astro.props;
 const px = size === 'header' ? 30 : size === 'menu' ? 56 : 112;
+const badgeSizes = size === 'header' ? '30px' : size === 'menu' ? '56px' : '(max-width: 700px) 68px, 112px';
 const items = only?.length
   ? badgeSocials.filter((item) => only.includes(item.id))
   : badgeSocials;
@@ -30,13 +32,13 @@ const platformClass = (id: string) => {
       rel="noopener noreferrer"
       title={item.label}
     >
-      <img
-        src={item.badge}
-        alt=""
+      <Picture
+        src={item.badge || ''}
         width={px}
         height={px}
-        decoding="async"
-        loading={size === 'header' ? 'eager' : 'lazy'}
+        sizes={badgeSizes}
+        widths={[64, 128, 256]}
+        priority={false}
       />
       <span class="sr-only">{item.label}</span>
     </a>

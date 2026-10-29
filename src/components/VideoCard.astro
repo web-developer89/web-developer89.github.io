@@ -3,6 +3,7 @@ import type { Video } from '../types';
 import { formatCompact, formatDate } from '../lib/format';
 import { videoPath } from '../lib/catalog';
 import Icon from './Icon.astro';
+import Picture from './Picture.astro';
 
 interface Props {
   video: Video;
@@ -11,8 +12,15 @@ interface Props {
   priority?: boolean;
   /** Homepage and editorial surfaces: no views/likes/comments. */
   hideEngagement?: boolean;
+  /** Archive pages start at h1, so the card title is the next level. */
+  level?: 'h2' | 'h3';
 }
-const { video, variant = 'standard', hidden = false, priority = false, hideEngagement = false } = Astro.props;
+const { video, variant = 'standard', hidden = false, priority = false, hideEngagement = false, level = 'h3' } = Astro.props;
+const sizes = variant === 'lead'
+  ? '(max-width: 900px) 92vw, 640px'
+  : variant === 'rail'
+    ? '(max-width: 900px) 78vw, 280px'
+    : '(max-width: 640px) 92vw, (max-width: 900px) 46vw, 360px';
 const stats = video.stats || { viewCount: null, likeCount: null, commentCount: null };
 const showEngagement =
   !hideEngagement &&
@@ -29,15 +37,13 @@ const showEngagement =
 >
   <a href={videoPath(video)}>
     <div class="thumb">
-      <img
+      <Picture
         src={video.thumbnail}
-        alt=""
-        width="1280"
-        height="720"
-        loading={priority ? 'eager' : 'lazy'}
-        decoding="async"
-        fetchpriority={priority ? 'high' : undefined}
-        data-fallback={video.thumbnailRemote}
+        width={1280}
+        height={720}
+        sizes={sizes}
+        priority={priority}
+        fallback={video.thumbnailRemote}
       />
       <span class="play"><Icon name="play" /></span>
       {video.durationLabel && <span class="duration">{video.durationLabel}</span>}
@@ -46,7 +52,7 @@ const showEngagement =
       <span>{video.channelName}</span>
       <time datetime={video.publishedAt}>{formatDate(video.publishedAt)}</time>
     </p>
-    <h3>{video.title}</h3>
+    {level === 'h2' ? <h2>{video.title}</h2> : <h3>{video.title}</h3>}
     {variant !== 'rail' && <p class="excerpt">{video.excerpt}</p>}
     {showEngagement && (
       <p class="stat-row" aria-label="YouTube-Statistiken">

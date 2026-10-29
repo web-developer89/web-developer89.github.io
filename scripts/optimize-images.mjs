@@ -1,47 +1,10 @@
-import { spawn } from 'node:child_process';
+import sharp from 'sharp';
 import { mkdir, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 
 const root = path.resolve(import.meta.dirname, '..');
 const outRoot = path.join(root, 'public/optimized');
-
 const jobs = [];
-
-function run(command, args) {
-  return new Promise((resolve, reject) => {
-    const child = spawn(command, args, { stdio: ['ignore', 'ignore', 'pipe'] });
-    let error = '';
-    child.stderr.on('data', (chunk) => {
-      error += chunk.toString();
-    });
-    child.on('close', (code) => {
-      if (code === 0) resolve();
-      else reject(new Error(error.trim() || `${command} ${code}`));
-    });
-  });
-}
-
-async function dimensions(file) {
-  const output = await new Promise((resolve, reject) => {
-    const child = spawn('ffprobe', [
-      '-v', 'error',
-      '-select_streams', 'v:0',
-      '-show_entries', 'stream=width,height',
-      '-of', 'csv=p=0:s=x',
-      file,
-    ], { stdio: ['ignore', 'pipe', 'pipe'] });
-    let text = '';
-    child.stdout.on('data', (chunk) => {
-      text += chunk.toString();
-    });
-    child.on('close', (code) => {
-      if (code === 0) resolve(text.trim());
-      else reject(new Error(`ffprobe ${file}`));
-    });
-  });
-  const [width, height] = output.split('x').map((value) => Number(value));
-  return { width, height };
-}
 
 function even(value) {
   const rounded = Math.max(2, Math.round(value));
@@ -58,22 +21,23 @@ async function newer(source, target) {
 }
 
 function queue(source, width, height, ext) {
-  const relative = path.relative(path.join(root, 'public'), source).replace(/\\/g, '/');
+  const relative = path.relative(path.join(root, 'public'), source).replaceAll('\\', '/');
   const stem = relative.replace(/\.[a-z0-9]+$/i, '');
-  const target = path.join(outRoot, `${stem}-${width}.${ext}`);
-  jobs.push({ source, target, width, height, ext });
+  jobs.push({
+    source,
+    target: path.join(outRoot, `${stem}-${width}.${ext}`),
+    width,
+    height,
+    ext,
+  });
 }
 
 async function addFile(source, widths, formats) {
-  let size;
-  try {
-    size = await dimensions(source);
-  } catch {
-    return;
-  }
-  const usable = [...new Set(widths.map((width) => Math.min(width, size.width)).map(even))].filter((width) => width >= 16);
+  const meta = await sharp(source).metadata();
+  if (!meta.width || !meta.height) throw new Error(`Keine Abmessungen: ${source}`);
+  const usable = [...new Set(widths.map((width) => Math.min(width, meta.width)).map(even))].filter((width) => width >= 16);
   for (const width of usable) {
-    const height = even(size.height * (width / size.width));
+    const height = even(meta.height * (width / meta.width));
     for (const ext of formats) queue(source, width, height, ext);
   }
 }
@@ -98,28 +62,11 @@ async function collect(directory, widths, formats) {
 async function encode(job) {
   if (await newer(job.source, job.target)) return;
   await mkdir(path.dirname(job.target), { recursive: true });
-  const scale = `scale=${job.width}:${job.height}:flags=lanczos`;
-  if (job.ext === 'webp') {
-    await run('ffmpeg', [
-      '-y', '-i', job.source,
-      '-vf', scale,
-      '-frames:v', '1',
-      '-c:v', 'libwebp',
-      '-quality', '72',
-      '-pix_fmt', 'yuva420p',
-      job.target,
-    ]);
-    return;
-  }
-  await run('ffmpeg', [
-    '-y', '-i', job.source,
-    '-vf', scale,
-    '-frames:v', '1',
-    '-c:v', 'libsvtav1',
-    '-pix_fmt', 'yuv420p',
-    '-svtav1-params', 'still-picture=1:crf=42:preset=10',
-    job.target,
-  ]);
+  let pipeline = sharp(job.source).resize(job.width, job.height, { fit: 'fill' });
+  pipeline = job.ext === 'webp'
+    ? pipeline.webp({ quality: 72, alphaQuality: 80 })
+    : pipeline.avif({ quality: 45, effort: 4 });
+  await pipeline.toFile(job.target);
 }
 
 async function pool(items, limit, fn) {

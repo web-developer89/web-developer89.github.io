@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-28T21:08:54.434Z",
-  "ok": true,
+  "syncedAt": "2026-10-29T00:50:53.552Z",
+  "ok": false,
   "source": "youtube-public",
-  "error": null,
+  "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
   "live": null,
   "channels": [
     {
@@ -10,7 +10,7 @@
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "name": "Politik mit Kopf",
       "videoCount": 15,
-      "status": "verbunden",
+      "status": "fehler",
       "avatar": "/brand/mark.jpg",
       "slug": "politik-mit-kopf",
       "handle": "@PolitikmitKopf",
@@ -28,7 +28,7 @@
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
       "videoCount": 7,
-      "status": "verbunden",
+      "status": "fehler",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
       "handle": "@PolitikmitKopfReagiert",
@@ -579,8 +579,8 @@
     "avatar": "/brand/tiktok.jpg",
     "status": "verbunden",
     "stats": {
-      "followerCount": 49,
-      "likeCount": 41,
+      "followerCount": 70,
+      "likeCount": 62,
       "videoCount": 5
     }
   }

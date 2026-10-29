@@ -89,12 +89,20 @@ function seriesForChannel(
   return points.sort((a, b) => Date.parse(a.at) - Date.parse(b.at));
 }
 
-function netChange(payload: Payload, channelId: string, period: Period): number | null {
+function comparison(payload: Payload, channelId: string, period: Period): { change: number; label: string } | null {
   const current = payload.channels.find((channel) => channel.channelId === channelId)?.stats.subscriberCount ?? null;
-  const snaps = (payload.snapshots.channelSnapshots || []).filter((item) => item.channelId === channelId);
-  const previous = closestBefore(snaps, Date.now() - PERIOD_MS[period]);
-  if (current == null || previous?.subscriberCount == null) return null;
-  return current - previous.subscriberCount;
+  const snaps = (payload.snapshots.channelSnapshots || []).filter((item) => item.channelId === channelId && item.subscriberCount != null);
+  const target = Date.now() - PERIOD_MS[period];
+  const anchored = closestBefore(snaps, target);
+  const earliest = [...snaps].sort((a, b) => Date.parse(a.at) - Date.parse(b.at)).find((item) => Date.parse(item.at) >= target);
+  const baseline = anchored?.subscriberCount != null ? anchored : earliest ?? null;
+  if (current == null || baseline?.subscriberCount == null) return null;
+  const started = Date.parse(baseline.at);
+  const near = Number.isFinite(started) && Math.abs(started - target) <= 36 * 60 * 60 * 1000;
+  const label = near
+    ? periodLabel(period)
+    : `seit dem ${new Intl.DateTimeFormat('de-DE', { day: 'numeric', month: 'long', timeZone: 'Europe/Zurich' }).format(new Date(started))}`;
+  return { change: current - baseline.subscriberCount, label };
 }
 
 function renderSpark(series: Array<{ at: string; value: number }>, color: string): string {
@@ -137,13 +145,24 @@ function normalizeRemote(data: Record<string, unknown>, current: Payload): Paylo
 
   if (!youtubeRemote.length) return null;
 
+  const remoteSyncedAt = typeof data.syncedAt === 'string' ? data.syncedAt : '';
+  const remoteTime = Date.parse(remoteSyncedAt);
+  if (!remoteSyncedAt || Number.isNaN(remoteTime)) return null;
+  if (current.syncedAt && remoteTime < Date.parse(current.syncedAt)) return null;
+
   const channels = current.channels.map((channel) => {
     const match = youtubeRemote.find((item) => item.channelId === channel.channelId);
     if (!match) return channel;
+    const incoming = match.stats?.subscriberCount;
+    const previous = channel.stats.subscriberCount;
+    const subscriberCount =
+      typeof incoming === 'number' && Number.isFinite(incoming) && !(incoming === 0 && (previous ?? 0) > 0)
+        ? incoming
+        : previous;
     return {
       ...channel,
       stats: {
-        subscriberCount: match.stats?.subscriberCount ?? channel.stats.subscriberCount,
+        subscriberCount,
         hiddenSubscriberCount: match.stats?.hiddenSubscriberCount ?? channel.stats.hiddenSubscriberCount,
       },
     };
@@ -155,13 +174,13 @@ function normalizeRemote(data: Record<string, unknown>, current: Payload): Paylo
   }, null as number | null);
 
   return {
-    syncedAt: typeof data.syncedAt === 'string' ? data.syncedAt : current.syncedAt,
+    syncedAt: remoteSyncedAt || current.syncedAt,
     syncOk: true,
     syncError: null,
     channels,
     combined,
     snapshots: {
-      channelSnapshots: Array.isArray(data.channelSnapshots)
+      channelSnapshots: Array.isArray(data.channelSnapshots) && data.channelSnapshots.length
         ? (data.channelSnapshots as Payload['snapshots']['channelSnapshots'])
         : current.snapshots.channelSnapshots,
     },
@@ -180,7 +199,14 @@ export function setupSubscriberBoard(): void {
     return;
   }
 
-  const period: Period = '7d';
+  const movement = (channelId: string): { change: number; label: string; period: Period } | null => {
+    const week = comparison(payload, channelId, '7d');
+    if (week && week.change !== 0) return { ...week, period: '7d' };
+    const month = comparison(payload, channelId, '30d');
+    if (month && month.change !== 0) return { ...month, period: '30d' };
+    if (week?.change === 0 || month?.change === 0) return { change: 0, label: '', period: '7d' };
+    return null;
+  };
 
   const render = () => {
     for (const channel of payload.channels) {
@@ -189,20 +215,28 @@ export function setupSubscriberBoard(): void {
       const count = panel.querySelector('[data-sub-count]');
       const delta = panel.querySelector('[data-sub-delta]');
       const spark = panel.querySelector('[data-sub-spark]');
-      const change = netChange(payload, channel.channelId, period);
-      const series = seriesForChannel(payload, channel.channelId, period);
+      const shown = movement(channel.channelId);
+      const series = seriesForChannel(payload, channel.channelId, shown?.period ?? '7d');
       const color = COLORS[channel.id] || '#d4b07a';
 
-      if (count instanceof HTMLElement) count.textContent = formatNumber(channel.stats.subscriberCount);
+      if (count instanceof HTMLElement && channel.stats.subscriberCount != null) {
+        count.textContent = formatNumber(channel.stats.subscriberCount);
+      }
       if (delta instanceof HTMLElement) {
-        if (change == null) {
+        if (shown == null) {
+          delta.hidden = false;
           delta.textContent = 'Für diesen Zeitraum liegen noch nicht genügend Daten vor.';
           delta.classList.remove('is-up', 'is-down', 'is-flat');
+        } else if (shown.change === 0) {
+          delta.hidden = true;
+          delta.textContent = '';
+          delta.classList.remove('is-up', 'is-down', 'is-flat');
         } else {
-          delta.textContent = `${formatSigned(change)} ${periodLabel(period)}`;
-          delta.classList.toggle('is-up', change > 0);
-          delta.classList.toggle('is-down', change < 0);
-          delta.classList.toggle('is-flat', change === 0);
+          delta.hidden = false;
+          delta.textContent = `${formatSigned(shown.change)} ${shown.label}`;
+          delta.classList.toggle('is-up', shown.change > 0);
+          delta.classList.toggle('is-down', shown.change < 0);
+          delta.classList.remove('is-flat');
         }
       }
       if (spark instanceof HTMLElement) spark.innerHTML = renderSpark(series, color);

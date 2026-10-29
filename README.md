@@ -25,9 +25,7 @@ Konfiguration in `src/config/youtube.json`:
 
 Ohne `YOUTUBE_API_KEY` liest der Sync die öffentlichen About-Seiten der Kanäle (`/about`: Abonnenten, Aufrufe, Videoanzahl) und ergänzt Aufrufe einzelner Videos über die öffentliche YouTube-Seite. Die Zeitreihe liegt in `src/data/snapshots.json` und `public/data/stats.json`. Ein API-Key ist nur optional und wird für diese Anzeige nicht gebraucht.
 
-Die Homepage zeigt darunter **Meine Kanäle in Zahlen**: aktuelle Aufrufe, Likes, Kommentare und Abonnenten plus die Entwicklung über 30 Tage. Das Diagramm lädt `/data/stats.json` erst, wenn der Abschnitt in die Nähe des sichtbaren Bereichs kommt, und prüft danach alle 60 Sekunden.
-
-Die Sektion **Meine Community wächst** zeigt zusätzlich nur die YouTube-Abonnentenzahlen. Dafür genügt `/data/community.json` (letzte 14 Tage).
+Die Sektion **Meine Community wächst** zeigt die YouTube-Abonnentenzahlen. Jeder Lauf des Sync-Workflows schreibt `/data/community.json` neu (Messpunkte der letzten 40 Tage) und veröffentlicht sie mit demselben Deploy. Die Seite lädt diese Datei nach dem Aufbau und danach alle 60 Sekunden mit `cache: 'no-store'` und einem Zeitstempel in der Adresse. Eine fehlgeschlagene, ungültige oder ältere Antwort lässt die zuletzt gültigen Zahlen stehen; eine gemeldete 0 ersetzt keine bereits bekannte positive Abonnentenzahl. Ist die Änderung in 7 Tagen nicht 0, steht sie in der Zeile. Sonst die Änderung über 30 Tage, oder „seit dem …“, wenn die Historie kürzer ist. Ist die gemessene Änderung 0, wird die Zeile ausgeblendet, weil YouTube Abonnenten rundet. TikTok erscheint in diesen Panels nicht.
 
 ### Backend-Takt
 

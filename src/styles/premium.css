@@ -301,67 +301,6 @@
   display: block;
 }
 
-.development-board {
-  display: grid;
-  gap: 12px;
-  padding: 16px 18px;
-  border-radius: 18px;
-  border: 1px solid var(--line);
-  background: var(--bg-raised);
-}
-
-.development-board .section-head {
-  align-items: end;
-}
-
-.development-board h3 {
-  margin: 0;
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-.development-chart {
-  min-height: 0;
-  max-width: 760px;
-  margin-inline: auto;
-  width: 100%;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  background: transparent;
-  padding: 4px 0 0;
-}
-
-.development-chart svg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.development-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 18px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.development-legend li {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.development-legend span {
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  display: inline-block;
-}
-
 .hero-feature .thumb {
   position: relative;
   aspect-ratio: 16 / 9;
@@ -381,173 +320,10 @@
   font-size: clamp(1.35rem, 2.4vw, 1.9rem);
 }
 
-.stats-board {
-  display: grid;
-  gap: 18px;
-  padding: 22px;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
-}
-
-.stats-controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-between;
-}
-
-.chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.chip {
-  display: inline-flex;
-  align-items: center;
-  min-height: 38px;
-  padding: 0 14px;
-  border-radius: 999px;
-  border: 1px solid var(--line-strong);
-  background: transparent;
-  color: var(--ink);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.92rem;
-}
-
-.chip.is-active,
-.chip[aria-current="true"] {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-ink);
-}
-
-.metric-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.metric-grid.is-compact {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.metric-card {
-  padding: 16px;
-  border-radius: 14px;
-  border: 1px solid var(--line);
-  background: var(--bg-elevated);
-  min-height: 132px;
-}
-
-.metric-card .label {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.88rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.metric-card .value {
-  margin: 10px 0 4px;
-  font-family: var(--display);
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-}
-
-.metric-card .change {
-  margin: 0;
-  color: var(--accent);
-  font-weight: 650;
-}
-
-.metric-card .hint {
-  margin: 8px 0 0;
-  color: var(--muted);
-  font-size: 0.86rem;
-}
-
-.chart-panel {
-  padding: 14px 16px;
-  border-radius: 16px;
-  border: 1px solid var(--line);
-  background: rgba(12, 13, 16, 0.72);
-}
-
-.growth-strip {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 16px 20px;
-  align-items: center;
-}
-
-.growth-copy {
-  display: grid;
-  gap: 6px;
-  min-width: 0;
-}
-
-.growth-copy h3 {
-  margin: 0;
-  font-size: 0.95rem;
-  letter-spacing: -0.02em;
-}
-
-.growth-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 12px;
-  align-items: center;
-}
-
-.growth-delta {
-  margin: 0;
-  font-family: var(--display);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--accent);
-  letter-spacing: -0.02em;
-}
-
-.growth-delta.is-flat { color: var(--muted); }
-.growth-delta.is-down { color: var(--danger); }
-
 .growth-note {
   margin: 0;
   color: var(--muted);
   font-size: 0.82rem;
-}
-
-.growth-chart {
-  width: min(280px, 42vw);
-  min-width: 160px;
-}
-
-.growth-chart svg {
-  width: 100%;
-  height: 64px;
-  display: block;
-}
-
-.chip.chip-mini {
-  min-height: 30px;
-  padding: 0 10px;
-  font-size: 0.8rem;
-}
-
-@media (max-width: 720px) {
-  .growth-strip {
-    grid-template-columns: 1fr;
-  }
-  .growth-chart {
-    width: 100%;
-    min-width: 0;
-  }
 }
 
 .channel-grid {
@@ -1051,17 +827,8 @@
   .hero-split,
   .channel-grid,
   .info-cards,
-  .metric-grid,
   .subscriber-panels {
     grid-template-columns: 1fr;
-  }
-
-  .metric-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .metric-grid.is-compact {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .channel-tiles {
@@ -1087,8 +854,7 @@
 @media (max-width: 720px) {
   .section-intro,
   .community-combined,
-  .subscriber-panel,
-  .development-board {
+  .subscriber-panel {
     text-align: center;
     justify-items: center;
   }
@@ -1096,15 +862,6 @@
   .subscriber-panel-top {
     flex-direction: column;
     text-align: center;
-  }
-
-  .development-board .section-head {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .development-legend {
-    justify-content: center;
   }
 
   .subscriber-panel .hero-actions {
@@ -1176,41 +933,6 @@
     gap: 6px;
   }
 
-  .stats-board {
-    padding: 18px 14px;
-    text-align: center;
-  }
-
-  .stats-board .section-head {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .stats-controls {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .chip-row {
-    justify-content: center;
-  }
-
-  .metric-card {
-    text-align: center;
-    min-height: 0;
-  }
-
-  .growth-strip,
-  .growth-copy {
-    text-align: center;
-    justify-items: center;
-  }
-
-  .growth-meta {
-    justify-content: center;
-  }
-
   .informant-banner {
     text-align: center;
     justify-items: center;
@@ -1270,11 +992,6 @@
 }
 
 @media (max-width: 560px) {
-  .metric-grid,
-  .metric-grid.is-compact {
-    grid-template-columns: 1fr;
-  }
-
   .channel-badges.is-section {
     max-width: 300px;
     gap: 16px 18px;
@@ -1283,11 +1000,5 @@
   .channel-badges.is-section .channel-badge {
     width: 64px;
     height: 64px;
-  }
-
-  .chip {
-    min-height: 36px;
-    padding: 0 12px;
-    font-size: 0.86rem;
   }
 }

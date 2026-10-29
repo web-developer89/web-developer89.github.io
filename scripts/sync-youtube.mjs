@@ -676,7 +676,7 @@ function tiktokAsStatsChannel(tiktok) {
 }
 
 function buildCommunityPayload(catalog, snapshots) {
-  const since = Date.now() - 14 * 24 * 60 * 60 * 1000;
+  const since = Date.now() - 40 * 24 * 60 * 60 * 1000;
   return {
     syncedAt: catalog.syncedAt,
     channels: asArray(catalog.channels)

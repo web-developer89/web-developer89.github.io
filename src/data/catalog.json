@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-29T06:32:24.657Z",
-  "ok": false,
+  "syncedAt": "2026-10-29T13:34:06.456Z",
+  "ok": true,
   "source": "youtube-public",
-  "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
+  "error": null,
   "live": null,
   "channels": [
     {
@@ -10,7 +10,7 @@
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "name": "Politik mit Kopf",
       "videoCount": 15,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/mark.jpg",
       "slug": "politik-mit-kopf",
       "handle": "@PolitikmitKopf",
@@ -18,8 +18,8 @@
       "subscribeUrl": "https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1",
       "stats": {
         "subscriberCount": 285000,
-        "viewCount": 174825984,
-        "videoCount": 1554,
+        "viewCount": 175156273,
+        "videoCount": 1555,
         "hiddenSubscriberCount": false
       }
     },
@@ -28,7 +28,7 @@
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
       "videoCount": 7,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
       "handle": "@PolitikmitKopfReagiert",
@@ -36,7 +36,7 @@
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
         "subscriberCount": 17500,
-        "viewCount": 458728,
+        "viewCount": 459218,
         "videoCount": 7,
         "hiddenSubscriberCount": false
       }
@@ -44,11 +44,35 @@
   ],
   "videos": [
     {
-      "id": "9R5O6dnv53I",
-      "slug": "mir-platzt-der-kragen-danke-sagen-reicht-schon-fuer-einen-verstoss-9R5O6dnv53I",
+      "id": "6EdhsWPZtM0",
+      "slug": "voellige-blamage-in-tokio-merz-lobt-was-in-deutschland-verboten-ist-ve-6EdhsWPZtM0",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "channelName": "Politik mit Kopf",
-      "title": "Mir platzt der Kragen: Danke sagen reicht schon für einen Verstoß",
+      "title": "Völlige Blamage in Tokio: Merz lobt, was in Deutschland verboten ist! Verfassungsschutz schaut zu ..",
+      "description": "Friedrich Merz reist nach Tokio und lobt Japan in den höchsten Tönen – dabei verschweigt er, dass genau diese Politik in Deutschland vom Verfassungsschutz beobachtet werden würde. In diesem Video geht es um die Blamage, die Widersprüche zur deutschen Migrations- und Energiepolitik und darum, was Merz wirklich nicht sagen will.\n\nhttps://youtu.be/NCnORR0sLME?si=262FudbT9OksC79x\n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nIBAN: CH15 0077 7009 8834 0191 4 (CHF-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n👉 Instagram: https://www.instagram.com/politik_mitkopf/👉 Facebook: https://www.facebook.com/PolitikmitKopf\n\nhttps://youtu.be/_Ie-kq9kkdE?si=W8TroYG1V3y9ZW1q\n\nFoto: Bundesregierung/Steffen Kugler\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Friedrich Merz reist nach Tokio und lobt Japan in den höchsten Tönen – dabei verschweigt er, dass genau diese Politik in Deutschland vom Verfassungsschutz beobachtet werden…",
+      "publishedAt": "2026-10-29T08:43:17+00:00",
+      "url": "https://www.youtube.com/watch?v=6EdhsWPZtM0",
+      "thumbnail": "/media/6EdhsWPZtM0.jpg",
+      "thumbnailRemote": "https://i3.ytimg.com/vi/6EdhsWPZtM0/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 87253,
+        "likeCount": null,
+        "commentCount": null
+      }
+    },
+    {
+      "id": "9R5O6dnv53I",
+      "slug": "schnauze-voll-danke-ist-jetzt-verboten-9R5O6dnv53I",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Schnauze voll! Danke ist jetzt verboten",
       "description": "Es gibt solche Tage und solche Tage!\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nIBAN: CH15 0077 7009 8834 0191 4 (CHF-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
       "excerpt": "Es gibt solche Tage und solche Tage!",
       "publishedAt": "2026-10-28T20:24:04+00:00",
@@ -62,7 +86,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 10619,
+        "viewCount": 139027,
         "likeCount": null,
         "commentCount": 205
       }
@@ -97,7 +121,7 @@
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "channelName": "Politik mit Kopf",
       "title": "64 Tote in Spanien: ETCS, ASFA und warum die Begründungen technisch nicht aufgehen",
-      "description": "In Spanien kollidieren zwei Hochgeschwindigkeitszüge – ein AVE fährt auf einen stehenden Iryo auf, dutzende Menschen sterben. Warum die offiziellen Erklärungen zu Signalstörung und menschlichem Versagen technisch kaum nachvollziehbar sind und warum sich das Unglück in eine Reihe schwerer Unfälle unter der sozialistischen Regierung einreiht.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "description": "In Spanien kollidieren zwei Hochgeschwindigkeitszüge – ein AVE fährt auf einen stehenden Iryo auf, dutzende Menschen sterben. Warum die offiziellen Erklärungen zu Signalstörung und menschlichem Versagen technisch kaum nachvollziehbar sind und warum sich das Unglück in eine Reihe schwerer Unfälle unter der sozialistischen Regierung einreiht.\n\nhttps://youtu.be/NCnORR0sLME?si=262FudbT9OksC79x\n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nIBAN: CH15 0077 7009 8834 0191 4 (CHF-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n👉 Instagram: https://www.instagram.com/politik_mitkopf/👉 Facebook: https://www.facebook.com/PolitikmitKopf\n\nhttps://youtu.be/_Ie-kq9kkdE?si=W8TroYG1V3y9ZW1q\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
       "excerpt": "In Spanien kollidieren zwei Hochgeschwindigkeitszüge – ein AVE fährt auf einen stehenden Iryo auf, dutzende Menschen sterben. Warum die offiziellen Erklärungen zu Signalstörung…",
       "publishedAt": "2026-10-28T14:15:02+00:00",
       "url": "https://www.youtube.com/watch?v=KXKFabHVK8Q",
@@ -110,7 +134,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 56095,
+        "viewCount": 72799,
         "likeCount": null,
         "commentCount": 408
       }
@@ -134,7 +158,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 141203,
+        "viewCount": 157125,
         "likeCount": null,
         "commentCount": 619
       }
@@ -182,7 +206,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 252121,
+        "viewCount": 262459,
         "likeCount": null,
         "commentCount": 997
       }
@@ -231,7 +255,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 235796,
+        "viewCount": 236914,
         "likeCount": null,
         "commentCount": 1458
       }
@@ -255,7 +279,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 136473,
+        "viewCount": 136881,
         "likeCount": null,
         "commentCount": 690
       }
@@ -279,7 +303,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 141771,
+        "viewCount": 142081,
         "likeCount": null,
         "commentCount": 1034
       }
@@ -303,7 +327,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 212235,
+        "viewCount": 212507,
         "likeCount": null,
         "commentCount": 1473
       }
@@ -327,7 +351,7 @@
         "spanien"
       ],
       "stats": {
-        "viewCount": 176842,
+        "viewCount": 177164,
         "likeCount": null,
         "commentCount": 1467
       }
@@ -351,7 +375,7 @@
         "paris"
       ],
       "stats": {
-        "viewCount": 161993,
+        "viewCount": 162113,
         "likeCount": null,
         "commentCount": 863
       }
@@ -375,33 +399,9 @@
         "hormuzstrait"
       ],
       "stats": {
-        "viewCount": 107454,
+        "viewCount": 107681,
         "likeCount": null,
         "commentCount": 718
-      }
-    },
-    {
-      "id": "DX7R8fTCcGg",
-      "slug": "digitaler-krieg-soeder-will-whatsapp-auf-wahrheit-pruefen-george-orwel-DX7R8fTCcGg",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Digitaler Krieg: Söder will WhatsApp auf Wahrheit prüfen – George Orwell lässt grüßen",
-      "description": "Markus Söder will Fake News in WhatsApp-Gruppen bekämpfen und spricht von digitalem Krieg. Das klingt stark nach George Orwells Wahrheitsministerium und bedeutet: Markus Söder verbietet sich selbst mit seinen Fake News!\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Digitaler Krieg: Söder will WhatsApp auf Wahrheit prüfen – George Orwell lässt grüßen",
-      "publishedAt": "2026-10-24T08:08:06+00:00",
-      "url": "https://www.youtube.com/watch?v=DX7R8fTCcGg",
-      "thumbnail": "/media/DX7R8fTCcGg.jpg",
-      "thumbnailRemote": "https://i1.ytimg.com/vi/DX7R8fTCcGg/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 81634,
-        "likeCount": null,
-        "commentCount": 827
       }
     },
     {
@@ -423,7 +423,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 70242,
+        "viewCount": 70422,
         "likeCount": null,
         "commentCount": 329
       }
@@ -447,7 +447,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 80342,
+        "viewCount": 80507,
         "likeCount": null,
         "commentCount": 524
       }
@@ -471,7 +471,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 98368,
+        "viewCount": 98550,
         "likeCount": null,
         "commentCount": 575
       }
@@ -495,7 +495,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33616,
+        "viewCount": 33618,
         "likeCount": 3363,
         "commentCount": 633
       }
@@ -519,7 +519,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 87994,
+        "viewCount": 88056,
         "likeCount": 4492,
         "commentCount": 400
       }
@@ -543,7 +543,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42838,
+        "viewCount": 42843,
         "likeCount": 3038,
         "commentCount": 508
       }
@@ -579,7 +579,7 @@
     "avatar": "/brand/tiktok.jpg",
     "status": "verbunden",
     "stats": {
-      "followerCount": 83,
+      "followerCount": 92,
       "likeCount": 64,
       "videoCount": 5
     }

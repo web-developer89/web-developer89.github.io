@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-29T13:34:06.456Z",
+  "syncedAt": "2026-10-29T19:10:14.060Z",
   "channels": [
     {
       "id": "primary",
@@ -21,171 +21,6 @@
     }
   ],
   "channelSnapshots": [
-    {
-      "at": "2026-10-15T13:49:42.078Z",
-      "channelId": "tiktok",
-      "subscriberCount": 22
-    },
-    {
-      "at": "2026-10-15T13:49:42.078Z",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "subscriberCount": 284000
-    },
-    {
-      "at": "2026-10-15T13:49:42.078Z",
-      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
-      "subscriberCount": 17000
-    },
-    {
-      "at": "2026-10-15T14:19:52.867Z",
-      "channelId": "tiktok",
-      "subscriberCount": 22
-    },
-    {
-      "at": "2026-10-15T14:19:52.867Z",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "subscriberCount": 284000
-    },
-    {
-      "at": "2026-10-15T14:19:52.867Z",
-      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
-      "subscriberCount": 17000
-    },
-    {
-      "at": "2026-10-15T14:52:46.278Z",
-      "channelId": "tiktok",
-      "subscriberCount": 22
-    },
-    {
-      "at": "2026-10-15T14:52:46.278Z",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "subscriberCount": 284000
-    },
-    {
-      "at": "2026-10-15T14:52:46.278Z",
-      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
-      "subscriberCount": 17000
-    },
-    {
-      "at": "2026-10-15T15:19:56.301Z",
-      "channelId": "tiktok",
-      "subscriberCount": 22
-    },
-    {
-      "at": "2026-10-15T15:19:56.301Z",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "subscriberCount": 284000
-    },
-    {
-      "at": "2026-10-15T15:19:56.301Z",
-      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
-      "subscriberCount": 17000
-    },
-    {
-      "at": "2026-10-15T15:53:44.493Z",
-      "channelId": "tiktok",
-      "subscriberCount": 22
-    },
-    {
-      "at": "2026-10-15T15:53:44.493Z",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "subscriberCount": 284000
-    },
-    {
-      "at": "2026-10-15T15:53:44.493Z",
-      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
-      "subscriberCount": 17000
-    },
-    {
-      "at": "2026-10-15T16:16:42.830Z",
-      "channelId": "tiktok",
-      "subscriberCount": 22
-    },
-    {
-      "at": "2026-10-15T16:16:42.830Z",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "subscriberCount": 284000
-    },
-    {
-      "at": "2026-10-15T16:16:42.830Z",
-      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
-      "subscriberCount": 17000
-    },
-    {
-      "at": "2026-10-15T16:48:23.325Z",
-      "channelId": "tiktok",
-      "subscriberCount": 22
-    },
-    {
-      "at": "2026-10-15T16:48:23.325Z",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "subscriberCount": 284000
-    },
-    {
-      "at": "2026-10-15T16:48:23.325Z",
-      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
-      "subscriberCount": 17000
-    },
-    {
-      "at": "2026-10-15T17:16:32.759Z",
-      "channelId": "tiktok",
-      "subscriberCount": 22
-    },
-    {
-      "at": "2026-10-15T17:16:32.759Z",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "subscriberCount": 284000
-    },
-    {
-      "at": "2026-10-15T17:16:32.759Z",
-      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
-      "subscriberCount": 17000
-    },
-    {
-      "at": "2026-10-15T17:43:26.805Z",
-      "channelId": "tiktok",
-      "subscriberCount": 22
-    },
-    {
-      "at": "2026-10-15T17:43:26.805Z",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "subscriberCount": 284000
-    },
-    {
-      "at": "2026-10-15T17:43:26.805Z",
-      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
-      "subscriberCount": 17000
-    },
-    {
-      "at": "2026-10-15T18:08:20.174Z",
-      "channelId": "tiktok",
-      "subscriberCount": 22
-    },
-    {
-      "at": "2026-10-15T18:08:20.174Z",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "subscriberCount": 284000
-    },
-    {
-      "at": "2026-10-15T18:08:20.174Z",
-      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
-      "subscriberCount": 17000
-    },
-    {
-      "at": "2026-10-15T18:40:22.035Z",
-      "channelId": "tiktok",
-      "subscriberCount": 22
-    },
-    {
-      "at": "2026-10-15T18:40:22.035Z",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "subscriberCount": 284000
-    },
-    {
-      "at": "2026-10-15T18:40:22.035Z",
-      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
-      "subscriberCount": 17000
-    },
     {
       "at": "2026-10-15T19:13:52.743Z",
       "channelId": "tiktok",
@@ -2558,6 +2393,21 @@
     },
     {
       "at": "2026-10-29T13:34:06.456Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-29T19:10:14.060Z",
+      "channelId": "tiktok",
+      "subscriberCount": 96
+    },
+    {
+      "at": "2026-10-29T19:10:14.060Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-29T19:10:14.060Z",
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "subscriberCount": 17500
     }

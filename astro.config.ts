@@ -7,7 +7,7 @@ export default defineConfig({
   trailingSlash: 'always',
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/overlay/') && !page.includes('/redaktion'),
+      filter: (page) => !page.includes('/overlay/') && !page.includes('/redaktion') && !page.includes('/404'),
     }),
   ],
   prefetch: {

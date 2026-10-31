@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-31T18:46:33.700Z",
+  "syncedAt": "2026-10-31T21:53:49.506Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -17,9 +17,9 @@
       "channelUrl": "https://www.youtube.com/@PolitikmitKopf",
       "subscribeUrl": "https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1",
       "stats": {
-        "subscriberCount": 285000,
-        "viewCount": 176167853,
-        "videoCount": 1564,
+        "subscriberCount": 286000,
+        "viewCount": 176350488,
+        "videoCount": 1565,
         "hiddenSubscriberCount": false
       }
     },
@@ -36,13 +36,37 @@
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
         "subscriberCount": 17500,
-        "viewCount": 460814,
+        "viewCount": 461073,
         "videoCount": 7,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "OxgXg5E5I00",
+      "slug": "brennende-barrikaden-wasserwerfer-die-duemmste-generation-z-eskaliert-OxgXg5E5I00",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Brennende Barrikaden & Wasserwerfer: Die dümmste Generation Z eskaliert!",
+      "description": "Die Gen-Z-Demos am Halloween sind in mehreren Städten eskaliert: Wasserwerfer in Köln, brennende Barrikaden und eine überforderte Polizei in Berlin. Die dümmste Generation will das Ende des kapitalistischen Deutschlands – und bekommt genau das Chaos, das sie selbst provoziert.\n\nhttps://youtu.be/NCnORR0sLME?si=262FudbT9OksC79x\n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nIBAN: CH15 0077 7009 8834 0191 4 (CHF-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n👉 Instagram: https://www.instagram.com/politik_mitkopf/\n👉 Facebook: https://www.facebook.com/PolitikmitKopf\n\nhttps://youtu.be/_Ie-kq9kkdE?si=W8TroYG1V3y9ZW1q\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "Die Gen-Z-Demos am Halloween sind in mehreren Städten eskaliert: Wasserwerfer in Köln, brennende Barrikaden und eine überforderte Polizei in Berlin. Die dümmste Generation will…",
+      "publishedAt": "2026-10-31T19:58:01+00:00",
+      "url": "https://www.youtube.com/watch?v=OxgXg5E5I00",
+      "thumbnail": "/media/OxgXg5E5I00.jpg",
+      "thumbnailRemote": "https://i4.ytimg.com/vi/OxgXg5E5I00/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 25342,
+        "likeCount": null,
+        "commentCount": 848
+      }
+    },
     {
       "id": "41h5zBMtPWU",
       "slug": "zdf-stuerzt-sich-auf-frohnmaier-dabei-liegt-der-skandal-bei-der-it-sic-41h5zBMtPWU",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 48828,
+        "viewCount": 80897,
         "likeCount": null,
-        "commentCount": 116
+        "commentCount": 149
       }
     },
     {
@@ -88,7 +112,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 35
+        "commentCount": 42
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 110374,
+        "viewCount": 120204,
         "likeCount": null,
-        "commentCount": 665
+        "commentCount": 700
       }
     },
     {
@@ -134,9 +158,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 109986,
+        "viewCount": 111533,
         "likeCount": null,
-        "commentCount": 577
+        "commentCount": 583
       }
     },
     {
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 148143,
+        "viewCount": 149415,
         "likeCount": null,
-        "commentCount": 564
+        "commentCount": 565
       }
     },
     {
@@ -206,9 +230,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 151396,
+        "viewCount": 151676,
         "likeCount": null,
-        "commentCount": 2030
+        "commentCount": 2033
       }
     },
     {
@@ -232,7 +256,7 @@
       "stats": {
         "viewCount": 17997,
         "likeCount": 1746,
-        "commentCount": 95
+        "commentCount": 96
       }
     },
     {
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 78749,
+        "viewCount": 79045,
         "likeCount": null,
-        "commentCount": 1009
+        "commentCount": 1010
       }
     },
     {
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 330578,
+        "viewCount": 332851,
         "likeCount": null,
-        "commentCount": 1497
+        "commentCount": 1502
       }
     },
     {
@@ -302,7 +326,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 171285,
+        "viewCount": 171471,
         "likeCount": null,
         "commentCount": 956
       }
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 77981,
+        "viewCount": 78057,
         "likeCount": null,
         "commentCount": 582
       }
@@ -374,33 +398,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 161217,
+        "viewCount": 161317,
         "likeCount": null,
         "commentCount": 666
-      }
-    },
-    {
-      "id": "FofstNH8tm0",
-      "slug": "audi-baut-werk-in-den-usa-FofstNH8tm0",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Audi baut Werk in den USA?",
-      "description": "Nicht das neue Audi-Werk ist die Schande, sondern Niedersachsen. Das Land hält 20 % der Stimmrechte bei Volkswagen und sitzt bei solchen Entscheidungen mit am Tisch. Dass Standorte aus Deutschland abwandern, ist bei der Politik von Merz und von der Leyen nur folgerichtig.\n\n#Audi #Volkswagen #Standort \n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Nicht das neue Audi-Werk ist die Schande, sondern Niedersachsen. Das Land hält 20 % der Stimmrechte bei Volkswagen und sitzt bei solchen Entscheidungen mit am Tisch. Dass…",
-      "publishedAt": "2026-10-27T16:43:51+00:00",
-      "url": "https://www.youtube.com/watch?v=FofstNH8tm0",
-      "thumbnail": "/media/FofstNH8tm0.jpg",
-      "thumbnailRemote": "https://i3.ytimg.com/vi/FofstNH8tm0/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Audi",
-        "Volkswagen",
-        "Standort"
-      ],
-      "stats": {
-        "viewCount": null,
-        "likeCount": null,
-        "commentCount": 161
       }
     },
     {
@@ -422,7 +422,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 70929,
+        "viewCount": 71056,
         "likeCount": null,
         "commentCount": 329
       }
@@ -446,7 +446,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 80956,
+        "viewCount": 80978,
         "likeCount": null,
         "commentCount": 524
       }
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 99001,
+        "viewCount": 99040,
         "likeCount": null,
         "commentCount": 576
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 88188,
+        "viewCount": 88195,
         "likeCount": 4492,
         "commentCount": 403
       }
@@ -542,7 +542,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42866,
+        "viewCount": 42867,
         "likeCount": 3038,
         "commentCount": 508
       }
@@ -579,7 +579,7 @@
     "status": "verbunden",
     "stats": {
       "followerCount": 109,
-      "likeCount": 142,
+      "likeCount": 179,
       "videoCount": 9
     }
   }

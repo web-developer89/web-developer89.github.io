@@ -1,12 +1,12 @@
 {
-  "syncedAt": "2026-10-31T18:46:33.700Z",
+  "syncedAt": "2026-10-31T21:53:49.506Z",
   "channels": [
     {
       "id": "primary",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
       "name": "Politik mit Kopf",
       "stats": {
-        "subscriberCount": 285000,
+        "subscriberCount": 286000,
         "hiddenSubscriberCount": false
       }
     },
@@ -6023,6 +6023,21 @@
     },
     {
       "at": "2026-10-31T18:46:33.700Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-31T21:53:49.506Z",
+      "channelId": "tiktok",
+      "subscriberCount": 109
+    },
+    {
+      "at": "2026-10-31T21:53:49.506Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 286000
+    },
+    {
+      "at": "2026-10-31T21:53:49.506Z",
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "subscriberCount": 17500
     }

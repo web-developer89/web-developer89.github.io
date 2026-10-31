@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-31T08:46:01.414Z",
+  "syncedAt": "2026-10-31T14:46:23.895Z",
   "channels": [
     {
       "id": "primary",
@@ -5998,6 +5998,16 @@
     },
     {
       "at": "2026-10-31T08:46:01.414Z",
+      "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
+      "subscriberCount": 17500
+    },
+    {
+      "at": "2026-10-31T14:46:23.895Z",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "subscriberCount": 285000
+    },
+    {
+      "at": "2026-10-31T14:46:23.895Z",
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "subscriberCount": 17500
     }

@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-31T14:46:23.895Z",
+  "syncedAt": "2026-10-31T18:46:33.700Z",
   "ok": true,
   "source": "youtube-public",
   "error": null,
@@ -19,7 +19,7 @@
       "stats": {
         "subscriberCount": 285000,
         "viewCount": 176167853,
-        "videoCount": 1563,
+        "videoCount": 1564,
         "hiddenSubscriberCount": false
       }
     },
@@ -44,6 +44,30 @@
   ],
   "videos": [
     {
+      "id": "41h5zBMtPWU",
+      "slug": "zdf-stuerzt-sich-auf-frohnmaier-dabei-liegt-der-skandal-bei-der-it-sic-41h5zBMtPWU",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "ZDF stürzt sich auf Frohnmaier – dabei liegt der Skandal bei der IT-Sicherheit des Bundestages!",
+      "description": "ZDF berichtet über angebliche Skandale aus den AfD-Leaks rund um Markus Frohnmaier und Verschlusssachen – dabei liegt das eigentliche Problem bei der IT-Sicherheit des Bundestages. In diesem Video geht es darum, warum der Umgang mit VS-NfD-Dokumenten und Drittgeräten der wahre Skandal ist.\n\nhttps://youtu.be/NCnORR0sLME?si=262FudbT9OksC79x\n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nIBAN: CH15 0077 7009 8834 0191 4 (CHF-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n👉 Instagram: https://www.instagram.com/politik_mitkopf/\n👉 Facebook: https://www.facebook.com/PolitikmitKopf\n\nhttps://youtu.be/_Ie-kq9kkdE?si=W8TroYG1V3y9ZW1q\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "ZDF berichtet über angebliche Skandale aus den AfD-Leaks rund um Markus Frohnmaier und Verschlusssachen – dabei liegt das eigentliche Problem bei der IT-Sicherheit des…",
+      "publishedAt": "2026-10-31T15:01:29+00:00",
+      "url": "https://www.youtube.com/watch?v=41h5zBMtPWU",
+      "thumbnail": "/media/41h5zBMtPWU.jpg",
+      "thumbnailRemote": "https://i1.ytimg.com/vi/41h5zBMtPWU/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 48828,
+        "likeCount": null,
+        "commentCount": 116
+      }
+    },
+    {
       "id": "f11M0MnykiM",
       "slug": "japan-sagt-nein-zur-masseneinwanderung-f11M0MnykiM",
       "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
@@ -64,7 +88,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 32
+        "commentCount": 35
       }
     },
     {
@@ -86,9 +110,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 82340,
+        "viewCount": 110374,
         "likeCount": null,
-        "commentCount": 569
+        "commentCount": 665
       }
     },
     {
@@ -110,9 +134,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 105881,
+        "viewCount": 109986,
         "likeCount": null,
-        "commentCount": 544
+        "commentCount": 577
       }
     },
     {
@@ -136,7 +160,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 57
+        "commentCount": 62
       }
     },
     {
@@ -158,7 +182,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 145399,
+        "viewCount": 148143,
         "likeCount": null,
         "commentCount": 564
       }
@@ -182,9 +206,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 149295,
+        "viewCount": 151396,
         "likeCount": null,
-        "commentCount": 2023
+        "commentCount": 2030
       }
     },
     {
@@ -230,7 +254,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 78346,
+        "viewCount": 78749,
         "likeCount": null,
         "commentCount": 1009
       }
@@ -254,9 +278,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 325841,
+        "viewCount": 330578,
         "likeCount": null,
-        "commentCount": 1493
+        "commentCount": 1497
       }
     },
     {
@@ -278,9 +302,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 170932,
+        "viewCount": 171285,
         "likeCount": null,
-        "commentCount": 955
+        "commentCount": 956
       }
     },
     {
@@ -304,7 +328,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 169
+        "commentCount": 170
       }
     },
     {
@@ -326,9 +350,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 77882,
+        "viewCount": 77981,
         "likeCount": null,
-        "commentCount": 581
+        "commentCount": 582
       }
     },
     {
@@ -350,7 +374,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 161117,
+        "viewCount": 161217,
         "likeCount": null,
         "commentCount": 666
       }
@@ -376,31 +400,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 160
-      }
-    },
-    {
-      "id": "9qOQxLqDw3Y",
-      "slug": "er-regt-sich-ueber-berlin-auf-6-tage-spaeter-kommt-der-baustopp-9qOQxLqDw3Y",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Er regt sich über Berlin auf – 6 Tage später kommt der Baustopp",
-      "description": "Ein Berliner Unternehmer geht viral, weil er sich über die Behörden und die extremen Hürden beim Bau eines Mehrfamilienhauses aufregt – keine Woche später erhält er einen Baustopp wegen angeblich nicht eingehaltener Auflagen. Im Video zeigt er den Brief und erklärt, warum die Begründung seiner Meinung nach nicht stimmt.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Ein Berliner Unternehmer geht viral, weil er sich über die Behörden und die extremen Hürden beim Bau eines Mehrfamilienhauses aufregt – keine Woche später erhält er einen…",
-      "publishedAt": "2026-10-27T10:53:20+00:00",
-      "url": "https://www.youtube.com/watch?v=9qOQxLqDw3Y",
-      "thumbnail": "/media/9qOQxLqDw3Y.jpg",
-      "thumbnailRemote": "https://i2.ytimg.com/vi/9qOQxLqDw3Y/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 275730,
-        "likeCount": null,
-        "commentCount": 1055
+        "commentCount": 161
       }
     },
     {
@@ -422,7 +422,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 70920,
+        "viewCount": 70929,
         "likeCount": null,
         "commentCount": 329
       }
@@ -446,7 +446,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 80937,
+        "viewCount": 80956,
         "likeCount": null,
         "commentCount": 524
       }
@@ -470,7 +470,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 98940,
+        "viewCount": 99001,
         "likeCount": null,
         "commentCount": 576
       }
@@ -494,7 +494,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 33630,
+        "viewCount": 33631,
         "likeCount": 3363,
         "commentCount": 633
       }
@@ -518,7 +518,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 88183,
+        "viewCount": 88188,
         "likeCount": 4492,
         "commentCount": 403
       }
@@ -542,7 +542,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42864,
+        "viewCount": 42866,
         "likeCount": 3038,
         "commentCount": 508
       }
@@ -574,13 +574,13 @@
     "handle": "@politik.mit.kopf",
     "uniqueId": "politik.mit.kopf",
     "profileUrl": "https://www.tiktok.com/@politik.mit.kopf",
-    "description": "Kurze Clips und Hinweise zum YouTube-Kanal von Politik mit Kopf.",
+    "description": "Der TikTok-Kanal zum Original https://www.youtube.com/@PolitikmitKopf",
     "avatar": "/brand/tiktok.jpg",
-    "status": "fehler",
+    "status": "verbunden",
     "stats": {
-      "followerCount": 101,
-      "likeCount": 79,
-      "videoCount": 7
+      "followerCount": 109,
+      "likeCount": 142,
+      "videoCount": 9
     }
   }
 }

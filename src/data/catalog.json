@@ -1,8 +1,8 @@
 {
-  "syncedAt": "2026-10-31T02:33:03.539Z",
-  "ok": false,
+  "syncedAt": "2026-10-31T08:46:01.414Z",
+  "ok": true,
   "source": "youtube-public",
-  "error": "Mindestens ein Kanal konnte nicht gelesen werden. Angezeigt werden gespeicherte Videos.",
+  "error": null,
   "live": null,
   "channels": [
     {
@@ -18,8 +18,8 @@
       "subscribeUrl": "https://www.youtube.com/channel/UCsLN1bEfDJoZOs8udTwHatQ?sub_confirmation=1",
       "stats": {
         "subscriberCount": 285000,
-        "viewCount": 175850789,
-        "videoCount": 1561,
+        "viewCount": 176167853,
+        "videoCount": 1562,
         "hiddenSubscriberCount": false
       }
     },
@@ -28,7 +28,7 @@
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
       "name": "Politik mit Kopf REAGIERT",
       "videoCount": 7,
-      "status": "fehler",
+      "status": "verbunden",
       "avatar": "/brand/UCOdBOgdBxkqo5CaGukX8z4g.jpg",
       "slug": "politik-mit-kopf-reagiert",
       "handle": "@PolitikmitKopfReagiert",
@@ -36,13 +36,37 @@
       "subscribeUrl": "https://www.youtube.com/@PolitikmitKopfReagiert?sub_confirmation=1",
       "stats": {
         "subscriberCount": 17500,
-        "viewCount": 460373,
+        "viewCount": 460814,
         "videoCount": 7,
         "hiddenSubscriberCount": false
       }
     }
   ],
   "videos": [
+    {
+      "id": "Re70Dd16-CE",
+      "slug": "hochverrat-in-polen-tusk-gesteht-gewalt-medien-luegen-ueber-das-verfas-Re70Dd16-CE",
+      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
+      "channelName": "Politik mit Kopf",
+      "title": "Hochverrat in Polen? Tusk gesteht Gewalt, Medien lügen über das Verfassungsgericht",
+      "description": "In Polen eskaliert der Streit um das Verfassungsgericht: Präsident Nawrocki wird am Betreten gehindert, während Donald Tusk von einem „schmerzhaften Prozess“ zur Wiederherstellung der Rechtsstaatlichkeit spricht. Dabei wurde das Artikel-7-Verfahren 2024 beendet und 137 Milliarden Euro freigegeben – es geht um den Euro, die Abschaffung des Złoty und die Goldreserven.\n\nhttps://youtu.be/NCnORR0sLME?si=262FudbT9OksC79x\n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nIBAN: CH15 0077 7009 8834 0191 4 (CHF-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n👉 Instagram: https://www.instagram.com/politik_mitkopf/\n👉 Facebook: https://www.facebook.com/PolitikmitKopf\n\nhttps://youtu.be/_Ie-kq9kkdE?si=W8TroYG1V3y9ZW1q\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
+      "excerpt": "In Polen eskaliert der Streit um das Verfassungsgericht: Präsident Nawrocki wird am Betreten gehindert, während Donald Tusk von einem „schmerzhaften Prozess“ zur…",
+      "publishedAt": "2026-10-31T08:37:51+00:00",
+      "url": "https://www.youtube.com/watch?v=Re70Dd16-CE",
+      "thumbnail": "/media/Re70Dd16-CE.jpg",
+      "thumbnailRemote": "https://i3.ytimg.com/vi/Re70Dd16-CE/hqdefault.jpg",
+      "durationLabel": null,
+      "tags": [
+        "Bundestag",
+        "Politik",
+        "Bundesregierung"
+      ],
+      "stats": {
+        "viewCount": 1232,
+        "likeCount": null,
+        "commentCount": 17
+      }
+    },
     {
       "id": "Oh-ptoD5NOw",
       "slug": "polen-putsch-oder-staatsstreich-von-tusk-eskalation-um-richter-nawrock-Oh-ptoD5NOw",
@@ -62,9 +86,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 68461,
+        "viewCount": 86999,
         "likeCount": null,
-        "commentCount": 379
+        "commentCount": 504
       }
     },
     {
@@ -91,7 +115,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 40
+        "commentCount": 49
       }
     },
     {
@@ -113,9 +137,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 132756,
+        "viewCount": 138768,
         "likeCount": null,
-        "commentCount": 529
+        "commentCount": 557
       }
     },
     {
@@ -137,9 +161,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 139885,
+        "viewCount": 143093,
         "likeCount": null,
-        "commentCount": 1960
+        "commentCount": 1989
       }
     },
     {
@@ -163,7 +187,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 92
+        "commentCount": 93
       }
     },
     {
@@ -185,9 +209,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 76860,
+        "viewCount": 77385,
         "likeCount": null,
-        "commentCount": 992
+        "commentCount": 1000
       }
     },
     {
@@ -209,9 +233,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 304579,
+        "viewCount": 310645,
         "likeCount": null,
-        "commentCount": 1452
+        "commentCount": 1471
       }
     },
     {
@@ -233,9 +257,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 169030,
+        "viewCount": 169621,
         "likeCount": null,
-        "commentCount": 946
+        "commentCount": 953
       }
     },
     {
@@ -259,7 +283,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 165
+        "commentCount": 167
       }
     },
     {
@@ -281,7 +305,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 77610,
+        "viewCount": 77684,
         "likeCount": null,
         "commentCount": 581
       }
@@ -305,9 +329,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 160885,
+        "viewCount": 160961,
         "likeCount": null,
-        "commentCount": 665
+        "commentCount": 666
       }
     },
     {
@@ -331,7 +355,7 @@
       "stats": {
         "viewCount": null,
         "likeCount": null,
-        "commentCount": 157
+        "commentCount": 159
       }
     },
     {
@@ -353,9 +377,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 272397,
+        "viewCount": 273236,
         "likeCount": null,
-        "commentCount": 1050
+        "commentCount": 1052
       }
     },
     {
@@ -384,30 +408,6 @@
       }
     },
     {
-      "id": "V7U43EJNyQ8",
-      "slug": "merz-haut-ab-unbeliebtester-kanzler-aller-zeiten-fluechtet-vor-der-rea-V7U43EJNyQ8",
-      "channelId": "UCsLN1bEfDJoZOs8udTwHatQ",
-      "channelName": "Politik mit Kopf",
-      "title": "Merz haut ab: unbeliebtester Kanzler aller Zeiten flüchtet vor der Realität - längste Auslandsreise",
-      "description": "Spare 83 Prozent beim Abschluss eines Abos von Cyberghost VPN und erhalte vier Monate gratis dazu: https://cyberghostvpn.com/PolitikmitKopf *\n\nFriedrich Merz bricht zu seiner bisher längsten Auslandsreise nach Singapur, Japan und Südkorea auf – trotz historisch schlechter Zustimmungswerte.Er flüchtet vor den innenpolitischen Problemen und den bevorstehenden Protesten in Deutschland.\n\nhttps://youtu.be/iKwFHNpAUjs \n\n🛍️ Mein Amazon-Shop mit Produkten die ich empfehle: https://amzn.eu/d/0gPb9Zmz *\n👉 Tesla - 1000 Freikilometer am Supercharger für dich, wenn du über meinen Empfehlungslink bestellst: https://ts.la/maurice669555 *\n\nUnterstützung per Spende ist möglich:\n\nIBAN: CH42 0077 7009 8834 0181 6 (Euro-Konto)\nAn: MK Swiss Media GmbH\nZwecke: Spende \n\n👉 WhatsApp: https://whatsapp.com/channel/0029Vb822FVBadmbHAN3mg0L\n👉 Telegram: https://t.me/politik_mit_kopf\n👉 X: https://x.com/Politikmit_Kopf\n👉 TikTok: https://www.tiktok.com/@politik.mit.kopf\n\nhttps://youtu.be/nPydV-SUemY\n\nFoto: Bundesregierung/Christina Czybik\n\n#Bundestag #Politik #Bundesregierung\n\n*Werbung / Affiliate-Link. Als Partner verdiene ich an qualifizierten Käufen.",
-      "excerpt": "Spare 83 Prozent beim Abschluss eines Abos von Cyberghost VPN und erhalte vier Monate gratis dazu: https://cyberghostvpn.com/PolitikmitKopf * Friedrich Merz bricht zu seiner…",
-      "publishedAt": "2026-10-26T17:47:52+00:00",
-      "url": "https://www.youtube.com/watch?v=V7U43EJNyQ8",
-      "thumbnail": "/media/V7U43EJNyQ8.jpg",
-      "thumbnailRemote": "https://i3.ytimg.com/vi/V7U43EJNyQ8/hqdefault.jpg",
-      "durationLabel": null,
-      "tags": [
-        "Bundestag",
-        "Politik",
-        "Bundesregierung"
-      ],
-      "stats": {
-        "viewCount": 238669,
-        "likeCount": null,
-        "commentCount": 1458
-      }
-    },
-    {
       "id": "fEchecle3Sw",
       "slug": "friedliche-schuelerproteste-phoenix-runde-vs-realitaet-phoenix-runde-b-fEchecle3Sw",
       "channelId": "UCOdBOgdBxkqo5CaGukX8z4g",
@@ -426,7 +426,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 70773,
+        "viewCount": 70835,
         "likeCount": null,
         "commentCount": 329
       }
@@ -450,7 +450,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 80841,
+        "viewCount": 80895,
         "likeCount": null,
         "commentCount": 524
       }
@@ -474,7 +474,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 98880,
+        "viewCount": 98905,
         "likeCount": null,
         "commentCount": 576
       }
@@ -522,9 +522,9 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 88131,
+        "viewCount": 88165,
         "likeCount": 4492,
-        "commentCount": 400
+        "commentCount": 401
       }
     },
     {
@@ -546,7 +546,7 @@
         "Bundesregierung"
       ],
       "stats": {
-        "viewCount": 42858,
+        "viewCount": 42859,
         "likeCount": 3038,
         "commentCount": 508
       }

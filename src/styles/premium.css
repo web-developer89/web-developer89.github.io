@@ -991,6 +991,41 @@
   }
 }
 
+.not-found {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  padding-bottom: 56px;
+}
+
+.not-found .lede {
+  max-width: 36rem;
+}
+
+.not-found .hero-actions {
+  justify-content: center;
+}
+
+.not-found-figure {
+  width: min(100%, 720px);
+  margin: 0 0 18px;
+}
+
+.not-found-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1024 / 576;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: #111;
+}
+
+.not-found-next {
+  margin: 16px 0 0;
+}
+
 @media (max-width: 560px) {
   .channel-badges.is-section {
     max-width: 300px;
